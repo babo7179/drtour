@@ -1,0 +1,117 @@
+@charset "euc-kr";
+/* 모든 디바이스 공통 */ 
+/* 팝업 */
+#popWrap {padding:20px 20px 0 20px; border-top:2px solid #484b4f;}
+#popWrap .popHeader{margin-bottom:20px; border-bottom:1px solid #ccc;}
+#popWrap .popHeader .innerWrap{position:relative;}
+#popWrap .popHeader h1 {padding:0 0 18px 0;}
+#popWrap .popHeader a{position:absolute; right:10px; top:18px;}
+
+#popWrap .popDesc {padding:15px 0; border-bottom:1px solid #e2e2e2;}
+#popWrap .popDesc li span {display:inline-block;}
+#popWrap .popDesc li span > a {margin-left:5px; text-decoration:underline;}
+#popWrap .popDesc li {color:#666; letter-spacing:-1px; line-height:26px;}
+
+#popWrap h2{margin-bottom:20px;color:#515151;font-weight:normal;font-size:22px}
+#popWrap .popFoamArea{padding:18px; border:1px solid #dcdcdc; background:#f4f4f4;}
+/* #popWrap .popFoamArea dl {overflow:hidden;} */
+#popWrap .popFoamArea dl > dt {float:left; width:20%;color:#454545;font-weight:bold; letter-spacing:-1px; line-height:32px;}
+#popWrap .popFoamArea dl > dd {float:left; width:70%; line-height:32px;overflow:hidden}
+#popWrap .popFoamArea dl > dd input{width:90%}/*수정2015-05-19*/
+
+#popWrap textarea {width:95%; height:208px;padding:0 2%;color:#848484; border:1px solid #e2e2e2;}
+/* 팝업 - 메일공유 */
+#popWrap .popFoamArea dl > dt{width:30%; font-size:14px; line-height:44px;}/*margin-left:15px; */
+#popWrap .popFoamArea dl > dd {line-height:44px;}
+/*#popWrap .popFoamArea dl > dd input {width:100%;}*/
+#popWrap .popFoamArea dl > dd input.point {color:#ff921c;}
+
+/* 팝업-여행계약서 */
+#popWrap .popContArea{padding:10px;border:1px solid #ccc;background-color:#fdfdfa}
+#popWrap .travelBox {margin-top:30px;overflow:hidden; border-top:2px solid #949494;  border-bottom:1px solid #e2e2e2;}
+#popWrap .travelBox h3 {float:left; width:20%; font-size:14px; font-weight:bold; color:#454545; line-height:30px;}
+#popWrap .travelBox dl {float:left; width:80%;line-height:30px;}
+#popWrap .travelBox dt {float:left; width:30%; font-size:13px; color:#454545; }
+#popWrap .travelBox dd {float:left; width:70%; font-size:12px; color:#666;}
+#popWrap .travelBox.clearfix dl{position:relative;margin-bottom:20px}
+#popWrap .travelBox.clearfix dt{width:15%}
+#popWrap .travelBox.clearfix dd{width:85%}
+#popWrap .travelBox.clearfix dd input{width:30%}
+#popWrap .travelBox.clearfix .posiA{top:0;}
+#popWrap .travelBox.clearfix dt.posiA{width:25%;left:47%}
+#popWrap .travelBox.clearfix dd.posiA{left:70%}
+#popWrap .travelBox.clearfix dd.full input{width:95%;}
+#popWrap .travelBox p {margin-bottom:17px;}
+#popWrap .brNone {border-bottom:none;}
+/*#popWrap .mb20 {margin-bottom:20px;}
+#popWrap .mb30 {margin-bottom:30px;}*/
+#popWrap .travelBox .expandWidth {width:208px;}
+#popWrap .rightBtn {margin-right:20px; text-align:right;}
+
+/* 팝업 - 인쇄하기 */
+#popWrap .printSet {position:relative;height:37px;overflow:hidden; margin:30px 0; padding-left:20px;border:1px solid #e2e2e2; border-right:none;}
+#popWrap .printSet h2 {float:left;width:19%; margin:0; font-size:13px; font-weight:bold; height:37px;line-height:37px; padding:0 !important}
+#popWrap .printSet ul {float:left;width:81%;overflow:hidden; margin-top:13px}
+#popWrap .printSet li {float:left; padding-right:15px; margin-right:15px; color:#666;background:url(../images/common/bg_bar_04.gif) no-repeat right 13px;}
+html.ie7 #popWrap .printSet li{padding-right:0}
+#popWrap .printSet li input {margin-right:5px;}
+#popWrap .printSet li.end {background:none;}
+#popWrap .printSet .printInner {line-height:40px}
+#popWrap .printSet  button.dePopBtn.type0{position:absolute; top:0; right:0;width:20%;font-size:15px;}
+#popWrap .printArea {margin:20px 0;}
+
+
+/* 버튼 */
+#popWrap .dePopBtn{padding:10px;margin:0 5px;font-weight:bold; text-align:center; }
+#popWrap .dePopBtn.type0{width:30%;color:#fff; border:1px solid #e37a08; background:#ff921c;}
+#popWrap .dePopBtn.type1{width:30%;color:#848484;border:1px solid #a5a5a5; background:#fff;}
+#popWrap .dePopBtn.type2{width:30%;color:#fff; border:1px solid #999; background:#aaa;}
+#popWrap .dePopBtn.type3{color:#fff; border:1px solid #575757; background:#666;}
+#popWrap .btnArea.right,
+#popWrap .btnArea.center{margin-top:20px;}
+
+/* 도착지 검색 */
+#popWrap .searchArea h3{margin-bottom:15px;font-size:14px; font-weight:bold; color:#454545; }
+#popWrap .searchArea .popFoamArea{padding:15px 20px;margin:15px 0 20px}
+#popWrap .searchArea .popFoamArea strong{margin-right:10px;font-size:14px}
+#popWrap .searchArea .popFoamArea .inputBox{width:68%}
+#popWrap .searchArea .popFoamArea  .dePopBtn.type3{width:100px;padding:6px 8px;margin-right:0px}
+
+/* bbsType1*/
+#popWrap .bbsType1Pop{/*border-top:1px solid #c5c5c5*/}
+#popWrap .bbsType1Pop table{width:100%;margin:5px 0 20px 0;border: 1px solid #e2e2e2;}
+#popWrap .bbsType1Pop th,
+#popWrap .bbsType1Pop td{padding:10px 20px;vertical-align:middle}
+#popWrap .bbsType1Pop thead th{color:#454545;text-align:center;border-left:1px solid #e2e2e2;border-bottom:1px solid #e2e2e2;background-color:#f4f4f4;}
+#popWrap .bbsType1Pop thead th:first-child{border-left:0px}
+#popWrap .bbsType1Pop tbody th{color:#fff;text-align:left;border:1px solid #ee841f;background-color:#ff9733;}
+#popWrap .bbsType1Pop tbody td{color:#848484;text-align:center;border:1px solid #e2e2e2;border-width:0px 1px 1px 1px;}
+
+#popWrap .bbsType1Pop.bbsType2Pop tbody td{border-left:0px}
+
+#popWrap .bbsType1Pop.bbsType3Pop tbody th{background-color:#f4f4f4;color:#454545}
+#popWrap .bbsType1Pop.bbsType3Pop tbody th,
+#popWrap .bbsType1Pop.bbsType3Pop tbody td{border:1px solid #e2e2e2;border-width:0px 1px 1px 0px ;}
+
+#popWrap .bbsType1Pop tbody td .point1{color:#fc7d09}
+#popWrap .bbsType1Pop tbody td .point2{color:#3acbc5}
+
+
+
+/* 장바구니 */
+#popWrap .cart .bbsType1Pop{margin:10px 0 20px}
+
+/* 호텔 지도보기 팝업 */
+.mapWrap{margin-bottom:20px;}
+.mapWrap .mapView{width:460px;height:400px;margin:0 auto;border:1px solid #ccc;}
+
+/* pass print */
+#popWrap .passPrint p{line-height:20px;color:#666;}
+#popWrap .passPrint p em{display:block;font-size:15px;font-weight:bold;}
+
+/* 국외여행계약서 가로 조정 2015-01-26 */
+/*@media screen {
+	.popContArea table{width:660px !important; }
+	.popContArea table tbody tr td table {width:660px !important;}
+	#cbody {width:660px !important;}
+}*/

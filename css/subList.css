@@ -1,0 +1,215 @@
+@charset "euc-kr";
+
+.sub-visual {position:relative;}
+.sub-visual .visual-img {width:100%;}
+.sub-visual .visual-txt {position:absolute; top:0; left:50%; z-index:1; width:1100px; height:168px; margin-left:-550px;}
+.sub-visual .visual-txt:after {display:block; content:''; clear:both;}
+.sub-visual .visual-txt .area-txt {display:table; float:left; width:50%; height:168px;}
+.sub-visual .visual-txt .area-txt > .txt {display:table-cell; color:#fff; font-size:25px; font-weight:bold; line-height:30px; vertical-align:middle;}
+.sub-visual .visual-txt .area-txt > .txt > span {display:block;}
+.sub-visual .visual-txt .sub-tagGroup {display:table; float:left; width:50%; height:168px; text-align:right;}
+.sub-visual .visual-txt .sub-tagGroup > .tagGroup {display:table-cell; font-size:0; line-height:30px; vertical-align:middle;}
+.sub-visual .visual-txt .sub-tagGroup > .tagGroup .hashtag {display:inline-block; padding:0 10px; margin:4px 0 4px 8px; border:1px solid #fff; color:#fff; font-size:14px; opacity: .8;}
+.sub-visual .visual-txt .area-txt.black,
+.sub-visual .visual-txt .sub-tagGroup.black  {color:#000;}
+
+.sub-list-wrap {width:1100px; padding:40px 0 0; margin:0 auto;}
+.sub-list-wrap .hidden {font-size:0;}
+.sub-list-wrap:after {display:block; content:''; clear:both;}
+
+.sub-list-wrap .list-filter{float:left; width:216px; }
+.sub-list-wrap .list-filter .list-filter-inner {width:216px;padding:30px 19px; margin:0 30px 0 0; border:1px solid #ddd; box-sizing:border-box;}
+
+.list-filter h4 {margin-bottom:25px; color:#222; font-size:16px; font-weight:normal;text-align:center;}
+.list-filter input {height:35px;}
+.filter-srh > .btn-init {display:block; position:relative; width:100%; margin-bottom:20px; line-height:47px; background:#2bb5b1; color:#fff; text-align:center;}
+.filter-srh > .btn-init:before {display:inline-block; content:''; width:13px; height:13px; margin-right:8px; background:url(//cdnimg.tourbaksa.com/PC/www/sublist/ico_srh_init.png) no-repeat; vertical-align:middle;}
+.filter-srh > .btn-init span {font-size:15px; vertical-align:middle;}
+.filter-srh .srh-inner {position:relative;}
+.filter-srh .srh-inner > .btn-name-srh {position:absolute; top:0; right:0; width:30px; height:35px; padding-left:2px; text-align:left;}
+.filter-srh .srh-inner > .btn-name-srh:after {display:inline-block; content:''; width:12px; height:12px; background:url(//cdnimg.tourbaksa.com/PC/www/sublist/ico_srh_sm.png) no-repeat;}
+.list-filter dl {margin-top:27px;}
+.list-filter dt {padding-bottom:8px; margin-bottom:12px; border-bottom:1px solid #ddd; color:#222; font-size:14px;}
+.list-filter dd {position:relative; font-size:0;}
+.list-filter dd + dd {margin-top:8px;}
+.list-filter dd:first-child {margin-top:0;}
+.list-filter dd span {color:#666; font-size:13px; vertical-align:middle;}
+.list-filter .ui-input {vertical-align:middle;}
+.list-filter .ui-input.long {width:100%;}
+.list-filter .ui-input.sm {width:75px; padding:0 3px; color:#fe922e; text-align:right;}
+.list-filter .calendar-input {position:relative;}
+.list-filter .calendar-input .btn-calendar {position:absolute; top:0; right:0; width:30px; height:35px; text-align:left;}
+.list-filter .calendar-input .btn-calendar:after {display:inline-block; content:''; width:14px; height:14px; margin-top:2px; background:url(//cdnimg.tourbaksa.com/PC/www/sublist/ico_calendar_sm.png) no-repeat;}
+.list-filter .btn-price-srh {display:inline-block; width:12px; height:35px; margin-left:4px;}
+.list-filter .btn-price-srh:after {display:inline-block; content:''; width:12px; height:12px; background:url(//cdnimg.tourbaksa.com/PC/www/sublist/ico_srh_sm.png) no-repeat;}
+.list-filter .ui-chk {width:176px;}
+.list-filter .btn-trf-more {position:absolute; top:1px; right:0; width:13px; height:13px;}
+.list-filter .btn-trf-more:after {display:block; content:''; width:13px; height:13px; line-height:10px; background:url(//cdnimg.tourbaksa.com/PC/www/sublist/ico_plusBox.png) no-repeat;}
+.list-filter .btn-trf-more.on:after {background:url(//cdnimg.tourbaksa.com/PC/www/sublist/ico_minusBox.png) no-repeat;}
+.list-filter .trf-Group {display:none; position:relative; padding:0 0 5px 24px; margin-top:8px;}
+.list-filter .trf-Group.active {display:block;}
+.list-filter .trf-Group:before {position:absolute; top:0; left:9px; content:''; width:6px; height:6px; background:url(//cdnimg.tourbaksa.com/PC/www/sublist/ico_connection.png) no-repeat;}
+.list-filter .trf-Group .ui-chk {display:block; width:100%; margin-top:8px;}
+.list-filter .trf-Group .ui-chk:first-child {margin-top:0;}
+.list-filter .trf-Group .ui-chk .chk + label > .txt  {width:114px;}
+/* ���� ��Ȱ��ȭ */
+.list-filter.inactive .filter-srh > .btn-init {background:#888;}
+.list-filter.inactive .ui-input {background:#fafafa;}
+.list-filter.inactive .ui-chk .chk + label:before {display:inline-block; content:''; width:15px; height:15px; border:1px solid #ddd; background:#fafafa; box-sizing:border-box; vertical-align:top;}
+
+.sub-list-wrap .list-inner {float:left;width:854px;margin: 0 0 58px 30px;}
+.list-inner .list-container {margin-top:95px;}
+.list-inner .list-container:first-child {margin-top:0;}
+.list-inner .list-container h3 {margin-bottom:20px; color:#222; font-size:20px;}
+.list-container .airline-srh-form {padding:19px; margin-bottom:30px; border:1px solid #ddd; background-color:#f1f4f6; box-sizing:border-box; font-size:0;}
+.list-container .airline-srh-form .srh-form {display:inline-block; position:relative;}
+.list-container .airline-srh-form .srh-form:first-child {margin-right:43px;}
+.list-container .airline-srh-form span {vertical-align:middle;}
+.list-container .airline-srh-form input {width:220px; height:40px; line-height:40px; border:0; color:#888;}
+.list-container .airline-srh-form .calendar-input {display:inline-block; position:relative;}
+.list-container .airline-srh-form .calendar-input .btn-calendar {position:absolute; top:0; right:0; width:35px; height:40px; padding-left:5px; text-align:left;}
+.list-container .airline-srh-form .calendar-input .btn-calendar:after {display:inline-block; content:''; width:14px; height:14px; margin-top:3px; background:url(//cdnimg.tourbaksa.com/PC/www/sublist/ico_calendar_sm.png) no-repeat;}
+.list-container .airline-srh-form .srh-select {display:inline-block; width:220px; padding:0 5px; border:0; background-color:#fff; color:#888; font-size:13px; box-sizing:border-box;}
+.list-container .airline-srh-form .srh-select > a {display:block; position:relative; height:40px; line-height:40px; text-indent:2px;}
+.list-container .airline-srh-form .srh-select > a:after {position:absolute; right:15px; top:50%; content:''; margin-top:-3px; border:solid transparent; border-color:rgba(255, 255, 255, 0); border-top-color:#aaa; border-width:4px;}
+.list-container .airline-srh-form .srh-select:first-child {margin-right:15px;}
+.list-container .airline-srh-form .ui-selectbox > .ui-select-list {display:none; position:absolute;top:40px;left:0;z-index:1;width:220px;padding:10px 0;background-color:#fff;border:1px solid #dddddd;box-sizing:border-box;}
+.list-container .airline-srh-form .ui-selectbox > .ui-select-list>li {height:24px;}
+.list-container .airline-srh-form .ui-selectbox > .ui-select-list>li>a {padding-left:14px;height:24px;line-height:24px;}
+.list-container .airline-srh-form .srh-slect.on > .ui-select-list {display:block;}
+.list-container .airline-srh-form .ui-chk {margin-left:10px;}
+.list-container .airline-srh-form .ui-chk .txt {color:#666;}
+.list-container .air-sale {margin-bottom:15px;}
+.list-container .air-sale:after {display:block; content:''; clear:both;}
+.list-container .air-sale .air-sale-date {float:left; width:50%; color:#222; font-size:13px;}
+.list-container .air-sale .air-sale-opt {float:right; width:50%; text-align:right;}
+.list-container .air-sale .air-sale-opt a {display:inline-block; color:#666; font-size:0;}
+.list-container .air-sale .air-sale-opt a.on {color:#fe922e;}
+.list-container .air-sale .air-sale-opt a span {display:inline-block; position:relative; padding:0 10px; font-size:13px;}
+.list-container .air-sale .air-sale-opt a:first-child span {padding-left:0;}
+.list-container .air-sale .air-sale-opt a:last-child span {padding-right:0;}
+.list-container .air-sale .air-sale-opt a span:after {position:absolute; top:0; bottom:0; left:0; content:''; width:1px; height:12px; margin:auto 0; background-color:#ddd;}
+.list-container .air-sale .air-sale-opt a:first-child span:after {display:none;}
+.list-container .list-table {width:100%; margin-bottom:10px;}
+.list-container .list-table thead th {position:relative; line-height:45px; border-top:1px solid #666; border-bottom:1px solid #666; color:#222; font-size:13px;}
+.list-container .list-table thead th:after {position:absolute; top:0; bottom:0; left:0; content:''; width:1px; height:14px; margin:auto 0; background-color:#ddd;}
+.list-container .list-table thead th:first-child:after {display:none;}
+.list-container .list-table tbody tr:hover {background-color:#fafafa;}
+.list-container .list-table tbody tr.empty:hover {background-color:#fff;}
+.list-container .list-table tbody td {padding:12px 0; line-height:16px; border-bottom:1px solid #ddd; color:#666; font-size:13px; text-align:center; vertical-align:middle;}
+.list-container .list-table tbody td a span {vertical-align:middle;}
+.list-container .list-table tbody tr:hover td a span:last-child {text-decoration:underline;}
+.list-container .list-table tbody td a span + span {display:block;}
+.list-container .btn-liner {display:inline-block; position:relative;}
+.list-container .btn-liner > .liner-name {display:none; position:absolute; top:28px; left:50%; width:70px; padding:6px 0; margin-left:-36px; border:1px solid #666; background-color:#fff; text-align:center; z-index:2;}
+.list-container .btn-liner:hover > .liner-name {display:inline-block;}
+.list-container .btn-liner > .liner-name:before {position:absolute; top:-6px; left:50%; content:''; margin:-4px 0 0 -4px; border:solid transparent; border-color:rgba(255, 255, 255, 0); border-bottom-color:#222; border-width:5px;}
+.list-container .btn-liner > .liner-name:after {position:absolute; top:-6px; left:50%; content:''; margin:-2px 0 0 -3px; border:solid transparent; border-color:rgba(255, 255, 255, 0); border-bottom-color:#fff; border-width:4px;}
+.list-container .btn-help {display:inline-block; position:relative; width:15px; height:15px; margin-right:6px; vertical-align:middle;}
+.list-container .btn-help:after {position:absolute; top:0; left:0; content:''; width:15px; height:15px; background:url(//cdnimg.tourbaksa.com/PC/www/sublist/ico_help.png) no-repeat;}
+.list-container .btn-help > .help-desc {display:none; position:absolute; top:25px; left:50%; width:324px; padding:18px 15px; margin-left:-314px; border:1px solid #666; background-color:#fff; color:#222; text-align:left; z-index:2;}
+.list-container .btn-help > .help-desc .help-desc-tit {margin-bottom:8px; font-size:13px; font-weight:bold;}
+.list-container .btn-help > .help-desc .inner-info {margin-bottom:22px;}
+.list-container .btn-help > .help-desc .inner-info li {line-height:16px; font-size:12px;}
+.list-container .btn-help > .help-desc .inner-info li > em {color:#666;}
+.list-container .btn-help > .help-desc p {line-height:16px;}
+.list-container .btn-help > .help-desc p .point {color:#fe922e;}
+.list-container .btn-help:hover > .help-desc {display:inline-block;}
+.list-container .btn-help > .help-desc:before {position:absolute; top:-6px; right:50%; content:''; margin:-4px -142px 0 0; border:solid transparent; border-color:rgba(255, 255, 255, 0); border-bottom-color:#222; border-width:5px;}
+.list-container .btn-help > .help-desc:after {position:absolute; top:-6px; right:50%; content:''; margin:-2px -141px 0 0; border:solid transparent; border-color:rgba(255, 255, 255, 0); border-bottom-color:#fff; border-width:4px;}
+.list-container .btn-inner {font-size:0; text-align:right;}
+.list-container .btn-inner > button:last-child {margin-left:15px;}
+.list-container .btn-list-gry {display:inline-block; min-width:70px; line-height:25px; background-color:#aaa; text-align:center;}
+.list-container .btn-list-gry span {display:inline-block; position:relative; padding-right:12px; color:#fff; font-size:12px;}
+.list-container .btn-list-gry span:after {position:absolute; top:10px; right:0; content:''; width:7px; height:4px; background:url(//cdnimg.tourbaksa.com/PC/www/sublist/ico_line_arw.png) no-repeat;}
+.list-container .btn-list-close {display:inline-block; min-width:70px; line-height:25px; background-color:#aaa; text-align:center;}
+.list-container .btn-list-close span {display:inline-block; position:relative; padding-right:12px; color:#fff; font-size:12px;}
+.list-container .btn-list-close span:after {position:absolute; top:10px; right:0; content:''; width:7px; height:4px; background:url(//cdnimg.tourbaksa.com/PC/www/sublist/ico_line_arw.png) no-repeat; transform:rotate(180deg); -webkit-transform:rotate(180deg);}
+
+.list-tab-heading {border-bottom:1px solid #222;}
+.list-tab-heading:after {display:block; content:''; clear:both;}
+.list-tab-heading .list-tab {float:left; width:50%}
+.list-tab-heading .list-tab li {display:inline-block; position:relative; padding:0 16px;}
+.list-tab-heading .list-tab li:first-child {padding-left:0;}
+.list-tab-heading .list-tab li:last-child {padding-right:0;}
+.list-tab-heading .list-tab li:after {position:absolute; top:4px; left:0; content:''; width:1px; height:15px; background-color:#aaa;}
+.list-tab-heading .list-tab li:first-child:after {display:none;}
+.list-tab-heading .list-tab li a {display:block; padding-bottom:18px; color:#222; font-size:20px;}
+.list-tab-heading .list-tab li a.on {position:relative; font-weight:bold;}
+.list-tab-heading .list-tab li a.on:after {position:absolute; bottom:0; left:0; content:''; width:71px; height:3px; background-color:#222;}
+.list-tab-heading .tab-opt {float:right; width:50%; text-align:right; font-size:0;}
+.list-tab-heading .tab-opt a {display:inline-block; color:#666; font-size:0;}
+.list-tab-heading .tab-opt a.on {color:#fe922e;}
+.list-tab-heading .tab-opt a span {display:inline-block; position:relative; padding:0 10px; font-size:13px;}
+.list-tab-heading .tab-opt a:first-child span {padding-left:0;}
+.list-tab-heading .tab-opt a:last-child span {padding-right:0;}
+.list-tab-heading .tab-opt a span:after {position:absolute; top:0; bottom:0; left:0; content:''; width:1px; height:12px; margin:auto 0; background-color:#ddd;}
+.list-tab-heading .tab-opt a:first-child span:after {display:none;}
+.list-form {}
+.list-form li {padding:25px; border-bottom:1px solid #ddd;}
+.list-form li:after {display:block; content:''; clear:both;}
+.list-form li .item-img {float:left; position:relative; width:170px; margin-right:24px;}
+.list-form li .item-img:after {position:absolute; top:50%; right:-1px; content:''; margin-top:-10px; border:solid transparent; border-color:rgba(136, 183, 213, 0); border-right-color:#fff; border-width:10px;}
+.list-form li .item-img img {height:158px;}
+.list-form li .item-desc {float:left; width:479px; margin-right:10px;}
+.list-form li .item-desc .desc-tit {margin-bottom:16px;}
+.list-form li .item-desc .desc-tit a {display:block; line-height:22px; color:#222; font-size:18px; font-weight:bold;}
+.list-form li .item-desc .desc-data .flight {font-size:0;}
+.list-form li .item-desc .desc-data .flight span {display:inline-block; position:relative; padding:0 10px; line-height:20px; color:#888; font-size:13px;}
+.list-form li .item-desc .desc-data .flight span:first-child {padding-left:0;}
+.list-form li .item-desc .desc-data .flight span:last-child {padding-right:0;}
+.list-form li .item-desc .desc-data .flight span:after {position:absolute; top:0; bottom:0; left:0; content:''; width:1px; height:10px; margin:auto 0; background-color:#ddd;}
+.list-form li .item-desc .desc-data .flight span:first-child:after {display:none;}
+.list-form li .item-desc .desc-data .flight .liner img {vertical-align:top;}
+.list-form li .item-desc .desc-data .price {margin-top:54px;}
+.list-form li .item-desc .desc-data .price span {color:#ff5a0f; font-size:22px; font-weight:bold;}
+.list-form li .item-btn {float:left; width:121px; padding-top:35px;}
+.list-form li .item-btn a + a {margin-top:10px;}
+.list-form li .item-btn .btn-item-gry {display:inline-block; min-width:120px; line-height:40px; box-sizing:border-box; background-color:#666; color:#fff; font-size:14px; text-align:center;}
+.list-form li .item-btn .btn-item-line {display:inline-block; min-width:120px; line-height:38px; border:1px solid #aaa; box-sizing:border-box; background-color:#fff; color:#888; font-size:14px; text-align:center;}
+/* ����Ʈ�� �˻����� ������ */
+.list-inner .srh-empty {position:relative; padding-top:58px; margin:45px 0 60px; line-height:20px; color:#222; font-size:16px; text-align:center;}
+.list-inner .srh-empty:before {position:absolute; top:0; left:0; right:0; content:''; width:52px; height:44px; margin:0 auto; background:url(//cdnimg.tourbaksa.com/PC/www/new/layout/tb_iconset.png) no-repeat; background-position:0px -217px; background-size:500px;}
+.list-inner .srh-empty span {display:block; color:#888; font-size:13px;}
+/* �������� �˾� */
+.schedule-pop {position:fixed; top:20%; left:0; right:0; z-index:999; width:1100px; margin:0 auto; background:#fff;}
+.sc-header {padding:45px 50px 0;}
+.sc-header .sc-tit {width:100%; margin-bottom:10px;}
+.sc-tit .sc-label {display:inline-block; height:26px; padding:0 7px; margin-bottom:14px; line-height:26px; border:1px solid #ddd; color:#666; font-size:13px;}
+.sc-tit .sc-label > em {color:#ff8719;}
+.sc-tit .sc-label > em:after {display:inline-block; content:''; margin:0 8px; width:1px; height:10px; background:#ddd;}
+.sc-tit > strong {display:block; margin-bottom:14px; color:#222; font-size:25px;}
+.sc-tit .sc-txt {color:#222; font-size:15px;}
+.sc-desc {font-size:0; padding-bottom:20px; border-bottom:1px dotted #c6c6c6;}
+.sc-desc .sc-left {display:inline-block; width:50%; vertical-align:bottom;}
+.sc-desc .sc-left > span {display:inline-block; margin:0 12px 0 8px; color:#666; font-size:14px; vertical-align:middle;}
+.sc-desc .sc-left > img {vertical-align:middle;}
+.sc-desc .sc-right {display:inline-block; width:50%; text-align:right; vertical-align:bottom;}
+.sc-desc .sc-right > span {color:#222; font-size:18px; vertical-align:bottom;}
+.sc-desc .sc-right > span strong {font-size:25px;}
+.sc-desc .sc-right > span > .min-price {color:#fc4809;}
+.sc-desc .sc-right > span > .max-price {font-weight:normal;}
+.sc-desc .sc-right .btn-sc-view {display:inline-block; min-width:180px; height:46px; line-height:46px; margin-left:20px; background:#323944; color:#fff; font-size:18px; text-align:center; vertical-align:bottom;}
+.sc-select-opt {padding:20px 0 12px; font-size:0;}
+.sc-select-opt .sc-opt {display:inline-block; width:75%;}
+.sc-select-opt .sc-opt .opt {display:inline-block; height:28px; line-height:28px; padding:0 10px; margin:0 8px 8px 0; border:1px solid #2bb5b1; border-radius:16px;}
+.sc-select-opt .sc-opt .opt > span {color:#2bb5b1; font-size:13px; vertical-align:middle;}
+.sc-select-opt .sc-opt .opt > a {display:inline-block; width:7px; height:7px; margin-left:5px; background:url(//cdnimg.tourbaksa.com/PC/www/sublist/ico_sc_opt_x.png) no-repeat; vertical-align:middle;}
+.sc-select-opt .sc-select-more {display:inline-block; width:25%; text-align:right; vertical-align:top;}
+.sc-select-opt .sc-select-more > span {color:#666; font-size:13px; vertical-align:middle;}
+.sc-select-opt .sc-select-more > select {width:110px; height:30px; margin-left:5px; border:1px solid #ddd; color:#888; font-size:13px; vertical-align:middle;}
+.sc-content {padding:40px 50px; background:#f1f4f6;}
+.sc-content:after {display:block; content:''; clear:both;}
+.sc-content .sc-left {float:left; width:490px; height:412px; border:1px solid #ddd; background:#fff; box-sizing:border-box;}
+.sc-content .sc-right {float:right; width:490px; height:412px; background:#fff;}
+
+/* ���� */
+/* input */
+.ui-input {display:inline-block; padding:0 5px; line-height:33px; border:1px solid #ddd; font-size:13px; text-indent:2px; box-sizing:border-box;}
+/* checkbox */
+.ui-chk {display:inline-block; position:relative;}
+.ui-chk .chk {display:none; position:absolute; left:0; top:0; width:24px; height:24px;}
+.ui-chk .chk + label {display:table;}
+.ui-chk .chk + label:before {display:table-cell; content:''; width:15px; height:15px; background:url(//cdnimg.tourbaksa.com/PC/www/new/layout/tb_iconset.png) no-repeat; background-position:-192px -60px; background-size:500px; vertical-align:top;}
+.ui-chk .chk:checked + label:before {background:url(//cdnimg.tourbaksa.com/PC/www/new/layout/tb_iconset.png) no-repeat; background-position:-207px -60px; background-size:500px;}
+.ui-chk .chk + label > .txt {display:table-cell; padding-left:6px; line-height:16px; font-size:13px; vertical-align:top;}

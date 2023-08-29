@@ -1,0 +1,543 @@
+@charset "euc-kr";
+@import "/UI/css/subLayout.css";
+@import "/UI/css/subCommon.css";
+@import "/UI/css/subCommon2.css";
+
+/* 렌터카 */
+body.onlyDesktop .h3My{color:#333; font-size:15px; padding:20px 0 ;}
+
+body.onlyDesktop .rent_dc{background: url("//cdnimg.tourbaksa.com/PC/www/common/bg_rentercar_dc.gif") no-repeat ;color:#f46600;width:60px;height:22px;font-size:11px;line-height:22px;display:inline-block;margin-left:5px;padding-left:3px;}
+body.onlyDesktop .rent_sub_txt{font-size:12px;margin-top:10px;}
+
+body.onlyDesktop .tbl_rentCar{border-top:2px solid #949494;border-bottom:1px solid #e2e2e2;}
+body.onlyDesktop .tbl_rentCar table{width:100%;}
+body.onlyDesktop .tbl_rentCar th {padding:12px 0; color:#454545; font-size:14px; text-align:left;vertical-align:top;}
+body.onlyDesktop .tbl_rentCar td {padding:12px 0; color:#666; font-size:13px;}
+body.onlyDesktop .tbl_rentCar td input[type="text"]{border:1px solid #e2e2e2; height:28px; line-height:28px; width:180px; text-indent:10px}
+body.onlyDesktop .tbl_rentCar td .pointIn{display:inline-block;  background:#f4f4f4; padding:5px 10px;}
+
+body.onlyDesktop .tbl_rentCar .pro_info{overflow:hidden;}
+body.onlyDesktop .tbl_rentCar .pro_info ul{overflow:hidden;margin-bottom:10px;height:19px;}
+body.onlyDesktop .tbl_rentCar .pro_info li{float:left;margin-right:20px;}
+body.onlyDesktop .tbl_rentCar .pro_info li img{margin-right:5px;;}
+body.onlyDesktop .tbl_rentCar .pro_info dl{overflow:hidden;}
+body.onlyDesktop .tbl_rentCar .pro_info dt{float:left;font-weight:bold;background: url("//cdnimg.tourbaksa.com/PC/www/common/bg_bar_01.gif") no-repeat 0 3px;padding:0 10px 0 10px;}
+body.onlyDesktop .tbl_rentCar .pro_info dt:first-child{background:none;padding:0 10px 0 0;}
+body.onlyDesktop .tbl_rentCar .pro_info dd{float:left;font-size:12px;padding:0 10px 0 0;}
+
+body.onlyDesktop .tbl_charge{width:100%;border-top:1px solid #c5c5c5;}
+body.onlyDesktop .tbl_charge th {padding:12px 0; border-bottom:1px solid #dcdcdc;  border-left:1px solid #dcdcdc; background:#f4f4f4; color:#454545;text-align:center;font-size:12px;font-weight:normal;}
+body.onlyDesktop .tbl_charge th:first-child{border-left:none;}
+body.onlyDesktop .tbl_charge td {padding:12px 0; border-bottom:1px solid #dcdcdc; border-left:1px solid #dcdcdc; text-align:center; color:#666;font-size:12px;}
+body.onlyDesktop .tbl_charge td:first-child{border-left:none;}
+
+body.onlyDesktop .rentCar_tabMn{overflow:hidden;position:absolute;bottom:17px;right:0;}
+body.onlyDesktop .rentCar_tabMn li{float:left;font-size:13px;line-height:20px;color:#666;padding:0 10px 0 10px;background: url("//cdnimg.tourbaksa.com/PC/www/common/bg_bar_04.gif") no-repeat 0 5px;}
+body.onlyDesktop .rentCar_tabMn li:first-child{background:none;padding:0 10px 0 0;}
+body.onlyDesktop .rentCar_tabMn a{color:#666;}
+body.onlyDesktop .rentCar_tabMn a:hover{color:#454545;}
+body.onlyDesktop .rentCar_tabMn li.on a{color:#454545;font-weight:bold;}
+body.onlyDesktop .tit_float2{overflow:hidden;position:relative;border-bottom:2px solid #949494;margin-bottom:24px;}
+body.onlyDesktop .tit_float2 h3{float:left;}
+body.onlyDesktop .rentCar_scroll{height:240px;overflow-x:hidden;overflow-y:scroll;background:#f4f4f4;border:1px solid #dcdcdc;}
+body.onlyDesktop .rentCar_scroll div{padding:20px;color:#666;line-height:20px;}
+body.onlyDesktop .rentCar_scroll h4{color:#666;margin:30px 0 0 0;}
+body.onlyDesktop .rentCar_scroll h4:first-child{margin-top:0;}
+body.onlyDesktop .rentCar_agree{color:#666;margin:20px 0 30px 0;border-bottom:1px solid #e2e2e2;padding-bottom:20px;}
+body.onlyDesktop .rentCar_agree label{padding:0 30px 0 5px;}
+
+body.onlyDesktop .rentCar_process{height:85px;background:url("//cdnimg.tourbaksa.com/PC/www/sub/bg_rentcar_step.gif") no-repeat center center;margin:30px 0;}
+
+body.onlyDesktop .tbl_rentCar_form{border-top:2px solid #949494;border-bottom:1px solid #e2e2e2;padding:15px 0; 20px 0;}
+body.onlyDesktop .tbl_rentCar_form table{width:100%;}
+body.onlyDesktop .tbl_rentCar_form th {padding:5px 0; color:#454545; font-size:14px; text-align:left;vertical-align:middle;}
+body.onlyDesktop .tbl_rentCar_form td {padding:5px 0; color:#666; font-size:13px;}
+body.onlyDesktop .tbl_rentCar_form .inp{border:1px solid #e2e2e2; height:28px; line-height:28px;text-indent:10px;color:#666;}
+body.onlyDesktop .tbl_rentCar_form .sel{border:1px solid #e2e2e2; height:28px; line-height:28px;color:#666;}
+body.onlyDesktop .tbl_rentCar_form td .pointIn{display:inline-block;background:#f4f4f4; padding:5px 10px;}
+
+body.onlyDesktop .h3My_2{color:#333; font-size:15px; padding:30px 0 20px 0 ;}
+
+body.onlyDesktop .tbl_rentCar_cn{border-top:2px solid #949494;border-bottom:1px solid #e2e2e2;}
+body.onlyDesktop .tbl_rentCar_cn table{width:100%;background: url("//cdnimg.tourbaksa.com/PC/www/common/bg_dot.gif") repeat-y 46.36% 0;margin:10px 0 ;}
+body.onlyDesktop .tbl_rentCar_cn th {padding:12px 0; color:#454545; font-size:14px; text-align:left;vertical-align:top;}
+body.onlyDesktop .tbl_rentCar_cn td {padding:12px 0; color:#666; font-size:12px;}
+body.onlyDesktop .tbl_rentCar_cn th.emp, body.onlyDesktop .tbl_rentCar_cn td.emp {padding:5px 0;vertical-align:middle}
+body.onlyDesktop .tbl_rentCar_cn .inp{border:1px solid #e2e2e2; height:28px; line-height:28px;text-indent:10px;color:#666;}
+body.onlyDesktop .tbl_rentCar_cn .select01{border:1px solid #e2e2e2; height:28px; line-height:28px;color:#666;}
+body.onlyDesktop .tbl_rentCar_cn ul li{font-size:12px;line-height:20px;}
+
+body.onlyDesktop .tbl_rentCar_form2{border-top:2px solid #949494;border-bottom:1px solid #e2e2e2;padding:15px 0; 20px 0;}
+body.onlyDesktop .tbl_rentCar_form2 table{width:100%;}
+body.onlyDesktop .tbl_rentCar_form2 th {padding:5px 0; color:#454545; font-size:14px; text-align:left;vertical-align:middle;}
+body.onlyDesktop .tbl_rentCar_form2 td {padding:5px 0; color:#666; font-size:13px;}
+body.onlyDesktop .tbl_rentCar_form2 .inp{border:1px solid #e2e2e2; height:28px; line-height:28px;text-indent:10px;color:#666;}
+body.onlyDesktop .tbl_rentCar_form2 .sel{border:1px solid #e2e2e2; height:28px; line-height:28px;color:#666;}
+body.onlyDesktop .tbl_rentCar_form2 td .pointIn{display:inline-block;background:#f4f4f4; padding:5px 10px;}
+body.onlyDesktop .tbl_rentCar_form2 li{font-size:12px;}
+body.onlyDesktop .tbl_rentCar_form2 .type_bg{background: url("//cdnimg.tourbaksa.com/PC/www/common/bg_dot.gif") repeat-y right 0;}
+body.onlyDesktop .tbl_rentCar_form2 .rList{padding:5px 0;}
+body.onlyDesktop .tbl_rentCar_form2 .rList li{float:left;margin-right:10px;}
+body.onlyDesktop .tbl_rentCar_form2 .navi_tit{line-height:26px;vertical-align:top;}
+body.onlyDesktop .tbl_rentCar_form2 .rent_info{margin-left:30px;}
+body.onlyDesktop .tbl_rentCar_form2 .rent_info li{font-size:13px;line-height:22px;}
+
+body.onlyDesktop .rentCar_guide{background: url("//cdnimg.tourbaksa.com/PC/www/bul/bul_list_dot_ora.gif") no-repeat 0 5px;padding:0 0 0 8px;font-size:12px;color:#f46600;}
+body.onlyDesktop .rentCar_guideUL{margin-top:10px;}
+body.onlyDesktop .rentCar_guideUL li{background: url("//cdnimg.tourbaksa.com/PC/www/bul/bul_dot_org_02.gif") no-repeat 0 9px;padding:0 0 0 8px;color:#e54c01;line-height:20px;}
+body.onlyDesktop .rentCar_guideUL .def{background:none;color:#666;}
+body.onlyDesktop .rentCar_guide2{background: url("//cdnimg.tourbaksa.com/PC/www/bul/bul_dot_org_02.gif") no-repeat 0 9px;padding:0 0 0 8px;color:#e54c01;line-height:20px;margin-bottom:10px;}
+
+body.onlyDesktop .rentCar_tArea{margin-bottom:30px;border:1px solid #e2e2e2;overflow:hidden;}
+body.onlyDesktop .rentCar_tArea textarea{font-size:12px;line-height:18px;width:99.895%;border:none;}
+body.onlyDesktop .rentCar_tArea2{margin-bottom:30px;border:1px solid #e2e2e2;overflow:hidden;font-size:12px;line-height:18px;padding:15px;color:#666;}
+
+body.onlyDesktop .rentCar_bx_info{padding:18px; border:1px solid #dcdcdc; background:#f4f4f4;text-align:center;margin-top:30px;}
+
+body.onlyDesktop .tbl_rentCar_cn2{border-top:2px solid #949494;border-bottom:1px solid #e2e2e2;}
+body.onlyDesktop .tbl_rentCar_cn2 table{width:100%;margin:10px 0 ;}
+body.onlyDesktop .tbl_rentCar_cn2 th {padding:12px 0; color:#454545; font-size:14px; text-align:left;vertical-align:top;}
+body.onlyDesktop .tbl_rentCar_cn2 td {padding:12px 0; color:#666; font-size:13px;}
+body.onlyDesktop .tbl_rentCar_cn2 .bdt_dotLine{border-top:1px dotted #c7c7c7;}
+
+body.onlyDesktop .rentCar_bx_cost{overflow:hidden;border:2px solid #949494;background:#fefdf8;}
+body.onlyDesktop .rentCar_bx_cost li{float:left;}
+
+body.onlyDesktop .rentCar_bx_cost h4{font-size:14px;color:#454545;}
+body.onlyDesktop .rentCar_bx_cost h4 strong{font-size:16px;margin-left:2%;}
+body.onlyDesktop .rentCar_bx_cost h4 span{font-size:12px;color:#666;font-weight:normal;}
+
+body.onlyDesktop .rentCar_bx_cost .cost{width:50%;}
+body.onlyDesktop .rentCar_bx_cost .info{width:49%;border-left:1px solid #e2e2e2;}
+body.onlyDesktop .rentCar_bx_cost div{padding:30px 30px 20px 30px;}
+body.onlyDesktop .rentCar_bx_cost ul li ul{overflow:hidden;margin-top:15px;}
+body.onlyDesktop .rentCar_bx_cost ul li ul li{line-height:20px;float:none;overflow:hidden;}
+body.onlyDesktop .rentCar_bx_cost .cost li{background: url("//cdnimg.tourbaksa.com/PC/www/bul/bul_list_dot.gif") no-repeat 0 11px;padding:0 0 0 8px;} /* 2014-05-30 */
+body.onlyDesktop .rentCar_bx_cost .cost li.txt_point{color:#e54c01;}/* 2014-05-30 추가 */
+body.onlyDesktop .rentCar_bx_cost .info li{background: url("//cdnimg.tourbaksa.com/PC/www/bul/bul_list_dot.gif") no-repeat 0 11px;padding:0 0 0 8px;color:#666;}
+body.onlyDesktop .rentCar_bx_cost .info li.txt_point{color:#e54c01;}/* 2014-06-02 추가 */
+
+body.onlyDesktop .rentCar_btn{text-align:right;margin-top:20px;}
+body.onlyDesktop .rentCar_btn strong{float:left;}
+
+body.onlyDesktop .rentCar_bx_note{border:1px solid #e2e2e2;padding:20px;}
+body.onlyDesktop .rentCar_bx_note h3{color:#f46600;}
+body.onlyDesktop .rentCar_bx_note h4{margin:20px 0 12px 0;}
+body.onlyDesktop .rentCar_bx_note ul{}
+body.onlyDesktop .rentCar_bx_note li{background: url("//cdnimg.tourbaksa.com/PC/www/bul/bul_list_dot.gif") no-repeat 0 11px;padding:0 0 0 8px;color:#666;line-height:20px;}
+
+body.onlyDesktop .rentCar_check{color:#666;margin:20px 0 25px 0;}
+
+
+/* 렌터가 lnb */
+body.onlyDesktop .leftAddMenu {height:132px;padding:20px 0 0;border-left:1px solid #e2e2e2;border-bottom:1px solid #e2e2e2;}
+body.onlyDesktop .leftAddMenu ul {margin:0 20px;overflow:hidden;border:1px solid #d9d8d4;}
+body.onlyDesktop .leftAddMenu ul li {border-top:1px solid #d9d8d4;background:#f8f6ef;height:36px;font-weight:bold;font-size:13px;letter-spacing:-1px;line-height:36px;padding-left:14px;}
+body.onlyDesktop .leftAddMenu ul li:first-child {border-top:0 none;}
+body.onlyDesktop .leftAddMenu ul li a {display:block;color:#62666c;}
+html.ie7 body.onlyDesktop .leftAddMenu.rentSale  {padding:20px 20px;} /* 20141107 추가 */
+
+body.onlyDesktop .contWrap .leftCont .innerCont .pic02{width:100%;height:259px;}
+body.onlyDesktop .btnArea {margin:0; text-align:left;}
+body.onlyDesktop .leftArea #lnb ul > li.on > h4{border:1px solid #e48329;background-color:#fe922e}
+body.onlyDesktop .leftArea #lnb ul > li.on > h4 a{background:none}
+body.onlyDesktop .leftArea #lnb h3.lnb7{background:#404346 url(//cdnimg.tourbaksa.com/PC/www/ico/ico_lnb_tit7.png) no-repeat 175px 63px}
+
+body.onlyDesktop .leftArea #lnb ul > li.none > h4{border:1px solid #5c5e61; background-color:#66696c;} /* 20140901 : 추가 */
+body.onlyDesktop .leftArea #lnb ul > li.none > h4 a{background:none}
+
+
+ /* 렌터가 메인 right*/
+body.onlyDesktop .rentSale{height:auto; padding:20px 0;}
+body.onlyDesktop .rentRefuel {margin:10px 11px 0 0; padding:15px 28px 12px 0; border:1px solid #e2ddcd; background:#fbf8ed; text-align:right;}
+body.onlyDesktop .rentRefuel .text01 {color:#fe8415; font-size:12px; font-weight:bold;}
+body.onlyDesktop .rentRefuel .text02 {margin:8px 0 0 0; color:#848484; font-size:12px; font-weight:bold;}
+body.onlyDesktop .rentRefuel .text02 strong {color:#f46600; font-size:14px;}
+
+body.onlyDesktop .airCon .contactArea .contact div.call02 {padding:10px 0 20px;line-height:18px;text-align:left;overflow:hidden;}
+body.onlyDesktop .contact .call02 > span {float:left;width:57%;color:#16a6a0;}
+body.onlyDesktop .contact .call02 > span:first-child {width:43%;color:#666;}
+body.onlyDesktop .contactArea .contact .call li span.txt01 {text-align:left;}
+
+body.onlyDesktop #content .rentSearch {position:relative; padding:20px 95px 20px 15px; border:1px solid #e2e2e2; background:#f4f4f4;}
+body.onlyDesktop #content .rentSearch ul {overflow:hidden; zoom:1;}
+body.onlyDesktop #content .rentSearch ul li {float:left; position:relative; padding:22px 1% 0 0;}
+body.onlyDesktop #content .rentSearch ul li .tit {position:absolute; top:0; left:0; color:#666; font-size:13px; font-weight:bold;}
+body.onlyDesktop #content .rentSearch ul li .tit label {color:#666; font-size:13px; font-weight:bold;}
+body.onlyDesktop #content .rentSearch ul li select {width:90%; height:30px; padding:5px 0 5px 0; vertical-align:middle;}
+body.onlyDesktop #content .rentSearch ul li .inputBox {position:relative; display:inline-block; width:72%; height:30px; vertical-align:middle;}
+body.onlyDesktop #content .rentSearch ul li .inputBox .date {vertical-align:top;width:67%;height:22px;background:transparent;border:0;position:relative;z-index: 100000;text-indent:2px;}
+body.onlyDesktop #content .rentSearch ul li .inputBox img {position:relative; top:0px; right:4px;}
+body.onlyDesktop #content .rentSearch ul li.sel01 {width:7%;}
+body.onlyDesktop #content .rentSearch ul li.sel02 {width:23%;}
+body.onlyDesktop #content .rentSearch ul li.sel03 {width:23%;}
+body.onlyDesktop #content .rentSearch ul li.sel04 {width:21%;}
+body.onlyDesktop #content .rentSearch ul li.sel05 {width:21%;}
+body.onlyDesktop #content .rentSearch ul li.sel01 select {width:97%;}
+body.onlyDesktop #content .rentSearch ul li.sel04 select,
+body.onlyDesktop #content .rentSearch ul li.sel05 select {width:45%;}
+body.onlyDesktop #content .rentSearch .btn {position:absolute; top:42px; right:15px; width:78px; height:30px; line-height:28px; color:#fff; font-weight:bold; text-align:center; border:1px solid #575757; background-color:#666;}
+body.onlyDesktop #content .carSort {position:relative; height:158px; margin-top:10px; border:1px solid #ecd0a8; background:#fdfaef;} /* 2014-06-02 */
+body.onlyDesktop #content .carSort h3 {height:23px; color:#666; font-size:13px; font-weight:bold;}/* 2014-06-02 */
+body.onlyDesktop #content .carSort .car {padding:14px 14px 0 14px;} /* 2014-06-02 */
+body.onlyDesktop #content .carSort .car ul {width:100%; overflow:hidden;}
+body.onlyDesktop #content .carSort .car ul li {float:left; width:20%; text-align:center;}
+body.onlyDesktop #content .carSort .car ul li .checkBox {display:block; margin:15px 0 5px 0; color:#666; font-size:12px;} /* 2014-06-02 */
+body.onlyDesktop #content .carSort .car ul li .checkBox label {color:#666; font-size:12px;}
+body.onlyDesktop #content .carSort .car ul li .money {color:#e54c01; font-size:12px; font-weight:bold;}
+body.onlyDesktop #content .carSort .moneySel {position:absolute; top:0; right:0; width:130px; height:184px; padding:14px 20px 0 20px; border-left:1px solid #ecd0a8; display:none;}
+body.onlyDesktop #content .carSort .moneySel .selBox {position:relative; padding:25px 0 0 0; background:url("//cdnimg.tourbaksa.com/PC/www/common/bg_bar_06.gif") repeat-x 0 25px;}
+body.onlyDesktop #content .carSort .moneySel .selBox .selOn {height:6px; background:url("//cdnimg.tourbaksa.com/PC/www/common/bg_bar_06_on.gif") repeat-x 0 0;}
+body.onlyDesktop #content .carSort .moneySel .selBox .selIcon {position:absolute; top:23px;}
+body.onlyDesktop #content .carSort .moneySel .selBox .selIcon span {position:absolute; top:-17px; left:-3px; display:block; height:11px; line-height:11px; padding:0 3px; color:#ff7d0b; font-family:tahoma; font-size:10px; border:1px solid #dddde1; background:#fff;}
+body.onlyDesktop #content .carSort .moneySel .selBox .selIcon span img {position:absolute; bottom:-4px; left:2px;}
+body.onlyDesktop #content .carSort02 {position:relative; height:23px; margin-top:10px; padding:9px 0 0 14px; border:1px solid #ecd0a8; background:#fdfaef;}
+body.onlyDesktop #content .carSort02 h3 {height:33px; color:#666; font-size:13px; font-weight:bold;}
+body.onlyDesktop #content .btnType01 {position:absolute; right:-1px; bottom:-1px; display:inline-block; height:32px; line-height:32px; padding:0 16px; background-color:#aaa; border:1px solid #999; *display:inline; zoom:1;}
+body.onlyDesktop #content .btnType01 span {padding-right:18px; color:#fff; font-size:13px; font-weight:bold; background:#aaa url("//cdnimg.tourbaksa.com/PC/www/ico/ico_arrow_up_01.gif") no-repeat right 6px; font-size:13px;}
+body.onlyDesktop #content .btnType02 {position:absolute; right:-1px; bottom:-1px; display:inline-block; height:32px; line-height:32px; padding:0 16px; background-color:#ffbf44; border:1px solid #f5a700; *display:inline; zoom:1;}
+body.onlyDesktop #content .btnType02 span {padding-right:18px; color:#fff; font-size:13px; font-weight:bold; background:#ffbf44 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_arrow_down_01.gif") no-repeat right 6px; font-size:13px;}
+body.onlyDesktop #content .sortTop {position:relative; margin:25px 0 0 0; overflow:hidden; zoom:1;}
+body.onlyDesktop #content .sortTop .tab {float:left; width:33%;}
+body.onlyDesktop #content .sortTop .tab li {display:inline-block; height:14px; margin-right:4px; border-left:1px solid #ccc; *display:inline; zoom:1;}
+body.onlyDesktop #content .sortTop .tab li a {display:block; padding:0 0 0 8px; color:#666; font-size:13px; line-height:14px;}
+body.onlyDesktop #content .sortTop .tab li a.on {color:#fc7d09; font-weight:bold;}
+body.onlyDesktop #content .sortTop .tab li:first-child {border-left:none;}
+body.onlyDesktop #content .sortTop .tab li:first-child a {padding-left:0;}
+body.onlyDesktop #content .sortTop .sortText {float:left; width:50%; padding:1px 0 0 0; color:#848484; font-size:12px; letter-spacing:-1px;}
+body.onlyDesktop #content .sortTop .sortText strong {color:#ff921c;}
+body.onlyDesktop #content .sortTop .sortInfo {position:absolute; top:0; right:0; padding-top:2px; color:#848484; font-size:11.5px;}
+body.onlyDesktop #content .sortTop .sortInfo img {position:relative; margin:-2px 3px 0 6px; vertical-align:middle;}
+body.onlyDesktop #content .sortList {margin:20px 0 0 0; border-top:2px solid #949494;}
+body.onlyDesktop #content .sortList li {position:relative; min-height:120px; padding:20px 280px 20px 203px; border-bottom:1px solid #e2e2e2; overflow:hidden; zoom:1;}
+body.onlyDesktop #content .sortList li .image {position:absolute; top:20px; left:0; width:180px; height:120px;}
+body.onlyDesktop #content .sortList li .image img {border:1px solid #e5e5e5;}
+body.onlyDesktop #content .sortList li .image span {position:absolute; left:0; bottom:0; display:inline-block; width:61px; height:18px; line-height:18px; border:1px solid #ccc; background:#f4f4f4; text-align:center;}
+body.onlyDesktop #content .sortList li .info {min-height:120px;}
+body.onlyDesktop #content .sortList li .info .tit {padding:0 0 12px 0; color:#454545; font-size:14px; font-weight:bold; line-height:22px;}
+body.onlyDesktop #content .sortList li .info .tit .sale {display:inline-block; width:54px; height:22px; line-height:22px; margin-left:5px; padding-right:6px; color:#f46600; font-size:11px; font-weight:normal; background:url("//cdnimg.tourbaksa.com/PC/www/common/bg_sale.png") no-repeat 0 0; text-align:center; *display:inline; zoom:1;}
+body.onlyDesktop #content .sortList li .info .txt {height:44px; color:#666; font-size:12px; line-height:18px;}
+body.onlyDesktop #content .sortList li .info .detail {color:#666; font-size:13px;}
+body.onlyDesktop #content .sortList li .info .detail img {position:relative; margin:-4px 6px 0 15px; vertical-align:middle;}
+body.onlyDesktop #content .sortList li .info .detail img:first-child {margin-left:0;}
+body.onlyDesktop #content .sortList li .money {position:absolute; top:48px; right:0; color:#f2542b; font-size:20px; font-weight:bold;}
+body.onlyDesktop #content .sortList li .btn {position:absolute; top:116px; right:0;}
+body.onlyDesktop #content .sortList li .btn .btnT01 {display:inline-block; height:32px; line-height:32px; padding:0 16px; background-color:#ffbf44; border:1px solid #f5a700;  *display:inline; zoom:1;}
+body.onlyDesktop #content .sortList li .btn .btnT01 span {padding-right:18px; color:#fff; font-size:13px; font-weight:bold; background:#ffbf44 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_arrow_down_01.gif") no-repeat right 6px; font-size:13px;}
+body.onlyDesktop #content .sortList li .btn .btnT01.type01 {background-color:#b9b9b9; border-color:#afafaf;}
+body.onlyDesktop #content .sortList li .btn .btnT01.type01 span {background:#b9b9b9 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_arrow_up_01.gif") no-repeat right 6px;}
+body.onlyDesktop #content .sortList li .btn .btnT02 {display:inline-block; height:32px; line-height:32px; padding:0 30px; color:#fff; font-size:13px; font-weight:bold; background-color:#ff921c; border:1px solid #e37a08; *display:inline; zoom:1;}
+body.onlyDesktop #content .sortList li .detailInfo {position:relative; margin:20px -280px -20px -203px; padding:19px 20px 20px 203px; border-top:1px solid #e2e2e2; background:#f4f4f4;}
+body.onlyDesktop #content .sortList li .detailInfo .photo {position:absolute; top:15px; left:5px; width:180px; overflow:hidden;}
+body.onlyDesktop #content .sortList li .detailInfo .photo li {float:left; width:53px; height:45px; margin:5px 0 0 5px; min-height:0; padding:0; border-bottom:none;}
+body.onlyDesktop #content .sortList li .detailInfo .dInfo {margin-bottom:20px; overflow:hidden; zoom:1;}
+body.onlyDesktop #content .sortList li .detailInfo .dInfo li {float:left; height:14px; min-height:0; padding:0 8px 0 9px; color:#666; font-size:12px; border-left:1px solid #ccc; border-bottom:none;}
+body.onlyDesktop #content .sortList li .detailInfo .dInfo li:first-child {border-left:none; padding-left:0;}
+body.onlyDesktop #content .sortList li .detailInfo .dInfo li strong {color:#454545; font-size:13px;}
+body.onlyDesktop #content .sortList li .detailInfo table {width:100%; background:#fff;}
+body.onlyDesktop #content .sortList li .detailInfo table th,
+body.onlyDesktop #content .sortList li .detailInfo table td {padding:10px 0 10px 0; border:1px solid #dcdcdc; text-align:center;vertical-align:middle;line-height:15px;}
+body.onlyDesktop #content .sortList li .detailInfo table th {color:#454545; font-size:12px; font-weight:normal;}
+body.onlyDesktop #content .sortList li .detailInfo table td {color:#e54c01; font-size:12px; font-weight:bold;}
+body.onlyDesktop #content .sortList li .detailInfo .review_btn {overflow: hidden; position: absolute; left: 15px; top: 81px; width: 100px; padding: 13px 22px; border: 1px solid #AFAFAF; color: #FFFFFF; font-size: 11px; background: url("//cdnimg.tourbaksa.com/PC/www/ico/ico_magnifier.png") no-repeat scroll 14% center #B9B9B9; font-weight:bold; text-align:center;} /* 20140128 : 리뷰버튼추가 */
+
+
+
+/* 렌터카 반응형*/
+.h3My{color:#333; font-size:15px; padding:20px 0 ;}
+
+.rent_dc{background: url("//cdnimg.tourbaksa.com/PC/www/common/bg_rentercar_dc.gif") no-repeat ;color:#f46600;width:60px;height:22px;font-size:11px;line-height:22px;display:inline-block;margin-left:5px;padding-left:3px;}
+.rent_sub_txt{font-size:12px;margin-top:10px;}
+
+.tbl_rentCar{border-top:2px solid #949494;border-bottom:1px solid #e2e2e2;}
+.tbl_rentCar table{width:100%;}
+.tbl_rentCar th {padding:12px 0; color:#454545; font-size:14px; text-align:left;vertical-align:top;}
+.tbl_rentCar td {padding:12px 0; color:#666; font-size:13px;}
+.tbl_rentCar td input[type="text"]{border:1px solid #e2e2e2; height:28px; line-height:28px; width:180px; text-indent:10px}
+.tbl_rentCar td .pointIn{display:inline-block;  background:#f4f4f4; padding:5px 10px;}
+
+.tbl_rentCar .pro_info{overflow:hidden;}
+.tbl_rentCar .pro_info ul{overflow:hidden;margin-bottom:10px;height:19px;}
+.tbl_rentCar .pro_info li{float:left;margin-right:20px;}
+.tbl_rentCar .pro_info li img{margin-right:5px;;}
+.tbl_rentCar .pro_info dl{overflow:hidden;}
+.tbl_rentCar .pro_info dt{float:left;font-weight:bold;background: url("//cdnimg.tourbaksa.com/PC/www/common/bg_bar_01.gif") no-repeat 0 3px;padding:0 10px 0 10px;}
+.tbl_rentCar .pro_info dt:first-child{background:none;padding:0 10px 0 0;}
+.tbl_rentCar .pro_info dd{float:left;font-size:12px;padding:0 10px 0 0;}
+
+.tbl_charge{width:100%;border-top:1px solid #c5c5c5;}
+.tbl_charge th {padding:12px 0; border-bottom:1px solid #dcdcdc;  border-left:1px solid #dcdcdc; background:#f4f4f4; color:#454545;text-align:center;font-size:12px;font-weight:normal;}
+.tbl_charge th:first-child{border-left:none;}
+.tbl_charge td {padding:12px 0; border-bottom:1px solid #dcdcdc; border-left:1px solid #dcdcdc; text-align:center; color:#666;font-size:12px;}
+.tbl_charge td:first-child{border-left:none;}
+
+.rentCar_tabMn{overflow:hidden;position:absolute;bottom:17px;right:0;}
+.rentCar_tabMn li{float:left;font-size:13px;line-height:20px;color:#666;padding:0 10px 0 10px;background: url("//cdnimg.tourbaksa.com/PC/www/common/bg_bar_04.gif") no-repeat 0 5px;}
+.rentCar_tabMn li:first-child{background:none;padding:0 10px 0 0;}
+.rentCar_tabMn a{color:#666;}
+.rentCar_tabMn a:hover{color:#454545;}
+.rentCar_tabMn li.on a{color:#454545;font-weight:bold;}
+.tit_float2{overflow:hidden;position:relative;border-bottom:2px solid #949494;margin-bottom:24px;}
+.tit_float2 h3{float:left;}
+.rentCar_scroll{height:240px;overflow-x:hidden;overflow-y:scroll;background:#f4f4f4;border:1px solid #dcdcdc;}
+.rentCar_scroll div{padding:20px;color:#666;line-height:20px;}
+.rentCar_scroll h4{color:#666;margin:30px 0 0 0;}
+.rentCar_scroll h4:first-child{margin-top:0;}
+.rentCar_agree{color:#666;margin:20px 0 30px 0;border-bottom:1px solid #e2e2e2;padding-bottom:20px;}
+.rentCar_agree label{padding:0 30px 0 5px;}
+
+.rentCar_process{height:85px;background:url("//cdnimg.tourbaksa.com/PC/www/sub/bg_rentcar_step.gif") no-repeat center center;margin:30px 0;}
+
+.tbl_rentCar_form{border-top:2px solid #949494;border-bottom:1px solid #e2e2e2;padding:15px 0; 20px 0;}
+.tbl_rentCar_form table{width:100%;}
+.tbl_rentCar_form th {padding:5px 0; color:#454545; font-size:14px; text-align:left;vertical-align:middle;}
+.tbl_rentCar_form td {padding:5px 0; color:#666; font-size:13px;}
+.tbl_rentCar_form .inp{border:1px solid #e2e2e2; height:28px; line-height:28px;text-indent:10px;color:#666;}
+.tbl_rentCar_form .sel{border:1px solid #e2e2e2; height:28px; line-height:28px;color:#666;}
+.tbl_rentCar_form td .pointIn{display:inline-block;background:#f4f4f4; padding:5px 10px;}
+
+.h3My_2{color:#333; font-size:15px; padding:30px 0 20px 0 ;}
+
+.tbl_rentCar_cn{border-top:2px solid #949494;border-bottom:1px solid #e2e2e2;}
+.tbl_rentCar_cn table{width:100%;background: url("//cdnimg.tourbaksa.com/PC/www/common/bg_dot.gif") repeat-y 46.36% 0;margin:10px 0 ;}
+.tbl_rentCar_cn th {padding:12px 0; color:#454545; font-size:14px; text-align:left;vertical-align:top;}
+.tbl_rentCar_cn td {padding:12px 0; color:#666; font-size:12px;}
+.tbl_rentCar_cn ul li{font-size:12px;line-height:20px;}
+
+.tbl_rentCar_form2{border-top:2px solid #949494;border-bottom:1px solid #e2e2e2;padding:15px 0; 20px 0;}
+.tbl_rentCar_form2 table{width:100%;}
+.tbl_rentCar_form2 th {padding:5px 0; color:#454545; font-size:14px; text-align:left;vertical-align:middle;}
+.tbl_rentCar_form2 td {padding:5px 0; color:#666; font-size:13px;}
+.tbl_rentCar_form2 .inp{border:1px solid #e2e2e2; height:28px; line-height:28px;text-indent:10px;color:#666;}
+.tbl_rentCar_form2 .sel{border:1px solid #e2e2e2; height:28px; line-height:28px;color:#666;}
+.tbl_rentCar_form2 td .pointIn{display:inline-block;background:#f4f4f4; padding:5px 10px;}
+.tbl_rentCar_form2 li{font-size:12px;}
+.tbl_rentCar_form2 .type_bg{background: url("//cdnimg.tourbaksa.com/PC/www/common/bg_dot.gif") repeat-y right 0;}
+.tbl_rentCar_form2 .rList{padding:5px 0;}
+.tbl_rentCar_form2 .rList li{float:left;margin-right:10px;}
+.tbl_rentCar_form2 .navi_tit{line-height:26px;vertical-align:top;}
+.tbl_rentCar_form2 .rent_info{margin-left:30px;}
+.tbl_rentCar_form2 .rent_info li{font-size:13px;line-height:22px;}
+
+.rentCar_guide{background: url("//cdnimg.tourbaksa.com/PC/www/bul/bul_list_dot_ora.gif") no-repeat 0 5px;padding:0 0 0 8px;font-size:12px;color:#f46600;}
+.rentCar_guideUL{margin-top:10px;}
+.rentCar_guideUL li{background: url("//cdnimg.tourbaksa.com/PC/www/bul/bul_dot_org_02.gif") no-repeat 0 9px;padding:0 0 0 8px;color:#e54c01;line-height:20px;}
+.rentCar_guideUL .def{background:none;color:#666;}
+.rentCar_guide2{background: url("//cdnimg.tourbaksa.com/PC/www/bul/bul_dot_org_02.gif") no-repeat 0 9px;padding:0 0 0 8px;color:#e54c01;line-height:20px;margin-bottom:10px;}
+
+.rentCar_tArea{margin-bottom:30px;border:1px solid #e2e2e2;overflow:hidden;}
+.rentCar_tArea textarea{font-size:12px;line-height:18px;width:99.895%;border:none;}
+.rentCar_tArea2{margin-bottom:30px;border:1px solid #e2e2e2;overflow:hidden;font-size:12px;line-height:18px;padding:15px;color:#666;}
+
+.rentCar_bx_info{padding:18px; border:1px solid #dcdcdc; background:#f4f4f4;text-align:center;margin-top:30px;}
+
+.tbl_rentCar_cn2{border-top:2px solid #949494;border-bottom:1px solid #e2e2e2;}
+.tbl_rentCar_cn2 table{width:100%;margin:10px 0 ;}
+.tbl_rentCar_cn2 th {padding:12px 0; color:#454545; font-size:14px; text-align:left;vertical-align:top;}
+.tbl_rentCar_cn2 td {padding:12px 0; color:#666; font-size:13px;}
+.tbl_rentCar_cn2 .bdt_dotLine{border-top:1px dotted #c7c7c7;}
+
+.rentCar_bx_cost{overflow:hidden;border:2px solid #949494;background:#fefdf8;}
+.rentCar_bx_cost li{float:left;}
+
+.rentCar_bx_cost h4{font-size:14px;color:#454545;}
+.rentCar_bx_cost h4 strong{font-size:16px;margin-left:2%;}
+.rentCar_bx_cost h4 span{font-size:12px;color:#666;font-weight:normal;}
+
+.rentCar_bx_cost .cost{width:50%;}
+.rentCar_bx_cost .info{width:49%;border-left:1px solid #e2e2e2;}
+.rentCar_bx_cost div{padding:30px 30px 20px 30px;}
+.rentCar_bx_cost ul li ul{overflow:hidden;margin-top:15px;}
+.rentCar_bx_cost ul li ul li{line-height:20px;float:none;overflow:hidden;}
+.rentCar_bx_cost .cost li{background: url("//cdnimg.tourbaksa.com/PC/www/bul/bul_dot_org_02.gif") no-repeat 0 11px;padding:0 0 0 8px;color:#666;}
+.rentCar_bx_cost .info li{background: url("//cdnimg.tourbaksa.com/PC/www/bul/bul_list_dot.gif") no-repeat 0 11px;padding:0 0 0 8px;color:#666;} /* 2014-05-30 */
+
+.rentCar_btn{text-align:right;margin-top:20px;}
+.rentCar_btn strong{float:left;}
+
+.rentCar_bx_note{border:1px solid #e2e2e2;padding:20px;}
+.rentCar_bx_note h3{color:#f46600;}
+.rentCar_bx_note h4{margin:20px 0 12px 0;}
+.rentCar_bx_note ul{}
+.rentCar_bx_note li{background: url("//cdnimg.tourbaksa.com/PC/www/bul/bul_list_dot.gif") no-repeat 0 11px;padding:0 0 0 8px;color:#666;line-height:20px;}
+
+.rentCar_check{color:#666;margin:20px 0 25px 0;}
+
+
+/* 렌터가 lnb */
+.leftAddMenu {height:132px;padding:20px 0 0;border-left:1px solid #e2e2e2;border-bottom:1px solid #e2e2e2;}
+.leftAddMenu ul {margin:0 20px;overflow:hidden;border:1px solid #d9d8d4;}
+.leftAddMenu ul li {border-top:1px solid #d9d8d4;background:#f8f6ef;height:36px;font-weight:bold;font-size:13px;letter-spacing:-1px;line-height:36px;padding-left:14px;}
+.leftAddMenu ul li:first-child {border-top:0 none;}
+.leftAddMenu ul li a {display:block;color:#62666c;}
+
+.contWrap .leftCont .innerCont {overflow:hidden;text-align:center; position:relative; z-index:1;} /* 20140203 :  height:259px; 삭제 */
+.contWrap .leftCont .innerCont .pic02{width:100%;height:auto;}
+html.tablet .contWrap .leftCont .innerCont .pic02{width:100%;height:259px;}
+html.desktop .contWrap .leftCont .innerCont .pic02{width:100%;height:259px;}
+
+
+.btnArea {margin:0; text-align:left;}
+/*
+.leftArea #lnb ul > li.none > h4{border:1px solid #e48329;background-color:#fe922e}
+.leftArea #lnb ul > li.none > h4 a{background:none}
+.leftArea #lnb h3.lnb7{background:#404346 url(//cdnimg.tourbaksa.com/PC/www/ico/ico_lnb_tit7.png) no-repeat 175px 63px}
+*/
+
+ /* 렌터가 메인 right*/
+.rentSale{height:auto; padding:20px 0;}
+.rentRefuel {margin:10px 11px 0 0; padding:15px 28px 12px 0; border:1px solid #e2ddcd; background:#fbf8ed; text-align:right;}
+.rentRefuel .text01 {color:#fe8415; font-size:12px; font-weight:bold;}
+.rentRefuel .text02 {margin:8px 0 0 0; color:#848484; font-size:12px; font-weight:bold;}
+.rentRefuel .text02 strong {color:#f46600; font-size:14px;}
+
+.airCon .contactArea .contact div.call02 {padding:10px 0 20px 20px;line-height:18px;text-align:left;overflow:hidden;}
+html.tablet .airCon .contactArea .contact div.call02 {padding:10px 0 20px 0px; }
+html.desktop .airCon .contactArea .contact div.call02 {padding:10px 0 20px 0px; }
+
+.contact .call02 > span {float:left;width:57%;color:#16a6a0;}
+.contact .call02 > span:first-child {width:34%;color:#666;}
+.contactArea .contact .call li span.txt01 {text-align:left;}
+html.desktop .contact .call02 > span:first-child {width:43%;color:#666;}
+html.tablet .contact .call02 > span:first-child {width:43%;color:#666;}
+
+
+#content .rentSearch {position:relative; padding:20px 95px 20px 15px; border:1px solid #e2e2e2; background:#f4f4f4;}
+#content .rentSearch ul {overflow:hidden; zoom:1;}
+#content .rentSearch ul li {float:left; position:relative; padding:22px 1% 0 0;}
+#content .rentSearch ul li .tit {position:absolute; top:0; left:0; color:#666; font-size:13px; font-weight:bold;}
+#content .rentSearch ul li .tit label {color:#666; font-size:13px; font-weight:bold;}
+#content .rentSearch ul li select {width:48%; height:30px; padding:5px 0 5px 0; vertical-align:middle;}
+#content .rentSearch ul li .inputBox {position:relative; display:inline-block; width:56%; height:30px; vertical-align:middle;}
+#content .rentSearch ul li .inputBox img {position:absolute; top:9px; right:4px;}
+#content .rentSearch ul li.sel01 {width:7%;}
+#content .rentSearch ul li.sel02 {width:23%;}
+#content .rentSearch ul li.sel03 {width:23%;}
+#content .rentSearch ul li.sel04 {width:21%;}
+#content .rentSearch ul li.sel05 {width:21%;}
+#content .rentSearch ul li.sel01 select {width:97%;}
+#content .rentSearch ul li.sel04 select,
+#content .rentSearch ul li.sel05 select {width:36%;}
+#content .rentSearch .btn {position:absolute; top:42px; right:15px; width:78px; height:30px; line-height:28px; color:#fff; font-weight:bold; text-align:center; border:1px solid #575757; background-color:#666;}
+#content .carSort {position:relative; height:198px; margin-top:10px; border:1px solid #ecd0a8; background:#fdfaef;}
+#content .carSort h3 {height:33px; color:#666; font-size:13px; font-weight:bold;}
+#content .carSort .car {padding:14px 175px 0 14px;}
+#content .carSort .car ul {width:100%; overflow:hidden;}
+#content .carSort .car ul li {float:left; width:20%; text-align:center;}
+#content .carSort .car ul li .checkBox {display:block; margin:30px 0 5px 0; color:#666; font-size:12px;}
+#content .carSort .car ul li .checkBox label {color:#666; font-size:12px;}
+#content .carSort .car ul li .money {color:#e54c01; font-size:12px; font-weight:bold;}
+#content .carSort .moneySel {position:absolute; top:0; right:0; width:130px; height:184px; padding:14px 20px 0 20px; border-left:1px solid #ecd0a8;}
+#content .carSort .moneySel .selBox {position:relative; padding:25px 0 0 0; background:url("//cdnimg.tourbaksa.com/PC/www/common/bg_bar_06.gif") repeat-x 0 25px;}
+#content .carSort .moneySel .selBox .selOn {height:6px; background:url("//cdnimg.tourbaksa.com/PC/www/common/bg_bar_06_on.gif") repeat-x 0 0;}
+#content .carSort .moneySel .selBox .selIcon {position:absolute; top:23px;}
+#content .carSort .moneySel .selBox .selIcon span {position:absolute; top:-17px; left:-3px; display:block; height:11px; line-height:11px; padding:0 3px; color:#ff7d0b; font-family:tahoma; font-size:10px; border:1px solid #dddde1; background:#fff;}
+#content .carSort .moneySel .selBox .selIcon span img {position:absolute; bottom:-4px; left:2px;}
+#content .carSort02 {position:relative; height:23px; margin-top:10px; padding:9px 0 0 14px; border:1px solid #ecd0a8; background:#fdfaef;}
+#content .carSort02 h3 {height:33px; color:#666; font-size:13px; font-weight:bold;}
+#content .btnType01 {position:absolute; right:-1px; bottom:-1px; display:inline-block; height:32px; line-height:32px; padding:0 16px; background-color:#aaa; border:1px solid #999; *display:inline; zoom:1;}
+#content .btnType01 span {padding-right:18px; color:#fff; font-size:13px; font-weight:bold; background:#aaa url("//cdnimg.tourbaksa.com/PC/www/ico/ico_arrow_up_01.gif") no-repeat right 6px; font-size:13px;}
+#content .btnType02 {position:absolute; right:-1px; bottom:-1px; display:inline-block; height:32px; line-height:32px; padding:0 16px; background-color:#ffbf44; border:1px solid #f5a700; *display:inline; zoom:1;}
+#content .btnType02 span {padding-right:18px; color:#fff; font-size:13px; font-weight:bold; background:#ffbf44 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_arrow_down_01.gif") no-repeat right 6px; font-size:13px;}
+#content .sortTop {position:relative; margin:25px 0 0 0; overflow:hidden; zoom:1;}
+#content .sortTop .tab {float:left; width:33%;}
+#content .sortTop .tab li {display:inline-block; height:14px; margin-right:4px; border-left:1px solid #ccc; *display:inline; zoom:1;}
+#content .sortTop .tab li a {display:block; padding:0 0 0 8px; color:#666; font-size:13px; line-height:14px;}
+#content .sortTop .tab li a.on {color:#fc7d09; font-weight:bold;}
+#content .sortTop .tab li:first-child {border-left:none;}
+#content .sortTop .tab li:first-child a {padding-left:0;}
+#content .sortTop .sortText {float:left; width:50%; padding:1px 0 0 0; color:#848484; font-size:12px; letter-spacing:-1px;}
+#content .sortTop .sortText strong {color:#ff921c;}
+#content .sortTop .sortInfo {position:absolute; top:0; right:0; padding-top:2px; color:#848484; font-size:11.5px;}
+#content .sortTop .sortInfo img {position:relative; margin:-2px 3px 0 6px; vertical-align:middle;}
+#content .sortList {margin:20px 0 0 0; border-top:2px solid #949494;}
+#content .sortList li {position:relative; min-height:120px; padding:20px 280px 20px 203px; border-bottom:1px solid #e2e2e2; overflow:hidden; zoom:1;}
+#content .sortList li .image {position:absolute; top:20px; left:0; width:180px; height:120px;}
+#content .sortList li .image img {border:1px solid #e5e5e5;}
+#content .sortList li .image span {position:absolute; left:0; bottom:0; display:inline-block; width:61px; height:18px; line-height:18px; border:1px solid #ccc; background:#f4f4f4; text-align:center;}
+#content .sortList li .info {min-height:120px;}
+#content .sortList li .info .tit {padding:0 0 12px 0; color:#454545; font-size:14px; font-weight:bold; line-height:22px;}
+#content .sortList li .info .tit .sale {display:inline-block; width:54px; height:22px; line-height:22px; margin-left:5px; padding-right:6px; color:#f46600; font-size:11px; font-weight:normal; background:url("//cdnimg.tourbaksa.com/PC/www/common/bg_sale.png") no-repeat 0 0; text-align:center; *display:inline; zoom:1;}
+#content .sortList li .info .txt {height:44px; color:#666; font-size:12px; line-height:18px;}
+#content .sortList li .info .detail {color:#666; font-size:13px;}
+#content .sortList li .info .detail img {position:relative; margin:-4px 6px 0 15px; vertical-align:middle;}
+#content .sortList li .info .detail img:first-child {margin-left:0;}
+#content .sortList li .money {position:absolute; top:48px; right:0; color:#f2542b; font-size:20px; font-weight:bold;}
+#content .sortList li .btn {position:absolute; top:116px; right:0;}
+#content .sortList li .btn .btnT01 {display:inline-block; height:32px; line-height:32px; padding:0 16px; background-color:#ffbf44; border:1px solid #f5a700;  *display:inline; zoom:1;}
+#content .sortList li .btn .btnT01 span {padding-right:18px; color:#fff; font-size:13px; font-weight:bold; background:#ffbf44 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_arrow_down_01.gif") no-repeat right 6px; font-size:13px;}
+#content .sortList li .btn .btnT01.type01 {background-color:#b9b9b9; border-color:#afafaf;}
+#content .sortList li .btn .btnT01.type01 span {background:#b9b9b9 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_arrow_up_01.gif") no-repeat right 6px;}
+#content .sortList li .btn .btnT02 {display:inline-block; height:32px; line-height:32px; padding:0 30px; color:#fff; font-size:13px; font-weight:bold; background-color:#ff921c; border:1px solid #e37a08; *display:inline; zoom:1;}
+#content .sortList li .detailInfo {position:relative; margin:20px -280px -20px -203px; padding:19px 20px 20px 203px; border-top:1px solid #e2e2e2; background:#f4f4f4;}
+#content .sortList li .detailInfo .photo {position:absolute; top:15px; left:5px; width:180px; overflow:hidden;}
+#content .sortList li .detailInfo .photo li {float:left; width:53px; height:45px; margin:5px 0 0 5px; min-height:0; padding:0; border-bottom:none;}
+#content .sortList li .detailInfo .dInfo {margin-bottom:20px; overflow:hidden; zoom:1;}
+#content .sortList li .detailInfo .dInfo li {float:left; height:14px; min-height:0; padding:0 8px 0 9px; color:#666; font-size:12px; border-left:1px solid #ccc; border-bottom:none;}
+#content .sortList li .detailInfo .dInfo li:first-child {border-left:none; padding-left:0;}
+#content .sortList li .detailInfo .dInfo li strong {color:#454545; font-size:13px;}
+#content .sortList li .detailInfo table {width:100%; background:#fff;}
+#content .sortList li .detailInfo table th,
+#content .sortList li .detailInfo table td {padding:10px 0 10px 0; border:1px solid #dcdcdc; text-align:center;}
+#content .sortList li .detailInfo table th {color:#454545; font-size:12px; font-weight:normal;}
+#content .sortList li .detailInfo table td {color:#e54c01; font-size:12px; font-weight:bold;}
+
+.rentRefuel{display:none;}
+.leftAddMenu{display:none;}
+html.desktop .rentRefuel{display:block;}
+html.desktop .leftAddMenu{display:block;}
+
+
+/* NOC 안심보험 배너 추가 2014-06-02 */
+.rentRefuel_noc {display:none; margin:10px 11px 0 0; padding:10px 6px 10px 14px; border:1px solid #e2ddcd; background:#fbf8ed; line-height:150%; text-align:left;}
+.rentRefuel_noc .text01 {color:#fe8415; font-size:12px; font-weight:bold; text-align:center;}
+html.desktop .rentRefuel_noc {display:block; }
+
+.rentRefuel_noc .text02 { font-size: 10px; color:#848484; font-weight:normal; line-height:150%; padding-top:4px;}
+
+.txt_insurance_noc {line-height:20px;}
+.txt_insurance_noc strong{font-size:13px; color:#454545 }
+.txt_insurance_noc span.noc_area {color:#E54C01; font-weight:bold}
+.txt_insurance_noc span.noc_etc{color:#888888;}
+
+
+.tit_float2 .txtTab {padding-top:24px;}
+.tit_float2 .txtTab .current{color:#454545;font-weight:bold;}
+.tit_float2 .txtTab a:first-child{padding-right:10px;margin-right:5px;background:url(//cdnimg.tourbaksa.com/PC/www/common/bg_bar_03.gif) no-repeat right center}
+.tit_float2 .txtTab a.pass_agree{padding-right:10px;margin-right:5px;background:url(//cdnimg.tourbaksa.com/PC/www/common/bg_bar_03.gif) no-repeat right center}
+
+/* 렌트카 대마도 메뉴 추가 */
+body.onlyDesktop .leftAddMenu ul.rentcar_leftM {border:0;}
+body.onlyDesktop .leftAddMenu ul.rentcar_leftM li {height:40px; margin-top:5px; box-sizing:border-box; border:1px solid #d9d8d4;}
+body.onlyDesktop .leftAddMenu ul.rentcar_leftM li:first-child {margin-top:0;}
+
+/* 20170330 : 일본렌터카 이용안내 */
+.local_tourWrap {margin-top:22px; padding:9px; background:#edefee;}
+.local_tourWrap .tourBox{border:1px solid #d2d3d5;background:#fdfdfd;}
+.local_tourWrap .top_cont{padding:40px;}
+.local_tourWrap .tourBox .local_tourTit{overflow:hidden;text-align:center;}
+.local_tourWrap .tourBox .local_tourTit .tit_box{float:left;width:auto;}
+.local_tourWrap .tourBox .local_tourTit .tit_box > strong{display:block;width:330px;height:30px;margin-bottom:0;padding:7px 0 0 3px;background:url(//cdnimg.tourbaksa.com/PC/www/pass/bg_tour_tip_01.png)no-repeat 0 0;background-size:226px 25px;background-size:332px 30px;font-size:15px;color:#fff;font-weight:600;}
+.local_tourWrap .tourBox .local_tourTit .tit_box > strong em{color:#3cbb09;}
+.local_tourWrap .tourBox .local_tourTit .tit_box > span{display:inline-block;margin-top:22px;letter-spacing:-1px;font-size:50px;font-weight:bold;text-align:left;color:#454545; font-weight:600; letter-spacing:-3px;}
+.local_tourWrap .tourBox .local_tourTit .tit_box > span > em{display:inline;margin-top:11px;font-size:50px;color:#3cbb09;text-align:left; font-weight:600;}
+.local_tourWrap .tourBox .local_tourTit > img.img1{float:right;width:319px;height:154px;margin:0;}
+.local_tourWrap .tourBox .local_tourTit > img.img2{float:right;width:273px;height:196px;}
+.local_tourWrap .tourBox ul.tourUseInfo li .tourUseInfo_tit {padding:18px 45px; border-top:1px solid #d6d6d8; border-bottom:1px solid #d6d6d8; background:#f4f4f4; color:#454545; font-size:15px; font-weight:bold;}
+.local_tourWrap .tourBox ul.tourUseInfo li ul.min_list {padding:18px 45px;}
+.local_tourWrap .tourBox ul.tourUseInfo li ul.min_list li {position:relative; margin:10px 0 0 5px; line-height:16px; color:#7e7e7e; font-size:13px; font-weight:600;}
+.local_tourWrap .tourBox ul.tourUseInfo li ul.min_list li:first-child {margin-top:0;}
+.local_tourWrap .tourBox ul.tourUseInfo li ul.min_list li:after {position:absolute; top:0; left:-8px; content:"-"; width:8px;}
+.local_tourWrap .tourBox ul.tourUseInfo li ul.min_list li > strong {color:#454545; font-weight:600;}
+.local_tourWrap .tourBox ul.tourUseInfo li ul.min_list li > ol.star_list {margin-top:12px;}
+.local_tourWrap .tourBox ul.tourUseInfo li ol.star_list li {position:relative; margin:4px 0 0 10px; line-height:16px; color:#7e7e7e; font-size:13px; font-weight:600;}
+.local_tourWrap .tourBox ul.tourUseInfo li ol.star_list li:after {position:absolute; top:0; left:-10px; content:"*"; width:8px;}
+.local_tourWrap .tourBox ul.tourUseInfo li ol.star_list li > strong {color:#cf6a6a; font-weight:600;}
+.local_tourWrap .tourBox ul.tourUseInfo li ul.min_list li.last_desc{margin-left:0;}
+.local_tourWrap .tourBox ul.tourUseInfo li ul.min_list li.last_desc:after{left:0;width:0;}
+/* 20170330 : 렌터카 메인 상단 배너 추가 */
+.subCont > h2.rent_new_tit {position:relative;}
+.subCont > h2.rent_new_tit > .rent_new_top_bnr {position:absolute; top:8px; right:0; color:#6c6c6c; font-size:14px; font-weight:600; line-height:15px;}
+.subCont > h2.rent_new_tit > .rent_new_top_bnr:after {position:absolute; top:0; left:-25px; content:""; width:18px; height:14px; background:url("//cdnimg.tourbaksa.com/PC/www/rent/ico_rent_new_car_01.gif")no-repeat 0 0; background-size:18px 14px;}
+.subCont > h2.rent_new_tit > .rent_new_top_bnr > span {display:inline-block; color:#ff7a1f;}
+.subCont > h2.rent_new_tit > .rent_new_top_bnr > span > em {display:inline-block; padding-bottom:3px; font-size:9px; vertical-align:middle;}

@@ -1,0 +1,207 @@
+@charset "euc-kr";
+
+/* 툴팁 */
+.tooltipBoxContents {
+    position:relative;float:left;
+}
+.tooltipBoxContents .tooltipBoxContentsInfo{
+    display:none;
+    position:absolute;width:159px;height:89px;padding:14px 0 0 37px;background:url(//cdnimg.tourbaksa.com/PC/www/sub/bg_hotel_desc.png) no-repeat 0 0;z-index:10;line-height:16px;
+    bottom: 20px;
+    right: -100px;
+}
+.HotelLink{
+    font-weight:bold;
+}
+.HotelLink a:hover{
+    text-decoration:underline;
+}
+
+.tooltipBoxContents1 {
+    position:relative;float:left;
+}
+.tooltipBoxContents1 .tooltipBoxContentsInfo{
+    display:none;
+    position:absolute;width:300px;height:160px;padding:25px 0 0 37px;background:url(//cdnimg.tourbaksa.com/PC/www/sub/bg_info1_300x160.png) no-repeat 0 0;z-index:10;line-height:16px;
+    top: 20px;
+    text-align:left;
+    left: 100px;
+    font-weight:normal;
+    font-size:12px;
+}
+
+
+/* 환불정보 */
+.refund_agree { padding:0; margin:-6px 0 0 0; }
+.refund_agree label{display:inline-block; margin-right:10px; padding-left:2px; vertical-align:middle;}
+.refund_agree span{display:block;padding:6px 0 0 0; line-height:140%; vertical-align:middle;}
+.refund_info {margin-top:10px; width:100%; padding-top:4px; background: url("//cdnimg.tourbaksa.com/PC/www/sub/bg_reservationInfo.gif") repeat-x scroll left top rgba(0, 0, 0, 0); }
+.refund_info li{float:left; height:32px; line-height:32px; }
+.refund_info li.rf_bank input{width:80px;}
+.refund_info li.rf_acc input{width:130px;}
+.refund_info li.rf_name{width:250px;}
+.refund_info li.rf_name input{width:80px;}
+.refund_info li input{display:inline; padding-left:6px !important; text-indent:0; height:20px; background:#f4f4f4;}
+.refund_info  button { background-color: #aaa !important; border: 1px solid #999 !important;  color: #fff; cursor: pointer; font-size: 12px; height: 24px; line-height: 20px;  vertical-align:middle;  margin: 0 0 0 4px;;  min-width: 70px;}
+.refund_info li.rf_acc{width:100%;;}
+.refund_info li.rf_bank{width:145px;}
+.refund_info li.rf_acc{width:210px;}
+.refund_info li label {display:inline-block; width:50px;text-align:center;}
+.refund_info li:first-child label{width:38px;}
+.refund_info li.rf_name label{width:38px;}
+.refund_agree span{display:inline-block; padding:0;}
+
+
+.refundwrap .refund_info {overflow:hidden; background:none; margin-top:15px; border-top: 2px solid #c5c5c5; border-bottom: 1px solid #dcdcdc; padding:10px 0;;}
+.refundwrap .refund_info label{font-weight:bold;}
+.refundwrap .txt_refund_info {clear:both;font-size:12px; line-height:140%; margin-top:15px;}
+
+
+
+/* 칸쿤 프로모션 2015-02-23 추가 */
+.kankoon_wrap {overflow:hidden;}
+.kankoon_lnb {float:left;margin-right:28px;border-left:1px solid #dcdcdc;border-right:1px solid #dcdcdc;background:#f7f7f7;}
+.kankoon_lnb .tit_area {position:relative;}
+.kankoon_lnb .tit_area .go_main {position:absolute;top:14px;left:21px;}
+.kankoon_lnb .lnb_list > li {/* border-bottom:1px solid #2388cf; */background:#3e9cde;}
+.kankoon_lnb .lnb_list > li:first-child > a {/* border-bottom:1px solid #2388cf; */}
+.kankoon_lnb .lnb_list > li:first-child > a:hover {font-weight:normal;}
+.kankoon_lnb .lnb_list > li:first-child > a.on:hover {font-weight:bold;}
+.kankoon_lnb .lnb_list > li > a {display:block;padding:16px 0 13px 20px;border-left:1px solid #2388cf;border-right:1px solid #2388cf;background:#3e9cde;color:#fff;font-size:15px;}
+.kankoon_lnb .lnb_list > li > a:hover {background:#2a78c9 url(//cdnimg.tourbaksa.com/PC/www/promotion/kankoon/bg_link_dep1.png) no-repeat 90% 17px;font-weight:bold;}
+.kankoon_lnb .lnb_list > li:first-child > a {background:none;cursor:default;}
+.kankoon_lnb .lnb_list > li > a.on {background:#2a78c9 url(//cdnimg.tourbaksa.com/PC/www/promotion/kankoon/bg_link_dep1.png) no-repeat 90% 17px;font-weight:bold;}
+.kankoon_lnb .lnb_list .dep1 {padding-top:20px;background:#fff;}
+.kankoon_lnb .lnb_list .dep1 > li {padding:20px 0 0 20px;border-top:1px dashed #dcdcdc;color:#01aee7;font-size:13px;}
+.kankoon_lnb .lnb_list .dep1 > li:first-child {border-top:0;padding-top:0;}
+.kankoon_lnb .lnb_list .dep2 {padding:20px 0;}
+.kankoon_lnb .lnb_list .dep2 > li {padding-left:16px;margin-top:16px;}
+.kankoon_lnb .lnb_list .dep2 > li:first-child {margin-top:0;}
+.kankoon_lnb .lnb_list .dep2 > li > a {color:#666;font-size:12px;}
+.kankoon_lnb .lnb_list .dep2 > li > a:hover {color:#333;text-decoration:underline;}
+.kankoon_lnb .lnb_list .dep2 > li.on > a {color:#333;text-decoration:underline;}
+.kankoon_cont {float:left; margin-left:-1px;} /* 2015-05-29 수정 */
+.kankoon_cont .inner_tit {position:relative;}
+.kankoon_cont .inner_tit .game_menu {overflow:hidden;position:absolute;top:310px;left:37px;width:800px;}
+.kankoon_cont .inner_tit .game_menu li.prev {float:left;width:279px;height:67px;background:url(//cdnimg.tourbaksa.com/PC/www/promotion/kankoon/btn_shadowbox_prev.png) no-repeat 0 0;}
+.kankoon_cont .inner_tit .game_menu li.prev > a {display:block;padding:22px 28px 27px 0;color:#333;font-size:15px;text-align:right;}
+.kankoon_cont .inner_tit .game_menu li.next {float:right;width:279px;height:67px;background:url(//cdnimg.tourbaksa.com/PC/www/promotion/kankoon/btn_shadowbox_next.png) no-repeat 0 0;}
+.kankoon_cont .inner_tit .game_menu li.next > a {display:block;padding:22px 0 27px 27px;color:#333;font-size:15px;text-align:left;}
+.kankoon_cont .inner_cont {position:relative;}
+.kankoon_cont .inner_cont.dream {width:870px;height:825px;padding-top:225px;background:url(//cdnimg.tourbaksa.com/PC/www/promotion/kankoon/img_main_0102.png) no-repeat 0 0;}
+.kankoon_cont .inner_cont.price {width:870px;height:1180px;background:url(//cdnimg.tourbaksa.com/PC/www/promotion/kankoon/img_main_02.png) no-repeat 0 0;}
+.kankoon_cont .inner_cont.where {width:870px;height:1110px;background:url(//cdnimg.tourbaksa.com/PC/www/promotion/kankoon/img_main_03.png) no-repeat 0 0;}
+.kankoon_cont .inner_cont.where .btn_area {overflow:hidden;width:654px;height:157px;padding-top:953px;margin:0 auto;}
+.kankoon_cont .inner_cont.where .btn_area .btn_prd_view_01 {float:left;}
+.kankoon_cont .inner_cont.where .btn_area .btn_prd_view_02 {float:right;}
+.kankoon_cont .inner_cont > .character_list {overflow:hidden;width:815px;margin:-28px auto 0;}
+.kankoon_cont .inner_cont > .character_list li {float:left;width:250px;height:67px;padding-top:273px;margin:28px 17px 0 0;border:5px solid #eaeaea;font-size:14px;text-align:center;cursor:pointer;}
+.kankoon_cont .inner_cont > .character_list li:hover {border:5px solid #00a9e8;}
+.kankoon_cont .inner_cont > .character_list li.girl01 {background:url(//cdnimg.tourbaksa.com/PC/www/promotion/kankoon/img_character_girl_01.png) no-repeat 0 0;}
+.kankoon_cont .inner_cont > .character_list li.girl02 {background:url(//cdnimg.tourbaksa.com/PC/www/promotion/kankoon/img_character_girl_02.png) no-repeat 0 0;}
+.kankoon_cont .inner_cont > .character_list li.girl03 {margin-right:0;background:url(//cdnimg.tourbaksa.com/PC/www/promotion/kankoon/img_character_girl_03.png) no-repeat 0 0;}
+.kankoon_cont .inner_cont > .character_list li.boy01 {background:url(//cdnimg.tourbaksa.com/PC/www/promotion/kankoon/img_character_boy_01.png) no-repeat 0 0;}
+.kankoon_cont .inner_cont > .character_list li.boy02 {background:url(//cdnimg.tourbaksa.com/PC/www/promotion/kankoon/img_character_boy_02.png) no-repeat 0 0;}
+.kankoon_cont .inner_cont > .character_list li.boy03 {margin-right:0;background:url(//cdnimg.tourbaksa.com/PC/www/promotion/kankoon/img_character_boy_03.png) no-repeat 0 0;}
+.kankoon_cont .inner_cont .game_area {height:711px;padding-top:39px;background:url(//cdnimg.tourbaksa.com/PC/www/promotion/kankoon/bg_ring.png) no-repeat 0 0;}
+.kankoon_cont .inner_cont .game_area > .character_list_s {overflow:hidden;width:797px;margin:0 auto 62px;}
+.kankoon_cont .inner_cont .game_area > .character_list_s li {float:left;width:132px;height:72px;padding-top:128px;border-left:1px solid #ededed;text-align:center;}
+.kankoon_cont .inner_cont .game_area > .character_list_s li:first-child {border-left:0;}
+.kankoon_cont .inner_cont .game_area > .character_list_s li.girl01 {background:url(//cdnimg.tourbaksa.com/PC/www/promotion/kankoon/img_character_girl_01_s.png) no-repeat 0 0;}
+.kankoon_cont .inner_cont .game_area > .character_list_s li.girl02 {background:url(//cdnimg.tourbaksa.com/PC/www/promotion/kankoon/img_character_girl_02_s.png) no-repeat 0 0;}
+.kankoon_cont .inner_cont .game_area > .character_list_s li.girl03 {background:url(//cdnimg.tourbaksa.com/PC/www/promotion/kankoon/img_character_girl_03_s.png) no-repeat 0 0;}
+.kankoon_cont .inner_cont .game_area > .character_list_s li.boy01 {background:url(//cdnimg.tourbaksa.com/PC/www/promotion/kankoon/img_character_boy_01_s.png) no-repeat 0 0;}
+.kankoon_cont .inner_cont .game_area > .character_list_s li.boy02 {background:url(//cdnimg.tourbaksa.com/PC/www/promotion/kankoon/img_character_boy_02_s.png) no-repeat 0 0;}
+.kankoon_cont .inner_cont .game_area > .character_list_s li.boy03 {background:url(//cdnimg.tourbaksa.com/PC/www/promotion/kankoon/img_character_boy_03_s.png) no-repeat 0 0;}
+.kankoon_cont .inner_cont .game_area > .character_list_s li input[type=radio] {display:inline-block;margin-bottom:10px;cursor:pointer;}
+.kankoon_cont .inner_cont .game_area > .character_list_s li label {display:block;line-height:16px;cursor:pointer;}
+.kankoon_cont .inner_cont .game_area .result {width:797px;margin:0 auto;}
+.kankoon_cont .inner_cont .event_desc.girl01 {height:120px;padding-top:505px;background:url(//cdnimg.tourbaksa.com/PC/www/promotion/kankoon/bg_evt_desc_girl_01.png) no-repeat 0 0;}
+.kankoon_cont .inner_cont .event_desc.girl02 {position:relative;height:121px;padding-top:872px;background:url(//cdnimg.tourbaksa.com/PC/www/promotion/kankoon/bg_evt_desc_girl_02.png) no-repeat 0 0;}
+.kankoon_cont .inner_cont .event_desc.girl02 a.accum {position:absolute;top:559px;left:347px;color:#e1232d;font-size:12px;}
+.kankoon_cont .inner_cont .event_desc.girl02 a.oneworld {display:block;position:absolute;top:695px;left:72px;color:#333;font-size:14px;}
+.kankoon_cont .inner_cont .event_desc.girl03 {height:120px;padding-top:903px;background:url(//cdnimg.tourbaksa.com/PC/www/promotion/kankoon/bg_evt_desc_girl_03.png) no-repeat 0 0;}
+.kankoon_cont .inner_cont .event_desc.boy01 {height:121px;padding-top:504px;background:url(//cdnimg.tourbaksa.com/PC/www/promotion/kankoon/bg_evt_desc_boy_01.png) no-repeat 0 0;}
+.kankoon_cont .inner_cont .event_desc.boy02 {height:137px;padding-top:487px;background:url(//cdnimg.tourbaksa.com/PC/www/promotion/kankoon/bg_evt_desc_boy_02.png) no-repeat 0 0;}
+.kankoon_cont .inner_cont .event_desc.boy03 {height:121px;padding-top:504px;background:url(//cdnimg.tourbaksa.com/PC/www/promotion/kankoon/bg_evt_desc_boy_03.png) no-repeat 0 0;}
+.kankoon_cont .inner_cont .btn_prd_view {display:block;width:251px;height:41px;margin:0 auto;}
+.kankoon_cont .btn_area.resort {overflow:hidden;width:577px;margin:0 auto 90px;}
+.kankoon_cont .btn_area.resort .btn_prd_view.left {float:left;}
+.kankoon_cont .btn_area.resort .btn_prd_view.right {float:right;}
+
+/* 홈쇼핑 sms 2015-03-02 추가 */
+.happycall_sms_wrap {max-width:854px;padding:25px 10px 50px;margin:0 auto;}
+.happycall_sms_wrap .logo_area {overflow:hidden;margin-bottom:27px;}
+.happycall_sms_wrap .logo_area h1 {float:left;}
+.happycall_sms_wrap .logo_area p {float:right;padding-top:10px;color:#666;line-height:16px;text-align:right;}
+.happycall_sms_wrap .logo_area p > span {display:inline;}
+.happycall_sms_wrap .orange_box {margin-bottom:15px;font-size:15px;}
+.happycall_sms_wrap .gray_box {margin-bottom:15px;}
+.happycall_sms_wrap ul.light_yellow_box {margin-bottom:27px;} /* 2015-03-12 수정 */
+.happycall_sms_wrap ul.light_yellow_box > li {margin-top:27px;} /* 2015-03-12 수정 */
+.happycall_sms_wrap ul.light_yellow_box > li:first-child {margin-top:0;} /* 2015-03-12 수정 */
+.happycall_sms_wrap ul.light_yellow_box > li .booking_contact {display:block;margin-bottom:18px;} /* 2015-03-12 수정 */
+.happycall_sms_wrap ul.light_yellow_box > li .contact_list li {margin-top:5px;} /* 2015-03-12 수정 */
+.happycall_sms_wrap ul.light_yellow_box > li .contact_list li:first-child {margin-top:0;} /* 2015-03-12 수정 */
+.happycall_sms_wrap div.light_yellow_box {margin-bottom:27px;line-height:18px;} /* 2015-03-12 수정 */
+.happycall_sms_wrap .prd_tit {margin-bottom:20px;color:#454545;font-size:20px;line-height:28px;}
+.happycall_sms_wrap .prd_img {display:none;}
+.happycall_sms_wrap .prd_img img {width:100%;margin-bottom:24px;}
+.happycall_sms_wrap .prd_subtit {padding-bottom:15px;margin-bottom:30px;border-bottom:2px solid #949494;color:#333;font-size:17px;}
+.happycall_sms_wrap .tbl_type_04 {margin-bottom:22px;}
+.happycall_sms_wrap .tbl_type_04 .w1 {width:15%;}
+.happycall_sms_wrap .tbl_type_04 .w2 {width:85%;}
+.happycall_sms_wrap .tbl_type_04 tbody th {padding:8px;}
+.happycall_sms_wrap .tbl_type_04 tbody td {padding:8px;}
+.happycall_sms_wrap .tbl_type_04 tbody td strong.col_ora {color:#ff921c;}
+.happycall_sms_wrap .prd_subtit2 {margin-bottom:15px;color:#333;font-size:14px;}
+.happycall_sms_wrap .prd_subtit2.day {color:#f67e0f;}
+.happycall_sms_wrap .bd_gray_box {margin-bottom:22px;}
+.happycall_sms_wrap select.plan_view {width:200px;padding:10px 5px;margin:-125px 0 0 80px;appearance:menulist;-webkit-appearance:menulist;-moz-appearance:menulist;box-sizing:content-box;}
+.happycall_sms_wrap .tbl_type_05 {margin-bottom:21px;}
+.happycall_sms_wrap .tbl_type_05 .w1 {width:6%;}
+.happycall_sms_wrap .tbl_type_05 .w2 {width:94%;}
+.happycall_sms_wrap .tbl_type_05 tbody th {padding:8px;}
+.happycall_sms_wrap .tbl_type_05 tbody td {padding:8px;word-break:break-all;} /* 2015-03-13 수정 */
+.happycall_sms_wrap .tbl_type_05 tbody td.plan {background:#fcfcfc;color:#454545;font-weight:bold;text-align:center;}
+.happycall_sms_wrap .tbl_type_05 img {width:100%;height:auto;}
+.happycall_sms_wrap .noti_txt {color:#000;line-height:16px;} 
+.happycall_sms_wrap .noti_txt + .prd_subtit {margin-top:27px;} /* 2015-03-12 추가 */
+.happycall_sms_wrap .prd_tit.safe {padding-left:40px;margin:36px 0 12px;background:url(//cdnimg.tourbaksa.com/PC/www/item/h4_info5.gif) no-repeat top left;font-size:16px;}
+.happycall_sms_wrap .travel_subtit {font-size:13px;} /* 2015-03-12 추가 */
+.happycall_sms_wrap .info_warning_signal{width:100% !important;margin:20px 0;border-collapse:collapse;border:0px solid #e2e2e2;border-top:2px solid #c5c5c5;border-bottom:2px solid #c5c5c5;  }
+.happycall_sms_wrap .info_warning_signal th {padding:11px 0;background-color:#f4f4f4;border-bottom:1px solid #e2e2e2;border-left:1px solid #e2e2e2;color:#666;text-align:center;}
+.happycall_sms_wrap .info_warning_signal th:first-child {border-left:0;}
+.happycall_sms_wrap .info_warning_signal td {padding:10px;border-bottom:1px solid #e2e2e2;border-left:1px solid #e2e2e2;color:#666;text-align:left;line-height:18px;}
+.happycall_sms_wrap .info_warning_signal td:first-child {border-left:0;text-align:center;}
+.happycall_sms_wrap .info_warning_signal td img{display:inline-block;vertical-align:middle;}
+.happycall_sms_wrap .info_warning_signal td span{display:inline;}
+.happycall_sms_wrap .info_warning_signal td span em{color:#ddd;}
+.happycall_sms_wrap .noti_txt2 {color:#666;line-height:16px;} 
+.happycall_sms_wrap .banner_area {display:none;}
+.happycall_sms_wrap .banner_area img {width:100%;}
+.happycall_sms_wrap .ScheduleDivClass + .noti_txt {margin-top:-10px;}
+#footer.happycall_sms {width:100%;max-width:854px;margin:0 auto;}
+#footer.happycall_sms .copyRight h2 {margin-top:0px;}
+
+
+
+
+/* 2015-05-21 추가 */
+.tb_cf_layer {display:none; position:fixed; top:0; left:0; width:100%; height:100%; z-index:100;}
+/*.tb_cf_layer .cf_bg {position:absolute; top:0; left:0; width:100%; height:100%; background:#000; opacity:.5; filter:alpha(opacity=50);}*/
+.tb_cf_layer .cf_pop-layer {display:none;}
+
+.cf_pop-layer {display:none; position: absolute; top: 50%; left: 50%;  width:100%;  height:auto;  border: none; z-index: 10;}	
+.cf_pop-layer .pop-container {padding: 0 8px;}
+.cf_pop-layer p.ctxt { color: #666; background-color:#fff; }
+.cf_pop-layer p.ctxt img{width:100%; margin-bottom:-1px;}
+.cf_pop-layer .btn-r {width: 100%; margin:0; padding:0;text-align:right; background:#ffffff; float:left;}
+.cf_pop-layer .btn-r .cbtn {float:right;  margin:0; padding:10px 16px;  background:url('//cdnimg.tourbaksa.com/PC/www/popup/pop_close.png') center 45% no-repeat;-webkit-background-size: 16px 16px; cursor:pointer; }
+@media screen and (-webkit-min-device-pixel-ratio:2){ .cf_pop-layer .btn-r .cbtn {background-image:url('//cdnimg.tourbaksa.com/PC/www/popup/pop_close2x.png') ;} }
+
+.cf_pop-layer .btn-r .cbtn_setdate {float:left; color:#444444; vertical-align:bottom; margin:0 0 0 12px; padding:10px 10px 10px 20px; background:url('//cdnimg.tourbaksa.com/PC/www/popup/pop_check_close.png') left 45% no-repeat;-webkit-background-size: 16px 16px; cursor:pointer; }
+@media screen and (-webkit-min-device-pixel-ratio:2){ .cf_pop-layer .btn-r .cbtn_setdate {background-image:url('//cdnimg.tourbaksa.com/PC/www/popup/pop_check_close2x.png') ;} }
+
+.tb_cf_layer .pop-layer {display:none;}
+.tb_cf_layer .cf_bg{display:none;}

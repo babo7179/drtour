@@ -1,0 +1,1088 @@
+@charset "euc-kr";
+@import "/UI/css/subLayout.css";
+@import "/UI/css/subCommon.css";
+.btnArea {}
+.btnArea2 {margin:10px 0 0 0;}
+.btnArea3 {margin:20px auto !important; text-align:center !important;}
+
+.txt-l{text-align:left !important;}
+
+
+/* 반응형 후 삭제 start */
+/* 고객센터 */
+.cut_list_txt{margin:30px 0;line-height:18px;position:relative;overflow:hidden;}
+.cut_list_txt span{color:#fc7d09;}
+.cut_list_txt .btn_ora3{float:right;display:inline;}
+.cut_list_txt .my_w {display:block; margin-top:10px;}
+
+.cut_list_txt .mn{float:left;margin:10px 0;}
+.cut_list_txt .mn li{float:left;background: url("//cdnimg.tourbaksa.com/PC/www/bul/bul_list_dot_ora.gif") no-repeat 0 10px;overflow:hidden;line-height:18px;padding:0 10px 0 10px;font-weight:bold;color:#fc7d09;}
+.cut_list_txt .mn li:first-child{margin-right:10px;padding-right:0;}
+.cut_list_txt .mn li a{color:#fc7d09;}
+.cut_list_txt .btn_mytxt_view{display:inline;float:right;background:#ffbf44;border:1px solid #f5a700;padding:3px;font-size:12px;font-weight:bold;color:#fff;text-align:center;}
+.cut_list_txt .btn_mytxt_view a{color:#fff;}
+.btn_write_comm{display:inline-block;background:#ff921c;border:1px solid #e37a08;font-size:11px;font-weight:bold;color:#fff;padding:9px 30px;}
+.btn_write_comm a{color:#fff;}
+.tbl_select select {border:1px solid #e2e2e2;font-size:12px;height:30px;line-height:30px; margin-bottom:2px;}
+.tbl_select .btn_mytxt_view {float:none; background: none repeat scroll 0 0 #FFBF44; border: 1px solid #F5A700; color: #FFFFFF; display: inline-block; font-size: 12px; font-weight: bold; padding: 7px; text-align: center;}
+.tbl_select {text-align:right;margin-bottom:10px;}
+
+.board_lst {clear:both;}
+.tbl_cus{width:100%;border-top:1px solid #c5c5c5;}
+.tbl_cus th{background:#f4f4f4;padding:12px 0 12px 0;text-align:center;border-bottom:1px solid #dcdcdc;color:#454545;font-weight:normal;}
+.tbl_cus tbody th{text-align:left;padding-left:20px;}
+.tbl_cus td{padding:12px 0 12px 0;text-align:center;color:#454545;border-bottom:1px solid #dcdcdc;vertical-align:middle;}
+.tbl_cus .ico_area{margin-right:3px;margin-top:-2px;}
+
+.tbl_cus_write{width:100%;border-top:1px solid #c5c5c5;}
+.tbl_cus_write th{background:#f4f4f4;padding:12px 0 12px 0;text-align:center;border-bottom:1px solid #dcdcdc;color:#454545;font-weight:normal;}
+.tbl_cus_write tbody th{text-align:left;padding-left:20px;}
+.tbl_cus_write td{padding:12px 0 12px 10px;text-align:left;color:#666;border-bottom:1px solid #dcdcdc;vertical-align:middle;}
+.tbl_cus_write .inp{border:1px solid #e2e2e2;height:30px;color:#666;font-size:12px;padding:0 5px;}
+.tbl_cus_write .tArea{border:1px solid #e2e2e2;color:#666;font-size:12px;padding:0 5px;line-height:18px;}
+
+.tbl_cus_write .wid55{border:1px solid #e2e2e2;height:30px;color:#666;font-size:12px;padding:0 5px;}
+.tbl_cus_write b{line-height:18px;}
+
+.rList{clear:both;overflow:hidden;display:table;}
+.rList li{display:table-cell;float:left;margin-left:10px;margin-right:19pxline-height:18px;}
+
+.mt10{margin-top:10px;}
+
+/* 고객상품평 */
+.ora2{color:#fe922e;}
+.cus_rating{overflow:hidden;width:100%; border:0}
+.cus_rating li{position:relative;width:100%;border-bottom:1px solid #e2e2e2;overflow:hidden; line-height:14px;}
+.cus_rating li.thead {display:block;width:100%;border-bottom:1px solid #dcdcdc;background:#f4f4f4;padding:0;height:36px;line-height:36px;text-align:center;}
+.cus_rating li.thead span{display:table-cell;width:10%;color:#666;}
+.cus_rating li.thead div{display:table;width:100%;vertical-align:middle;}
+.cus_rating .tbodylist{overflow:hidden;display:table;position:relative;width:100%;height:80px;padding:12px 0;color:#848484;}
+.cus_rating .tbodylist div {display:table-cell;vertical-align:top}
+.cus_rating .tbodylist .num {width:10%;text-align:center;padding-top:15px;}
+.cus_rating .tbodylist .info {width:90%;position:relative;text-align:left; float:left; height:inherit;}
+.cus_rating .tbodylist {display:table;width:100%;color:#848484;padding:12px 0;}
+.cus_rating .tbodylist .info p {display:inline-block;}
+.cus_rating .tbodylist .txt_infomat .rate {position:absolute;top:5px;left:125px;width:75px}
+.cus_rating .tbodylist .txt_infomat .cont {position:absolute;top:6px;left:205px;width:270px;overflow:hidden;white-space:nowrap; text-overflow:ellipsis; padding:0;}
+.cus_rating .tbodylist .txt_infomat .pro_tit {position:absolute;top:28px;left:125px;width:324px;overflow:hidden;white-space:nowrap; text-overflow:ellipsis; padding:0; line-height:14px;}
+.cus_rating .tbodylist .txt_infomat .ico_info {position:absolute;top:50px;left:125px;width:324px}
+.cus_rating .tbodylist .txt_infomat .name {position:absolute;top:5px;left:530px;width:100px;text-align:center; padding:0;}
+.cus_rating .tbodylist .txt_infomat .date {position:absolute;top:5px;left:660px;width:100px;text-align:center;}
+.cus_rating .pro_img{float:left;width:20%;overflow:hidden;}
+.cus_rating .pro_img img{width:92%;height:auto;}
+.cus_rating ul{width:80%;float:left;}
+.cus_rating ul li{float:left;border:0}
+.cus_rating ul li ul{width:100%;margin-top:10px;}
+.cus_rating .rate{  width:70px}
+.cus_rating .con{font-weight:bold;font-size:13px;line-height:18px;width:397px; }
+.cus_rating .pro_tit{float:left;color:#666;line-height:16px;width:100%;} /* 20131119 : color:#848484; -> color:#666666; */
+
+.cus_rating .pro_tit p{width:450px;height:18px;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;}
+.cus_rating .day{padding:0 5px 0 0;}
+.cus_rating .where{background: url("//cdnimg.tourbaksa.com/PC/www/common/bg_bar_04.gif") no-repeat left 0;padding:0 5px 0 5px;}
+.cus_rating .cobi{background: url("") no-repeat;padding:0 0 0 5px;}
+
+.cus_rating span{color:#666;}
+.cus_rating_click{background:#f4f4f4 !important;}
+.cus_rating_click ul{margin-left:20%;width:80%;overflow:hidden;}
+.cus_rating_click ul li{overflow:hidden;}
+.cus_rating_click .con{color:#666666;line-height:22px;float:left;padding-right:2%;width:68%;} /* 20131119 : color:#848484; -> color:#666666; */
+.cus_rating_click .btn{float:right;text-align:center;margin-right:2%;}
+.cus_rating_click .money{display:block;color:#ff921c;font-weight:bold;margin-bottom:5px;line-height:14px;}
+.cus_rating_click .btn_date{display:inline-block;border:1px solid #f5a700;padding:10px 25px 10px 20px;font-size:13px;font-weight:bold;color:#fff;text-align:center;background: #ffbf44 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_seemore_white.png") no-repeat 95px 15px;}
+.cus_rating_click .btn_date a{color:#fff;}
+
+.searArea{text-align:center;}
+.searArea input{border:1px solid #e2e2e2;height:26px;}
+.searArea select{border:1px solid #e2e2e2;font-size:12px;height:30px;line-height:30px;}
+.searArea .btn_sear{display:inline-block;background:#666;border:1px solid #575757;font-size:14px;font-weight:bold;padding:7px 25px;color:#fff;vertical-align:middle;margin-left:7px;}
+.searArea .btn_sear a{color:#fff;}
+
+/* 공지사항 */
+.leftAddB {clear:both;margin:0;padding:0;}
+.leftAddMenu {height:132px;padding:20px 0 0;border-left:1px solid #e2e2e2;border-bottom:1px solid #e2e2e2;}
+.leftAddMenu ul {margin:0 20px;overflow:hidden;border:1px solid #d9d8d4;}
+.leftAddMenu ul li {border-top:1px solid #d9d8d4;background:#f8f6ef;height:36px;font-weight:bold;font-size:13px;letter-spacing:-1px;line-height:36px;padding-left:14px;}
+.leftAddMenu ul li:first-child {border-top:0 none;}
+.leftAddMenu ul li a {display:block;color:#454545;}
+.leftMIcon {text-align:right;padding:9px 15px 0 0}
+.leftMIcon a {display:inline-block;margin:0 2px}
+
+.tbl_not_write{width:100%;border-top:1px solid #c5c5c5;}
+.tbl_not_write th{background:#f4f4f4;padding:12px 0 12px 10px;overflow:hidden;text-align:left;border-bottom:1px solid #dcdcdc;color:#454545;font-weight:bold;}
+.tbl_not_write td{padding:4px 0 4px 10px;overflow:hidden;text-align:left;color:#666;border-bottom:1px solid #dcdcdc;vertical-align:middle;}
+.tbl_not_write td input {border:1px solid #e2e2e2;padding:0 5px;height:30px;line-height:30px;vertical-align:middle}
+.tbl_not_write td span {vertical-align:middle}
+.tbl_not_write td textarea {text-align:left;border:1px solid #e2e2e2;padding:0 5px;margin:0;height:218px;vertical-align:middle;width:95%;}
+
+.tbl_not_write .inpFile {width:55%;}
+.tbl_cus td.tbL {text-align:left;padding:12px 10px 10px 10px;}
+.tbl_cus td.tbR {text-align:right;padding:12px 10px 10px 0;}
+.tbl_cus_view {width:100%;border-top:1px solid #c5c5c5;}
+.tbl_cus_view dt{background:#f4f4f4;padding:12px 0 12px 20px;overflow:hidden;text-align:left;border-bottom:1px solid #dcdcdc;color:#454545;font-weight:bold;}
+.tbl_cus_view dd{padding:25px 28px;overflow:hidden;text-align:left;border-bottom:1px solid #dcdcdc;vertical-align:middle;line-height:22px;color:#333;}
+.tbl_cus_view dt p.subject {float:left;text-align:left;width:70%;vertical-align:top;line-height:14px}
+.tbl_cus_view dt p.txtR {float:right;display:inline;font-weight:normal;vertical-align:top;padding:0 20px 0 0;}
+.tbl_cus_view dt p.txtR span {display:inline; background: url(//cdnimg.tourbaksa.com/PC/www/common/bg_bar_04.gif) no-repeat left 2px;padding:0 4px 0 6px}
+.tbl_cus_view dt p.txtR span:first-child {background:0 none;padding:0 4px 0 0}
+
+/* 반응형 후 삭제 end */
+ 
+/* 10월25일추가 */
+.btnArea3_write .btn_left{float:left;}
+.btnArea3_write .btn_gray3,
+.btnArea3_write .btn_yellow,
+.btnArea3_write .btn_write_comm{padding:9px 30px;}
+
+/* //10월25일추가 */
+
+/* 고객센터 메인 아이콘 */
+.ico01 {background: url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_01_off.png") no-repeat ;}
+.ico01:hover {background:#ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_01_on.png") no-repeat ;}
+.ico02 {background: url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_02_off.png") no-repeat center center;}
+.ico02:hover {background:#ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_02_on.png") no-repeat center center;}
+.ico03 {background: url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_03_off.png") no-repeat center center;}
+.ico03:hover {background:#ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_03_on.png") no-repeat center center;}
+.ico04 {background: url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_04_off.png") no-repeat center center;}
+.ico04:hover {background:#ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_04_on.png") no-repeat center center;}
+.ico05 {background: url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_05_off.png") no-repeat center center;}
+.ico05:hover {background:#ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_05_on.png") no-repeat center center;}
+.ico06 {background: url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_06_off.png") no-repeat center center;}
+.ico06:hover {background:#ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_06_on.png") no-repeat center center;}
+.ico07 {background: url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_07_off.png") no-repeat center center;}
+.ico07:hover {background:#ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_07_on.png") no-repeat center center;}
+.ico08 {background: url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_08_off.png") no-repeat center center;}
+.ico08:hover {background:#ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_08_on.png") no-repeat center center;}
+.ico09 {background: url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_09_off.png") no-repeat center center;}
+.ico09:hover {background:#ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_09_on.png") no-repeat center center;}
+.ico10 {background: url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_10_off.png") no-repeat center center;}
+.ico10:hover {background:#ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_10_on.png") no-repeat center center;}
+.ico11 {background: url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_11_off.png") no-repeat center center;}
+.ico11:hover {background:#ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_11_on.png") no-repeat center center;}
+.ico12 {background: url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_12_off.png") no-repeat center center;}
+.ico12:hover {background:#ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_12_on.png") no-repeat center center;}
+.ico13 {background: url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_13_off.png") no-repeat center center;}
+.ico13:hover {background:#ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_13_on.png") no-repeat center center;}
+.ico14 {background: url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_14_off.png") no-repeat center center;}
+.ico14:hover {background:#ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_14_on.png") no-repeat center center;}
+.ico15 {background: url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_15_off.png") no-repeat center center;}
+.ico15:hover {background:#ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_15_on.png") no-repeat center center;}
+.ico16 {background: url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_16_off.png") no-repeat center center;}
+.ico16:hover {background:#ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_16_on.png") no-repeat center center;}
+.ico17 {background: url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_17_off.png") no-repeat center center;}
+.ico17:hover {background:#ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_17_on.png") no-repeat center center;}
+.ico18 {background: url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_18_off.png") no-repeat center center;}
+.ico18:hover {background:#ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_18_on.png") no-repeat center center;}
+.ico19 {background: url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_19_off.png") no-repeat center center;}
+.ico19:hover {background:#ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_19_on.png") no-repeat center center;}
+.ico01 .on{background:#ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_01_on.png") no-repeat ;background-position:center 22px;color:#fff;border:1px solid #e37a08;}
+.ico02 .on{background:#ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_02_on.png") no-repeat center 22px;color:#fff;border:1px solid #e37a08;}
+.ico03 .on{background:#ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_03_on.png") no-repeat center 22px;color:#fff;border:1px solid #e37a08;}
+.ico04 .on{background:#ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_04_on.png") no-repeat center 22px;color:#fff;border:1px solid #e37a08;}
+.ico05 .on{background:#ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_05_on.png") no-repeat center 22px;color:#fff;border:1px solid #e37a08;}
+.ico06 .on{background:#ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_06_on.png") no-repeat center 22px;color:#fff;border:1px solid #e37a08;}
+.ico07 .on{background:#ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_07_on.png") no-repeat center 22px;color:#fff;border:1px solid #e37a08;}
+.ico08 .on{background:#ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_08_on.png") no-repeat center 22px;color:#fff;border:1px solid #e37a08;}
+.ico09 .on{background:#ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_09_on.png") no-repeat center 22px;color:#fff;border:1px solid #e37a08;}
+.ico10 .on{background:#ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_10_on.png") no-repeat center 22px;color:#fff;border:1px solid #e37a08;}
+.ico11 .on{background:#ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_11_on.png") no-repeat center 22px;color:#fff;border:1px solid #e37a08;}
+.ico12 .on{background:#ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_12_on.png") no-repeat center 22px;color:#fff;border:1px solid #e37a08;}
+.ico13 .on{background:#ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_13_on.png") no-repeat center 22px;color:#fff;border:1px solid #e37a08;}
+.ico14 .on{background:#ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_14_on.png") no-repeat center 22px;color:#fff;border:1px solid #e37a08;}
+.ico15 .on{background:#ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_15_on.png") no-repeat center 22px;color:#fff;border:1px solid #e37a08;}
+.ico16 .on{background:#ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_16_on.png") no-repeat center 22px;color:#fff;border:1px solid #e37a08;}
+.ico17 .on{background:#ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_17_on.png") no-repeat center 22px;color:#fff;border:1px solid #e37a08;}
+.ico18 .on{background:#ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_18_on.png") no-repeat center 22px;color:#fff;border:1px solid #e37a08;}
+.ico19 .on{background:#ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_comm_19_on.png") no-repeat center 22px;color:#fff;border:1px solid #e37a08;}
+/*.ico_comm4 li.ico15 span, .ico_comm4 li.ico03 span, .ico_comm4 li.ico04 span, .ico_comm4 li.ico08 span, .ico_comm4 li.ico11 span,
+.ico_comm4 li.ico12 span, .ico_comm4 li.ico13 span, .ico_comm4 li.ico14 span, .ico_comm4 li.ico16 span, .ico_comm4 li.ico19 span {padding-top:15px;}
+.ico_comm4 li.ico02 span,.ico_comm4 li.ico04 span, .ico_comm4 li.ico05 span, .ico_comm4 li.ico06 span, .ico_comm4 li.ico07 span, .ico_comm4 li.ico10 span, .ico_comm4 li.ico17 span, .ico_comm4 li.ico18 span {padding-top:8px;}*/
+
+.ion_none {display:none;}
+
+.ico_comm{overflow:hidden;border:1px solid #e2e2e2;margin:30px 0 30px 0;} /* 아이콘14일때 */
+.ico_comm ul{overflow:hidden;margin:auto;width:100%;}
+.ico_comm li{overflow:hidden;float:left;height:108px;width:6.52%;text-align:center;letter-spacing:-1px;border-left:1px solid #e2e2e2;background-position:center 22px;font-size:12px;}
+.ico_comm li:hover{background-position:center 22px;}
+.ico_comm li:first-child {border-left:0 none;width:7%;}
+.ico_comm li a {display:block;height:100%;}
+.ico_comm li a:hover {color:#fff;border:1px solid #e37a08;height:98%;}
+.ico_comm li img{width:100%;height:auto;}
+.ico_comm li span{display:inline-block;line-height:18px;padding:65px 0 0;}
+
+.ico_comm2{overflow:hidden;border:1px solid #e2e2e2;margin:30px 0 30px 0;} /* 아이콘15일때 */
+.ico_comm2 ul{overflow:hidden;margin:auto;width:100%;}
+.ico_comm2 li{overflow:hidden;float:left;height:108px;width:6.55%;text-align:center;letter-spacing:-1px;border-left:1px solid #e2e2e2;background-position:center 22px;}
+.ico_comm2 li:hover{background-position:center 22px;}
+.ico_comm2 li:first-child {border-left:0 none;width:6.6%;}
+.ico_comm2 li a {display:block;height:100%;}
+.ico_comm2 li a:hover {color:#fff;border:1px solid #e37a08;height:98%;}
+.ico_comm2 li img{width:100%;height:auto;}
+.ico_comm2 li span{display:inline-block;line-height:18px;padding:65px 0 0;}
+
+.ico_comm3{overflow:hidden;border:1px solid #e2e2e2;margin:30px 0 30px 0;}/* 아이콘12일때 */
+.ico_comm3 ul{overflow:hidden;margin:auto;width:100%;}
+.ico_comm3 li{overflow:hidden;float:left;height:108px;width:8.2%;text-align:center;letter-spacing:-1px;border-left:1px solid #e2e2e2;background-position:center 22px;}
+.ico_comm3 li:hover{background-position:center 22px;}
+.ico_comm3 li:first-child {border-left:0 none;width:8.51%;}
+.ico_comm3 li a {display:block;height:100%;}
+.ico_comm3 li a:hover {color:#fff;border:1px solid #e37a08;height:98%;}
+.ico_comm3 li img{width:100%;height:auto;}
+.ico_comm3 li span{display:inline-block;line-height:18px;padding:65px 0 0;}
+
+.ico_comm4{clear:both;overflow:hidden;border:1px solid #e2e2e2;margin:30px 0 30px 0;}/* 아이콘13일때 */
+.ico_comm4 li{overflow:hidden;float:left;height:108px;width:7.03%;text-align:center;letter-spacing:-1px;border-left:1px solid #e2e2e2;background-position:center 22px;margin-right: -1px;margin-bottom: -1px;border: 1px solid #e2e2e2;/*border-width: 0px 1px 1px 0;*/}
+.ico_comm4 li:hover{background-position:center 22px;}
+.ico_comm4 li:first-child {border-left:0 none;width:7%;}
+.ico_comm4 li a {display:block;height:100%;text-align:center;}
+.ico_comm4 li a:hover {color:#fff;border:1px solid #e37a08;height:98%;}
+.ico_comm4 li img{width:100%;height:auto;}
+.ico_comm4 li span{display:inline-block;line-height:18px;padding:65px 0 0;}
+
+/* 칭찬 건의 불만 */
+.tbl_cus3{width:100%;border-top:2px solid #c5c5c5;}
+.tbl_cus3 li .tbodylist {display:table;width:100%;height:36px;border-bottom:1px solid #e2e2e2;}
+.tbl_cus3 li.thead {display:block;position:relative;height:36px;line-height:36px;padding:0;border-bottom:1px solid #dcdcdc;background:#f4f4f4;}
+.tbl_cus3 li.thead div {display:table;width:100%;}
+
+.tbl_cus3 li.thead div span  {display:table-cell;text-align:center;vertical-align:middle;}
+.tbl_cus3 li.thead div span.num {width:9%;}
+.tbl_cus3 li.thead div span.sub {width:60%;}
+.tbl_cus3 li.thead div span.name {width:12%;}
+.tbl_cus3 li.thead div span.date {width:12%;}
+.tbl_cus3 li.thead div span.recom {width:7%;}
+.tbl_cus3 li .tbodylist div{display:table-cell; vertical-align: middle;}
+.tbl_cus3 li .tbodylist div.num {width:10%;text-align:center;vertical-align:top;padding-top:12px;}
+.tbl_cus3 li .tbodylist div.infom {width:90%; float:left;text-align:left;position:relative;top:12px;}
+.tbl_cus3 li .tbodylist div.infom .process {position:absolute;left:0;top:0;width:60px;text-align:center;}
+.tbl_cus3 li .tbodylist div.infom .check {position:absolute;left:70px;top:0;width:80px;text-align:center;}
+.tbl_cus3 li .tbodylist div.infom .check span {display:inline-block;background: url("//cdnimg.tourbaksa.com/PC/www/common/bg_bar_04.gif") no-repeat left 2px;padding: 0 5px 0 10px;}
+.tbl_cus3 li .tbodylist div.infom .check span:first-child{background:none;padding: 0 5px 0 0;}
+.tbl_cus3 li .tbodylist div.infom .tit {position:absolute;left:160px;top:0;width:335px;text-align:left;}
+.tbl_cus3 li .tbodylist div.infom .name {position:absolute;left:510px;top:0;width:90px;text-align:center;}
+.tbl_cus3 li .tbodylist div.infom .date {position:absolute;left:610px;top:0;width:90px;text-align:center;}
+.tbl_cus3 li .tbodylist div.infom .recom {position:absolute;left:710px;top:0;width:60px;text-align:center;}
+.tbl_cus3 li .tbodylist div.infom .list_no {position:absolute;left:5px;top:0;width:490px;text-align:left;}
+.voc_subject {width:90%;text-align:left !important;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow:hidden;}
+
+/* 자주하시는 질문 */
+.faq{position:relative;width:100%;line-height:22px;}
+.faq h3{font-size:20px;line-height:30px;}
+.faq dl{margin-top:10px;border-bottom:1px solid #dcdcdc}
+.faq dl dt{background: url("//cdnimg.tourbaksa.com/PC/www/ico/ico_faq_q.png") no-repeat 20px 6px;padding:2px 20px 2px 45px;border-top:1px solid #dcdcdc}
+.faq dl dd{background: #f4f4f4 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_faq_a.png") no-repeat 20px 19px;border-top:1px dashed #dcdcdc;padding:12px 20px 12px 45px;color:#848484;margin-top:5px;}
+.faq .result{font-size:14px;margin-bottom:10px;color:#666;}
+.faq .result span{}
+
+/* 질문과답변 */
+.selArea{height:30px;margin-bottom:10px;margin-top:-10px;text-align:right;}
+.selArea select{border:1px solid #e2e2e2;font-size:12px;height:30px;line-height:30px;}
+.selArea .qa_list {display:inline;}
+
+.qna_list_txt{}
+.qna_list_txt li{float:left;text-align:center;}
+.qna_list_txt .process{width:15%;}
+.qna_list_txt .check{width:20%;padding-right:5%;}
+.qna_list_txt .check span{background: url("//cdnimg.tourbaksa.com/PC/www/common/bg_bar_04.gif") no-repeat left 3px;padding: 0 0 0 10px}
+.qna_list_txt .check span:first-child{background:none;padding:0 5px 0 0 ;}
+.qna_list_txt .listTitle a{color:#333;}
+
+.tbl_cus2{width:100%;border-top:2px solid #c5c5c5;}
+.tbl_cus2 li {position:relative;}
+.tbl_cus2 li .tbodylist {display:table;width:100%;height:80px;border-bottom:1px solid #e2e2e2;}
+.tbl_cus2 li .tbodylist div {display:table-cell;vertical-align:middle;}
+.tbl_cus2 li .tbodylist div.num {display:table-cell;width:10%;text-align:center;vertical-align:top;padding-top:12px;}
+.tbl_cus2 li .tbodylist div.infom {width:98%;text-align:left;position:relative;top:12px; float:left;} /* 20150722 : 게시판 제목영역 width 조정 */
+.tbl_cus2 li .tbodylist div.infom .process {position:absolute;left:10px;top:20px;width:60px;text-align:left;} /* 20140331 : left:0; -> 10px; */
+.tbl_cus2 li .tbodylist div.infom .check {position:absolute;left:100px;top:20px;text-align:left; width:105px;} /* 20140331 : left:70px; -> 100px / text-align:center; -> left */
+.tbl_cus2 li .tbodylist div.infom .check span {display:inline-block;background: url("//cdnimg.tourbaksa.com/PC/www/common/bg_bar_04.gif") no-repeat left 2px;padding: 0 5px 0 10px;}
+.tbl_cus2 li .tbodylist div.infom .check span:first-child{background:none;padding: 0 5px 0 0;}
+.tbl_cus2 li .tbodylist div.infom .tit {position:absolute;left:10px;top:45px;width:90%;text-align:left; line-height:13px;} /* 20140331 : left:0; -> 10px; */
+.tbl_cus2 li .tbodylist div.infom .name {position:absolute;left:10px;top:0;width:100px;text-align:left;} /* 20140331 : padding-left:5px; 삭제 / left:0; -> 10px; */
+.tbl_cus2 li .tbodylist div.infom .date {position:absolute;left:100px;top:0;width:110px;text-align:left;}
+.tbl_cus2 li .tbodylist div.infom .list_no {position:absolute;left:5px;top:25px;width:99%;text-align:left;line-height:15px;}/* 20150722 : 게시판 제목영역 width 조정 */
+.tbl_cus2 li .tbodylist {display:table;width:100%;height:36px;border-bottom:1px solid #e2e2e2;}
+.tbl_cus2 li.thead {display:block;height:36px;line-height:36px;padding:0;border-bottom:1px solid #dcdcdc;background:#f4f4f4;}
+.tbl_cus2 li.thead div {display:table;width:100%;}
+.tbl_cus2 li.thead div span {display:table-cell;text-align:center;vertical-align:middle;}
+.tbl_cus2 li.thead div span.num {width:10%;}
+.tbl_cus2 li.thead div span.sub {width:62%;}
+.tbl_cus2 li.thead div span.name {width:15%;}
+.tbl_cus2 li.thead div span.date {width:13%;}
+
+.tbl_cus2 li .tbodylist div.infom .process {position:absolute;left:0;top:0;width:60px;text-align:center;}
+.tbl_cus2 li .tbodylist div.infom .check {position:absolute;left:70px;top:0;width:105px;text-align:center;}
+.tbl_cus2 li .tbodylist div.infom .check span {display:inline-block;background: url("//cdnimg.tourbaksa.com/PC/www/common/bg_bar_04.gif") no-repeat left 2px;padding: 0 5px 0 10px;}
+.tbl_cus2 li .tbodylist div.infom .check span:first-child{background:none;padding: 0 5px 0 0;}
+.tbl_cus2 li .tbodylist div.infom .tit {position:absolute;left:185px;top:0;width:330px;text-align:left; line-height:13px;}
+.tbl_cus2 li .tbodylist div.infom .name {position:absolute;left:529px;top:0;width:128px;text-align:center;}
+.tbl_cus2 li .tbodylist div.infom .date {position:absolute;left:657px;top:0;width:110px;text-align:center;}
+.tbl_cus2 li .tbodylist div.infom .list_no {position:absolute;left:5px;top:0;width:490px;text-align:left;}
+
+/* 질문과 답변  view */
+.voc_list_txt{}
+.voc_list_txt li{float:left;}
+.voc_list_txt .process{width:15%;}
+.voc_list_txt .check{width:15%;}
+
+.voc_view{overflow:hidden;width:100%;}
+.voc_view li{clear:both;padding:10px 0 10px 0;overflow:hidden;line-height:20px;display:table;width:100%;}
+.voc_view li ul li{padding:0;}
+.voc_view dl {display:table-row;width:100%}
+.voc_view dl dt{display:table-cell;font-weight:bold;text-align:center;}
+.voc_view dl dt, .voc_view dl dd {display:table-cell;vertical-align:middle;}
+.voc_view dl dd{display:table;vertical-align:middle;color:#848484;}
+.voc_view dl dt {width:162px !important;text-align:center;}
+
+.voc_view dl dd ul li{margin-bottom:5px;}
+.voc_view .tit{color:#454545;}
+.voc_view dl dd li span{background: url("//cdnimg.tourbaksa.com/PC/www/common/bg_bar_04.gif") no-repeat left 2px;padding: 0 0 0 10px;}
+.voc_view dl dd li span:first-child{background:none;padding:0 10px 0 0;}
+
+.voc_view .first_row{border-top:1px solid #c5c5c5;border-bottom:1px solid #dcdcdc;background:#f4f4f4;}
+.voc_view .first_row dt{vertical-align:top !important;}
+.voc_view .first_row dd {text-align:left;width:98%;}
+
+.voc_view .first_row .type1 {float:left;width:60%;}
+.voc_view .first_row .type2 {float:right;display:inline;width:23%;padding-right:15px;text-align:right;}
+
+.voc_view .sec_row{border-bottom:1px solid #e2e2e2;position:relative;}
+.voc_view .sec_row .type1{display:table-cell;width:95%;text-align:left;}
+.voc_view .sec_row .type1 span:first-child{width:95%;display:block;}
+.voc_view .sec_row .type1 span img {width:auto;/*width:inherit !important; height:inherit !important;*/}
+.voc_view .sec_row dt{width: 155px !important;}
+.voc_view .sec_row dd{width:660px !important;}
+.voc_view .thu_row{position:relative;}
+.voc_view .thu_row .type1{width:100%;}
+
+/* 20131025 :상품영역표시 css 추가 : goods_tit_long,goods_tit_short,goods_tit_area */
+.voc_view .sec_row .type1 span .goods_tit_long {float:left; display: block; width: 40%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;} /* 20131107 : width: 45%; -> 40% */
+.voc_view .sec_row .type1 span .goods_tit_short {float:left; display: block;}
+.voc_view .sec_row .type1 span .goods_tit_area {float:left; display: block;}
+.voc_view .sec_row .type1 span .goods_tit_area img {width:30px; height:20px;}
+.voc_view .sec_row .type1 a {text-decoration:none; /*float:left; display: block;*/}
+.voc_view .sec_row .type1 a:hover {color:#FF921C;}
+
+.voc_view .thu_row .type1 p.conts {float:left;width:75%;text-align:left;margin-right:10px;}
+.voc_view .thu_row .type1 p.dateiy{float:right;display:inline;text-align:right;padding:0 10px 0 0;color:#848484;}
+
+.voc_view .contact {border-bottom:1px solid #e2e2e2;padding-bottom:20px;}
+.voc_view .contact dd{color:#454545 !important;padding-left:0;}
+
+.voc_view .contact dd ul{margin-top:5px;}
+.voc_view .contact dd ul li{font-size:13px;}
+.voc_view .contact span {background:none;display:inline-block;font-size:11px;padding:0 0 0 0;}
+.voc_view .contact span.phone {padding-right:20px;}
+.voc_view .contact span.fax {padding-right:20px;}
+.voc_view .contact span.email {}
+.voc_view .contact div{background:#fdfaef;border:1px solid #e8e4d7;padding:10px;}
+.voc_view .contact div.info_contact {padding:15px 10px 15px 20px;} 
+.voc_view .contact div.info_contact span:first-child {padding-right:10px; display:block;}
+
+.file{background: url("//cdnimg.tourbaksa.com/PC/www/ico/ico_file.png") no-repeat 0 5px;padding:0 0 0 15px;display:inline-block;margin-top:5px;color:#949494;}
+.file a{color:#949494;}
+.qna_view dt{vertical-align:top !important;}
+.qna_view .date{position:absolute;top:10px}
+
+/* 질문과 답변 글쓰기 */
+
+/* 변경 2014-04-14 */
+.tbl_modify {clear:both;width:100%;border-top:2px solid #c5c5c5;background:url("//cdnimg.tourbaksa.com/PC/www/community/bg_h4.gif") repeat-y;}
+/* 변경 2014-04-14 */
+
+.tbl_modify:after {content:"";clear:both;display:block;overflow:hidden;}
+.tbl_modify .inp{display:inline-block;border:1px solid #e2e2e2;height:29px;color:#666;font-size:12px;padding:0 5px;text-indent:0;}
+.tbl_modify .inpNone{border:none;height:29px;color:#666;font-size:12px;padding:0 0;}
+.tbl_modify select{border:1px solid #e2e2e2;height:29px;color:#666;font-size:12px;padding:0 5px;}
+.tbl_modify span{/*display:block;margin-top:5px;margin-bottom:5px;line-height:14px;*/}
+.tbl_modify label {color:#666}
+
+.modlist {clear:both;float:left;border-bottom:1px solid #dcdcdc;overflow:hidden;width:100%; min-height:100%; background:url("//cdnimg.tourbaksa.com/PC/www/customerCenter/bg_h4_320.gif") repeat-y scroll 0 0 #fff;}
+.modlist div {display:block;}
+.modlist h4 {display:inline-block;width:100px;padding:15px 0 15px 20px;font-weight:normal;color:#454545; background: #f4f4f4; vertical-align:top;display: -moz-inline-stack;*display:inline;}
+.modlist div.int {display: -moz-inline-stack;display:inline-block;*display:inline;text-align:left;padding:5px 0 0 5px;width:83%;color:#666;}
+.modlist .inpNone{border:none;height:29px;color:#666;font-size:12px;padding:0 0 !important;}
+.modlist_nobg {background:none;}
+
+.modlist div.int span {/*display:inline-block;margin-right:5px;*/}
+.modlist div.int p {text-align:left;line-height:15px;}
+.modlist select {margin:0 2px;}
+.modlist select:first-child {margin:0 5px 0 0;}
+.modlist .sear_no {display:block;}
+
+.modlist2 {float:left;border-bottom:1px solid #dcdcdc;overflow:hidden;width:100%;}
+.modlist2 div {display:table-cell;}
+.modlist2 h4 {display:inline-block;background:#f4f4f4;width:100px;padding:15px 0 15px 20px;font-weight:normal;color:#666666;}
+.modlist2 div.int {display:inline-block;text-align:left;padding:0 0 0 5px;width:60%;color:#666}
+.modlist2 div.int em {padding-left:5px;}
+.modlist2 div.int span {display:inline-block;margin-right:5px;}
+.modlist2 div.int p {text-align:left;line-height:15px;}
+.modlist2 .inpNone{border:none;height:29px;color:#666;font-size:12px;padding:0 0 !important;}
+.modlist2 select {margin:0 2px;}
+.modlist2 select:first-child {margin:0 2px 0 0;}
+
+/* 글쓰기 부분 2013.10.14 */
+.rwList {clear:both;overflow:hidden;padding:7px 0 5px;width:100%;border-top:1px solid #e2e2e2;}
+.rwList:first-child {border-top:0 none;}
+.rwList li{float:left;margin-left:10px;line-height:18px;}
+.rwList li:first-child {margin-left:10px;}
+/* html.desktop .rwList li:first-child {margin-left:0px;} */
+
+.rwListHotel{clear:both;overflow:hidden;width:100%;border-top:1px solid #e2e2e2;padding-top:5px;}
+.rwListHotel:first-child {border-top:0 none;}
+.rwListHotel li{float:left;margin-left:10px;line-height:18px;}
+.rwListHotel li:first-child {margin-left:10px;}
+
+/* 변경 2014-04-14 */
+.modlist.group h4 {vertical-align:top; padding:15px 0 0 20px;height:101px;}
+/* 변경 2014-04-14 */
+
+.modlist2.start_tour h4 {padding:15px 0 15px 20px;vertical-align:top;height:15px;}
+.modlist2.start_tour .int {padding:13px 0 0 5px;}
+
+.modlist.reply h4 {padding:15px 0 15px 20px;vertical-align:top;height:15px;}
+.modlist.reply .int {padding:2px 0 0 5px;}
+
+.rList .inp.wphone{display:inline-block;width:50%;margin:5px 0 0 10px;}
+.tArea {border:1px solid #e5e5e5;}
+
+.modlist.infoArea h4 {padding:50px 0 0 20px;vertical-align:top;height:577px;}
+.modlist.filely .int input{vertical-align:top;}
+
+.modlist.filely2 h4 {/*padding:20px 0 0 10px;*/vertical-align:top;height:35px;}
+.modlist.filely2 .int input{vertical-align:top;}
+.modlist.filely2 .int .fileserch {width:90%;}
+.modlist.filely2 .int .btn_gray4 {display:block;margin-top:5px;width:70px;padding:5px 0}
+.modlist.filely h4 {padding:13px 0 0 20px;vertical-align:top;height:29px;}
+.modlist.filely .int .fileserch {width:80%;}
+.modlist.filely .int .btn_gray4 {display:inline-block;vertical-align:top;width:90px;padding:8px 0;margin:0;}
+
+/* 고객센터 서브메인 */
+.comuSm_searArea{margin-top:12px;}
+.comuSm_searArea .btn_sear{margin-left:0 !important;}
+
+.comuSm_faq{overflow:hidden;position:relative;border-bottom:1px solid #e2e2e2;padding-bottom:30px;margin-bottom:30px;}
+.comuSm_faq h4{display:inline-block;float:left;width:18%;font-size:20px;line-height:30px;}
+.comuSm_faq ul{display:inline-block;float:left;width:65%;padding:0 0 10px;}
+.comuSm_faq ul li{background: url("//cdnimg.tourbaksa.com/PC/www/ico/ico_faq_q.png") no-repeat 20px 7px;padding:0 20px 0 45px;margin: 10px 0;color:#454545;font-weight:bold;line-height:27px;font-size:13px;}
+.comuSm_faq ul li a{color:#454545;}
+.comuSm_faq span{position:absolute;bottom:30px;right:0;}
+
+.comuSm_qna, .comuSm_inq, .comuSm_cs, .comuSm_cus,.comuSm_notice h4{font-size:15px;color:#333;line-height:18px;}
+
+
+.comuSm_inq{overflow:hidden;float:left;width:59.5%;margin-bottom:30px;}
+.comuSm_inq ul{margin-top:23px;}
+.comuSm_inq li{margin-left:0.7%;background:#85878a;text-align:center;color:#fff;overflow:hidden;float:left;width:19.42%;font-size:13px;line-height:14px;vertical-align:middle;font-weight:bold;} /* 20140324 : width:19.42%; -> 19.5 */
+.comuSm_inq li a{color:#fff;vertical-align:middle;display:block;padding:12px 0;width:100%;}
+.comuSm_inq li a:hover{background:#fe922e;width:100%;}
+.comuSm_inq li:first-child{margin-left:0;}
+
+.comuSm_cs{overflow:hidden;width:37%;margin:0 3.5% 0 0;float:left;}
+.comuSm_cs ul{margin-top:20px;}
+.comuSm_cs li{float:left;}
+.comuSm_cs dt{float:left;}
+.comuSm_cs dd{float:left;}
+
+.comuSm_cs .mainCity{font-size:14px;width:46%;margin-right:6%;}
+.comuSm_cs .mainCity dl{overflow:hidden;width:100%;line-height:20px;font-weight:bold;}
+.comuSm_cs .mainCity dl dt{color:#454545;width:26%;} /* 20131119 : color:#666; -> color:#454545; */
+.comuSm_cs .mainCity dl dd{color:#454545;width:74%;}
+.comuSm_cs .mainCity span{width:100%;overflow:hidden;font-size:11px;line-height:18px;color:#ff7a1f;display:block;}
+.comuSm_cs .mainCity .weekday{color:#16a6a0 !important;margin-top:7px;letter-spacing:-1px;}/*2015-03-25수정*/
+.comuSm_cs .mainCity .day{color:#16a6a0 !important; margin-top:5px; letter-spacing:-1px;}/*2015-03-25수정*/
+.comuSm_cs .mainCity .holyday{margin-top:5px;}/*2015-03-25수정*/
+
+.comuSm_cs .subCity{font-size:12px;width:48%;line-height:22px;}
+.comuSm_cs .subCity dl{width:100%;letter-spacing:-1px;}
+.comuSm_cs .subCity dt{width:40%;}
+.comuSm_cs .subCity dd{width:60%;}
+
+.comuSm_cus{overflow:hidden;float:left;width:59.5%;}
+.comuSm_cus div{float:left;width:46.8%;border:1px solid #e3e3e3;overflow:hidden;}
+.comuSm_cus div:first-child{margin-right:5%;}
+.comuSm_cus h4{padding:20px 0 15px 20px;}
+.comuSm_cus ul{padding:0 20px 25px 20px;overflow:hidden;}
+.comuSm_cus ul li{font-size:12px;line-height:22px;background: url("//cdnimg.tourbaksa.com/PC/www/bul/bul_list_dot_02.gif") no-repeat 0 11px;padding:0 0 0 8px;letter-spacing:-1px;}
+
+.comuSm_icBanner{overflow:hidden;clear:both;float:left;width:37%;margin:30px 3.5% 0 0;}
+.comuSm_icBanner .ico{overflow:hidden;border:1px solid #e2e2e2;}
+.comuSm_icBanner .ico a{display:block;width:100%;padding:10px 0;}
+.comuSm_icBanner .ico span{display:block;margin-top:10px;}
+.comuSm_icBanner .ico li{float:left;width:33%;text-align:center;border-left:1px solid #e2e2e2;border-bottom:1px solid #e2e2e2;color:#666;}
+.comuSm_icBanner .ico li:first-child{border-left:none;}
+.comuSm_icBanner .ico img{height:auto;}
+.comuSm_icBanner .ic04{border:none !important;}
+.comuSm_icBanner .ic05{border-bottom:none !important;}
+.comuSm_icBanner .ic06{border-bottom:none !important;}
+.comuSm_notice{overflow:hidden;float:left;width:59.5%;}
+
+.comuSm_icBanner .tour{background:#f4f4f4;border:1px solid #c5c5c5;overflow:hidden;margin-top:10px;}
+.comuSm_icBanner .tour li{width:50%;float:left;text-align:center;font-size:14px;font-weight:bold;padding:12px 0;}
+.comuSm_icBanner .tour li:first-child{background: url("//cdnimg.tourbaksa.com/PC/www/bul/bul_line_02.gif") no-repeat right 11px;}
+
+.comuSm_notice{overflow:hidden;float:left;width:59.5%;margin-top:30px;}
+.comuSm_notice div{float:left;width:46.8%;border:1px solid #e3e3e3;overflow:hidden;}
+.comuSm_notice div:first-child{margin-right:5%;}
+.comuSm_notice .notice{float:left;width:46.8%;border:1px solid #e3e3e3;overflow:hidden;}
+.comuSm_notice .notice h4{padding:20px 0 15px 20px;}
+.comuSm_notice .notice ul{padding:0 20px 14px 20px;overflow:hidden;}
+.comuSm_notice .notice ul li{font-size:12px;line-height:22px;background: url("//cdnimg.tourbaksa.com/PC/www/bul/bul_list_dot_02.gif") no-repeat 0 11px;padding:0 0 0 8px;letter-spacing:-1px;}
+
+.comuSm_notice .face_book{width:240px;border:none;}
+.comuSm_notice .face_book dl dt{height:51px;}
+.comuSm_notice .face_book dl dd{border-right:1px solid #a3a3a3;border-left:1px solid #a3a3a3;border-bottom:1px solid #a3a3a3;}
+.comuSm_notice .face_book ul{width:87%;margin:0 auto 0 auto;}
+.comuSm_notice .face_book li:first-child{border:0; border-bottom:1px solid #ccc;padding:0 7px 9px 7px;text-align:center;}
+.comuSm_notice .face_book .txt{font-size:11px;line-height:12px;text-align:left;padding:10px 0 10px 0;}
+.comuSm_notice .face_book .like{margin:10px auto}
+.comuSm_notice .face_book .clickNum{background: url("//cdnimg.tourbaksa.com/PC/www/community/bg_clickNum.gif") no-repeat;padding:0 0 0 8px;height:25px;font-size:11px;line-height:20px;display:inline-block;margin-left:5px;}
+.comuSm_notice .face_book .clickNum span{background: url("//cdnimg.tourbaksa.com/PC/www/community/bg_clickNum2.gif") repeat-x right 0;height:25px;display:block;padding:2px 7px 2px 0px;}
+
+.comu_body{overflow:hidden;clear:both;position:relative;width:100%;height:531px;}
+.comu_body .comuSm_qna{clear: both;overflow:hidden;float:left;position: absolute;left: 0;top: 0;width: 37%;margin-right: 3.5%;}
+.comu_body .comuSm_inq {position:absolute;left:40.5%;top:0;width:59.5%; margin-top:0;}
+.comu_body .comuSm_cs {clear:both;position:absolute;left:0;top:120px;width:37%; margin-top:0;}
+.comu_body .comuSm_cus {position:absolute;left:40.5%;top:120px;width:59.5%; margin-top:0;} 
+.comu_body .comuSm_icBanner{position:absolute;left:0;top:330px;width:37%; margin-top:0;} 
+.comu_body .comuSm_notice{position:absolute;left:40.5%;top:330px;width:59.5%; margin-top:0;}
+.comuSm_qna p{margin-bottom:20px;line-height:18px;color:#454545;font-size:12px;}
+.btn_online{display:block;border:1px solid #e37a08;font-size:11px;color:#fff; padding:9px 9px 9px 30px; background: #ff9733 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_online.png") no-repeat 38.8% center;text-align:center;font-weight:bold;}
+.btn_online a{color:#fff;}
+
+
+/* 20140331 : 추가 */
+.tbl_cus_view dd img {width:auto;}
+
+/* 공지사항 리스트 */
+.noticeList {clear:both;border-top:2px solid #949494;}
+.noticeList li.thead {display:block;width:100%;border-bottom:1px solid #dcdcdc;background:#f4f4f4;padding:0;height:36px;line-height:36px;text-align:center;}
+.noticeList li.thead div {display:table;width:100%;vertical-align:middle}
+.noticeList li.thead span {display:table-cell;}
+.noticeList li.thead span.w01 {width:10%;}
+.noticeList li.thead span.w02 {width:60%;}
+.noticeList li.thead span.w03 {width:15%;}
+.noticeList li.thead span.w04 {width:15%;}
+
+.noticeList li{position:relative;width:100%;border-bottom:1px solid #e2e2e2;overflow:hidden;}
+.noticeList .tbodylist {display:table;width:100%;position:relative;color:#848484;padding:10px 0;height:20px;overflow:hidden;}
+.noticeList .tbodylist div {display:table-cell;vertical-align:top}
+.noticeList .tbodylist .num {width:10%;text-align:center;padding-top:5px;}
+.noticeList .tbodylist .info {width:90%;position:relative;text-align:left;top:0;left:0;}
+.noticeList .tbodylist .info p {display:inline-block;}
+.noticeList .tbodylist .txt_infomat {display:inline-block;margin:10px 0 0 15px}
+.noticeList .tbodylist .txt_infomat .cont {position:absolute;top:6px;left:0;width:350px;height:14px;overflow:hidden;white-space:nowrap; text-overflow:ellipsis;}
+.noticeList .tbodylist .txt_infomat .name {position:absolute;top:5px;left:530px;width:100px;text-align:center;}
+.noticeList .tbodylist .txt_infomat .date {position:absolute;top:5px;left:660px;width:100px;text-align:center;} 
+
+.event_part{clear:both;border:1px solid #dcdcdc;background:#f4f4f4;padding:20px;margin:10px 0 20px; position:relative}
+.event_part textarea{border:1px solid #e2e2e2; width:89%;height:58px;float:left;margin-right:1%;font-size:12px;line-height:16px;}
+
+.event_part .btn_ora{ width:70px !important; }
+.event_part .agree{overflow:hidden;width:100%;margin-top:10px;}
+.event_part .agree li{float:left;font-weight:bold;color:#454545; height:20px; line-height:20px}
+.event_part .agree li:first-child{margin-right:50px;}
+.event_part .agree span{color:#ff7a1f; }
+.event_part .agree a{color:#454545; }
+.event_partList{border-top:2px solid #c5c5c5;border-bottom:2px solid #c5c5c5;overflow:hidden;width:100%;margin-top:20px;}
+.event_partList li:first-child{border-top:none;}
+.event_partList li{border-top:1px solid #dcdcdc;padding:20px;}
+.event_partList .info{border:none;overflow:hidden;margin-bottom:10px;}
+.event_partList .info li{border:none;float:left;padding:0;line-height:16px;}
+.event_partList .info .name{color:#333;font-weight:bold;padding-right:10px;}
+.event_partList .info span{color:#848484;font-weight:normal;}
+
+.event_partList .date{color:#848484;background: url("//cdnimg.tourbaksa.com/PC/www/common/bg_bar_04.gif") no-repeat 0 3px;padding-left:10px !important;}
+.event_partList .date a:first-child{padding-left:5px;}
+.event_partList .con{line-height:16px;color:#666;}
+
+.login_before{text-align:center;font-weight:bold;font-size:15px;}
+.event_part h4{font-weight:bold;font-size:14px;color:#454545;padding:0 0 9px 9px;}
+.event_part .winnerList{border:1px solid #e2e2e2;background:#fff;padding:8px;}
+.event_part .winnerList ul{overflow:hidden;}
+.event_part .winnerList li{float:left;width:18%;padding:0 2% 5px 0;}
+.event_part .mt20{margin-top:20px;}
+.event_part .winnerList p { padding:15px 0 0px;color:#666;line-height:18px; }
+.event_part .winnerList p:first-child { padding:0 }
+.event_part .inp{border:1px solid #e2e2e2;height:30px;color:#666;font-size:12px;padding:0 5px;}
+
+/**************************************** 130925 노은명 start************************************************/
+
+/* 130925 시차 */  
+.timeSearchB{ background:#f4f4f4; border:1px solid #e2e2e2; padding:20px; overflow:hidden; margin-top:20px;}
+.timeSearchB > p{ float:left; padding-right:20px; color:#454545; font-weight:bold; line-height:170%; }
+.timeSearchB > p > strong{ font-size:14px; color:#e54c01; display:block}
+.timeSearchB fieldset{ float:left;}
+.timeSearchB fieldset button{ background:#666; color:#fff; padding:0 20px; display:inline-block; height:28px; line-height:28px; border:0; }
+.timeSearchB fieldset select{ padding:5px; width:130px; margin-right:5px}
+.timeSearchB fieldset strong{color:#454545;}
+.timeSearchB fieldset b{color:#e54c01;}
+.timeSearchB fieldset > p{ margin-top:10px;}
+
+
+/*애그WIFT*/
+/*html.desktop .wifiTableW{ overflow:hidden; margin-bottom:30px;}
+html.desktop .wifiTableW > span{ display:block; text-align:right; color:#848484; margin-bottom:-10px}
+html.desktop .wifiTableW > p{ float:left}
+html.desktop .wifiTableW .rateTableList{float:right; width:530px}
+
+.wifiList{border:1px solid #c5c5c5;  padding:20px;}
+.wifiList h3{ font-size:15px;float:left;}
+.wifiList .colorg{ width:50px; height:20px; margin-left:10px;font-size:12px; padding:0; line-height:18px; }
+.wifiList h4{ font-size:15px; color:#fc7d09; margin-top:30px;}
+.wifiList ul{ clear:both; margin-top:15px; color:#848484}
+.wifiList ul li{ background:url(//cdnimg.tourbaksa.com/PC/www/bul/bul_list_dot_03.gif) no-repeat left 5px; padding-left:8px; line-height:170%;}
+
+.copyWrap{border-bottom:1px solid #c5c5c5; padding-bottom:30px; margin-bottom:30px; color:#454545; }
+.copy1{color:#848484; font-size:36px; letter-spacing:-1px; font-weight:bold; margin-top:30px;}  
+.copy2{font-size:60px; letter-spacing:-1px; font-weight:bold; margin:5px 0 15px;} 
+.copy3{font-size:24px; letter-spacing:-1px; font-weight:bold; margin-bottom:25px;} 
+.copy4{letter-spacing:-1px; line-height:170%; }
+.copy4 span{display:block; color:#16a6a0; letter-spacing:-1px; }
+.copy5{font-size:18px; letter-spacing:-1px; font-weight:bold; margin-bottom:25px;} 
+.copy3 strong, .copy5 strong{ color:#fc7d09} */
+
+/**************************************** 130925 노은명 end****************************************/
+
+/* 131015 노은명 start(반응형대비)*/
+
+/* 세계날씨 */
+.clearB{ clear:both; padding:10px 0 20px}
+.WeatherT { text-align:right; margin:30px 0 10px; color:#666;}
+.WeatherT.mt0{margin:0 0 20px; }
+.weatherMap{ border:1px solid #e2e2e2; height:383px; margin-bottom:10px;}
+.weatherTable{ overflow:hidden; margin-bottom:20px;border:1px solid #e2e2e2; float:left}
+.weatherTable.left{ width:49%; margin-right:1.5%}
+.weatherTable.right{ width:49%;}
+ 
+.weatherTable table{width:100%; text-align:center; }
+.weatherTable thead th{height:50px; line-height:50px; border-bottom:1px solid #e2e2e2; border-right:1px solid #e2e2e2; background:#f4f4f4; color:#454545;} 
+.weatherTable tbody th{ border-right:1px solid #e2e2e2;vertical-align:middle;color:#848484; } 
+.weatherTable td{ border-right:1px solid #e2e2e2; color:#848484; vertical-align:middle; padding:10px 0}
+.weatherTable td div{ min-height:76px}
+.weatherTable td.last, .weatherTable th.last{  border-right:0}
+
+.weatherTableD{ overflow:hidden; margin-bottom:20px;border:1px solid #e2e2e2;}
+.weatherTableD table{width:100%; text-align:center;font-size:14px}
+.weatherTableD thead th{height:36px; line-height:36px; border-bottom:1px solid #e2e2e2; border-right:1px solid #e2e2e2; background:#f4f4f4; color:#454545;} 
+.weatherTableD tbody th{ border-right:1px solid #e2e2e2;vertical-align:middle;color:#848484; } 
+.weatherTableD td{ border-right:1px solid #e2e2e2; color:#848484; vertical-align:middle; padding:10px 0}
+.weatherTableD td div{ min-height:85px}
+.weatherTableD td.last, .weatherTableD th.last{  border-right:0}
+
+.weatherTable01{ overflow:hidden; margin-bottom:20px;border-top:1px solid #e2e2e2; float:left}
+.weatherTable01 table{width:100%; }
+.weatherTable01 th{ border-bottom:1px solid #e2e2e2; border-right:1px solid #e2e2e2; background:#f4f4f4; vertical-align:middle;  color:#454545;}  
+.weatherTable01 td{ border-right:1px solid #e2e2e2; color:#848484; vertical-align:middle; padding:12px 10px;border-bottom:1px solid #e2e2e2; line-height:150%;} 
+.weatherTable01 td.last, .weatherTable th.last{border-right:0} 
+
+.wedt{ overflow:hidden; margin:30px 0 20px;  }
+.wedt h3 {float:left;line-height:150%;}
+.wedt h3 strong{ font-size:20px; color:#e54c01;}
+.wedt span{display:inline-block; margin:5px 0 0 20px;line-height:150%}
+.wedt span b{color:#fc7d09;}
+
+/* 시차 */ 
+.timeB{ background:#fee5ce; height:345px; margin:30px 0 10px;}  
+.tabList.type0 { margin:30px 0 0 ;}
+.tabList.type0 ul { overflow:hidden;  border-bottom:1px solid #898989;}
+.tabList.type0 ul li { float:left; }
+.tabList.type0 ul li { width:138px; margin-right:5px;}
+.tabList.type0 ul li.link5 {margin-right:0;}
+.tabList.type0 ul li a { display:block; height:34px; line-height:34px; border:1px solid #dcdcdc; border-bottom:0 none; text-align:center; color:#454545;}
+.tabList.type0 ul li a span { color:#ff9733;}
+.tabList.type0 ul li.selected a { background-color:#898989; color:#fff; border-color:#818181;}
+
+.timeSearchB{ background:#f4f4f4; border:1px solid #e2e2e2; padding:20px; overflow:hidden; margin-top:20px;}
+.timeSearchB > p{ float:left; padding-right:20px; color:#454545; font-weight:bold; line-height:170%; }
+.timeSearchB > p > strong{ font-size:14px; color:#e54c01; display:block}
+.timeSearchB fieldset{ float:left;}
+.timeSearchB fieldset button{ background:#666; color:#fff; padding:0 20px; display:inline-block; height:28px; line-height:28px; border:0; }
+.timeSearchB fieldset select{ padding:5px; width:130px; margin:0 5px 3px 0}
+.timeSearchB fieldset strong{color:#454545;}
+.timeSearchB fieldset b{color:#e54c01;}
+.timeSearchB fieldset > p{ margin-top:10px;}
+
+/*환율서비스*/ 
+.ratesB { background:#f8f5f2; border:1px solid #e2e2e2; padding:20px; overflow:hidden; margin:20px 0 30px;}
+.ratesB li{ width:30%; text-align:center; line-height:150%; float:left; letter-spacing:-1px}/*width:25%;*/
+.ratesB li strong{ display:block; color:#000; font-size:14px; margin-bottom:10px;}
+.ratesB li p{ color:#454545;font-size:13px;}
+.ratesB li p span{ color:#fc7d09;}
+
+.ratesB02{overflow:hidden; margin:20px 0 30px;border:1px solid #e2e2e2; border-width:0 0 1px 1px}
+.ratesB02 li{ float:left; width:33.3%; text-align:center; line-height:170%; }
+.ratesB02 li.last div{border:0;}
+.ratesB02 li div{border-right:1px solid #e2e2e2; overflow:hidden; padding:0 0 20px; letter-spacing:-1px}
+.ratesB02 li div span{border-bottom:1px solid #e2e2e2;border-top:1px solid #e2e2e2; display:block; padding:5px 0; margin-bottom:15px; }
+.ratesB02 li div p strong{ color:#454545; display:block; font-size:13px }
+.ratesB02 li div .colorg{ padding:0 20px; margin-top:10px}
+
+.rateTableList{width:100%;  margin-top:20px}
+.rateTableList table{width:100%;border-top:1px solid #c5c5c5;}
+.rateTableList th{height:33px; vertical-align:middle; border-bottom:1px solid #dcdcdc; border-right:1px solid #dcdcdc; background:#f4f4f4; color:#454545;} 
+.rateTableList td{height:33px; vertical-align:middle; border-bottom:1px solid #dcdcdc; border-right:1px solid #dcdcdc; text-align:center; color:#848484;}
+.rateTableList th.last, 
+.rateTableList td.last{border-right:0;}
+.rateTableList td.left{ text-align:left; padding-left:10px;} 
+.rateTableList td .OrigP{ display:block; color:#454545 ; text-decoration:line-through;}
+.rateTableList td .disP{ font-size:26px; color:#fc7d09;}
+.rateTableList td b{ font-size:16px; color:#fc7d09;}
+.rateTableList .c01{width:9%;}
+.rateTableList .c02{width:12%;}
+.rateTableList .c03{width:11%;}
+.rateTableList .c04{width:11%;}
+.rateTableList .c05{width:11%;}
+.rateTableList .c06{width:11%;}
+.rateTableList .c07{width:11%;}
+.rateTableList .c08{width:11%;}
+.rateTableList .c09{width:11%;border-right:0;}
+
+/* 에그 wifi 2015-03-10 수정 */
+.wifiTableW{ overflow:hidden; margin-bottom:30px;}
+.wifiTableW > span{ display:block; text-align:right; color:#848484; margin-bottom:-10px}
+.wifiTableW > p{ display:none}
+.wifiTableW .rateTableList{ width:100%}
+
+.wifiTableW .rateTableList td.egg_price { padding:10px 0;}
+.wifiTableW .rateTableList td.egg_price .OrigP{ display:block; color:#454545 ; text-decoration:line-through; }
+.wifiTableW .rateTableList td.egg_price .disP{font-size:18px; line-height:120%; }
+.wifiTableW .rateTableList td.last{color:#454545;} /* 2016-03-29 추가 이상익 */
+.wifiTableW .rateTableList td.last .block{line-height:1.5} /* 2016-03-29 추가 이상익 */
+.wifiTableW .rateTableList td.last .block span{display:block;} /* 2016-03-29 추가 이상익 */
+
+.wifiTableW > p{ float:left; display:block}
+.wifiTableW .rateTableList{float:right; width:530px}
+
+.wifiList{border:1px solid #c5c5c5;  padding:20px;}
+.wifiList h3{ font-size:15px;float:left;}
+.wifiList .colorg{ width:50px; height:20px; margin-left:10px;font-size:12px; padding:0; line-height:18px; }
+.wifiList h4{ font-size:15px; color:#fc7d09; margin-top:30px;}
+.wifiList ul{ clear:both; margin-top:15px; color:#848484}
+.wifiList ul li{ background:url(//cdnimg.tourbaksa.com/PC/www/bul/bul_list_dot_03.gif) no-repeat left center; padding-left:8px; line-height:170%;} /* 2015-02-23 수정 */
+.wifiList p.txt {margin-top:15px;color:#848484;line-height:18px;} /* 2015-02-23 추가 */
+.wifiList p.txt + ul {margin-top:0;} /* 2015-02-23 추가 */
+.wifiList ul.txt li {padding:0;background:url(//cdnimg.tourbaksa.com/PC/www/common/bg_transparent.png);color:#848484;line-height:18px;} /* 2015-03-09 추가 */
+.wifiList h4 + table {margin-top:15px;} /* 2015-03-09 추가 */
+
+.copyWrap{position:relative;border-bottom:1px solid #c5c5c5; padding-bottom:30px; margin-bottom:30px; color:#454545; margin-top:30px; background:url(//cdnimg.tourbaksa.com/PC/www/common/bg_transparent.png);}
+.copy1{color:#848484; font-size:36px; letter-spacing:-1px; font-weight:bold; margin-top:30px; background:url(//cdnimg.tourbaksa.com/PC/www/common/bg_transparent.png);}  
+.copy2{font-size:60px; letter-spacing:-1px; font-weight:bold; margin:5px 0 15px; background:url(//cdnimg.tourbaksa.com/PC/www/common/bg_transparent.png);} 
+.copy3{font-size:24px; letter-spacing:-1px; font-weight:bold; margin-bottom:25px; background:url(//cdnimg.tourbaksa.com/PC/www/common/bg_transparent.png);} 
+.copy4{letter-spacing:-1px; line-height:170%; background:url(//cdnimg.tourbaksa.com/PC/www/common/bg_transparent.png);}
+.copy4 span{display:block; color:#16a6a0; letter-spacing:-1px; }
+.copy5{font-size:18px; letter-spacing:-1px; font-weight:bold; margin-bottom:25px; line-height:150%; background:url(//cdnimg.tourbaksa.com/PC/www/common/bg_transparent.png);} 
+.copy3 strong, .copy5 strong{ color:#fc7d09} 
+.copyWrap .center_number{position:absolute;right:0;top:0;}
+
+/* 131015 노은명 end(반응형대비)*/
+
+/* 130926 윤미리 세계날씨_주요도시 날씨안내 추가 */
+.weatherTb {overflow:hidden; margin-bottom:20px;border:1px solid #e2e2e2; float:left}
+.weatherTb.left {width:48%; margin-right:1.5%}
+.weatherTb.right {width:49%;}
+ 
+.weatherTb table {width:100%; text-align:center;}
+.weatherTb th {vertical-align:top; color:#848484;} 
+.weatherTb th p {padding-top:34px;}
+.weatherTb td {border-left:1px solid #e2e2e2; color:#848484; vertical-align:top;}
+.weatherTb dl {overflow:hidden; width:100%;}
+.weatherTb dl dt {height:50px; line-height:50px; border-bottom:1px solid #e2e2e2; background:#f4f4f4; font-weight:bold; color:#454545;} 
+.weatherTb dl dd {padding:10px 0; }
+.weatherTb td dd div {min-height:76px}
+
+/* 130927 김정훈 세계날씨_주요도시 날씨안내 추가 */
+.weatherTb2 {overflow:hidden; margin-bottom:20px;border:1px solid #e2e2e2; float:left}
+.weatherTb2.left {width:99%; margin-right:1.5%}
+.weatherTb2.right {width:99%;}
+ 
+.weatherTb2 table {width:100%; text-align:center;}
+.weatherTb2 th {vertical-align:top; color:#848484;} 
+.weatherTb2 th p {padding-top:34px;}
+.weatherTb2 td {border-left:1px solid #e2e2e2; color:#848484; vertical-align:top;}
+.weatherTb2 dl {overflow:hidden; width:100%;}
+.weatherTb2 dl dt {height:50px; line-height:50px; border-bottom:1px solid #e2e2e2; background:#f4f4f4; font-weight:bold; color:#454545;} 
+.weatherTb2 dl dd {padding:10px 0; }
+.weatherTb2 td dd div {min-height:76px}
+
+/* 130925 윤미리 여행자보험 추가 */
+.insurance_top {overflow:hidden; width:100%; margin-bottom:30px; padding-bottom:25px; border-bottom:1px solid #e2e2e2;}
+.insurance_top .img {float:left; width:26%; margin-right:2%;}
+.insurance_top .rCon {float:left; width:72%; padding-top:5px; font-size:13px;}
+.insurance_top .rCon .tit {font-size:24px;}
+.insurance_top .rCon p {margin-bottom:8px; color:#454545;}
+.insurance_top .rCon p .po {margin-bottom:18px; color:#fc7d09;}
+.insurance_top .rCon .cmt {overflow:hidden; margin-top:17px; margin-bottom:7px; padding:11px 2% 13px; border:1px solid #e8e4d7; background:#fdfaef; color:#848484;}
+.insurance_top .rCon .cmt .po {color:#16a6a0;}
+
+.instB {overflow:hidden; width:100%;  margin-bottom:30px;}
+.instB ul.thead {overflow:hidden; width:100%; border-top:1px solid #c5c5c5;}
+.instB ul.thead li, 
+.instB ul.thead li {padding:10px 0 5px;height:20px; float:left; border-bottom:1px solid #dcdcdc; border-right:1px solid #dcdcdc; background:#f4f4f4; text-align:center; color:#454545;}  
+.instB ul.tbody {overflow:hidden; width:100%;} 
+.instB ul.tbody li{overflow:hidden;text-align:center;}
+.instB ul.tbody li span {padding:5px 0; height:30px; line-height:30px; display:block; float:left; border-right:1px solid #dcdcdc; border-bottom:1px solid #dcdcdc;  color:#848484;} 
+.instB ul li.last,
+.instB ul li span.last {border-right:0;}
+.instB .w01 {width:10%;}
+.instB .w02 {width:20%;}
+.instB .w03 {width:20%;}
+.instB .w04 {width:49.5%;}
+.txtOrg {line-height:130%;}
+
+/* 2014-08-05 추가 */
+.instB .tw01 {width:5%;}
+.instB .tw02 {width:11%;}
+.instB .tw03 {width:15%;}
+.instB .tw04 {width:25%;}
+.instB .tw05 {width:8%;}
+.instB .tw06 {width:9%;}
+.instB .tw07 {width:13%;}
+.instB .tw08 {width:13%;}
+.instB .inputW80 {width:82%;}
+
+h3.inTit {margin-bottom:20px; font-size:15px;}
+.insurance_guide {overflow:hidden; width:100%;}
+.insurance_guide dt {display:block; margin-bottom:7px; font-weight:bold; color:#666;}
+.insurance_guide dd {overflow:hidden; margin-bottom:15px;}
+.insurance_guide dd p {line-height:150%; color:#848484;}
+.insurance_guide dd ul {overflow:hidden; border:1px solid #dcdcdc;}
+.insurance_guide dd ul li {overflow:hidden; width:100%; border-bottom:1px dotted #dcdcdc;}
+.insurance_guide dd ul li div {float:left; width:40%; line-height:140%; padding:15px 15px 10px 35px; border-right:1px dotted #dcdcdc; }
+.insurance_guide dd ul li div.q {background: url("//cdnimg.tourbaksa.com/PC/www/ico/ico_faq_q.png") no-repeat 12px 18px;}
+.insurance_guide dd ul li div.a {background: url("//cdnimg.tourbaksa.com/PC/www/ico/ico_faq_a.png") no-repeat 12px 18px;}
+.insurance_guide dd ul li.end div {width:; border-right:none;}
+
+/* 130926 임혜옥 여행자보험 완료 */
+.insur_done_tit{border:1px solid #dcdcdc;background:#fdfaef;padding:30px 0;text-align:center;position:relative;margin-bottom:30px;}
+.insur_done_tit p{margin-bottom:20px;color:#fc7d09;font-size:28px;line-height:28px;}
+.insur_done_tit span{position:absolute;right:20px;bottom:15px;font-size:13px;line-height:16px;color:#666;}
+.insur_done_tbl{border-top:1px solid #c5c5c5; padding:0; margin-bottom:25px;}  
+.insur_done_tbl table{width:100%;}
+.insur_done_tbl th {padding:10px 0 10px 1%; color:#454545; text-align:left; background:#f4f4f4;border-bottom:1px solid #dcdcdc;}
+.insur_done_tbl th b{color:#f46600}  
+.insur_done_tbl td {padding:10px 0 10px 1%; color:#666; line-height:150%;border-bottom:1px solid #dcdcdc;}
+.insur_done_ul{}
+.insur_done_ul li{line-height:22px;background: url("//cdnimg.tourbaksa.com/PC/www/bul/bul_list_dash.gif") no-repeat 0 11px;color:#666;padding-left:8px;}
+
+.insur_done_dl{color:#fc7d09;margin:20px 0 30px 0;}
+.insur_done_dl dt{}
+.insur_done_dl dd{line-height:22px;padding-left:16px;}
+
+.btn_gray5{display:inline-block;background:#66696c;border:1px solid #575757;font-size:11px;font-weight:bold;color:#fff;padding:9px 30px;}
+.btn_gray5 a{color:#fff;}
+
+/* 130927 백승진 여행자 보험 수정&추가 */
+.insurance_txt {margin:30px 0;line-height:18px;position:relative;}
+.insurance_txt h3 { font-size: 16px;line-height: 30px; margin:30px 0 20px 0; color:#000;}
+.insurance_txt .insurance_menu {width:850px; border:1px solid #dcdcdc;padding:12px 0 8px 0; margin-bottom:20px;}
+
+.insurance_txt .insurance_menu  ul {display:inline-block; clear:both;}
+.insurance_txt .insurance_menu  ul li{float:left; padding:0 0 0 20px; font-size: 14px;}
+.insurance_txt .insurance_menu  ul li a{color:#000;}
+
+.insurance_txt table{width:850px; margin-bottom:10px;}
+.insurance_txt th{background:#f4f4f4;padding:12px 0 12px 0;text-align:center;border-bottom:1px solid #dcdcdc;color:#454545;font-weight:bold;}
+.insurance_txt td{padding:8px 0 8px 0;text-align:center;border-bottom:1px solid #dcdcdc;vertical-align:middle; line-height:25px;}
+.insurance_txt .icon_01 {font-size: 8px;color:#fe922e;}
+
+.insurance_txt .txt_box_00 {background:#f4f4f4; padding:8px 15px 8px 8px; border:1px solid #dcdcdc; color:#666666; margin-top:30px;}
+.insurance_txt .txt_box_01 {background:#f4f4f4; padding:8px 15px 8px 8px; border:1px solid #dcdcdc; color:#666666;}
+.insurance_txt .txt_box_02 {background:#f4f4f4; padding:8px 10px; border:1px solid #dcdcdc; margin-top:20px; color:#666666}
+
+.insurance_txt .faq{position:relative;width:100%;line-height:22px; padding-bottom:10px;}
+.insurance_txt .faq h3{font-size:18px;line-height:30px;}
+.insurance_txt .faq dl{margin-top:10px;}
+.insurance_txt .faq dl dt{background: url("//cdnimg.tourbaksa.com/PC/www/ico/ico_faq_q.png") no-repeat 20px 6px;padding:2px 20px 2px 45px;}
+.insurance_txt .faq dl dd{background: #f4f4f4 url("//cdnimg.tourbaksa.com/PC/www/ico/ico_faq_a.png") no-repeat 20px 19px;border-top:1px solid #dcdcdc;border-bottom:1px solid #dcdcdc;padding:12px 20px 12px 45px;color:#848484;margin-top:5px;}
+
+.insurance_txt ul li a.non_tab{width:130px; height:25px; text-align:center; display:block; padding-top:10px; background:#f4f4f4; border:1px #d8d8d8  solid; font-size:13px; font-weight:bold; color:#66696c; float:left; margin-bottom:30px; }
+.insurance_txt ul li a.on_tab{width:130px; height:25px; text-align:center; display:block; padding-top:10px; background:#ff9733; border:1px #e37a08  solid; font-size:13px; font-weight:bold; color:#FFF; float:left; margin-bottom:30px;}
+
+.insurance_txt .insurance_con01{clear:both;}
+.insurance_txt .insurance_con02{clear:both;}
+.insurance_txt .insurance_con03{clear:both;}
+
+.insurance_txt .insurance_con04{clear:both;}
+.insurance_txt .insurance_con02 table{width:850px; margin-bottom:10px; border:1px solid #dcdcdc;}
+.insurance_txt .insurance_con02 th{background:#f4f4f4;padding:12px 0 12px 0;text-align:center;border-bottom:1px solid #dcdcdc;color:#454545;font-weight:bold;}
+.insurance_txt .insurance_con02 td{padding:8px; text-align:left;border:1px solid #dcdcdc; vertical-align:middle; line-height:20px;}
+.insurance_txt .insurance_con02 .sty_01{text-align:center; padding:8px 6px;}
+
+.insurance_txt .insurance_con03 table{width:850px; margin-bottom:10px;border:1px solid #dcdcdc;}
+.insurance_txt .insurance_con03 th{background:#f4f4f4;padding:12px 0 12px 0;text-align:center;border-bottom:1px solid #dcdcdc; color:#454545;font-weight:bold;}
+.insurance_txt .insurance_con03 td{padding:8px; text-align:center;border:1px solid #dcdcdc; vertical-align:middle; line-height:25px;}
+
+/* 여행 질문과 답변 - 출발지(부산 - 항공, 선박 추가) 2015-01-05 */
+.modlist2.start_tour.startAreaTR {display:table;}
+.modlist2.start_tour.startAreaTR  h4 {display:table-cell;float:left;height:15px;}
+.modlist2.start_tour.startAreaTR .int {padding-bottom:0;}
+.modlist2.start_tour.startAreaTR .rList {padding-left:3px;}
+.modlist2.start_tour.startAreaTR .rList li {float:left;width:auto;}
+
+/* .modlist2.start_tour.departureTrans {display:none;} */
+
+.modlist2.start_tour.departureTrans  h4 {float:left;height:15px;}
+.modlist2.start_tour.departureTrans .int {padding-bottom:0;}
+.modlist2.start_tour.departureTrans .rList {padding-left:3px;}
+.modlist2.start_tour.departureTrans .rList li {float:left;width:auto;}
+
+/* 모바일 - 크롬에서 글씨 크기 크게 보이는 현상 막기 2015-03-10 추가 */
+.subCont {max-height:1000000px;}
+
+/*게시판 탭 추가 */
+.tabList.type1 { clear:both; width:855px; margin:30px auto 0;}
+.tabList.type1 ul {overflow:hidden; clear:both;border-bottom:1px solid #dcdcdc;}
+.tabList.type1 ul li {float:left; width:176px; margin-right:9px;}
+.tabList.type1 ul li.link5 { width:175px;margin-right:0;}
+.tabList.type1 ul li a { display:block; height:34px; line-height:34px;border:1px solid #dcdcdc; border-bottom:0 none;text-align:center; color:#454545;}
+.tabList.type1 ul li a span { color:#ff9733;}
+.tabList.type1 ul li.selected a { background-color:#898989; color:#fff; border-color:#818181;}
+.tabList.type1 ul li.link4 a,
+.tabList.type1 ul li.link5 a { border-bottom:1px solid #dcdcdc;}
+.tabList.type1 ul li.link0 a,
+.tabList.type1 ul li.link2 a,
+.tabList.type1 ul li.link4 a { border-right:0 none;} 
+
+/* tabList */
+.tabList.type2{margin:20px 0 0 0;}
+.tabList.type2 ul { overflow:hidden; clear:both;} /* 20131127 :  clear:both;추가 */
+.tabList.type2 ul li { float:left; padding:0 5px; border-left:1px solid #ccc;}
+.tabList.type2 ul li:first-child{border-left:0;}
+.tabList.type2 ul li a { display:block; color:#494949; font-size:13px;}
+.tabList.type2 ul li.selected a { font-weight:bold; color:#fc7d09}
+
+.new_tour_cust_center_area{padding:0;width:552px;}
+.tour_cust_btn_area{padding-top:0;}
+.tour_cust_btn_area li.last {padding-top:12px;}
+.tour_cust_btn_area li.last a{margin:0;}
+ .new_tour_cust_center_area .tour_cust_center{overflow:hidden;position:relative;width: 100%;height:190px;margin-bottom:0;border:1px solid #e2e2e2;
+-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;}
+ .new_tour_cust_center_area .new_tour__tel{width:56%;margin-top:0;}
+ .new_tour__tel{float:left;;margin-top:0 !important;border-right:1px solid #e2e2e2;font-size:12px;}
+ .new_tour__tel li{position:relative;width:100%;height:27px;line-height: 27px;;border-top:1px solid #e2e2e2;border-left:none;font-weight:bold;color:#454545;line-height:31px;
+-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;}
+ .new_tour__tel li:first-child{height:26px;border-top:none;line-height:31px;}
+.new_tour__tel li:first-child span{line-height:27px;}
+.new_tour__tel li:first-child em{line-height:26px;}
+ .new_tour__tel li a{display:none;}
+ .new_tour__tel li > span{display:block;width:auto;padding:0 0 0 10px;letter-spacing:0;}
+ .new_tour__tel li em{float:left;width:56px;padding-right:0;font-size:12px;line-height:31px;}
+ .new_tour__tel li em.new_tour__tel__customer{padding-top:0;}
+ .new_tour__tel li > span.on{display:block;width:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;}
+ .new_tour__tel li > span.on,
+.new_tour__tel li:hover{background:url(//cdnimg.tourbaksa.com/PC/www/main/ico_tourQna.png) #f4f4f4 no-repeat 96% center;color:#ff7a1f;cursor:pointer;}
+
+ .new_tour__telDetail{position:absolute;left:56%;width:44%;height:190px;padding: 10px 0 0 0;background:#f4f4f4;border-left:1px solid #e2e2e2;top: 0;z-index: 1;font-size:12px;
+-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;}
+ .new_tour__telDetail dl dt.add{width:100%;}
+ .new_tour__telDetail dl dt{float:none;}
+
+
+.new_tour__telDetail p{margin-bottom:15px;padding:0 4px 0 10px;font-size:15px;font-weight:bold;}
+.new_tour__telDetail dl{overflow:hidden;margin-bottom:10px;padding:0 4px 0 10px;}
+.new_tour__telDetail dl dt{float:none;width:100%;}
+.new_tour__telDetail dl dt.add{width:100%;line-height:1.3;letter-spacing:-1px;}
+.new_tour__telDetail dl dd{display:block;float:none !important;color:#454545;font-weight:600;}
+.new_tour__telDetail .tel__guide{overflow:hidden;position:absolute;left:0;bottom:0;width:100%;border-top:1px solid #e2e2e2;}
+.new_tour__telDetail .tel__guide a{display:block;width:100%;height: 52px; padding: 20px 0 0 0;font-size:12px;text-align:left;cursor:pointer;text-align:center;box-sizing: border-box;}
+.new_tour__telDetail .tel__guide a:first-child{border-right:none;}
+.new_tour__telDetail .tel__guide a.location{background:url(//cdnimg.tourbaksa.com/PC/www/main/ico_mapGuide.png) no-repeat 25% center;background-size:13px 18px;}
+.new_tour__telDetail .tel__guide.ty2 a{display:block;float:left;width:49%;padding:34px 0 15px;font-size:13px;text-align:center;cursor:pointer;}
+.new_tour__telDetail .tel__guide.ty2 a:first-child{border-right:1px solid #e2e2e2;}
+.new_tour__telDetail .tel__guide.ty2 a.location{background:url(//cdnimg.tourbaksa.com/PC/www/main/ico_mapGuide.png) no-repeat center 15px;background-size:13px 18px;}
+.new_tour__telDetail a.tel,
+.new_tour__telDetail span.tel{background:url(//cdnimg.tourbaksa.com/PC/www/main/ico_telGuide.png) no-repeat center 15px;background-size:13px 18px;}
+.new_tour__telDetail a.tel{position:absolute;right:2px;bottom:0;z-index:1;}
+
+/* 현금영수증 160502 */
+.cashreceipt{color:#454545;}
+.cashreceipt .tit_bx img{width:100%;}
+.cashreceipt .tabs{overflow:hidden;margin-top:20px;}
+.cashreceipt .tabs li{float:left;width:50%;
+-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.cashreceipt .tabs li a{display:block;padding:24px 0;border:1px solid #d8d8d8;text-align:center;color:#454545;font-size:16px;font-weight:600;line-height:18px;}
+.cashreceipt .tabs li a > span{display:inline;}
+.cashreceipt .tabs li a.on{background:#ff9733;border:1px solid #e37a08;}
+.cashreceipt .tabs li a.on{color:#fff;}
+
+.cashreceipt .fnt18_st{font-size:18px;font-weight:600;}
+.cashreceipt .tit_ty1{padding:30px 0 15px;border-bottom:1px solid #c2c2c2;}
+.cashreceipt .tit_ty2{margin:30px 0 0;padding:12px 20px;background:#f3f5f7;border:1px solid #c2c2c2;font-size:18px;font-weight:600;}
+
+.cashreceipt .cashr_cnt{line-height:1.5;}
+.cashreceipt .cashr_cnt .bx_ty1{overflow:hidden;padding:40px 50px;border:1px solid #ff9733;}
+.cashreceipt .cashr_cnt .bx_ty1 h3{margin-bottom:17px;font-size:18px;font-weight:600;color:#fc7d09;}
+.cashreceipt .cashr_cnt .bx_ty1 ul{overflow:hidden;}
+.cashreceipt .cashr_cnt .bx_ty1 ul li{float:left;position:relative;margin-top:0;padding:20px 0 0 70px;width:33%;height:58px;font-size:14px;letter-spacing:-1px;word-wrap:break-all;
+-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.cashreceipt .cashr_cnt .bx_ty1 ul li:first-child{margin-top:0;}
+.cashreceipt .cashr_cnt .bx_ty1 ul li strong{position:absolute;left:0;top:0;display:inline-block;width:58px;height:58px;background:url(//cdnimg.tourbaksa.com/PC/www/community/cashreceipt/bg_black_circle.png) no-repeat 0 0;background-size:35px 35px;font-size:11px;color:#fff;text-align:center;line-height:58px;}
+.cashreceipt .cashr_cnt .bx_ty1 ul li.area_ty1{padding-top:10px;}
+.cashreceipt .cashr_cnt .bx_ty1 ul li.wid_ty1{width:30%;}
+.cashreceipt .cashr_cnt .bx_ty1 ul li.wid_ty2{width:39%;}
+.cashreceipt .cashr_cnt .bx_ty1 ul li.wid_ty3{width:34%;}
+.cashreceipt .cashr_cnt .bx_ty1 ul li.wid_ty4{width:37%;}
+.cashreceipt .cashr_cnt .bx_ty1 ul li.wid_ty5{width:28%;}
+.cashreceipt .cashr_cnt .bx_ty1 ul li.wid_ty45{width:45%;}
+
+.cashreceipt .cashr_cnt .list_ty1 > li{padding-left:24px;margin-top:12px;background:url(//cdnimg.tourbaksa.com/PC/www/ico/ico_i.png) no-repeat 0 0;font-size:14px;font-weight:600;}
+.cashreceipt .cashr_cnt .list_ty1 > li > p,
+.cashreceipt .cashr_cnt .list_ty1 > li > ul > li{font-weight:normal;}
+.cashreceipt .cashr_cnt .list_ty1 .color{color:#fc7d09;}
+
+.cashreceipt .issue{padding:30px 0;}
+.cashreceipt .issue h5{padding:0 25px 7px;font-size:17px;font-weight:600;}
+.cashreceipt .issue p{padding:0 25px 7px;font-size:14px;}
+.cashreceipt .issue .detail > li{font-size:12px;line-height:1.5;}
+.cashreceipt .issue .color{color:#fc7d09}
+.cashreceipt .issue div{margin:35px 0;}
+.cashreceipt .issue div img{width:100%;}
+.cashreceipt .cashr_cnt .bx_bg_ty1{padding:10px 20px;margin:20px 0;background:#d7f4f3;font-size:14px;}
+.cashreceipt .cashr_cnt .bx_bg_ty1 h6{font-size:14px;font-weight:600;}
+.cashreceipt .issue .img_left{margin-left:30px;}
+.cashreceipt .issue .img_left img{width:auto;}
+.cashreceipt .issue .detail{padding:0 25px;}
+.cashreceipt .cashr_cnt .bx_bg_ty1 p {padding-left:12px;text-indent:-12px;}
+
+/* 0912 추가 : 고객만족도 조사 추가 */
+.subCont.cc {overflow:hidden; float:none; width:854px; max-height:100%; margin:20px auto 0;}
+.qa_list_wrap {width:854px; height:100%; padding:62px 46px 100px; border:1px solid #ccc; box-sizing:border-box;}
+.qa_list_wrap h2.rud_tit {width:365px; padding:15px 0; margin:0 auto 65px; border:1px solid #fda537; border-radius:30px; -webkit-border-radius:30px; -moz-border-radius:30px; color:#fc7d09; font-size:25px; text-align:center;}
+.qa_list li {padding-bottom:20px; margin-bottom:20px; border-bottom:1px solid #e2e2e2;}
+.qa_list li.last {border-bottom:0;}
+.qa_list li > .q {position:relative; top:0; left:0; padding-left:32px; margin-bottom:20px; color:#333; font-size:15px; font-weight:600;}
+.qa_list li > .q:before {position:absolute; top:-3px; left:0; content:''; width:22px; height:22px; background:url("//cdnimg.tourbaksa.com/PC/www/ico/ico_faq_q_2.png") no-repeat;}
+.qa_list li > .a {color:#000; font-size:13px;}
+.qa_list li > .a input {margin-right:5px; vertical-align:middle;}
+.qa_list li > .a input + label {margin-right:10px; vertical-align:middle;}
+.qa_list li > .a > input[type="textbox"] {width:146px; padding:5px 3px; margin-right:10px; border:1px solid #e2e2e2; color:#000; font-size:13px;}
+.qa_list li > .a > textarea {border:1px solid #e2e2e2;}
+.qa_list li > .a .chek_ty1 {margin-top:7px; font-size:12px;}
+.qa_list li > .a .chek_ty1 > span {vertical-align:middle;}
+.btn_ora4.ty1 {width:160px; padding:12px 0; margin-right:5px; font-size:14px; box-sizing:border-box;}
+.btn_bdl1 {display:inline-block; width:160px; padding:12px 0; border:1px solid #a5a5a5; background:#fff; color:#656565; font-size:14px; font-weight:bold;}
+
+/*고객만족도 조사 완료시 추가*/
+.qa_list_wrap.finish {padding:233px 46px 255px;}
+.qa_list_wrap.finish .org_box {width:550px; padding:5px; margin:0 auto 40px; background:#f8871f;}
+.qa_list_wrap.finish .org_box .list_finish_area {padding:50px 0 45px; border:1px solid #fff; text-align:center;}
+.qa_list_wrap.finish .org_box .list_finish_area p {color:#fff; font-size:15px; line-height:28px;}
+.qa_list_wrap.finish .org_box .list_finish_area p > strong {font-size:28px;}
+.qa_list_wrap.finish .list_finish_info {margin-bottom:35px; color:#000; font-size:14px; text-align:center;}
+.qa_list_wrap.finish .list_finish_info > strong.point {color:#e74b01;}
+.qa_list_wrap.finish .btn_gray.ty1 {position:relative; width:182px; padding:10px 10px 10px 0; margin:0; font-size:14px; text-align:center;}
+.qa_list_wrap.finish .btn_gray.ty1:after {position:absolute; top:11px; right:20px; content:''; width:8px; height:12px; background:url("//cdnimg.tourbaksa.com/PC/www/ico/ico_arrow_line_ty1.png") no-repeat;}
+
+/*161101 수정 및 추가 : 여행문의 대전지점 추가*/
+
+.new_tour__telDetail .tel__guide {height:67px;}
+.new_tour__telDetail .tel__guide a {height:43px; padding:26px 0 0 0;}
+
+/* 고객문의게시판 참고문구 */
+.community-info-bottom{clear:both;padding:12px 0 12px 10px;text-align:left;color:#454545;border-bottom:1px solid #dcdcdc;vertical-align:middle;line-height:18px;}
+.community-info-bottom .info-bottom-tit{padding-bottom:3px;color:#ff0000;font-size:13px;}
+.community-info-bottom .info-description{font-weight:600;color:#454545;line-height:20px;}
+.community-info-bottom .info-description .info-description-strong{text-decoration:underline; font-size:13px;}
+.community-info-bottom .info-description .redStrong{color:#ff0000;}
+.tbl_modify.CustomerCenterBoard {background-image:none !important;}

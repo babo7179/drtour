@@ -1,0 +1,1395 @@
+@charset "euc-kr";
+@import "/UI/css/subLayout.css";
+@import "/UI/css/subCommon.css";
+
+/* 국내 레저/입장권 - 상품 리스트 */
+.prd_list_ctl {height:65px; padding:23px 0 0 0;  border-bottom:2px solid #949494;}
+.prd_list_num {display:inline-block;width:100%;float:left; color:#454545;}
+.prd_list_num span {color:#ff921c; font-weight:bold;}
+.prd_list_sort {float:left; margin-top:26px;}
+.prd_list_sort li {float:left; padding-left: 15px; margin-left: 10px; background: url(//cdnimg.tourbaksa.com/PC/www/common/bg_bar_02.gif) no-repeat center left; }
+.prd_list_sort li:first-child {background:none; padding-left:0; margin-left:0;}
+.prd_list_sort li a.y_color {color:#fe922e;} 
+.prd_info {float:left; width:100%;}
+.prd_info ul.prd_list {width:100%;}
+.prd_info ul.prd_list li {border:1px solid #e2e2e2;margin-top:10px;}
+.prd_info ul.prd_list li:first-child {margin-top:15px;}
+.prd_info ul.prd_list li a {display:block;overflow:hidden;position:relative;height:94px;padding:13px 20px 0 130px;}
+.prd_info ul.prd_list li a .img {overflow:hidden;position:absolute;top:0;left:0;width:130px;height:107px;}
+.prd_info ul.prd_list li a .img img {width:100%;height:100%;}
+.prd_info ul.prd_list li a .prd_info_all {margin-top:-5px; padding:0 0 0 10px;}/*padding:5px 0 0 16px;*/
+.prd_info ul.prd_list li a .star {display:block; height:20px; font-size:12px; color:#ff4d1d;}
+.prd_info ul.prd_list li a .tit {display:inline-block; overflow:hidden; width:100%;/* height:32px;*/ margin-top:10px; font-size: 14px; font-weight:bold; /*line-height: 16px;*/ color:#111111; letter-spacing: -1px; }
+.prd_info ul.prd_list li a .tit em {font-size: 13px; color:#959595; font-weight:normal;}
+.prd_info ul.prd_list li a .price_rate {float: left;  display:inline-block; width:47px; margin:25px 5px 0 0; color:#f46712; font-size:23px; font-weight:bold;}
+.prd_info ul.prd_list li a .price_rate em {font-size: 18px; }
+.prd_info ul.prd_list li a .price_sale {float: left; display:inline-block; width:89px; margin-top:15px; line-height:150%; font-size:12px; font-weight:bold; color:#111111; letter-spacing:-1px;}
+.prd_info ul.prd_list li a .price_sale em {color:#848484; text-decoration:line-through; }
+.prd_info ul.prd_list li a .price_sale span {font-size: 16px; color:#454545;}
+.prd_info ul.prd_list li a .person {display:none;}
+
+
+html.tablet .prd_list_ctl {height:20px; margin:20px 0 10px; border-bottom:0;}
+html.tablet .prd_list_ctl .prd_list_num {float:left;width:30%; color:#454545;}
+html.tablet .prd_list_ctl .prd_list_num span {color:#ff921c; font-weight:bold;}
+html.tablet .prd_list_ctl .prd_list_sort {float:right; margin-top:0;}
+html.tablet .prd_list_ctl .prd_list_sort li {float:left; padding-left: 15px; margin-left: 10px; background: url(//cdnimg.tourbaksa.com/PC/www/common/bg_bar_02.gif) no-repeat center left; }
+html.tablet .prd_list_ctl .prd_list_sort li:first-child {background:none;}
+html.tablet .prd_list_ctl .prd_list_sort li a.y_color {color:#fe922e;} 
+html.tablet .prd_info ul.prd_list {width:100%;}
+html.tablet .prd_info ul.prd_list li {float:left;width:228px; height:250px; margin:0 12px 20px 0;}
+html.tablet .prd_info ul.prd_list li.rig {margin-right:0;}
+html.tablet .prd_info ul.prd_list li a {width:100%;height:102px;padding:140px 0 0 0;}
+html.tablet .prd_info ul.prd_list li a .img {width:100%;height:140px;}
+html.tablet .ticket_sel_list {overflow:hidden; width:auto; margin:15px 0 0; padding:0 12px 12px 12px; border:1px solid #e2e2e2; }
+html.tablet .ticket_sel_list li, html.tablet .ticket_sel_list li.bgnone {float:left; width:auto; margin-left:8px; padding-left:8px; background:url(//cdnimg.tourbaksa.com/PC/www/common/bg_bar_02.gif) no-repeat center left; font-size:13px; color:#333;}
+html.tablet .ticket_sel_list li:first-child {margin-left:0; padding-left:0; background:none;}
+html.tablet .ticket_sel_list li a:hover {color:#333; font-weight:bold;}
+html.tablet .ticket_sel_list li a.on {color:#333; font-weight:bold;}
+html.tablet .prd_info ul.prd_list li a .prd_info_all {padding:15px 0 0 10px;}/*padding:20px 0 0 16px;20150525수정*/
+html.tablet .prd_info ul.prd_list li a .star {display:block; height:20px; font-size:12px; color:#ff4d1d;}
+html.tablet .prd_info ul.prd_list li a .tit {display:block; overflow:hidden; width:100%; height:35px; font-size: 14px; font-weight:bold; line-height: 18px; color:#111111; letter-spacing: -1px; margin-bottom:10px;}
+html.tablet .prd_info ul.prd_list li a .tit em {font-size: 13px; color:#959595; font-weight:normal;}
+html.tablet .prd_info ul.prd_list li a .price_rate {text-align:left; display:block;width:60px; margin:28px 8px 0 0; color:#f46712; font-size:28px; font-weight:bold; padding-top:0; margin-top:0; }
+html.tablet .prd_info ul.prd_list li a .price_rate em {font-size: 18px; }
+html.tablet .prd_info ul.prd_list li a .price_sale {float: left; display:inline-block; width:72px; line-height:150%; font-size:12px; font-weight:bold; color:#111111; letter-spacing:-1px; margin-top:0; padding-top:0;}
+html.tablet .prd_info ul.prd_list li a .price_sale em {color:#848484; text-decoration:line-through; }
+html.tablet .prd_info ul.prd_list li a .price_sale span {font-size: 16px; color:#454545;}
+html.tablet .prd_info ul.prd_list li a .person {display:inline-block; padding-top:16px; color:#898989; font-size:9px;}
+
+
+html.desktop .prd_list_ctl {height:20px; margin:20px 0 10px; border-bottom:0;}
+html.desktop .prd_list_ctl .prd_list_num {float:left;width:30%; color:#454545;}
+html.desktop .prd_list_ctl .prd_list_num span {color:#ff921c; font-weight:bold;}
+html.desktop .prd_list_ctl .prd_list_sort {float:right; margin-top:0;}
+html.desktop .prd_list_ctl .prd_list_sort li {float:left; padding-left: 15px; margin-left: 10px; background: url(///cdnimg.tourbaksa.com/PC/www/common/bg_bar_02.gif) no-repeat center left; }
+html.desktop .prd_list_ctl .prd_list_sort li:first-child {background:none;}
+html.desktop .prd_list_ctl .prd_list_sort li a.y_color {color:#fe922e;} 
+html.desktop .prd_info ul.prd_list {width:100%;}
+html.desktop .prd_info ul.prd_list li {display:block; overflow:hidden; float:left; position:relative; width:268px; height:250px; margin:0 21px 15px 0;}
+html.desktop .prd_info ul.prd_list li.rig {margin-right:0;}
+html.desktop .prd_info ul.prd_list li a { display:block; width:100%;height:252px; padding:0;}
+html.desktop .prd_info ul.prd_list li a .img {overflow:hidden; width:100%;height:140px;}
+html.desktop .prd_info ul.prd_list li a .prd_info_all {padding:20px 0 16px 14px; height:85px;}
+html.desktop .prd_info ul.prd_list li a .person {float:left; margin-top:23px; font-size:9px;}
+html.desktop .ticket_sel_list {overflow:hidden; width:auto; margin:15px 0 0; padding:0 12px 12px 12px; border:1px solid #e2e2e2; }
+html.desktop .ticket_sel_list li, html.desktop .ticket_sel_list li.bgnone {float:left; width:auto; margin-left:8px; padding-left:8px; background:url(//cdnimg.tourbaksa.com/PC/www/common/bg_bar_02.gif) no-repeat center left; font-size:13px; color:#333;}
+html.desktop .ticket_sel_list li:first-child { margin-left:0; padding-left:0; background:none;}
+html.desktop .ticket_sel_list li a:hover {color:#333; font-weight:bold;}
+html.desktop .ticket_sel_list li a.on {color:#333; font-weight:bold;}
+html.desktop .prd_info ul.prd_list li a .prd_info_all {height:90px; margin-top:161px; padding:0 0 0 16px;}
+html.desktop .prd_info ul.prd_list li a .star {display:block; height:20px; font-size:12px; color:#ff4d1d;}
+html.desktop .prd_info ul.prd_list li a .tit {display:block; overflow:hidden; width:100%; height:35px; font-size: 14px; font-weight:bold; line-height: 18px; color:#111111; letter-spacing: -1px; margin-bottom:5px;}
+html.desktop .prd_info ul.prd_list li a .tit em {font-size: 13px; color:#959595; font-weight:normal;}
+html.desktop .prd_info ul.prd_list li a .price_rate {/*float: left;*/text-align:left; display:block; width:58px; margin:0; margin-right:15px; padding-top:0; color:#f46712; font-size:30px; font-weight:bold; }/*수정2015-05-22*/
+html.desktop .prd_info ul.prd_list li a .price_rate em {font-size: 18px; }
+html.desktop .prd_info ul.prd_list li a .price_sale {float: left; display:block; width:80px; line-height:150%; font-size:12px; font-weight:bold; color:#111111; letter-spacing:-1px; margin-top:0;}
+html.desktop .prd_info ul.prd_list li a .price_sale em {color:#848484; text-decoration:line-through; }
+html.desktop .prd_info ul.prd_list li a .price_sale span {font-size: 16px; color:#454545;}
+html.desktop .prd_info ul.prd_list li a .person {display:block;float:left;color:#898989; margin-left:10px;}
+
+.pg1{clear:both; padding:20px 0 15px; text-align: center; }
+.pg1 a{display: inline-block; height: 16px; font-size: 16px; font-weight: bold; margin: 0 3px; }
+.pg1 .on{color: #ff4d1d; }
+.pg1 .peFir{width: 19px; background: url(///cdnimg.tourbaksa.com/PC/www/common/pg_pe_fir.gif) no-repeat 0 1px; text-indent: -100000px; }
+.pg1 .pePv{width: 12px; background: url(///cdnimg.tourbaksa.com/PC/www/common/pg_pe_pv.gif) no-repeat 0 1px; text-indent: -100000px; }
+.pg1 .peNt{width: 12px; background: url(///cdnimg.tourbaksa.com/PC/www/common/pg_pe_nt.gif) no-repeat 0 1px; text-indent: -100000px; }
+.pg1 .peEnd{width: 19px; background: url(///cdnimg.tourbaksa.com/PC/www/common/pg_pe_end.gif) no-repeat 0 1px; text-indent: -100000px; }
+
+/* paging */
+		.paging {text-align:center;clear:both;padding:30px 0 50px;overflow:hidden;}
+		.paging > a {display:inline-block;vertical-align:top;/* margin-right:5px; */margin-bottom:3px;}
+		.paging span.pag_num {display:inline-block;vertical-align:top;margin:0 20px;}
+		.paging span.pag_num span {display:inline-block;/* margin-right:5px; */}
+		.paging span.pag_num span.on {display:inline-block;vertical-align:top;width:34px;height:34px;margin-bottom:3px;border:1px solid #e37a08;background:#ff9733;/* margin-right:5px; */color:#fff;font-weight:bold;text-align:center;line-height:32px;}
+		.paging span.pag_num a{display:inline-block;vertical-align:top;width:34px;height:34px;margin-bottom:3px;border:1px solid #ccc;background:#fff;text-align:center;line-height:32px;}
+
+/*탭- 티켓리스트*/
+		.ticket_sel_list {overflow:hidden; width:97%; padding:0 0 13px 7px; margin:15px 0 0; border:1px solid #e2e2e2; }
+		.ticket_sel_list:first-child {margin-top:0;}
+		.ticket_sel_list li {float:left; width:48%; padding-left:8px; margin-top:16px; background:url(//cdnimg.tourbaksa.com/PC/www/common/bg_bar_02.gif) no-repeat center left; font-size:13px; color:#333;}
+		.ticket_sel_list li.bgnone{background:none; padding-left:0;}
+		.ticket_sel_list li:first-child {margin-left:0; padding-left:0; background:none;}
+		.ticket_sel_list li a:hover {color:#333; font-weight:bold;}
+		.ticket_sel_list li a.on {color:#333; font-weight:bold;}
+
+/* 하단부터 패스부분 가져옴*/
+
+/* list */
+
+/* top */
+.subCont .passContTit {overflow:hidden;}
+.subCont .passContTit h2 {float:left;font-size:24px;color:#fc7d09;font-weight:bold;}
+.btnCart {display:block;width:31px;height:25px; margin-left:2px;float:right;background:url(//cdnimg.tourbaksa.com/PC/www/ico/ico_basket_m.png) no-repeat 0 0}/* 2015-08-07 수정 */
+.contWrap .leftCont .innerCont{text-align:center}
+.contWrap .rightCont{position:relative;margin-top:20px;}
+
+/* banner rolling */
+.contWrap .leftCont .innerCont.bannerWrap {position:relative;overflow:hidden;border:0 none !important;/*border:1px solid #e2e2e2;*/z-index:10}
+.bannerWrap ul.promotionBanner,
+.bannerZone ul.recomBanner {position:relative;overflow:hidden;width:1000%;height:100%;z-index:9}
+.bannerWrap .promotionBanner li,
+.recommTour .contInner .bannerZone li {float:left;width:10%;margin:0;overflow:hidden}
+.recommTour .contInner .bannerZone li img {width:100%;}
+.bannerWrap .promotionBanner li img {width:100%;height:138px;}
+.passCont .rinkGroup ul {padding-top:0;border:0 none;}
+.contactArea .rinkGroup li {padding:14px 0 14px 15px;margin-bottom:5px;border:1px solid #c5c5c5;background:#f4f4f4 url(//cdnimg.tourbaksa.com/PC/www/btn/btn_move.png) no-repeat 94% center;line-height:18px;color:#222;font-weight:bold;font-size:14px;line-height:20px;}
+.contactArea .rinkGroup li:first-child {}
+.contactArea .rinkGroup li a {display:block;}
+.contactArea .rinkGroup li span {font-size:11px;color:#666;} /* 20131119 : color:#888; -> color:#666; */
+
+/* passTicket list */
+.passTicket .contBox {margin:20px 0 20px;}
+.passTicket .contBox > ul > li {padding:15px 14px;border-top:1px solid #e2e2e2;}
+.passTicket .contBox > ul > li:first-child {border-top:0 none;}
+.topTitArea {padding-bottom:0;}/*수정2015-05-25*/
+.topTitArea h4 {float:left;font-size:14px;color:#454545;}
+.topTitArea .txtTab{float:right;font-size:13px;line-height:14px;}
+.topTitArea .txtTab .on{font-weight:bold;color:#fc7d09;}
+.topTitArea .txtTab span{margin:0 5px;color:#ccc;}
+.passList {overflow:hidden;clear:both;}
+.passList li {margin-top:7px;padding-left:6px;background:url(///cdnimg.tourbaksa.com/PC/www/bul/bul_list_dot.gif) no-repeat left 7px;line-height:14px;}
+.passList li a {letter-spacing:-1px;}
+.passList.twoRows li {float:left;width:48%;}
+.passList li a {color:#848484;}
+.passList3 {overflow:hidden;clear:both;}
+.passList3 li {margin-top:7px;padding-left:6px;background:url(///cdnimg.tourbaksa.com/PC/www/bul/bul_list_dot.gif) no-repeat left 7px;line-height:14px;}
+.passList3 li a {letter-spacing:-1px;}
+.passList3.twoRows li {float:left;width:100%;}
+.passList3 li a {color:#848484;}
+.conTop .category {overflow:hidden;} /* 2015-01-19 수정 */
+.conTop .category li {float:left;width:40%;border-top:1px solid #9b9da0;background-color:#85878a;} /* 2015-01-19 수정 */
+.conTop .category li a {display:block;height:100%;padding:14px 0;border-left:1px solid #9b9da0;color:#fff;text-align:center;letter-spacing:-1px;}
+.conTop .category li.on {border-top:1px solid #fe922e;background-color:#fe922e;}
+.conTop .category li.on a {font-weight:bold;background-color:#fe922e;}
+.conTop .category li.all a {background-color:#53565b;}
+.conTop .category li.mFirst a {border-left:0 none;}
+.conTop .category li.long {width:60%;background-color:#85878a;} /* 2015-01-19 수정 */
+.conTop .category li.short {width:30%;background-color:#85878a;} /* 2015-01-19 수정 */
+
+/* passTicket detail */
+.passTicketItem .topTitArea {margin-top:10px;}
+.topTitArea .btnArea a {border:1px solid #e2e2e2;}
+.topTitArea .btnArea a:first-child {border-right:0px;}
+.passTicketItem .innerCont ul {overflow:hidden;}
+.passTicketItem .innerCont li {float:left;position:relative;width:98%;min-height:202px;margin-bottom:9px;margin-left:4px;border:1px solid #e2e2e2;background-color:#fff;z-index:1;}
+
+.passTicketItem .btnGroup .wish{display:none;}
+.passTicketItem .btnGroup .basket {float:left;margin-left:5px;}
+.passTicketItem .innerCont li strong{line-height:18px;}
+
+.mHidden {display:none;}
+.passTicketItem .innerCont li:first-child {}
+.passTicketItem .innerCont li span.discount {display:block;position:absolute;left:-6px;top:-1px;width:55px;height:23px;padding-top:5px;background:url(///cdnimg.tourbaksa.com/PC/www/sub/bg_discount.png) no-repeat left top;font-size:11px;color:#fff;text-align:center;letter-spacing:-1px;text-indent:-4px;}
+.passTicketItem .innerCont li span.localImg {display:block;min-height:100px;overflow:hidden;text-align:center;}
+.passTicketItem .innerCont li span.localImg a {display:block;}
+.passTicketItem .innerCont li span.localImg > a > img {width:100%;height:300px;} /* 2015-03-05 추가 */
+
+html.ie8.tablet .passTicketItem .innerCont ul{overflow:hidden;margin-left:-1.7%;} /* 2015-01-20 수정 */
+html.ie8.desktop .passTicketItem .innerCont ul{overflow:hidden;margin-left:-1.7%;} /* 2015-01-20 수정 */
+
+/*.passTicketItem .innerCont li .pic {width:100%;min-width:304px;}*/ /* 2015-01-19 수정 */
+.passTicketItem .innerCont li .contInfo{position:relative;width:94%;margin-top:-3px;padding:15px 3%;background:url(///cdnimg.tourbaksa.com/PC/www/sub/bg_passVisu.png) repeat-x left top;}
+.passTicketItem .innerCont li .contInfo strong {display:block;padding-bottom:8px;color:#454545;font-size:14px;}
+.passTicketItem .innerCont li .contInfo span {font-size:16px;letter-spacing:-1px;}
+.passTicketItem .btnGroup {overflow:hidden;padding:0 3% 10px 3%;}
+.passTicketItem .btnGroup .basket {float:right;}
+.passTicketItem .deBtn.type4 {float:left;}
+.passTicketItem .btnGroup .deBtn.type5.wish {position:static;width:28px;}
+html.ie7 .passTicketItem .btnGroup .deBtn.wish {margin-left:4px;}
+
+html.tablet .passTicketItem .innerCont li span.localImg > a > img {width:100%;height:100px;} /* 2015-01-20 수정 */
+html.desktop .passTicketItem .innerCont li span.localImg > a > img {width:100%;height:100px;} /* 2015-01-20 수정 */
+
+/* subBVisu*/
+.subBVisu{position:relative;overflow:hidden; margin:20px 0;min-width:304px;height:270px;}
+.subBVisu .btnArea a{top:33%;z-index:2}
+.subBVisu .btnArea a.btnPre{left:10px}
+.subBVisu .btnArea a.btnNext{right:10px;}
+.subBVisu .innerCont{position:absolute;overflow:hidden; width:1000%; height:270px; left:50%; top:0; margin-left:-434px;}
+.subBVisu ul.clearfix{position:absolute;left:0;top:0;width:1000%;height:270px}
+.subBVisu ul.clearfix li{float:left;margin:0 10px;}
+.subBVisu ul.clearfix li .pic{width:100%;}/* max-width:265px; */
+
+
+/* onlyDesktop layoutTypeC */
+/* topTitArea */
+body.onlyDesktop .layoutTypeC .topTitArea{padding-left:0px;border-bottom:0px;}
+body.onlyDesktop .layoutTypeC .topTitArea h4{margin-top:0}
+body.onlyDesktop .layoutTypeC .enterInfo{padding:15px 0;border-top:2px solid #949494;border-bottom:1px solid #e2e2e2}
+body.onlyDesktop .layoutTypeC .noLine{padding-bottom:0;border-bottom:0 none;}
+body.onlyDesktop .enterInfo .rates {margin-top:15px;}
+body.onlyDesktop .bbsType1 tr.lastTr td {border-bottom:1px solid #ff9733;}
+
+body.onlyDesktop .layoutTypeC .pay_Info{padding:15px 0 5px 0;border:1px solid #ecd0a8; color:#e74b00;}
+body.onlyDesktop .layoutTypeC .pay_Info li{line-height:14px;padding-bottom:10px;padding-left:23px;background:url(///cdnimg.tourbaksa.com/PC/www/bul/bul_list_dot_02.gif) no-repeat 15px 6px; font-weight:bold;}
+body.onlyDesktop .layoutTypeC .pay_Info li:first-child {font-weight:normal;}
+
+/* enter Info */
+body.onlyDesktop .buyingStep {overflow:hidden; width:100%; padding:0 0 18px; background:url(///cdnimg.tourbaksa.com/PC/www/sub/bg_reservationInfo.gif) repeat-x left bottom; }
+body.onlyDesktop .buyingStep .entry {float:left;overflow:hidden; width:54%; height:36px; color:#d7d7d7; line-height:36px; vertical-align:middle; border-left:0; border-right:0;}
+body.onlyDesktop .buyingStep .entry .new_resize {width:111px;} /* 20140217 */
+body.onlyDesktop .buyingStep .entry.mPhone,
+body.onlyDesktop .buyingStep .entry.mail {width:46%;}
+body.onlyDesktop .buyingStep strong {display:block; float:left; width:17%; height:32px; font-size:14px; color:#454545; line-height:32px;letter-spacing:-1px;}
+body.onlyDesktop .buyingStep strong.new_add_city {width:100px; padding-right:20px;} /* 20140217 */
+body.onlyDesktop .buyingStep .new_add_city_inputBox {width:530px; padding-right: 4px; background-color: #FFFFFF; border: 1px solid #E2E2E2; height: 20px; line-height: 20px; color: #666666; font-size: 12px; margin: 0; vertical-align: middle;}/* 20140217 */
+body.onlyDesktop .buyingStep strong sub {position:relative; top:-3px; font-size:14px; color:#e54c01;}
+body.onlyDesktop .buyingStep span {display:block; float:left; width:82%; height:36px; line-height:32px; color:#848484;}
+body.onlyDesktop .buyingStep .inputBox {width:230px;padding:0 4px;}
+body.onlyDesktop .buyingStep .mPhone input {width:61px;}
+body.onlyDesktop .buyingStep .point input {width:130px;}
+body.onlyDesktop .buyingStep select {width:65px;}
+body.onlyDesktop .buyingStep em.dash {display:inline-block; width:16px; text-align:center; color:#d7d7d7;}
+body.onlyDesktop .buying .enterInfo h5 {padding-top:26px;font-size:15px;color:#333;}
+body.onlyDesktop .buying .enterInfo ul {margin-top:15px;}
+body.onlyDesktop .buying .enterInfo ul li {line-height:18px;}
+body.onlyDesktop .request {border-top:1px solid #e2e2e2;}
+body.onlyDesktop textarea {width:100%;margin:15px 0 25px;font-size:12px;}
+body.onlyDesktop .request textarea {margin-bottom:0;}
+body.onlyDesktop .road { border:1px solid #e2e2e2; width:180px; padding:0 4px;}
+
+body.onlyDesktop .buyingStep.recieveInfo {display:none;padding:15px 0 18px;background-image:none;}
+body.onlyDesktop .buyingStep.recieveInfo.visit {display:block;}
+body.onlyDesktop .recieveInfo .entryList {overflow:hidden;}
+body.onlyDesktop .recieveInfo .entry {width:216px;}
+body.onlyDesktop .recieveInfo .entry strong {width:auto;padding-right:20px;}
+body.onlyDesktop .recieveInfo .entry span {position:relative;width:auto;}
+body.onlyDesktop .recieveInfo .entry .inputBox {width:82px;padding-right:23px;}
+body.onlyDesktop .recieveInfo .entry a {display:block;position:absolute;left:92px;top:0;}
+body.onlyDesktop .buyingStep.recieveInfo .branch {width:300px;}
+body.onlyDesktop .buyingStep.recieveInfo .branch select {width:190px;}
+body.onlyDesktop .buyingStep.recieveInfo .branch select.minute {margin-right:10px;}
+body.onlyDesktop .enterInfo .noti {height:14px;padding-bottom:8px;padding-left:8px;background:url(///cdnimg.tourbaksa.com/PC/www/bul/bul_list_dot_02.gif) no-repeat left 7px;}
+body.onlyDesktop .buyingStep span label {margin:0 15px 0 3px;}
+body.onlyDesktop .enterInfo .guideList li {padding-bottom:10px;padding-left:8px;background:url(///cdnimg.tourbaksa.com/PC/www/bul/bul_list_dot_02.gif) no-repeat left 9px;}
+body.onlyDesktop .enterInfo .guideList li a.viewBtn {display:inline-block;width:32px;height:18px;margin-left:5px;border:1px solid #ccc;text-align:center;background-color:#f4f4f4;font-size:11px;}
+body.onlyDesktop .itemInfo .btnArea,
+body.onlyDesktop .buying .btnArea {padding-top:30px;text-align:center;}
+body.onlyDesktop .itemInfo .btnArea .deBtn.type0,
+body.onlyDesktop .itemInfo .btnArea .deBtn.type3,
+body.onlyDesktop .itemInfo .btnArea .deBtn.type4,
+body.onlyDesktop .buying .btnArea .deBtn.type0,
+body.onlyDesktop .buying .btnArea .deBtn.type3,
+body.onlyDesktop .buying .btnArea .deBtn.type4 {display:inline-block;width:158px;height:37px;margin:0 4px;line-height:34px;vertical-align:middle;font-size:12px;letter-spacing:-1px;}
+
+body.onlyDesktop .buyingStep.delivery .entry,
+body.onlyDesktop .buyingStep.airport .entry {float:none;width:100%;}
+body.onlyDesktop .buyingStep.airport .entry.meettngPlace {height:80px;line-height:60px;} /* 2015-03-09 수정 */
+body.onlyDesktop .buyingStep.delivery .entry strong,
+body.onlyDesktop .buyingStep.airport .entry strong {width:100px;}
+body.onlyDesktop .buyingStep.airport .entry span {width:700px;}
+body.onlyDesktop .buyingStep.airport .entry span span {height:28px;line-height:28px;}
+body.onlyDesktop .buyingStep.delivery .deBtn.type5 {width:102px;margin-right:20px;margin-left:8px;}
+body.onlyDesktop .recieveInfo.delivery .entry.notes .inputBox {width:530px;padding-right:4px;}
+body.onlyDesktop .recieveInfo.delivery .entry.notes .address_inputBox {width:262.5px; padding-right:4px; background-color: #FFFFFF; border: 1px solid #E2E2E2; height: 20px; line-height: 20px;} /* 20140117 : 주소 인풋박스 추가 */
+body.onlyDesktop .pointR {font-weight:bold;color:#e54c01;}
+body.onlyDesktop .recieveInfo strong.pointR {float:none;margin:10px 0;text-decoration:underline;font-size:13px;}
+body.onlyDesktop .enterInfo .guideList .guideList {margin-top:0;}
+body.onlyDesktop .enterInfo .guideList .guideList .pointR {font-weight:normal;}
+body.onlyDesktop .enterInfo .guideList .new_add {float:none; width:100%; border-left: 0 none; border-right: 0 none; color: #D7D7D7; height: 36px; line-height: 36px; overflow: hidden; vertical-align: middle;}
+
+body.onlyDesktop .confirm .bbsType1 {margin-top:15px;}
+body.onlyDesktop .buyingStep.noBottom {background:none;}
+body.onlyDesktop .buyingStep.buyingStep2 {padding-bottom:0;background:none;}
+body.onlyDesktop .buyingStep.underLine {border-bottom:1px solid #e2e2e2;}
+body.onlyDesktop .confirm .request {border-top:0 none;}
+body.onlyDesktop .confirm .request h5 {padding-top:5px;}
+body.onlyDesktop .confirm .buyingStep .entry {width:50%;}
+body.onlyDesktop .confirm .buyingStep .entry.floatNone {float:none;}
+body.onlyDesktop .confirm .buyingStep strong {width:122px;}
+body.onlyDesktop .confirm .buyingStep.account {margin-bottom:20px;}
+body.onlyDesktop .confirm .buyingStep.account .entry {width:230px;}
+body.onlyDesktop .confirm .buyingStep.account strong {width:80px;}
+body.onlyDesktop .confirm .buyingStep span {width:auto;}
+body.onlyDesktop .buying .enterInfo .notiList {margin:8px 0;}
+body.onlyDesktop .confirm .buyingStep.account span .inputBox {width:100px;}
+body.onlyDesktop .confirm .buyingStep.account select {width:140px;}
+body.onlyDesktop .buyingStep.cashBox {padding-bottom:0;}
+body.onlyDesktop .confirm .buyingStep .cashReceipt {width:210px;}
+body.onlyDesktop .confirm .buyingStep .cashReceipt label {padding-left:5px;font-size:13px; color:#454545; font-weight:bold;vertical-align:middle;}
+body.onlyDesktop .confirm .buyingStep .cashUse {padding-right:40px;vertical-align:middle;}
+body.onlyDesktop .confirm .buyingStep .cashUse em {display:inline-block;padding-right:20px;color:#454545;font-weight:bold;font-size:13px;}
+body.onlyDesktop .confirm .buyingStep .cashUse *,
+body.onlyDesktop .confirm .buyingStep .socialNum * {vertical-align:middle;}
+body.onlyDesktop .buyingStep .socialNum .inputBox {width:150px;}
+body.onlyDesktop .confirm .btnArea {margin-bottom:60px;}
+
+body.onlyDesktop .costArea {overflow:hidden;margin:10px 0 20px;padding:45px 70px; border:2px solid #ff9733; text-align:center;}
+body.onlyDesktop .costArea > div {float:left;padding:0 40px;}
+body.onlyDesktop .costArea > div.point {padding:0 50px;}
+body.onlyDesktop .costArea span {display:block;width:auto;text-align:center;margin-bottom:5px;line-height:24px;vertical-align:middle;color:#ff9733;font-weight:bold;}
+body.onlyDesktop .costArea span em {display:inline-block; padding-right:4px;font-size:13px; color:#4a4a4a; text-align:left;}
+body.onlyDesktop .costArea span em.pointR {color:#e54c01;}
+body.onlyDesktop .costArea .price {line-height:28px;font-size:18px;color:#e74b01;text-align:right;}
+body.onlyDesktop .costArea .price em {font-size:28px;color:#e74b01;vertical-align:0;letter-spacing:-1px;}
+body.onlyDesktop .costArea .price em.minus {padding-left:0;}
+body.onlyDesktop .costArea .totalBox {float:right;padding:0 25px;}
+body.onlyDesktop .costArea img {float:left;display:inline-block;width:17px;padding-top:26px;}
+
+body.onlyDesktop .confirm p.reservNum {margin-top:10px;font-size:13px;font-weight:bold;color:#454545;}
+body.onlyDesktop .confirm span em {font-weight:bold;}
+body.onlyDesktop .confirm .infoBox {margin-top:30px;padding:25px;border:1px solid #ecd0a8;}
+body.onlyDesktop .confirm .infoBox h4 {margin:0;padding-bottom:10px;color:#fc7d09}
+body.onlyDesktop .confirm .infoBox h5 {font-size:13px;padding-top:8px;}
+body.onlyDesktop .confirm .infoBox ul {margin-top:10px;}
+body.onlyDesktop .confirm .infoBox .pointR {font-weight:normal;}
+body.onlyDesktop .confirm .infoBox .newyear {background:#FEFAEF; overflow:hidden; margin:5px -10px -10px; padding:10px; border:1px solid #ECD0A8;} /* 20140121 : 설연휴 공지 영역 추가 */
+body.onlyDesktop .confirm .infoBox .newyear h5 .viewBtn {background-color: #ffbf44; border: 1px solid #f5a700; display: inline-block; font-size: 13px; height: 18px; line-height:18px; margin-left: 10px; text-align: center; width: 76px; color:#FFF;}
+
+body.onlyDesktop .itemInfo em.point {font-weight:bold;}
+body.onlyDesktop .itemInfo .enterInfo {padding:15px 0;margin-bottom:20px;border-top:3px solid #949494;border-bottom:1px solid #e2e2e2}
+body.onlyDesktop .itemInfo .enterInfo.noLine {padding-bottom:30px;}
+body.onlyDesktop .itemInfo .buyingStep .entry {width:100%;}
+body.onlyDesktop .itemInfo .buyingStep strong {width:120px;}
+body.onlyDesktop .itemInfo .buyingStep > span {width:700px;}
+body.onlyDesktop .itemInfo .buyingStep .homepage {height:60px;line-height:60px;}
+body.onlyDesktop .itemInfo .buyingStep .homepage span span {height:22px;line-height:30px;}
+body.onlyDesktop .itemInfo .buyingStep .homepage a {display:inline-block;padding-right:10px;color:#666;background:url(///cdnimg.tourbaksa.com/PC/www/common/arrow_01.gif) no-repeat right 9px;}
+
+body.onlyDesktop .itemInfo .topTitArea {padding-top:10px;}
+body.onlyDesktop .itemInfo .topTitArea .txtTab .current{color:#454545;font-weight:bold;}
+body.onlyDesktop .itemInfo .topTitArea .txtTab a:first-child{padding-right:10px;margin-right:5px;background:url(///cdnimg.tourbaksa.com/PC/www/common/bg_bar_03.gif) no-repeat right center}
+body.onlyDesktop .itemInfo .provision .inner{height:200px;overflow-y:scroll;line-height:18px;padding:20px;color:#848484;border:1px solid #dcdcdc;background-color:#f4f4f4}
+body.onlyDesktop .itemInfo .provision .inner h4{margin-bottom:5px;color:#666}
+body.onlyDesktop .itemInfo .provision .inner p{margin-bottom:28px;}
+body.onlyDesktop .itemInfo .provision .guide{margin-top:12px;line-height:18px;color:#555;font-weight:bold;}
+body.onlyDesktop .itemInfo .provision .agreeArea{margin:15px 0 25px 12px;color:#666}
+body.onlyDesktop .itemInfo .provision .agreeArea li{display:inline;margin-right:40px;}
+body.onlyDesktop .itemInfo .provision .guide span{display:block}
+body.onlyDesktop .itemInfo .btnArea {padding-top:10px;}
+
+body.onlyDesktop .itemInfo .topTitArea .txtTab a.pass_agree{padding-right:10px;margin-right:5px;background:url(///cdnimg.tourbaksa.com/PC/www/common/bg_bar_03.gif) no-repeat right center}
+
+/*!
+ * Tablet
+ * min-width:768px and max-width:959px
+ **/
+
+/* list */
+
+/* top */
+html.tablet .btnCart {width:42px;height:42px;background:url(///cdnimg.tourbaksa.com/PC/www/ico/ico_basket.png) no-repeat 0 0}
+html.tablet .passCont .contWrap {margin-top:5px;}
+html.tablet .passCont .contWrap .leftCont {float:left;width:66.1%;}
+html.tablet .passCont .contWrap .rightCont {float:right;width:30.5%;margin-top:41px;}
+html.tablet .contactArea .rinkGroup li {padding:14px 0 13px 15px;margin-bottom:9px;}
+html.tablet .contactArea .rinkGroup li:first-child {}
+
+/* banner rolling */
+html.tablet .bannerZone ul.recomBanner {position:relative;overflow:hidden;width:1000%;height:100%;}
+html.tablet .airCon .contWrap .rightCont .promotionBanner li,
+html.tablet .recommTour .contInner .bannerZone li {float:left;width:10%;margin:0;}
+html.tablet .bannerWrap .promotionBanner li {height:212px;}
+html.tablet .bannerWrap .promotionBanner li img{width:100%;height:212px;}
+html.tablet .recommTour .contInner .bannerZone li img {width:100%;}
+
+/* passTicket list */
+html.tablet .passTicket .contBox {width:auto;}
+html.tablet .passTicket .contBox > ul {overflow:hidden;}
+html.tablet .passTicket .contBox > ul > li {float:left;width:28.22%;padding:20px 2.5%;border-left:1px solid #e2e2e2;height:137px !important;}
+html.tablet.ie7 .passTicket .contBox > ul > li {width:28.16%;}
+html.tablet .passTicket .contBox > ul > li.firstRow {border-left:0 none;}
+html.tablet .passTicket .contBox > ul > li.firstCol {border-top:0 none;}
+html.tablet .passList.twoRows.clearRows {height:105px;}
+html.tablet .passList.secondRow {height:84px;}
+html.tablet .passList.twoRows.clearRows li {float:none;width:100%;}
+html.tablet .passTicket .contBox > ul > li.long {width:44.6%;height:125px;}
+html.tablet .passTicket .contBox > ul > li.short {width:20%;height:125px;}
+
+
+html.tablet .conTop .category li{width:13.8%;border-left:1px solid #9b9da0;} /* 2015-01-19 수정 */
+html.tablet .conTop .category li.long{width:17.9%;} /* 2015-01-19 수정 */
+html.tablet .conTop .category li:first-child{width:8%;border-left:none;} /* 2015-01-19 수정 */
+html.tablet .conTop .category li > a {border-left:none;border-right:none;} /* 2015-01-19 수정 */
+/*html.tablet .conTop .category li.short{border-right:1px solid #9b9da0 !important;}
+html.tablet .conTop .category li.normal{border-right:1px solid #9b9da0 !important;}*/ /* 2015-01-19 수정 */
+/*html.tablet .conTop .category li.last{border:none !important;}*/ /* 2015-01-19 수정 */
+
+/* passTicket detail */
+html.tablet .passTicketItem .innerCont li {width:18.3%; margin:0 0 1.7% 1.7%; height:215px;} /* 2015-01-19 수정 */
+HTML.ie8.tablet .passTicketItem .innerCont LI {width:18%; margin:0 0 1.7% 1.7%; height:215px;} /* 2015-01-20 수정 */
+html.tablet .passTicketItem .innerCont li:nth-child(5n-4){margin-left:0;} /* 2015-01-20 수정 */
+html.tablet .passTicketItem .innerCont li strong{height:26px;width:80%;line-height:18px;margin-bottom:5px;}
+html.tablet .mHidden {display:block;}
+/*html.tablet .passTicketItem .innerCont li .pic {margin-left:-40%;}*/ /* 2015-01-19 수정 */
+html.tablet.ie8 .passTicketItem .innerCont li .pic {width:auto;}
+html.tablet .passTicketItem .innerCont li .contInfo {padding:15px 7%;}
+html.tablet .passTicketItem .btnGroup {padding: 0 4.3% 10px;}
+html.tablet .passTicketItem .deBtn.type4,
+html.tablet .passTicketItem .deBtn.type5 {width:56px;}
+html.tablet .passTicketItem .btnGroup .wish{display:none;}
+html.tablet .passTicketItem .btnGroup .basket {float:left;margin-left:5px;}
+
+/* subBVisu*/
+html.tablet .subBVisu .btnArea {display:block;}
+
+
+
+
+/*!
+ * Desktop
+ * min-width:1100px
+ **/
+
+/* list */
+
+/*레저탭 지도*/
+.passCont .contWrap .map {position:relative;} /*수정2015-05-25*/
+.passCont .contWrap .map .inner{width:100%; height:250px;} /*수정2015-05-25*/
+html.desktop .passCont .contWrap .map .inner, html.tablet .passCont .contWrap .map .inner {width:100%; height:600px;}
+
+
+
+/* top */
+html.desktop .btnCart {width:42px;height:42px;background:url(///cdnimg.tourbaksa.com/PC/www/ico/ico_basket.png) no-repeat 0 0}
+html.desktop .passCont .contWrap {margin-top:5px;}
+html.desktop .passCont .contWrap .leftCont {float:left;width:66.1%;}
+html.desktop .passCont .contWrap .rightCont {float:right;width:30.5%;margin-top:41px;}
+html.desktop .contactArea .rinkGroup li {padding:12px 0 11px 15px;margin-bottom:9px;}
+html.desktop .contactArea .rinkGroup a:first-child li {padding-bottom:10px;}
+
+/* banner rolling */
+html.desktop .contWrap .leftCont .innerCont.bannerWrap {width:562px;}
+html.desktop .bannerZone ul.recomBanner {position:relative;overflow:hidden;width:1000%;height:100%;}
+html.desktop .airCon .contWrap .rightCont .promotionBanner li,
+html.desktop .recommTour .contInner .bannerZone li {float:left;width:10%;margin:0;}
+html.desktop .bannerWrap .promotionBanner li {height:212px;}
+html.desktop .bannerWrap .promotionBanner li img{width:100%;height:212px;}
+html.desktop .recommTour .contInner .bannerZone li img {width:100%;}
+
+/* passTicket list */
+html.desktop .passTicket .contBox {width:auto;}
+html.desktop .passTicket .contBox > ul {overflow:hidden;}
+html.desktop .passTicket .contBox > ul > li {float:left;width:28.22%;padding:20px 2.5%;border-left:1px solid #e2e2e2;height:137px !important;}
+html.desktop.ie7 .passTicket .contBox > ul > li {width:28.12%;}
+html.desktop .passTicket .contBox > ul > li.firstRow {border-left:0 none;}
+html.desktop .passTicket .contBox > ul > li.firstCol {border-top:0 none;}
+html.desktop .passList.twoRows.clearRows {height:105px;}
+html.desktop .passList.secondRow {height:84px;}
+html.desktop .passList.twoRows.clearRows li {float:none;width:100%;}
+html.desktop .passTicket .contBox > ul > li.long {width:44.6%;height:125px;}
+html.desktop.ie7 .passTicket .contBox > ul > li.long {width:44%;}
+html.desktop .passTicket .contBox > ul > li.short {width:20%;height:125px;background:url('///cdnimg.tourbaksa.com/PC/www/sub/pass/bg_pList01_desk.png') repeat-y 0 0;}
+
+html.desktop .conTop .category li {width:15.2%;border-right:none;border-left:1px solid #9b9da0;}
+html.desktop .conTop .category li:first-child{border-left:none;width:8%;}
+html.desktop .conTop .category li > a {border-right:none;border-left:none;}
+/* html.desktop .conTop .category li.short{border-right:1px solid #9b9da0 !important;}
+html.desktop .conTop .category li.normal{border-right:1px solid #9b9da0 !important;} */ /* 2015-01-19 수정 */
+/*html.desktop .conTop .category li.last{border:none !important;}*/ /* 2015-01-19 수정 */
+
+/* passTicket detail */
+html.desktop .passTicketItem .innerCont li {width:18.4%; margin:0 0 1.7% 1.7%; height:215px;} /* 2015-01-20 수정 */
+html.ie8.desktop .passTicketItem .innerCont li {width:18%; margin:0 0 1.7% 1.7%; height:215px;} /* 2015-01-20 수정 */
+html.desktop .passTicketItem .innerCont li:nth-child(5n-4){margin-left:0;} /* 2015-01-20 수정 */
+/*html.desktop .passTicketItem .innerCont li:last-child {margin:0;}*/ /* 2015-01-20 수정 */
+html.desktop .passTicketItem .innerCont li strong{height:26px;}
+html.desktop .mHidden {display:block;}
+/*html.desktop .passTicketItem .innerCont li .pic {margin-left:-40%;}*/ /* 2015-01-19 수정 */
+html.desktop.ie8 .passTicketItem .innerCont li .pic {width:100%;} /* 2015-01-20 수정 */
+html.desktop .passTicketItem .innerCont li .contInfo {padding:15px 7%;}
+html.desktop .passTicketItem .btnGroup {padding: 0 5.4% 10px;}
+html.desktop .passTicketItem .deBtn.type4,
+html.desktop .passTicketItem .deBtn.type5 {width:56px;}
+html.desktop .passTicketItem .btnGroup .wish{display:none;}
+html.desktop .passTicketItem .btnGroup .basket {float:left;margin-left:5px;}
+
+/* subBVisu*/
+html.desktop .subBVisu .btnArea {display:none;}
+
+
+
+
+
+/* onlyDesktop */
+/* .infoSection.type1 height:370*/
+body.onlyDesktop .infoSection.type1{height:370px;overflow:hidden;margin:15px 0 50px}
+body.onlyDesktop .infoSection.type1 .visuArea{float:left;width:300px;overflow:hidden}
+body.onlyDesktop .infoSection.type1 .visuArea .cs{padding:0px 20px;margin-top:9px;border:1px solid #e2e2e2;background-color:#f4f4f4}
+body.onlyDesktop .infoSection.type1 .visuArea .cs h3{padding-top:32px;margin:31px 0 0 20px;font-size:15px;color:#666;background:url(///cdnimg.tourbaksa.com/PC/www/ico/ico_deco_11.gif) no-repeat top center}
+body.onlyDesktop .infoSection.type1 .visuArea .cs ul li{padding:4px 0;color:#454545}
+body.onlyDesktop .infoSection.type1 .visuArea .cs ul li strong{margin-left:5px}
+body.onlyDesktop .infoSection.type1 .visuArea .cs ul li img{margin-right:10px}
+body.onlyDesktop .infoSection.type1 .contInfo{float:right;width:58%;overflow:hidden}
+body.onlyDesktop .infoSection.type1 .contInfo .bbsType0{}
+
+
+/* .infoSection.type1 btnArea */
+body.onlyDesktop .infoSection.type1 .btnArea.type0{margin:41px 0 0}
+html.ie8 body.onlyDesktop .infoSection.type1 .btnArea.type0{margin-top:41px}
+html.ie7 body.onlyDesktop .infoSection.type1 .btnArea.type0{margin-top:40px}
+body.onlyDesktop .infoSection.type1 .btnArea.type0 .floatL .deBtn{float:left;width:auto;height:34px;line-height:34px;padding:0 15px;margin-right:6px;font-size:13px}
+html.ie7 body.onlyDesktop .infoSection.type1 .btnArea.type0 .floatL .deBtn{padding:0 10px;line-height:31px}
+body.onlyDesktop .infoSection.type1 .btnArea.type0 .floatL .deBtn.type0{width:118px;margin:0 6px 0 0}
+body.onlyDesktop .infoSection.type1 .btnArea.type0 .floatR a{margin-left:6px}
+
+/* passCont btnArea */
+
+body.onlyDesktop .passCont .contWrap .btnArea.type1{margin-top:20px;text-align:center;}
+body.onlyDesktop .passCont .contWrap .btnArea.type1 .deBtn{width:18%;margin:0 3px;height:34px;line-height:34px}
+
+
+/* .tabList.type0 */
+body.onlyDesktop .tabList.type0 ul li{float:left;width:164px; margin-left:8px;}
+body.onlyDesktop .tabList.type0 ul li:first-child{width:165px;margin-left:0}
+
+/* .contWrap cont */
+body.onlyDesktop .passCont .contWrap .contInner .cont{margin-top:30px}
+body.onlyDesktop .rates{margin-bottom:10px;color:#fc7d09;text-align:right;}
+body.onlyDesktop .passCont .contWrap .contInner .cont .guideWrap h5{margin:30px 0 5px;color:#fc7d09;font-size:14px;font-weight:bold;}
+body.onlyDesktop .passCont .contWrap .contInner .cont .guideWrap > ul > li{margin:15px 0;line-height:20px;color:#333;/* padding-left:8px;background:url(///cdnimg.tourbaksa.com/PC/www/bul/bul_list_dot_02.gif) no-repeat left 8px */}
+body.onlyDesktop .passCont .contWrap .contInner .cont .guideWrap > ul > li.point{color:#e54c01}
+
+/*table style bbsType1.bbsList */
+body.onlyDesktop .bbsType1.bbsList{margin-top:30px}
+
+/* .tabList bbsType3 */
+body.onlyDesktop .bbsType3.bbsType4 li{position:relative;padding-bottom:10px}
+body.onlyDesktop .bbsType3.bbsType4 li a.pic{position:relative;}
+body.onlyDesktop .bbsType3.bbsType4 li a.pic .icoBest{position:absolute;left:-6px;top:0}
+body.onlyDesktop .bbsType3.bbsType4 li .bbsCont .titleWrap h5{float:left;font-size:14px;color:#454545}
+body.onlyDesktop .bbsType3.bbsType4 li .bbsCont .titleWrap h5 .spanWrap{margin-left:5px;letter-spacing:-2.5px}
+body.onlyDesktop .bbsType3.bbsType4 li .bbsCont .titleWrap h5 .spanWrap img{margin-top:-5px;}
+body.onlyDesktop .bbsType3.bbsType4 li .bbsCont .titleWrap strong{float:right;font-size:16px;color:#f46600}
+body.onlyDesktop .bbsType3.bbsType4 li .bbsCont dd{margin:5px 0}
+body.onlyDesktop .bbsType3.bbsType4 li .bbsCont dd strong,
+body.onlyDesktop .bbsType3.bbsType4 li .bbsCont dd span{display:block;float:left;}
+body.onlyDesktop .bbsType3.bbsType4 li .bbsCont dd:after{content:"";display:block;clear:both}
+html.ie7 body.onlyDesktop .bbsType3.bbsType4 li .bbsCont dd{zoom:1}
+body.onlyDesktop .bbsType3.bbsType4 li .bbsCont dd strong{width:58px;margin-right:7px;color:#454545;font-size:13px}
+body.onlyDesktop .bbsType3.bbsType4 li .bbsCont dd span{width:63%;color:#666}
+body.onlyDesktop .bbsType3.bbsType4 li .btnMore{display:block;position:absolute;right:2px;bottom:20px;width:110px;height:12px;line-height:12px;padding:10px 0;text-align:center;font-size:12px;font-weight:bold;color:#fff;border:1px solid #f5a700;background-color:#ffbf44;}
+
+
+/* passCont cartArea */
+html.desktop .passCont .cartArea {margin-top:30px}
+html.desktop .passCont .cartArea .topGuide{margin-bottom:10px;color:#666}
+html.desktop .passCont .cartArea .topGuide .floatR{color:#848484}
+html.desktop .passCont .cartArea .bbsType1 .deBtn.type5{font-size:13px;background-color:#aaa}
+html.desktop .passCont .cartArea .bbsType1 .count .deBtn.type5{width:40px}
+html.desktop .passCont .cartArea .btnArea {margin:20px 0 40px;text-align:center;}
+html.desktop .passCont .cartArea .btnArea .deBtn{height:34px;line-height:32px;font-size:13px;}
+html.desktop .passCont .cartArea .btnArea .deBtn.type1,
+html.desktop .passCont .cartArea .btnArea .deBtn.type0{width:120px;float:none;margin:0 1px;}
+html.desktop .passCont .cartArea .guideAreaWrap h3{margin-bottom:20px;color:#333;font-size:15px;}
+html.desktop .passCont .cartArea .guideAreaWrap ul{padding:16px 20px;border:1px solid #ecd0a8;background-color:#fdfaef}
+html.desktop .passCont .cartArea .guideAreaWrap li{margin:4px 0;color:#848484; }
+
+
+#PassList30 li,
+#PassList31 li {width:100%;}
+
+.guideWrap{line-height:16px;}
+
+
+
+/* 10월08일 운영쪽 협력 - 좌측배너 */
+.pass_bnr{display:none;}
+html.tablet .pass_bnr{display:none;}
+html.desktop .pass_bnr{display:block;}
+
+
+/**************************** passTicket list - 10월10일 변경****************************/
+
+/* passTicket list */
+.passTicket2 .contBox {margin:20px 0 20px;}
+.passTicket2 .contBox >ul > li {padding:15px 14px;border-top:1px solid #e2e2e2;}
+.passTicket2 .contBox >ul > li:first-child {border-top:0 none;}
+.topTitArea2 {padding-bottom:6px;}
+.topTitArea2 h4 {font-size:14px;color:#454545;display:block;}
+.topTitArea2 h5{line-height:14px;font-size:12px;color:#666666;margin-top:20px;} /* 20131119 : color:#848484; -> color:#666666; */
+.topTitArea2 .txtTab{float:right;font-size:13px;line-height:14px;}
+.topTitArea2 .txtTab .on{font-weight:bold;color:#fc7d09;}
+.topTitArea2 .txtTab span{margin:0 5px;color:#ccc;}
+.passList2 {overflow:hidden;clear:both;}
+.passList2 li {margin-top:7px;padding-left:6px;background:url(///cdnimg.tourbaksa.com/PC/www/bul/bul_list_dot.gif) no-repeat left 7px;line-height:14px;}
+.passList2 li a {letter-spacing:-1px;}
+.passList2.twoRows li {float:left;width:47.8%;} /* 2015-03-04 수정 */
+.passList2.threeRows li {float:left;width:94%;}
+.passList2 li a {color:#666666;} /* 20131119 : color:#848484; -> color:#666666; */
+
+.passTicket2 .secondRow{border-top:1px solid #e2e2e2;}/* 10월25일수정 */
+.passTicket2 .secondRow .secondRow{border-top:none;}
+html.tablet .passTicket2 .secondRow{border-top:none;}
+html.desktop .passTicket2 .secondRow{border-top:none;}
+
+/* passTicket list */
+html.tablet .passTicket2 .contBox {width:auto;}
+html.tablet .passTicket2 .contBox > ul {overflow:hidden;}
+html.tablet .passTicket2 .contBox > ul.firstRow {overflow:hidden;background:url('///cdnimg.tourbaksa.com/PC/www/sub/pass/bg_pList01_ta.png') repeat-y 0 0;border-bottom:1px solid #e2e2e2;}
+html.tablet .passTicket2 .contBox > ul.secondRow{overflow:hidden;background:url('///cdnimg.tourbaksa.com/PC/www/sub/pass/bg_pList02_ta.png') repeat-y 0 0;}
+html.tablet .passTicket2 .contBox > ul > li {width:28.16%;float:left !important;margin-left:5px;border-top:0px !important;}
+html.tablet .passList2.twoRows li {float:left;width:48%;}
+
+html.tablet .passList2.twoRows.clearRows {min-height:105px;}
+html.tablet .passList2.secondRow {min-height:84px;}
+html.tablet .passList2.twoRows.clearRows li {float:none;width:100%;}
+html.tablet .passTicket2 .contBox > ul > li.long {width:44.6%;min-height:125px;}
+html.tablet .passTicket2 .contBox > ul > li.short {width:20%;min-height:125px;}
+
+
+/* passTicket list */
+html.desktop .passTicket2 .contBox {width:auto;}
+html.desktop .passTicket2 .contBox > ul {overflow:hidden;}
+html.desktop .passTicket2 .contBox > ul.firstRow {background:url('///cdnimg.tourbaksa.com/PC/www/sub/pass/bg_pList01_desk.png') repeat-y 0 0;border-bottom:1px solid #e2e2e2;}
+html.desktop .passTicket2 .contBox > ul.secondRow{background:url('///cdnimg.tourbaksa.com/PC/www/sub/pass/bg_pList02_desk.png') repeat-y 0 0;}
+html.desktop .passTicket2 .contBox > ul > li {float:left;width:28.22%;padding:20px 2.5%;border-top:0px;}
+html.desktop.ie7 .passTicket2 .contBox > ul > li {width:28.12%;}
+html.desktop .passList2.twoRows li {float:left;width:48%;}
+
+html.desktop .passList2.twoRows.clearRows {height:105px;}
+html.desktop .passList2.secondRow {height:84px;}
+html.desktop .passList2.twoRows.clearRows li {float:none;width:100%;}
+html.desktop .passTicket2 .contBox > ul > li.long {width:44.6%;min-height:125px;}
+html.desktop.ie7 .passTicket2 .contBox > ul > li.long {width:44%;}
+html.desktop .passTicket2 .contBox > ul > li.short {width:20%;min-height:125px;background:url('///cdnimg.tourbaksa.com/PC/www/sub/pass/bg_pList01_desk.png') repeat-y;}
+
+
+/* 2014-03-07 _ 도로명주소 */
+.recieveInfo.delivery .entry.info_addr {height:auto !important; float:left;} 
+.recieveInfo.delivery .entry.info_addr .entry {float:none;width:100%;max-width:800px;margin:0;padding:0;}
+.recieveInfo.delivery .entry.info_addr .entry label{color:#848484; padding-right:6px;}
+.recieveInfo.delivery .entry.info_addr ul.tbodyaddress {display:inline-block; float:left; margin:5px 0 0 0; width:100%;max-width:800px;  padding:0;}
+.recieveInfo.delivery .entry.info_addr ul.tbodyaddress li {width:100%;max-width:780px; float:left; height:28px; padding:3px 2px; } 
+.recieveInfo.delivery .entry.info_addr ul.tbodyaddress li label {display:inline-block; width:22%;max-width:80px;;color:#666;padding:0 0 5px; font-weight:bold;}
+.recieveInfo.delivery .entry.info_addr ul.tbodyaddress li.check_addr {width:100%; float:left; padding:0 2px; height:100%; }
+.recieveInfo.delivery .entry.info_addr ul.tbodyaddress li.check_addr span{display:inline-block; width:100%; }
+.recieveInfo.delivery .entry.info_addr ul.tbodyaddress li.check_addr span > input{border:none; }
+.recieveInfo.delivery .entry.info_addr ul.tbodyaddress li input {background-color: #FFFFFF;border: 1px solid #E2E2E2;height: 20px;line-height: 20px; padding: 0 2%; width:53%;max-width:500px;}
+.recieveInfo.delivery .entry.info_addr ul.tbodyaddress li li .search1{width:65%; margin-right:2px;} 
+.recieveInfo.delivery .entry.info_addr ul.tbodyaddress li li .search2{width:65%; margin-right:2px;} 
+.recieveInfo.delivery .entry.info_addr ul.tbodyaddress li button.graySub2 {background-color:#AAAAAA;border:1px solid #999999;color:#FFFFFF;cursor:pointer;font-size:12px;height:26px;line-height:22px;margin:2px 0 0 2px; min-width:50px;}
+
+html.tablet .recieveInfo.delivery .entry.info_addr .entry {float:left;}
+html.tablet .recieveInfo.delivery .entry.info_addr .entry span {height:30px;padding-left:2px;}
+html.desktop .recieveInfo.delivery .entry.info_addr .entry {float:left;}
+
+
+/* 20140619 : USJ 프리미엄패스 추가 */
+.passCont .contWrap .contInner .cont .premium_passInfo {margin-top:30px; border:1px solid #dcdcdc; padding:20px;}
+.passCont .contWrap .contInner .cont .premium_passInfo .ppi_title {font-size:20px; font-weight:bold; color:#fc7d09;}
+.passCont .contWrap .contInner .cont .premium_passInfo .sub_cts {padding:20px 0 0; line-height:16px;}
+.passCont .contWrap .contInner .cont .premium_passInfo .sub_cts .point01 {color:#fc7d09; text-decoration:underline;}
+.passCont .contWrap .contInner .cont .premium_passInfo .sub_cts .point02 {color:#aaaaaa;}
+.passCont .contWrap .contInner .cont .premium_passInfo .sub_cts .point03 {color:#fc7d09;}
+
+.passCont .contWrap .contInner .cont .premium_calendar {clear:both; margin-top:30px;}
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_title {font-size:20px; font-weight:bold; color:#fc7d09;}
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap {clear:both; overflow:hidden; margin-top:10px;}
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_main, .passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_info {border:1px solid #dcdcdc;}
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_main {float:left; width:99%; margin-right:1%;}
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_main .date {overflow:hidden; line-height:32px; padding:10px 0; /*background:#fdfcfd;*/}
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_main .date ul li {float:left;}
+
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .amount {overflow:hidden; margin-bottom:8px; line-height:16px; /*text-align:right; margin-right:31.2%;*/}
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .amount .update {padding-right:78px;}
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .amount .update span {color:#23c3ff;}
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .amount .color01 {color:#99bf12;font-size:12px;} /* 2015-02-09 수정 */
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .amount .color01 img {vertical-align:-3px;} /* 2015-02-09 추가 */
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .amount .color02 {color:#99bf12;font-size:12px;} /* 2015-02-09 수정 */
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .amount .color02 img {vertical-align:middle;} /* 2015-02-09 추가 */
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .amount .color03 {color:#ff0000;font-size:12px;} /* 2015-02-09 수정 */
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .amount .color03 img {vertical-align:middle;} /* 2015-02-09 추가 */
+
+html.tablet .passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_main {float:left; width:68.5%; margin-right:1%;}
+html.desktop .passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_main {float:left; width:68.5%; margin-right:1%;}
+
+html.desktop .passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_main .date ul li.prev, html.tablet .passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_main .date ul li.prev
+{width:35%; text-align:right; height:32px;}
+html.desktop .passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_main .date ul li.date_num, html.tablet .passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_main .date ul li.date_num
+{width:30%; text-align:center; font-size:28px; font-weight:bold;}
+html.desktop .passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_main .date ul li.next, html.tablet .passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_main .date ul li.next
+{width:35%; text-align:left; height:32px;}
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_main .date ul li.prev {width:25%; text-align:right;}
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_main .date ul li.date_num {width:50%; text-align:center; font-size:20px; font-weight:bold;}
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_main .date ul li.next {width:25%; text-align:left;}
+/*.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_main .amount {overflow:hidden; text-align:right; padding:0 10px 10px 0;}*/
+
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_main table {border-top: 1px solid #d5d8da; width:100%;}
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_main table thead th.first {border-left:0px;}
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_main table thead th {border-bottom:1px solid #e1e3e5; border-left:1px solid #eaedef; line-height:24px;}
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_main table tbody {width:100%; overflow:hidden;}
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_main table tbody tr {width:100%;}
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_main table tbody tr td {border-left:1px solid #dcdcdc; border-top:1px solid #dcdcdc; height:60px; padding:0 0 0 5px; width:14.2857%;}
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_main table tbody tr td.past {background:#eee;}
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_main table tbody tr td .cld_day_num {display:inline-block;font-weight:bold; line-height:22px; margin-bottom:5px;} /* 2015-02-09 수정 */
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_main table tbody tr td .holiday {color:#f44e4e;}
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_main table tbody tr td .inert {color:#e7e7e7;}
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_main table tbody tr td img {width:100%; max-width:20px; max-height:16px; text-align:center; padding-left:27px;}
+
+html.desktop .passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_info {width:30%; height:322px;}
+html.tablet .passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_info {width:29.5%; height:322px;}
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_info {float:left; width:99%; min-height:182px; height:auto; margin-top:10px;background:#eee;}
+html.tablet .passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_info {margin-top:0;}
+html.desktop .passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_info {margin-top:0;}
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_info .info_time {padding:15px; line-height:22px; border-bottom:1px solid #d5d8da; font-size:16px; font-weight:bold; background:#FFF;}
+html.desktop .passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_info .info_cts,
+html.tablet .passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_info .info_cts {padding:15px;}
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_info .info_cts {padding:10px; line-height:16px;}
+html.desktop .passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_info .info_cts .timeTable,
+html.tablet .passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_info .info_cts .timeTable {padding:0 0 0 20px; display:block;}
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_info .info_cts .timeTable {padding:0; display:block;}
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_info .info_cts .color01 {color:#fc7d09;}
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_info .info_cts .color02 {color:#F00;}
+
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_main table tbody tr td.bygone {background:#FFF;}
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_main table tbody tr td .cld_wrap .cld_day {height:60px;} /* 2015-02-09 추가 */
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_main table tbody tr td .cld_wrap .cld_day .bygone_day {color:#ccc;}
+
+/* USJ 팝업 2014-07 추가  */
+#pass_pop{width:853px;  position:absolute; top:10px; left:0px;}
+#pass_pop_bt{cursor: pointer;}
+#pass_close{cursor:pointer; font-weight:bold;}
+.pop_pass_faq{width:850px; background:#fff;border:2px solid #ff9734;}
+.pop_pass_faq .popHeader { position:relative; margin:0; padding:20px 0 10px 0; height:30px;}
+.pop_pass_faq .popHeader h1 {margin-left:15px; width:500px; font-size:18px;;}
+.pop_pass_faq .popHeader span {position:absolute; right:20px; top:20px;}
+.pop_pass_faq .popHeader span.cbtn img {border:none; }
+.pop_pass_faq ul.tabs{  padding:0;margin:0;list-style-type: none;text-align: left;width:130px;float:left;margin-right:10px;margin-left:10px; border: 1px solid #E2E2E2;}
+.pop_pass_faq ul.tabs li{float:left;display: inline-block;width:130px;height:46px;padding:0;margin: 0;border-bottom: 1px solid #E2E2E2; }
+.pop_pass_faq ul.tabs li:last-child{border-bottom:none;}
+.pop_pass_faq ul.tabs li a{text-decoration: none;padding:8px 0 14px 25%;color: #000;display:inline-block;width:75%;height:24px;font-size:13px;line-height:120%;}
+.pop_pass_faq ul.tabs li a:visited{color: #000;}
+.pop_pass_faq ul.tabs li.selected a, ul.tabs li.selected a:hover{font-weight:bold;background:#666 url("http://www.tourbaksa.com///cdnimg.tourbaksa.com/PC/www/main/bl_pass_on.png") no-repeat 12px 50%; color:#fff;  }/**/
+
+.pop_pass_faq ul.tabs li.selected a:hover{text-decoration: none;} 
+.pop_pass_faq ul.tabs li.popfaq_line a{padding-top:16px; height:16px;}
+.pop_pass_faq div.tabcontents{background-color:#FFF;padding:6px 0 0 0;height:284px;overflow:auto;margin-right:10px;border-top:1px solid #dcdcdc; border-bottom:none;font-size:12px;}
+.pop_pass_faq div.tabcontents div{width:100%;}
+.txt_popinfo{ padding:10px 10px 20px 10px; font-size:12px; }
+.pop_pass_faq dl { margin-top: -5px; }
+.pop_pass_faq dl dt { margin-top: 5px; border-bottom:1px solid #dcdcdc; cursor: pointer; line-height:140%;  background: url("http://www.tourbaksa.com///cdnimg.tourbaksa.com/PC/www/ico/ico_faq_q.png") no-repeat scroll 20px 5px; padding: 5px 20px 8px 45px; }
+
+.pop_pass_faq dl dd { margin: 0;  background:#ddd; line-height:180%; background:#f4f4f4 url("http://www.tourbaksa.com///cdnimg.tourbaksa.com/PC/www/ico/ico_faq_a.png") no-repeat scroll 21px 16px; padding: 12px 20px 12px 45px; border-bottom: 1px solid #dcdcdc;
+    border-top: 1px solid #dcdcdc; }
+.pop_pass_faq dl dt.on { font-weight: bold; }
+
+
+.provision .agreeAll_area {background: none repeat scroll 0 0 #f4f4f4; border: 1px solid #dcdcdc; margin-top: 30px; padding: 10px;}
+.provision .agreeAll_area.alltax {background:0; border:2px solid #ff9733; margin:40px 0 30px 0; padding:33px 10px 30px 24px;font-size:14px;}
+.provision .agreeAll_area.alltax span{color:#e54c01; font-size:18px; font-weight:bold;}
+.provision .agreeTex{overflow: hidden; margin:19px 0 23px 0; color:#454545;}
+.provision .agreeTex p{margin-top:10px;}
+.provision .agreeTex p:first-child{margin-top:0;}
+.provision .agreeTex p span {vertical-align:middle; margin-right:5px;}
+.provision .agreeTex p span:first-child{margin-left:12px;}
+.provision .agreeTex p span input{margin:0 4px 0 0;}
+.provision .agreeTex p span label {vertical-align:middle;}
+
+
+
+
+
+
+
+/* 할인쿠폰 20141111 추가 */
+.dis_coupon_box {width:100%;}
+.dis_coupon_box .top_img {margin:30px 0;}
+.dis_coupon_box .top_img img {width:100%;height:auto;}
+.dis_coupon_box .top_img img.desktop {display:none;}
+.dis_coupon_box .top_img img.tb_mb {display:block;}
+.dis_coupon_box h3 {color:#454545;font-size:15px;}
+.dis_coupon_box .coupon_list {overflow:hidden;width:100%;margin:14px 0 32px;}
+.dis_coupon_box .coupon_list li {width:99.5%;margin-bottom:10px;border:1px solid #e3e3e3;}
+.dis_coupon_box .coupon_list li dl {position:relative;padding:11px 0;}
+.dis_coupon_box .coupon_list li dt {padding-left:37%;margin:0 0 30px;color:#454545;font-size:14px;text-align:left;}
+.dis_coupon_box .coupon_list li dd.logo {position:absolute;top:25px;width:30%;padding:0 1.5%;margin:0;text-align:center;}
+.dis_coupon_box .coupon_list li dd.logo.lotte {padding:0 1.5%;}
+.dis_coupon_box .coupon_list li dd.logo img {width:100%;}
+.dis_coupon_box .coupon_list li dd.desc {padding-left:37%;margin:-25px 0 15px;color:#848484;font-size:11px;text-align:left;line-height:1.4em;}
+.dis_coupon_box .coupon_list li dd.btn {padding-left:37%;text-align:left;}
+.dis_coupon_box .coupon_list li dd.btn > a {display:none;}
+.dis_coupon_box .coupon_list li dd.btn > span {display:inline-block;}
+html.tablet .dis_coupon_box .top_img img.desktop {display:none;}
+html.tablet .dis_coupon_box .top_img img.tb_mb {display:block;}
+html.tablet .dis_coupon_box .coupon_list li {float:left;width:24%;height:171px;margin-left:1%;}
+html.tablet .dis_coupon_box .coupon_list li:first-child {width:23.9%;margin-left:0;}
+html.tablet .dis_coupon_box .coupon_list li:nth-child(4n) {width:23.9%;}
+html.tablet .dis_coupon_box .coupon_list li dl {position:static;height:100px;padding:0;}
+html.tablet .dis_coupon_box .coupon_list li dt {padding:0;margin:70px 0 20px;color:#454545;font-size:14px;text-align:center;}
+html.tablet .dis_coupon_box .coupon_list li dd.logo {position:static;top:0;width:100%;padding:7px 0 5px;margin:-100px 0 100px;border-bottom:1px solid #e3e3e3;text-align:center;}
+html.tablet .dis_coupon_box .coupon_list li dd.logo.lotte {padding:3px 0 9px;}
+html.tablet .dis_coupon_box .coupon_list li dd.logo img {width:auto;}
+html.tablet .dis_coupon_box .coupon_list li dd.desc {min-height:30px;padding-left:0;margin:-65px 0 10px;color:#848484;font-size:11px;text-align:center;}
+html.tablet .dis_coupon_box .coupon_list li dd.btn {padding-left:0;text-align:center;}
+html.tablet .dis_coupon_box .coupon_list li dd.btn > a {display:none;}
+html.tablet .dis_coupon_box .coupon_list li dd.btn > span {display:inline-block;}
+html.desktop .dis_coupon_box .top_img img.desktop {display:block;}
+html.desktop .dis_coupon_box .top_img img.tb_mb {display:none;}
+html.desktop .dis_coupon_box .coupon_list li {float:left;width:198px;height:171px;margin-left:17px;}
+html.desktop .dis_coupon_box .coupon_list li:first-child {width:199px;margin-left:0;}
+html.desktop .dis_coupon_box .coupon_list li:nth-child(4n) {width:199px;}
+html.desktop .dis_coupon_box .coupon_list li dl {position:static;height:100px;padding:0;}
+html.desktop .dis_coupon_box .coupon_list li dt {padding:0;margin:70px 0 20px;color:#454545;font-size:14px;text-align:center;}
+html.desktop .dis_coupon_box .coupon_list li dd.logo {position:static;top:0;width:100%;padding:7px 0 5px;margin:-100px 0 100px;border-bottom:1px solid #e3e3e3;text-align:center;}
+html.desktop .dis_coupon_box .coupon_list li dd.logo.lotte {padding:3px 0 9px;}
+html.desktop .dis_coupon_box .coupon_list li dd.logo img {width:auto;}
+html.desktop .dis_coupon_box .coupon_list li dd.desc {min-height:30px;padding-left:0;margin:-65px 0 10px;color:#848484;font-size:11px;text-align:center;}
+html.desktop .dis_coupon_box .coupon_list li dd.btn {padding-left:0;text-align:center;}
+html.desktop .dis_coupon_box .coupon_list li dd.btn > a {display:inline-block;}
+html.desktop .dis_coupon_box .coupon_list li dd.btn > span {display:none;}
+
+/* USJ 패스 수량 및 이용 시간 안내 2015-02-10 추가 */
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .amount .color01 {color:#99bf12;font-size:12px;} /* 2015-02-09 수정 */
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .amount .color01 img {vertical-align:-3px;} /* 2015-02-09 추가 */
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .amount .color02 {color:#99bf12;font-size:12px;} /* 2015-02-09 수정 */
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .amount .color02 img {vertical-align:middle;} /* 2015-02-09 추가 */
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .amount .color03 {color:#ff0000;font-size:12px;} /* 2015-02-09 수정 */
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .amount .color03 img {vertical-align:middle;} /* 2015-02-09 추가 */
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_main table tbody tr td .cld_day_num {display:inline-block;font-weight:bold; line-height:22px; margin-bottom:5px;} /* 2015-02-09 수정 */
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_main table tbody tr td .cld_wrap .cld_day {height:60px;} /* 2015-02-09 추가 */
+.passCont .contWrap .contInner .cont .premium_calendar .premium_calendar_wrap .premium_calendar_main table tbody tr td .cld_wrap .cld_day .bygone_day {color:#ccc;}
+.passCont .cld_wrap .cld_day {position:relative;}
+.passCont .cld_wrap .cld_day .season {display:inline-block;position:absolute;top:5px;left:17px;width:20px;height:20px;}
+.passCont .cld_wrap .cld_day .season img {width:18px !important;max-height:20px !important;padding:0 !important;}
+.passCont .cld_wrap .cld_day .pattern {display:inline-block;position:absolute;top:40px;left:0px;width:15px;height:14px;}
+.passCont .cld_wrap .cld_day .pattern img {width:15px !important;max-height:14px !important;padding:0 !important;}
+.passCont .cld_wrap .cld_day .q_many {display:inline-block;position:absolute;bottom:5px;right:5px;}
+.passCont .cld_wrap .cld_day .q_many img {width:15px !important;max-height:17px !important;padding:0 !important;}
+.passCont .cld_wrap .cld_day .q_little {display:inline-block;position:absolute;bottom:5px;right:5px;}
+.passCont .cld_wrap .cld_day .q_little img {width:15px !important;max-height:11px !important;padding:0 !important;}
+.passCont .cld_wrap .cld_day .q_no {display:inline-block;position:absolute;bottom:6px;right:5px;}
+.passCont .cld_wrap .cld_day .q_no img {width:18px !important;max-height:10px !important;padding:0 !important;}
+.passCont .cool_japan dt {margin-bottom:3px;color:#fc7d09;}
+.passCont .cool_japan dt img {margin-right:1px;vertical-align:middle;}
+.passCont .cool_japan dd {padding-left:19px;margin-bottom:20px;}
+.passCont .cool_japan dd ul li {line-height:18px;}
+.passCont .cool_japan dd ul li span.time {display:inline-block;width:80px;}
+
+html.tablet .passCont .cld_wrap .cld_day .season {display:inline-block;position:absolute;top:5px;left:28px;width:20px;height:20px;} /* 2015-02-09 추가 */
+html.desktop .passCont .cld_wrap .cld_day .season {display:inline-block;position:absolute;top:5px;left:28px;width:20px;height:20px;} /* 2015-02-09 추가 */
+
+/* ***************************  2015-02-24 반응형 *************************** */
+/* btnArea */
+.infoSection.type1 { margin-bottom:30px;}
+.infoSection.type1 .btnArea.type0{margin:21px 0 0}
+.infoSection.type1 .btnArea.type0 .floatL{width:100%;}
+.infoSection.type1 .btnArea.type0 .floatL .deBtn{float:left;width:49% !important; height:34px;line-height:34px;padding:0 15px;margin-right:2%;font-size:13px}
+.infoSection.type1 .btnArea.type0 .floatL .deBtn.type1{margin-right:0;}
+.infoSection.type1 .btnArea.type0 .floatL .deBtn.type0{width:100% !important;}
+.infoSection.type1 .btnArea.type0 .floatR{display:none;}
+.infoSection.type1 .btnArea.type0 .floatR a{margin-left:6px}
+.infoSection .bbsType0 table {clear:both; width:100%;}
+.infoSection .btnBox {margin-top:30px;}
+.infoSection .btnBox a img {width:27px;height:27px;} /* 2015-06-02 추가 */
+
+/* tabList */
+.tabList.type0 ul li{float:left;width:50%; border-right:none;}
+.tabList.type0 ul li#tab4{ border-bottom:1px solid #dcdcdc; }
+.rates{margin-bottom:10px;color:#fc7d09;text-align:right;}
+
+/* .contWrap cont */
+.passCont .contWrap .contInner .cont{margin-top:30px}
+.rates{margin-bottom:10px;color:#fc7d09;text-align:right;font-size:11px; letter-spacing:-1px;}/*2015-04-09*/
+.passCont .contWrap .contInner .cont .guideWrap h5{margin:30px 0 5px;color:#fc7d09;font-size:14px;font-weight:bold;}
+.passCont .contWrap .contInner .cont .guideWrap > ul > li{margin:15px 0;line-height:20px;color:#333;}
+.passCont .contWrap .contInner .cont .guideWrap > ul > li.point{color:#e54c01}
+
+/* img*/
+.guideWrap li img{width:100%;}
+#pass_pop_bt img{width:100%;}
+
+/* rsv_step02 */
+.layoutTypeC h3{font-size: 18px; color:#f67e0f; margin: 30px 0 5px;}
+.layoutTypeC h4{margin:30px 0 15px;font-size:15px;color:#333;}
+.layoutTypeC .topTitArea{padding-left:0px;border-bottom:0px;}
+.layoutTypeC .topTitArea h4{margin-top:0}
+.layoutTypeC .enterInfo{padding:15px 0;border-top:2px solid #949494;border-bottom:1px solid #e2e2e2}
+.layoutTypeC .noLine{padding-bottom:0;border-bottom:0 none;}
+.enterInfo .rates {margin-top:15px;}
+.bbsType1 tr.lastTr td {border-bottom:1px solid #ff9733;}
+
+.layoutTypeC .pay_Info{padding:15px 0 5px 0;border:1px solid #ecd0a8; color:#e74b00;}
+.layoutTypeC .pay_Info li{line-height:14px;padding-bottom:10px;padding-left:23px;background:url(///cdnimg.tourbaksa.com/PC/www/bul/bul_list_dot_02.gif) no-repeat 15px 6px; font-weight:bold;}
+.layoutTypeC .pay_Info li:first-child {font-weight:normal;}
+
+#table2 > tbody tr td img{width:100%;}
+#table20 td:nth-child(3){width:50%;}
+
+/* enter Info */
+.buyingStep {overflow:hidden; width:100%; padding:0 0 18px; background:url(///cdnimg.tourbaksa.com/PC/www/sub/bg_reservationInfo.gif) repeat-x left bottom; }
+.buyingStep .entry {float:left; width:100%; padding:8px 0;}
+.buyingStep .entry .new_resize {width:111px; }
+.buyingStep strong {display:block; width:30%; height:100%; font-size:14px; color:#454545; line-height:20px; letter-spacing:-1px; float:left;} /*min-width:85px; */
+.buyingStep strong sub {position:relative; top:-3px; font-size:14px; color:#e54c01;}
+.buyingStep span {display:block; width:70%; height:100%; line-height:20px; color:#848484; float:left;}
+.buyingStep .inputBox {width:75%;padding:0 4px;}
+.buyingStep .mail .inputBox{width:40% !important;}
+.buyingStep .mail select{width:48% !important;}
+.buyingStep .mPhone input {width:27%;}
+.buyingStep select {width:29%;}
+.buyingStep em.dash {display:inline-block; width:3%; text-align:center; color:#d7d7d7;}
+.buyingStep.bgnone {background:none !important;padding-bottom:0 !important;}
+
+.buying .enterInfo h5 {padding-top:26px;font-size:15px;color:#333;}
+.buying .enterInfo ul {margin-top:15px;}
+.buying .enterInfo ul li {line-height:18px;}
+textarea {width:98%;margin:15px 0 25px;font-size:12px;}
+.enterInfo .noti{height:14px; padding:0 0 8px 8px; background:url("///cdnimg.tourbaksa.com/PC/www/bul/bul_list_dot_02.gif") no-repeat left 7px;}
+
+.recieveInfo .entryList {overflow:hidden;}
+.recieveInfo .entryList .inputBox {width:75%;padding:0 4px;}
+.buyingStep .branch select {width:100%;}
+.enterInfo .guideList li {padding-bottom:10px;padding-left:8px;background:url(///cdnimg.tourbaksa.com/PC/www/bul/bul_list_dot_02.gif) no-repeat left 9px;}
+.enterInfo .guideList li a.viewBtn {display:inline-block;width:32px;height:18px;margin-left:5px;border:1px solid #ccc;text-align:center;background-color:#f4f4f4;font-size:11px;}
+
+.buyingStep.recieveInfo.visit p.yColor {color: #fc7d09; line-height: 18px; margin-top: 19px;}
+.buyingStep.recieveInfo.visit p {color: #333333;font-weight: bold; margin-top: 6px;}
+
+
+.buyingStep.recieveInfo {display:none;padding:15px 0 18px;background-image:none;}
+.buyingStep.recieveInfo.visit {display:block;}
+.recieveInfo .entryList {overflow:hidden;}
+.buying .btnArea {padding-top:30px;text-align:center;}
+.itemInfo .btnArea .deBtn.type0, .itemInfo .btnArea .deBtn.type3, .itemInfo .btnArea .deBtn.type4, .buying .btnArea .deBtn.type0, .buying .btnArea .deBtn.type3, .buying .btnArea .deBtn.type4
+, .itemInfo .btnArea .deBtn.type8, .buying .btnArea .deBtn.type8{display:inline-block;width:45%;height:auto;margin:0 4px;line-height:34px;vertical-align:middle;font-size:12px;letter-spacing:-1px;}
+
+.itemInfo .topTitArea {padding-top:10px; margin-top:20px;}
+.itemInfo .topTitArea .txtTab .current{color:#454545;font-weight:bold;}
+.itemInfo .topTitArea .txtTab a:first-child{padding-right:10px;margin-right:5px;background:url(///cdnimg.tourbaksa.com/PC/www/common/bg_bar_03.gif) no-repeat right center}
+.itemInfo .provision .inner{height:200px;overflow-y:scroll;line-height:18px;padding:20px;color:#848484;border:1px solid #dcdcdc;background-color:#f4f4f4}
+.itemInfo .provision .inner h4{margin-bottom:5px;color:#666}
+.itemInfo .provision .inner p{margin-bottom:28px;}
+.itemInfo .provision .guide{margin-top:12px;line-height:18px;color:#555;font-weight:bold;}
+.itemInfo .provision .agreeArea{margin:0 0 0 12px;color:#666}
+.itemInfo .provision .agreeArea li{display:inline-block;margin-right:40px; line-height:180%;}
+.itemInfo .provision .guide span{display:block}
+.itemInfo .btnArea {padding-top:10px;}
+.itemInfo .topTitArea .txtTab a.pass_agree{padding-right:10px;margin-right:5px;background:url(///cdnimg.tourbaksa.com/PC/www/common/bg_bar_03.gif) no-repeat right center}
+
+.bbsType0 .tblTh{width:30%;}
+.bbsType0 .tblTd{width:70%;}
+.bbsType0 th,
+.bbsType0 td{padding-bottom:15px;line-height:18px; }	
+.bbsType0 .end th,
+.bbsType0 .end td{padding-bottom:0}
+.bbsType0 th{text-align:left;color:#454545;font-size:14px}	
+.bbsType0 td{color:#666666; font-size:12px;} /* 20131119 : color:#848484; -> 666666 */
+.bbsType0 td strong.goodTit{color:#454545}
+.bbsType0 td strong em{display:block;}
+.bbsType0 td strong.point{color:#ff921c}
+.bbsType0 td li{font-size:12px}
+.bbsType0 td .priceValue li{display:inline-block;width:43%;overflow:hidden;text-align:center;background:url(..///cdnimg.tourbaksa.com/PC/www/common/bg_bar_03.gif) no-repeat left center}
+.bbsType0 td .priceValue li:first-child{padding-left:0;background-image:none}
+.bbsType0 td .priceValue strong{font-weight:normal}
+.bbsType0 td .priceValue .price span{color:#454545}
+.bbsType0 td .priceValue .price strong{color:#e54c01;font-weight:bold;text-decoration:underline}
+.bbsType0 td ol li{list-style-type:decimal;margin:5px 0 0 15px}
+.bbsType0 td ol li:first-child{margin-top:0px;}
+
+.infoSection.type1 .visuArea{float:left;width:100%;overflow:hidden; margin-bottom:20px;}
+.infoSection.type1 .visuArea img:first-child{width:100%}
+.infoSection.type1 .visuArea .cs{padding:11px 10px;margin-top:12px;border:1px solid #e2e2e2;background-color:#f4f4f4}
+.infoSection.type1 .visuArea .cs h3{padding-top:2px;margin:0 0  10px 0;font-size:15px;color:#666;}
+.infoSection.type1 .visuArea .cs .floatR{float:right; left:0; width:100%;}
+.infoSection.type1 .visuArea .cs ul {float:left;}
+.infoSection.type1 .visuArea .cs ul li{padding:4px 0; color:#454545; width:80%; float:left;}
+.infoSection.type1 .visuArea .cs ul li strong{margin-left:5px}
+.infoSection.type1 .visuArea .cs ul li img{margin-right:10px; width:auto;}
+
+.tabList ul{ border-bottom:1px solid #dcdcdc; border-right:1px solid #dcdcdc}
+.tabList ul li a{display:block; height:34px; line-height:34px; border:1px solid #dcdcdc; border-bottom:0 none; text-align:center; color:#454545;}
+.tabList ul li a span{color:#ff9733;}
+.tabList ul li.selected a{background-color:#898989; color:#fff; border-color:#818181;}
+.tabList ul li a{border:1px solid #dcdcdc; border-bottom:0 none;}
+
+#TabContent2 img {/*width:100% !important;*/ height:auto !important;  }
+#TabContent2 table {width:100%;}
+
+.costArea {overflow:hidden;margin:10px 0 20px;padding:15px 10px; border:2px solid #ff9733; text-align:center;}
+.costArea > div {float:left;padding:0 10px;} /* 2015-03-09 수정 */
+.costArea > div.point {padding:0 50px;}
+.costArea span {display:block;width:auto;text-align:center;margin-bottom:5px;line-height:24px;vertical-align:middle;color:#ff9733;font-weight:bold;}
+.costArea span em {display:inline-block; padding-right:4px;font-size:13px; color:#4a4a4a; text-align:left;}
+.costArea span em.pointR {color:#e54c01;}
+.costArea span em > span {color:#4a4a4a;line-height:12px;} /* 2015-03-09 추가 */
+.costArea .price {line-height:28px;font-size:18px;color:#e74b01;text-align:right;}
+.costArea .price.p2 {margin-top:-11px;} /* 2015-03-09 추가 */
+.costArea .price em {font-size:22px;color:#e74b01;vertical-align:0;letter-spacing:-1px;}
+.costArea .price em.minus {padding-left:0;}
+.costArea .totalBox {float:right;padding:0 20px; display:inline-block;}
+.costArea img {float:left;display:inline-block;width:17px;padding-top:36px;}
+
+.passCont .cartArea .guideAreaWrap h3{margin:20px 0;color:#333;font-size:15px;}
+.passCont .cartArea .guideAreaWrap ul{padding:16px 20px;border:1px solid #ecd0a8;background-color:#fdfaef}
+.passCont .cartArea .guideAreaWrap li{margin:4px 0;color:#848484; line-height:150% }
+
+.cartArea .bbsType1 table td .deBtn {width:42px;}
+.btn_tmp_re {margin-top:20px;}
+.btn_tmp_re .type0{width:48%; margin-left:2%;}
+
+.passCont .cartArea {margin-top:30px}
+.passCont .cartArea .topGuide{margin-bottom:10px;color:#666; line-height:150%;}
+.passCont .cartArea .topGuide .floatL{margin-bottom:20px;}
+.passCont .cartArea .topGuide .floatR{color:#848484}
+
+/* .tabList bbsType3 */
+.bbsType3 li{position:relative;padding:20px 0 20px 0; border-bottom:1px solid #e2e2e2;}
+.bbsType3 li a.pic{position:relative; }
+.bbsType3 li a.pic .icoBest{position:absolute;left:-6px;top:0}
+.bbsType3 li a.pic img{width:200px; height:143px;  }
+.bbsType3 li .bbsCont {float:right; width:100%; margin-bottom:0;padding:20px 0 10px 0; }
+.bbsType3 li .bbsCont .titleWrap h5{float:left;font-size:14px;color:#454545}
+.bbsType3 li .bbsCont .titleWrap h5 .spanWrap{margin-left:5px;letter-spacing:-2.5px}
+.bbsType3 li .bbsCont .titleWrap h5 .spanWrap img{margin-top:-5px;}
+.bbsType3 li .bbsCont .titleWrap strong{float:right;font-size:16px;color:#f46600; margin-top:20px;}
+.bbsType3 li .bbsCont dd{margin:5px 0}
+.bbsType3 li .bbsCont dd strong,
+.bbsType3 li .bbsCont dd span{display:block;float:left;}
+.bbsType3 li .bbsCont dd:after{content:"";display:block;clear:both}
+.bbsType3 li .bbsCont dd strong{width:58px;margin-right:7px;color:#454545;font-size:13px}
+.bbsType3 li .bbsCont dd span{width:100%;color:#666; line-height:150%}
+.bbsType3 li .btnMore{display:block;position:absolute;right:2px;bottom:14px;width:110px;height:12px;line-height:12px;padding:10px 0;text-align:center;font-size:12px;font-weight:bold;color:#fff;border:1px solid #f5a700;background-color:#ffbf44;}
+.bbsType3 li .bbsCont p.info{color:#999;}
+.bbsType3 li .bbsCont p.info span{margin-right:13px}
+.bbsType3 li .bbsCont dl{margin-top:10px}
+.bbsType3 li .bbsCont dt{font-weight:bold;font-size:13px;color:#454545; line-height:120%;}
+.bbsType3 li .bbsCont dd{color:#666;line-height:20px;}
+.bbsType3 li .bbsCont dd a{display:block;margin:10px 0 15px}
+#objPassHotelList .bbsType3 li .bbsCont {margin-bottom:20px; }
+
+/* paging */
+.paging {text-align:center;clear:both;padding:30px 0 50px;overflow:hidden;}
+.paging > a {display:inline-block;vertical-align:top;margin-right:5px;margin-bottom:3px;}
+.paging span.pag_num {display:inline-block;vertical-align:top;margin:0 5px;}
+.paging span.pag_num span {display:inline-block;margin-right:5px;}
+.paging span.pag_num a{display:inline-block;vertical-align:top;width:34px;height:34px;margin-bottom:3px;border:1px solid #ccc;background:#fff;text-align:center;line-height:32px;}
+.paging span.pag_num a.on {background:#ff9733;margin-right:5px;color:#fff;font-weight:bold;}
+/* .pagination .prev{margin-right:5px;}
+.pagination .next{margin-left:5px;} */
+
+.pagination {text-align:center;clear:both;padding:30px 0 50px;overflow:hidden;}
+.pagination a {display:inline-block;vertical-align:top;width:34px;height:34px;border:1px solid #ccc;background:#fff;text-align:center;line-height:32px;margin:0 5px;}
+.pagination a.on {background:#ff9733;border:1px solid #e37a08; color:#fff;font-weight:bold;}
+.pagination .prev{margin-right:5px;}
+.pagination .next{margin-left:5px;}
+
+
+/* 장바구니 */
+.flexibleTable .details .item h4 {font-weight:bold;}
+.flexibleTable .details .item .deBtn {width:42px;}
+.area_btn_del_top {text-align:right;  padding:10px 0; }
+.area_btn_del_btm {text-align:right;  padding:10px 0; }
+.reservNum {padding-bottom:10px;}
+.passCont .cartArea .bbsType1 {border-top:0;}
+
+html.tablet .flexibleTable .details .item {width:11%}
+html.tablet .flexibleTable .details .item.itemsort{width:34%} /* 2015-03-09 수정 */
+html.tablet .flexibleTable .details .item.itemtitle{width:18%}
+html.tablet .flexibleTable .details .item.itemdelete{width:15%} /* 2015-03-09 수정 */
+html.tablet .flexibleTable .details .item p{height:24px; padding:16px 4px; line-height:120%; }
+
+html.desktop .flexibleTable .details .item.itemsort{width:32%}
+html.desktop .flexibleTable .details .item.itemtitle{width:18%}
+html.desktop .flexibleTable .details .item.itemdelete{width:14%}
+html.desktop .flexibleTable .details .item p{height:24px; padding:16px 4px; line-height:120%; }
+
+html.tablet .infoSection.type1{/*height:250px;*/ overflow:hidden; margin:15px 0 50px}
+html.tablet .infoSection.type1 .btnArea.type0 .floatL{width:85%;}
+html.tablet .infoSection.type1 .visuArea{float:left;width:300px;overflow:hidden}
+html.tablet .infoSection.type1 .visuArea .cs{padding:11px 20px;margin-top:12px;border:1px solid #e2e2e2;background-color:#f4f4f4}
+html.tablet .infoSection.type1 .visuArea .cs h3{padding-top:32px;margin:20px 0 0 20px;font-size:15px;color:#666;background:url(///cdnimg.tourbaksa.com/PC/www/ico/ico_deco_11.gif) no-repeat top center}
+html.tablet .infoSection.type1 .visuArea .cs .floatR{float:right; left:0; width:70%}
+html.tablet .infoSection.type1 .visuArea .cs ul li{padding:4px 0;color:#454545; float:none; width:100%;}
+html.tablet .infoSection.type1 .visuArea .cs ul li strong{margin-left:5px}
+html.tablet .infoSection.type1 .visuArea .cs ul li img{margin-right:10px}
+html.tablet .infoSection.type1 .contInfo{float:right;width:48%; /*height:250px;*/ overflow:hidden}
+html.tablet .infoSection.type1 .contInfo .bbsType0{height:207px;}
+html.tablet .infoSection.type1 .contInfo .btnBox{height:30px; margin-top:16px;}/*수정2015-05-22*/
+
+/* btnArea */
+html.tablet .infoSection.type1 .btnArea.type0{margin:11px 0 0}
+html.tablet .infoSection.type1 .btnArea.type0 .floatL .deBtn{float:left;width:88px !important;height:34px;line-height:34px;padding:0 15px;margin-right:6px;font-size:13px}
+html.tablet .infoSection.type1 .btnArea.type0 .floatL .deBtn.type0{width:96px !important;margin:0 6px 0 0}
+html.tablet .infoSection.type1 .btnArea.type0 .floatR{display:block;}
+html.tablet .infoSection.type1 .btnArea.type0 .floatR a{margin-left:6px}
+
+/* tabList */
+html.tablet .tabList.type0 ul li{float:left;width:24%; margin-left:9px;}
+html.tablet .tabList.type0 ul li:first-child{width:24.2%;margin-left:0}
+html.tablet .rates{margin-bottom:10px;color:#fc7d09;text-align:right;}
+
+/* .contWrap cont */
+html.tablet .passCont .contWrap .contInner .cont{margin-top:30px}
+html.tablet .rates{margin-bottom:10px;color:#fc7d09;text-align:right;}
+html.tablet .passCont .contWrap .contInner .cont .guideWrap h5{margin:30px 0 5px;color:#fc7d09;font-size:14px;font-weight:bold;}
+html.tablet .passCont .contWrap .contInner .cont .guideWrap > ul > li{margin:15px 0;line-height:20px;color:#333;}
+html.tablet .passCont .contWrap .contInner .cont .guideWrap > ul > li.point{color:#e54c01}
+
+/* img*/
+html.tablet .guideWrap li > img{width:100%;}
+html.tablet .guideWrap li > a img{width:300px;}
+html.tablet #pass_pop_bt img{width:100%;}
+
+/* rsv_step02 */
+html.tablet .layoutTypeC .topTitArea{padding-left:0px;border-bottom:0px; margin-top:20px;}
+html.tablet .layoutTypeC .topTitArea h4{margin-top:0}
+html.tablet .layoutTypeC .enterInfo{padding:15px 0;border-top:2px solid #949494;border-bottom:1px solid #e2e2e2}
+html.tablet .layoutTypeC .noLine{padding-bottom:0;border-bottom:0 none;}
+html.tablet .enterInfo .rates {margin-top:15px;}
+html.tablet .bbsType1 tr.lastTr td {border-bottom:1px solid #ff9733;}
+html.tablet .layoutTypeC .pay_Info{padding:15px 0 5px 0;border:1px solid #ecd0a8; color:#e74b00;}
+html.tablet .layoutTypeC .pay_Info li{line-height:14px;padding-bottom:10px;padding-left:23px;background:url(///cdnimg.tourbaksa.com/PC/www/bul/bul_list_dot_02.gif) no-repeat 15px 6px; font-weight:bold;}
+html.tablet .layoutTypeC .pay_Info li:first-child {font-weight:normal;}
+
+/* enter Info */
+html.tablet .buyingStep {overflow:hidden; width:100%; padding:0 0 18px; background:url(///cdnimg.tourbaksa.com/PC/www/sub/bg_reservationInfo.gif) repeat-x left bottom; }
+html.tablet .buyingStep .entry {float:left;overflow:hidden; width:54%; height:100%; color:#d7d7d7; line-height:36px; vertical-align:middle; border-left:0; border-right:0; padding:8px 0}
+html.tablet .buyingStep .entry .new_resize {width:111px;} 
+html.tablet .buyingStep .entry.mPhone,
+html.tablet .buyingStep .entry.mail {width:46%;}
+html.tablet .buyingStep .entry.rcv {width:100%;} /* 2015-03-09 추가 */
+html.tablet .buyingStep strong {display:block; float:left; width:27%; height:100%; font-size:14px; color:#454545; line-height:20px;letter-spacing:-1px;}
+html.tablet .buyingStep strong.new_add_city {width:100px; padding-right:20px;} /* 20140217 */
+html.tablet .buyingStep .new_add_city_inputBox {width:530px; padding-right: 4px; background-color: #FFFFFF; border: 1px solid #E2E2E2; height: 20px; line-height: 20px; color: #666666; font-size: 12px; margin: 0; vertical-align: middle;}/* 20140217 */
+html.tablet .buyingStep strong sub {position:relative; top:-3px; font-size:14px; color:#e54c01;}
+html.tablet .buyingStep span {display:block; float:left; width:72%; height:100%; line-height:20px; color:#848484;}
+html.tablet .buyingStep .entry.rcv strong {width:10%;} /* 2015-03-09 추가 */
+html.tablet .buyingStep .entry.rcv span {width:90%;} /* 2015-03-09 추가 */
+html.tablet .buyingStep .inputBox {width:230px;padding:0 4px;}
+html.tablet .buyingStep .mPhone input {width:56px;}
+html.tablet .buyingStep .point input {width:130px;}
+html.tablet .buyingStep select {width:65px;}
+html.tablet .buyingStep em.dash {display:inline-block; width:16px; text-align:center; color:#d7d7d7;}
+html.tablet .buying .enterInfo h5 {padding-top:26px;font-size:15px;color:#333;}
+html.tablet .buying .enterInfo ul {margin-top:15px;}
+html.tablet .buying .enterInfo ul li {line-height:18px;}
+html.tablet .request {border-top:1px solid #e2e2e2;}
+html.tablet textarea {width:99%;margin:15px 0 25px;font-size:12px;}/*수정2015-05-25*/
+html.tablet .request textarea {margin-bottom:0;}
+html.tablet .road { border:1px solid #e2e2e2; width:180px; padding:0 4px;}
+
+
+html.tablet .provision .agreeTex p:first-child{margin-bottom:10px;}
+
+
+html.tablet .buyingStep.recieveInfo {display:none;padding:15px 0 18px;background-image:none;}
+html.tablet .buyingStep.recieveInfo.visit {display:block;}
+html.tablet .recieveInfo .entryList {overflow:hidden;}
+html.tablet .recieveInfo .entry {/* width:206px; */float:none;width:100%;} /* 2015-02-26 수정 */
+html.tablet .recieveInfo .entry strong {width:auto;padding-right:10px;}
+html.tablet .recieveInfo .entry span {position:relative;width:auto;}
+html.tablet .recieveInfo .entry .inputBox {width:82px;padding-right:23px;}
+html.tablet .recieveInfo .entry a {display:block;position:absolute;left:92px;top:0;}
+html.tablet .buyingStep.recieveInfo.visit p{color:#333333; font-weight:bold; margin-top:6px;}
+html.tablet .buyingStep.recieveInfo.visit p.yColor{color:#fc7d09; margin-top:19px; line-height:18px; }
+html.tablet .buyingStep.recieveInfo .branch {width:300px;}
+html.tablet .buyingStep.recieveInfo .branch select {width:190px;}
+html.tablet .buyingStep.recieveInfo .branch select.minute {margin-right:10px;}
+html.tablet .buyingStep.recieveInfo.delivery {height:auto;} /* 2015-02-26 수정 */
+html.tablet .enterInfo .noti {height:14px;padding-bottom:8px;padding-left:8px;background:url(///cdnimg.tourbaksa.com/PC/www/bul/bul_list_dot_02.gif) no-repeat left 7px;}
+html.tablet .buyingStep span label {margin:0 15px 0 3px;}
+html.tablet .enterInfo .guideList li {padding-bottom:10px;padding-left:8px;background:url(///cdnimg.tourbaksa.com/PC/www/bul/bul_list_dot_02.gif) no-repeat left 9px;}
+html.tablet .enterInfo .guideList li a.viewBtn {display:inline-block;width:32px;height:18px;margin-left:5px;border:1px solid #ccc;text-align:center;background-color:#f4f4f4;font-size:11px;}
+html.tablet .itemInfo .btnArea, html.tablet .buying .btnArea {padding-top:30px;text-align:center;}
+html.tablet .itemInfo .btnArea .deBtn.type0, html.tablet .itemInfo .btnArea .deBtn.type3, html.tablet .itemInfo .btnArea .deBtn.type4, html.tablet .buying .btnArea .deBtn.type0, html.tablet .buying .btnArea .deBtn.type3, html.tablet .buying .btnArea .deBtn.type4 
+,html.tablet .itemInfo .btnArea .deBtn.type8, html.tablet .buying .btnArea .deBtn.type8 {display:inline-block;width:158px;height:auto;margin:0 4px;line-height:34px;vertical-align:middle;font-size:12px;letter-spacing:-1px;}
+html.tablet .pop_pass_faq .popHeader h1 {margin-left:15px; width:500px; font-size:18px;}
+html.tablet .tabList ul{  border-right:none;}
+html.tablet .tabList.type0 ul li#tab4{ border-bottom:none; }
+
+
+/* RSV_Step03 최종 결제금액 */
+html.tablet .costArea {overflow:hidden;margin:10px 0 20px;padding:45px 70px; border:2px solid #ff9733; text-align:center;}
+html.tablet .costArea > div {float:left;padding:0 20px;} /* 2015-03-09 수정 */
+html.tablet .costArea .price em {font-size:28px;color:#e74b01;vertical-align:0;letter-spacing:-1px;}
+html.tablet .costArea .totalBox {float:right;padding:0 25px; display:inline-block;}
+html.tablet .costArea img {float:left;display:inline-block;width:17px;padding-top:26px;}
+html.tablet .costArea span em > span {display:inline;color:#4a4a4a;line-height:16px;} /* 2015-03-09 추가 */
+html.tablet .costArea .price.p2 {margin-top:0;} /* 2015-03-09 추가 */
+html.tablet .btn_tmp_re {width:250px; margin:20px auto;}
+html.tablet .btn_tmp_re .type1{width:120px;}
+html.tablet .btn_tmp_re .type0{width:120px; margin-left:10px;}
+html.tablet .bbsType3 li .bbsCont dd span{width:83%;color:#666; line-height:150%}
+html.tablet .bbsType3 li .bbsCont .titleWrap strong{float:right;font-size:16px;color:#f46600; margin-top:0;}
+
+html.desktop .infoSection.type1{/*height:250px;*/overflow:hidden;margin:15px 0 50px;}
+html.desktop .infoSection.type1 .visuArea{float:left;width:300px;overflow:hidden}
+html.desktop .infoSection.type1 .visuArea .cs{padding:11px 20px;margin-top:12px;border:1px solid #e2e2e2;background-color:#f4f4f4}
+html.desktop .infoSection.type1 .visuArea .cs h3{padding-top:32px;margin:20px 0 0 20px;font-size:15px;color:#666;background:url(///cdnimg.tourbaksa.com/PC/www/ico/ico_deco_11.gif) no-repeat top center}
+html.desktop .infoSection.type1 .visuArea .cs .floatR{float:right; left:0; width:70%}
+html.desktop .infoSection.type1 .visuArea .cs ul li{padding:4px 0;color:#454545; float:none; width:100%;}
+html.desktop .infoSection.type1 .visuArea .cs ul li strong{margin-left:5px}
+html.desktop .infoSection.type1 .visuArea .cs ul li img{margin-right:10px}
+html.desktop .infoSection.type1 .contInfo{float:right;width:58%;overflow:hidden}
+html.desktop .infoSection.type1 .contInfo .bbsType0 {height:195px; /*margin-bottom:44px;*/}/* 2015-08-07 수정 */
+html.desktop .infoSection.type1 .contInfo .btnBox{display:inline-block; float:right; height:auto; margin-top:28px;/*margin-top:52px;*/}/* height:15px;수정 2015-08-07 */
+
+/* btnArea */
+html.desktop .infoSection.type1 .btnArea.type0{/*display:inline-block; margin:0; margin:42px 0 0;*/}/* 수정 2015-07-13 */
+html.desktop .infoSection.type1 .btnArea.type0 .floatL{width:95%;}
+html.desktop .infoSection .bbsType0 table {margin-bottom:30px;}
+html.ie8.desktop .infoSection.type1 .btnArea.type0{margin-top:41px}
+html.ie7.desktop .infoSection.type1 .btnArea.type0{margin-top:40px}
+html.desktop .infoSection.type1 .btnArea.type0 .floatL .deBtn{float:left;width:90px !important;height:34px;line-height:34px;padding:0 15px;margin-right:6px;font-size:13px;}
+html.ie7.desktop .infoSection.type1 .btnArea.type0 .floatL .deBtn{padding:0 10px;line-height:31px}
+html.desktop .infoSection.type1 .btnArea.type0 .floatL .deBtn.type0{width:118px !important;margin:0 6px 0 0}
+html.desktop .infoSection.type1 .btnArea.type0 .floatR{display:block;}
+html.desktop .infoSection.type1 .btnArea.type0 .floatR a{margin-left:6px}
+
+/* tabList */
+html.desktop .tabList.type0 {width:853px;}
+html.desktop .tabList.type0 ul li{float:left;width:205px; margin-left:11px;}
+html.desktop .tabList.type0 ul li:first-child{width:205px;margin-left:0}
+html.desktop .rates{margin-bottom:10px;color:#fc7d09;text-align:right;}
+
+/* .contWrap cont */
+html.desktop .passCont .contWrap .contInner .cont{margin-top:30px}
+html.desktop .rates{margin-bottom:10px;color:#fc7d09;text-align:right;}
+html.desktop .passCont .contWrap .contInner .cont .guideWrap h5{margin:30px 0 5px;color:#fc7d09;font-size:14px;font-weight:bold;}
+html.desktop .passCont .contWrap .contInner .cont .guideWrap > ul > li{margin:15px 0;line-height:20px;color:#333;}
+html.desktop .passCont .contWrap .contInner .cont .guideWrap > ul > li.point{color:#e54c01}
+
+html.desktop .guideWrap li > a img{width:300px;}
+html.desktop #pass_pop_bt img{width:854px;}
+html.desktop #table2 > tbody tr td img{width:655px;}
+html.desktop #table2 > tbody tr td table img{width:333px;}
+
+/* rsv_step02 */
+/* topTitArea */
+html.desktop .layoutTypeC .topTitArea{padding-left:0px;border-bottom:0px; margin-top:20px;}
+html.desktop .layoutTypeC .topTitArea h4{margin-top:0}
+html.desktop .layoutTypeC .enterInfo{padding:15px 0;border-top:2px solid #949494;border-bottom:1px solid #e2e2e2}
+
+html.desktop .provision .agreeTex{overflow: hidden; margin:19px 0 23px 0; color:#454545;}
+html.desktop .provision .agreeTex p{ display:inline; float:left; margin:0 0 0 10px; }
+html.desktop .provision .agreeTex p:first-child{margin:0 50px 0 0; padding-left:10px;}
+html.desktop .provision .agreeTex p span {padding-left:7px;}
+html.desktop .provision .agreeTex p span:first-child{margin-left:12px;}
+html.desktop .provision .agreeTex p span input{margin-right:4px;}
+html.desktop .provision .agreeAll_area {background: none repeat scroll 0 0 #f4f4f4; border: 1px solid #dcdcdc; margin-top: 30px; padding: 10px;}
+html.desktop .provision .agreeAll_area.alltax {background:0; border:2px solid #ff9733; margin-top:40px; padding:33px 10px 30px 24px;font-size:14px;}
+html.desktop .provision .agreeAll_area.alltax span{color:#e54c01; font-size:18px; font-weight:bold;}
+
+html.desktop .layoutTypeC .noLine{padding-bottom:0;border-bottom:0 none;}
+html.desktop .enterInfo .rates {margin-top:15px;}
+html.desktop .bbsType1 tr.lastTr td {border-bottom:1px solid #ff9733;}
+
+html.desktop .layoutTypeC .pay_Info{padding:15px 0 5px 0;border:1px solid #ecd0a8; color:#e74b00;}
+html.desktop .layoutTypeC .pay_Info li{line-height:14px;padding-bottom:10px;padding-left:23px;background:url(///cdnimg.tourbaksa.com/PC/www/bul/bul_list_dot_02.gif) no-repeat 15px 6px; font-weight:bold;}
+html.desktop .layoutTypeC .pay_Info li:first-child {font-weight:normal;}
+
+/* enter Info */
+html.desktop .buyingStep {overflow:hidden; width:100%; padding:0 0 18px; background:url(///cdnimg.tourbaksa.com/PC/www/sub/bg_reservationInfo.gif) repeat-x left bottom; }
+html.desktop .buyingStep .entry {float:left;overflow:hidden; width:54%; height:100%; color:#d7d7d7; line-height:36px; vertical-align:middle; border-left:0; border-right:0; padding:8px 0;}
+html.desktop .buyingStep .entry .new_resize {width:111px;} 
+html.desktop .buyingStep .entry.mPhone,
+html.desktop .buyingStep .entry.mail {width:46%;}
+html.desktop .buyingStep strong {display:block; float:left; width:17%; height:100%; font-size:14px; color:#454545; line-height:20px;letter-spacing:-1px; }
+html.desktop .buyingStep strong.new_add_city {width:100px; padding-right:20px;} /* 20140217 */
+html.desktop .buyingStep .new_add_city_inputBox {width:530px; padding-right: 4px; background-color: #FFFFFF; border: 1px solid #E2E2E2; height: 20px; line-height: 20px; color: #666666; font-size: 12px; margin: 0; vertical-align: middle;}/* 20140217 */
+html.desktop .buyingStep strong sub {position:relative; top:-3px; font-size:14px; color:#e54c01;}
+html.desktop .buyingStep span {display:block; float:left; width:82%; height:100%; line-height:20px; color:#848484;}
+html.desktop .buyingStep .inputBox {width:230px;padding:0 4px;}
+html.desktop .buyingStep .mPhone input {width:61px;}
+html.desktop .buyingStep .point input {width:130px;}
+html.desktop .buyingStep select {width:65px;}
+html.desktop .buyingStep em.dash {display:inline-block; width:16px; text-align:center; color:#d7d7d7;}
+html.desktop .buying .enterInfo h5 {padding-top:26px;font-size:15px;color:#333;}
+html.desktop .buying .enterInfo ul {margin-top:15px;}
+html.desktop .buying .enterInfo ul li {line-height:18px;}
+html.desktop .request {border-top:1px solid #e2e2e2;}
+html.desktop textarea {width:99%;margin:15px 0 25px;font-size:12px;}/*수정2015-05-25*/
+html.desktop .request textarea {margin-bottom:0;}
+html.desktop .road { border:1px solid #e2e2e2; width:180px; padding:0 4px;}
+
+html.desktop .buyingStep.recieveInfo {display:none;padding:15px 0 18px;background-image:none;}
+html.desktop .buyingStep.recieveInfo.visit {display:block;}
+html.desktop .buyingStep.recieveInfo.visit p{color:#333333; font-weight:bold; margin-top:6px;}
+html.desktop .buyingStep.recieveInfo.visit p.yColor{color:#fc7d09; margin-top:19px; line-height:18px; display:none;}
+html.desktop .recieveInfo .entryList {overflow:hidden;}
+html.desktop .recieveInfo .entry {/* width:216px; */float:none;width:100%;} /* 2015-02-26 수정 */
+html.desktop .recieveInfo .entry strong {width:auto;padding-right:20px;}
+html.desktop .recieveInfo .entry span {position:relative;width:auto;}
+html.desktop .recieveInfo .entry .inputBox {width:82px;padding-right:23px;}
+html.desktop .recieveInfo .entry a {display:block;position:absolute;left:92px;top:0;}
+html.desktop .buyingStep.recieveInfo .branch {width:300px;}
+html.desktop .buyingStep.recieveInfo .branch select {width:190px;}
+html.desktop .buyingStep.recieveInfo .branch select.minute {margin-right:10px;}
+html.desktop .buyingStep.recieveInfo.delivery .info_addr {height:auto;} /* 2015-02-26 수정 */
+html.desktop .enterInfo .noti {height:14px;padding-bottom:8px;padding-left:8px;background:url(///cdnimg.tourbaksa.com/PC/www/bul/bul_list_dot_02.gif) no-repeat left 7px;}
+html.desktop .buyingStep span label {margin:0 15px 0 3px;}
+html.desktop .enterInfo .guideList li {padding-bottom:10px;padding-left:8px;background:url(///cdnimg.tourbaksa.com/PC/www/bul/bul_list_dot_02.gif) no-repeat left 9px;}
+html.desktop .enterInfo .guideList li a.viewBtn {display:inline-block;width:32px;height:18px;margin-left:5px;border:1px solid #ccc;text-align:center;background-color:#f4f4f4;font-size:11px;}
+html.desktop .itemInfo .btnArea,
+html.desktop .buying .btnArea {padding-top:30px;text-align:center;}
+html.desktop .itemInfo .btnArea .deBtn.type0, html.desktop .itemInfo .btnArea .deBtn.type3, html.desktop .itemInfo .btnArea .deBtn.type4, html.desktop .buying .btnArea .deBtn.type0,
+html.desktop .buying .btnArea .deBtn.type3, html.desktop .buying .btnArea .deBtn.type4, html.desktop .buying .btnArea .deBtn.type8, html.desktop .itemInfo .btnArea .deBtn.type8{display:inline-block;width:158px;height:auto;margin:0 4px;line-height:34px;vertical-align:middle;font-size:12px;letter-spacing:-1px;}
+html.desktop .pop_pass_faq .popHeader h1 {margin-left:15px; width:500px; font-size:18px;}
+html.desktop .tabList ul{  border-right:none;}
+html.desktop .tabList.type0 ul li#tab4{ border-bottom:none; }
+
+/* RSV_Step03 최종 결제금액 */
+html.desktop .costArea {overflow:hidden;margin:10px 0 20px;padding:45px 70px; border:2px solid #ff9733; text-align:center;}
+html.desktop .costArea > div {float:left;padding:0 40px;}
+html.desktop .costArea .price em {font-size:28px;color:#e74b01;vertical-align:0;letter-spacing:-1px;}
+html.desktop .costArea .totalBox {float:right;padding:0 25px; display:inline-block;}
+html.desktop .costArea span em > span {display:inline;color:#4a4a4a;line-height:16px;} /* 2015-03-09 추가 */
+html.desktop .costArea .price.p2 {margin-top:0;} /* 2015-03-09 추가 */
+html.desktop .costArea img {float:left;display:inline-block;width:17px;padding-top:26px;}
+html.desktop .bbsType3 li .bbsCont dd span{width:83%;color:#666; line-height:150%}
+html.desktop .bbsType3 li .bbsCont .titleWrap strong{float:right;font-size:16px;color:#f46600; margin-top:0;}
+
+/* 자세히 보기 이미지 2015-02-26 */
+#TabContent2 img.w100 {width:100% !important;}
+html.tablet #TabContent2 img {width:700px; height:auto !important;}/* auto !important; 수정 2015-07-13 */
+html.tablet #TabContent2 img.w100 {width:100% !important;}
+html.desktop #TabContent2 img {width:700px; height:auto !important;}
+
+/* 표 가격 모바일일 때만 두줄로 2015-03-03 추가 */
+.pass_b_el {display:block;}
+html.tablet .pass_b_el {display:inline;}
+html.desktop .pass_b_el {display:inline;}
+
+/* 브레드크럼 반응형 수정 2015-03-03 추가 */
+.layoutTypeC .breadcrumbArea .breadcrumb {padding-bottom:0;}
+.layoutTypeC .breadcrumbArea .breadcrumb .selectArea {display:inline-block;width:200px;max-width:250px;height:24px;}
+html.tablet .layoutTypeC .breadcrumbArea .breadcrumb .selectArea {display:inline-block;width:200px !important;max-width:250px !important;height:24px;}
+
+/* 인천공항약도 2015-03-06 추가 */
+.buyingStep.recieveInfo.airport .guideList li img#AirPortMap {width:100%;}
+html.tablet .buyingStep.recieveInfo.airport .guideList li img#AirPortMap {width:auto;}
+html.desktop .buyingStep.recieveInfo.airport .guideList li img#AirPortMap {width:auto;}
+
+.request {border-top:1px solid #e2e2e2;}
+textarea {width:98%;margin:15px 0 25px;font-size:12px;color:#666;}/*수정2015-05-25*/
+.request textarea {margin-bottom:0;}
+
+.buyingStep.cashBox {padding-bottom:10px;margin-top:10px;}
+.confirm .buyingStep .cashReceipt {width:210px;}
+.confirm .buyingStep .cashReceipt label {padding-left:5px;font-size:13px; color:#454545; font-weight:bold;vertical-align:middle;}
+.confirm .buyingStep .cashUse {padding-right:40px;margin:10px 0;vertical-align:middle;}
+.confirm .buyingStep .cashUse em {display:inline-block;padding-right:20px;color:#454545;font-weight:bold;font-size:13px;}
+.confirm .buyingStep .cashUse *,
+.confirm .buyingStep .socialNum * {vertical-align:middle;}
+.buyingStep .socialNum .inputBox {width:150px;}
+.confirm .btnArea {margin-bottom:60px;}
+
+html.tablet .confirm .buyingStep .cashUse {width:240px;margin-top:0;}
+html.desktop .confirm .buyingStep .cashUse {width:240px;margin-top:0;}
+
+.passCont .contWrap .btnArea.type1{margin-top:20px;text-align:center;}
+.passCont .contWrap .btnArea.type1 .deBtn{width:100%;margin:0 3px;height:34px;line-height:34px}
+html.tablet .passCont .contWrap .btnArea.type1 .deBtn{width:18%;margin:0 3px;height:34px;line-height:34px}
+html.desktop .passCont .contWrap .btnArea.type1 .deBtn{width:18%;margin:0 3px;height:34px;line-height:34px}
+
+/* data 없을 경우 2015-03-09 추가 */
+.nodata {padding:40px 0;border-top:1px solid #e2e2e2;border-bottom:1px solid #e2e2e2;text-align:center;}
+
+/* 수령방법 - 인천공항수령 2015-03-09 */
+.entry.rcv > span > span {display:block;width:100%;}
+.entry.rcv span.air_rcv {display:block !important;width:auto !important;margin-top:5px;}
+html.tablet .entry.rcv > span > span {display:inline-block !important;width:auto !important;}
+html.tablet .entry.rcv span.air_rcv {display:inline !important;margin-top:0;}
+html.desktop .entry.rcv > span > span {display:inline-block !important;width:auto !important;}
+html.desktop .entry.rcv span.air_rcv {display:inline !important;margin-top:0;}
+
+/* 2015-08-07 sns수정 */
+
+.passContTit .snsbox {overflow: hidden; padding-top: 20px; width: 100%;}
+.passContTit .snsbox .allSns {display: inline-block; float: right;}
+.passContTit .snsbox .allSns a img {height: 27px; width: 27px;}
+html.desktop .passContTit .snsbox {display: inline; padding-top: 0; width: 100%;}
+
+

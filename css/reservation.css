@@ -1,0 +1,922 @@
+@charset "euc-kr";
+@import "/UI/css/subLayout.css";
+@import "/UI/css/subCommon.css";
+
+/* 모든 디바이스 공통 */
+
+/* layoutTypeC */
+/* topTitArea */
+.layoutTypeC  h3{font-size:28px; color:#f67e0f;}
+.layoutTypeC  h4{margin:30px 0 15px;font-size:15px;color:#333;font-weight:800;}
+.layoutTypeC .topTitArea{padding-left:0px;border-bottom:0px;}
+.layoutTypeC .topTitArea h4{margin-top:0}
+.layoutTypeC .topTitArea .txtTab .current{color:#454545;font-weight:bold;}
+.layoutTypeC .topTitArea .txtTab a:first-child{padding-right:10px;margin-right:5px;background:url(//cdnimg.tourbaksa.com/PC/www/common/bg_bar_03.gif) no-repeat right center}
+.layoutTypeC .topTitArea .txtTab a.tab {padding-right:10px;margin-right:5px;background:url(//cdnimg.tourbaksa.com/PC/www/common/bg_bar_03.gif) no-repeat right center} /* 20140514 : 예외추가 */
+
+.layoutTypeC .topTitArea .txtTab {line-height:18px;;}
+
+/* .layoutTypeC .borderBlock*/
+.layoutTypeC .borderBlock{padding:15px 0;margin-bottom:20px;border-top:2px solid #949494;border-bottom:1px solid #e2e2e2}
+
+/* table.priceView */
+
+
+table.priceView{width:100%;}
+.priceView th,
+.priceView td{padding-bottom:28px;line-height:20px}	
+.priceView .end th,
+.priceView .end td{padding-bottom:0}
+.priceView th{text-align:left;color:#454545;font-size:14px}	
+.priceView td{color:#666666;font-size:13px;} /* 20131119 : color:#848484; -> 666666 */
+.priceView td span {padding:0 10px;background:url(//cdnimg.tourbaksa.com/PC/www/common/bg_bar_04.gif) no-repeat left center}
+.priceView td span:first-child {padding-left:0;background-image:none;}
+.priceView td span em.price {color:#e54c01;text-decoration:underline;}
+.priceView td strong.goodTit{color:#454545}
+.priceView td strong.point{color:#ff921c}
+.priceView td li{font-size:12px}
+.priceView td .priceValue li{display:inline-block;width:13%;overflow:hidden;text-align:center;background:url(//cdnimg.tourbaksa.com/PC/www/common/bg_bar_03.gif) no-repeat left center}
+.priceView td .priceValue li:first-child{padding-left:0;background-image:none}
+.priceView td .priceValue strong{font-weight:normal}
+.priceView td .priceValue .price span{color:#454545}
+.priceView td .priceValue .price strong{color:#e54c01;font-weight:bold;text-decoration:underline}
+.priceView td ol li{margin:5px 0 0 0;} /* 20131029 : 좌측 간격 15px -> 0 / 넘버링 삭제 */
+.priceView td ol li:first-child{margin-top:0px;}
+.priceView td ol li img{display:block; max-width: 800px; width: auto;} /* 20140530 */
+
+.priceView td .guide span {background:none;} /* 20140610 :bg 삭제 */
+
+/* provision */
+.provision .inner{height:200px;overflow-y:scroll;line-height:18px;padding:20px;border:1px solid #dcdcdc;background-color:#f4f4f4; color:#666666;} /* 20131119 : color:#848484; -> 666666 */
+.provision .inner h2{font-size:28px;font-weight:bold;color:#fc7d09;margin-bottom:5px;}
+.provision .inner .agreeWarp{margin-bottom:30px;line-height:20px}
+.provision .inner .agreeWarp p{text-align:left !important;}
+.provision .inner .agreeWarp h3{font-size:14px;color:#666;margin:30px 0 5px}
+.provision .inner .agreementWarp h3 {padding-top:20px;font-size:14px;color:#666;}
+.provision .inner .agreementWarp h4 {font-size:12px;}
+
+
+/* provision guide */
+.provision .guide{margin-top:12px;line-height:18px;color:#555;font-weight:bold;}
+
+/* provision agreeArea */
+.provision .agreeArea{margin-top:15px; margin-left:12px;color:#454545; line-height:20px;} /* 20131119 : color:#666 -> 454545 */
+
+/* btns */
+.reservation .btnArea.type0{margin:0;}
+.reservation .btnArea.type0 .deBtn{display:block; height:38px; margin:0; line-height:36px; color:#fff; font-size:14px; font-weight:bold;}
+.reservation .btnArea.type0 .deBtn.type0 { width:49%; margin:0 0 8px; background-color:#ff921c; border:1px solid #e37a08;}
+.reservation .btnArea.type0 .deBtn.type1{ width:49%;color:#666666;background-color:#fff; border:1px solid #a5a5a5;} /* color:#848484; -> 666666 */
+.reservation .btnArea.type0 .deBtn.type0 { float:left;}
+.reservation .btnArea.type0 .deBtn.type1 { float:right;}
+.reservation .btnArea.type0 .deBtn.type3 {width:45%;color:#fff;border:1px solid #f5a700;background-color:#ffbf44}
+
+/* descList */
+.descList li {margin:0 0 4px; padding:0 0 0 6px; color:#454545; line-height:17px; background:url(//cdnimg.tourbaksa.com/PC/www/bul/bul_list_dot.gif) no-repeat left 8px;} /* 20131119 : color:#666; -> color:#454545; */
+
+/* .checkPoint .accountInfo */
+.checkPoint .accountWrap .desc li,
+.checkPoint .notice .desc li{ line-height:1.4; padding:0 0 5px 7px; color:#666; background:url("//cdnimg.tourbaksa.com/PC/www/bul/bul_list_dot_02.gif") no-repeat left 6px;} /* 20131119 : color:#848484; -> 666666 */
+
+.checkPoint .accountWrap{padding-bottom:20px;margin-bottom:20px;border-bottom:1px solid #e2e2e2}
+.checkPoint .accountInfo{padding-bottom:5px;border:2px solid #949494;background-color:#fefdf8}
+.checkPoint .accountInfo > li{padding:15px;border-top:1px solid #e2e2e2;}
+.checkPoint .accountInfo > li:first-child{border-top:0px}
+.checkPoint .accountInfo > li.noAccount {height:32px;line-height:32px;}
+.checkPoint .accountInfo > li > dl:first-child{margin-bottom:15px;}
+.checkPoint .accountInfo > li > dl > dt,
+.checkPoint .accountInfo > li > dl > dd{display:inline-block;font-weight:bold;letter-spacing:-1px}
+.checkPoint .accountInfo > li > dl > dt{width:25%;font-size:14px;color:#454545}
+.checkPoint .accountInfo > li > dl > dd{width:70%;font-size:16px;color:#e54c01}
+.checkPoint .accountInfo > li > dl > dd strong{font-size:14px;color:#e54c01}
+.checkPoint .accountInfo > li.account dt{display:block;width:100%;margin-bottom:20px;}
+.checkPoint .accountInfo > li.account dd{padding-left:25%;font-size:24px}
+.checkPoint .accountInfo > li.account dd span{margin-right:10px;color:#454545;font-size:14px}
+.checkPoint .accountWrap .desc{margin:10px 0}
+.checkPoint .accountWrap .desc li{color:#666}
+
+/* CheckPoint notice */
+.checkPoint .notice{margin-top:20px;border:1px solid #ecd0a8;}
+.checkPoint .notice > .desc{padding:15px 4.5%}
+.checkPoint .personInCharge { padding:15px; background-color:#fdfaef; overflow:hidden; border:1px solid #e8e4d7;border-width:1px 0;}
+.checkPoint .personInCharge .photo { float:left; width:87px; height:58px;}
+.checkPoint .personInCharge .photo img { width:100%; height:100%;}
+.checkPoint .personInCharge .desc li {font-size:11px; color:#454545;background-image:none}
+.checkPoint .personInCharge .desc li.info2{padding-bottom:0px;line-height:20px;}
+.checkPoint .personInCharge .desc .tit {font-size:13px;}
+
+/* process */
+.notice .process {height:248px;padding:20px 0;background:url(//cdnimg.tourbaksa.com/PC/www/sub/bg_step1.gif) no-repeat center center;}
+
+/* reservationInfo */
+.reservationInfo {overflow:hidden; width:100%; margin:-5px 0 0; padding:0 0 18px; background:url(//cdnimg.tourbaksa.com/PC/www/sub/bg_reservationInfo.gif) repeat-x left bottom; }
+.reservationInfo .flow,
+.reservationInfo .reverse {overflow:hidden; width:100%; height:32px; color:#d7d7d7; line-height:32px; vertical-align:middle; border-left:0; border-right:0;}
+
+.reservationInfo .addr div {height:240px;line-height:10px;letter-spacing:-0.05em; } /* 2014-04-17 도로명 추가 */
+/*.reservationInfo .addr div {height:100px;line-height:95px;letter-spacing:-0.05em;}도로명 적용후 삭제*/
+.reservationInfo .addr div .zip_post{padding-bottom:30px;}/* 10월11일추가 */
+.reservationInfo .addr div .zip_info{line-height:16px;}
+
+.reservationInfo .addr div .inputAddr {margin-left:26%;}
+.reservationInfo .addr div .inputAddr input {width:44%;}
+.reservationInfo .addr div .inputAddr input:first-child {margin-right:4px;}
+.reservationInfo .addr div .deBtn.type5 {margin-left:2%;width:90px;}
+.reservationInfo strong {display:block; float:left; width:26%; height:32px; font-size:14px; color:#454545; line-height:32px;letter-spacing:-1px;}
+.reservationInfo strong sub {position:relative; top:-3px; font-size:14px; color:#e54c01;}
+.reservationInfo span {display:block; float:left; width:69%; height:32px; padding-right:5%;line-height:30px; color:#454545;} /* 20131119 : color:#666; -> 454545 */
+
+.reservationInfo em.dash {display:inline-block; width:5%; text-align:center; color:#d7d7d7;}
+.reservation em.dash_float {float:left; display:inline-block; width:5%; text-align:center; color:#d7d7d7;} /* 20131025 : float 추가 */ 
+.reservationInfo .addr div #zipcode,
+.mPhone .phoneFirst,
+.birth input {width:30%;}
+.mPhone input {width:25%;}
+.mail input {width:94.66%;}
+.reservation .graySub,
+.rsv_processWrap .graySub {width:22%; min-width:90px; height:32px; margin:4px 0 0 15%; font-size:13px; color:#fff; cursor:pointer; line-height:30px; border:1px solid #999; background-color:#aaa;}
+.reservation button {padding:0; border:0; background:none;}
+.reservation button::-moz-focus-inner {padding:0; border:0;}
+.reservation button img {vertical-align:top;}
+.reservation select.full {width:100%;}
+.reservationMember {position:relative;}
+.reservationMember .traveler {overflow:hidden; width:99.2%; padding:29px 0 12px;}
+.reservationMember .traveler strong {display:block; float:left; width:25%; height:100px; font-size:14px; color:#454545;}
+.reservationMember .traveler strong sub {position:relative; top:-3px; font-size:14px; color:#e54c01;}
+.reservationMember .traveler .travelerNum {float:left; display:block; width:32%;margin-right:5%;height:32px; font-size:12px; color:#666666;} /* 20131119 : color:#848484; -> color:#666666; */
+.reservationMember .traveler .travelerNum em {margin:0 3px 0 0;}
+.reservationMember .traveler .travelerNum > span {position:relative;}
+.reservationMember .traveler .travelerNum button {position:absolute; left:105%;}
+.reservationMember .traveler .travelerNum button.up {top:3px;}
+.reservationMember .traveler .travelerNum button.down {top:12px;}
+.reservationMember .traveler .travelerNum input[type="text"] {width:58%;color:#848484;}
+.reservationMember .travelerDesc {font-size:11px; color:#ff921c;line-height:18px;}
+/* 10월11일 추가  checkbox */
+.reservationMember .travelerPartner input{margin-top:-4px;}
+.reservationMember .travelerPartner{display:inline-block;float:right;margin-right:260px;font-size:11px;color:#454545;}
+
+.reservationMember .ageCategory {margin:0 0 10px; padding-bottom:12px; color:#454545; border:1px solid #e2dccc; background-color:#fdfbf4;} /* 20131119 : color:#666; -> color:#454545; */
+.reservationMember .ageCategory p {margin:20px 0 9px 20px;}
+.reservationMember .ageCategory p strong {font-size:13px; color:#454545;}
+.reservationMember .ageCategory p img {margin:0 5px 0 0; vertical-align:middle;}
+.reservationMember .ageCategory ul {margin:0 0 0 23px;}
+.reservationMember .ageCategory ul li {padding:0 0 6px 6px; background:url(//cdnimg.tourbaksa.com/PC/www/bul/bul_list_dot.gif) no-repeat left 5px;}
+.reservationMember .ageCategory ul li span {margin:7px 0 0; font-size:11px; color:#ff921c;}
+.reservationUser {padding:25px 0 0;}
+.reservationUser h4 {margin:0;}
+.reservationUser sub {position:relative; top:-2px; font-size:14px; color:#e54c01;}
+.reservationUser .flexibleTable .details p {overflow:hidden; margin-left:0;padding:12px 3%;}
+.reservationUser p input {width:96%;}
+.reservation .birthday,
+.reservation .passportNum,
+.reservation .passportDate,
+.reservation .name {width:95%;}
+.reservation .engNameFirst {float:left; width:27%;}
+.reservation .engNameLast {float:right; width:60%;}
+.reservation .engNameFirst_resize {float:left; width:22%;} /* 20131025 : 사이즈 추가 */
+.reservation .engNameFirst_resize2 {float:left; width:34%;} /* 20131025 : 사이즈 추가 */
+.reservation .accountName {width:95%;}
+.reservation .resident {width:117px; margin:0 8px 0 7px;}
+.reservation .iPoint {width:18%; margin:0 4px 0 2px; text-align:right; color:#848484;}
+
+.accountArea {overflow:hidden;padding:15px 0 21px; background:url(//cdnimg.tourbaksa.com/PC/www/sub/bg_reservationInfo.gif) repeat-x left bottom;}
+.accountArea span.accountWrap {overflow:hidden; display:block; width:100%; height:32px; line-height:32px;}
+.accountArea span.accountWrap strong {display:block; float:left; width:20%;}
+.accountArea span.accountWrap span {display:block; float:right; width:80%;}
+.accountArea span.accountWrap select {width:99.5%;}
+
+.cashReceiptArea {padding:7px 0 11px;}
+.cashReceiptArea .cashReceipt,
+.cashReceiptArea .cashUse,
+.cashReceiptArea .cashForm {display:block; margin:10px 0 0;}
+.cashReceiptArea .cashReceipt label {padding-left:5px;font-size:13px; color:#454545; font-weight:bold;vertical-align:middle;}
+.cashReceiptArea .cashUse em {margin:0 6px 0 0; color:#454545; font-weight:bold;}
+.cashReceiptArea .cashUse input[type="radio"] {vertical-align:middle; margin:0 6px 0 20px;}
+.cashReceiptArea .cashUse label,
+.cashReceiptArea .cashForm {color:#666;}
+.cashReceiptArea .cashForm {clear:left;margin:20px 0 0;}
+.requestArea textarea {width:100%; height:118px; font-size:12px; padding:0; color:#848484; border:1px solid #d7d7d7;}
+.pointArea i {font-weight:bold; font-style:normal;}
+.pointArea .userPoint {margin:0 1px 0 0; color:#848484;}
+.pointArea .userPoint i {color:#ffae00;}
+.pointArea .pointDetail {position:relative;}
+.pointArea .pointDetail #pointDesc {position:absolute; right:-2px; top:-72px; width:113px; height:55px; padding:13px 0 1px 32px; font-size:12px; color:#666; line-height:20px; letter-spacing:-0.5px;background:url(//cdnimg.tourbaksa.com/PC/www/sub/bg_point_desc.png) no-repeat left top;}
+.paymentArea .costArea {margin:10px 0 20px;padding:40px 12% 45px; border:2px solid #ff9733; text-align:center;}
+.paymentArea .costArea span {display:inline-block;width:30%;margin:0 0 12px; line-height:30px; text-align:left; vertical-align:middle;color:#ff9733;font-weight:bold;}
+
+.paymentArea .costArea span em {display:inline-block; padding-right:4px;font-size:13px; color:#4a4a4a; text-align:left;}
+.paymentArea .costArea .price {width:65%;font-size:18px;color:#e74b01;text-align:right;}
+.paymentArea .costArea .price em {font-size:24px;color:#e74b01;vertical-align:-2px;letter-spacing:-1px;}
+.paymentArea .costArea .price em.minus {padding-left:10px;background:url(//cdnimg.tourbaksa.com/PC/www/sub/bg_minus.gif) no-repeat left 17px;}
+.paymentArea .costArea .total {padding-top:7px;padding-left:10px;border-top:1px solid #e2e2e2;}
+.paymentArea .costArea .total span {width:100% !important; text-align:right;} /* 2014-07-14  */
+.paymentArea .costArea .total .price {width:85%;}
+.paymentArea .costArea .savings {margin-top:10px;padding-right:20px;text-align:right;}
+.paymentArea .costArea .savings span {width:auto; height:20px; margin:0; padding:0; line-height:20px; font-size:14px; color:#848484;}
+.paymentArea .costArea .savings em {display:inline-block; width:59px; height:20px; margin:0 auto; font-size:11px; color:#806000; line-height:20px; font-weight:normal; text-align:center; vertical-align:top; background:url(//cdnimg.tourbaksa.com/PC/www/sub/bg_point.gif) no-repeat left top;}
+.paymentArea .costArea .savings i {margin:0 2px 0 0; font-style:normal;color:#ffae00;}
+.paymentArea .costArea img {display:none;}
+
+
+ /* layoutTypeC */
+.priceView .tblTh{width:8%}
+.priceView .tblTd{width:85%}
+.priceView td strong em{display:inline;}
+.priceView td ul.priceValue li:first-child{width:12.5%;text-align:left;}
+
+/* provision 추가 : 20140603 */
+.provision .agreeAll_area {margin-top:30px; padding:10px; background:#f4f4f4; border:1px solid #dcdcdc;}
+.provision .agreeArea .agreeArea_chk {display:inline; line-height:20px;}
+.provision .agreeAll_check {display:inline;}
+
+/* provision */
+.provision .agreeArea li{display:inline;margin-right:40px;}
+.provision .agreeArea li.last{display:inline-block;margin-right:40px;}/*201608 추가*/
+.provision .guide span{display:block}
+.reservation .btnArea.type0{width:30%;margin:0 auto}
+
+/* checkPoint accountInfo */
+.checkPoint .accountWrap .accountInfo{padding-bottom:0;}
+.checkPoint ul.accountInfo > li{float:left;width:41%;padding:30px;border-top:0px;}
+.checkPoint ul.accountInfo > li:first-child{border-right:1px solid #e2e2e2;}
+.checkPoint .accountInfo > li.noAccount {height:47px;line-height:47px;}
+.checkPoint .accountInfo > li.account dl{padding-top:8px;}
+.checkPoint .accountInfo > li.account dt{display:inline-block;width:30%;margin-bottom:0;}
+.checkPoint .accountInfo > li.account dd{width:68%;padding-left:0;text-align:right}
+
+/* guideWrap */
+.checkPoint .guideWrap ul{float:left;}
+.checkPoint .guideWrap .btnArea{float:right;width:13%;margin-top:10px;}
+.checkPoint .guideWrap .btnArea.type0 .deBtn.type3{width:100%;height:34px;line-height:34px;}
+
+
+/* CheckPoint notice personInCharge */
+.checkPoint .personInCharge .desc { margin-left:127px;}
+.checkPoint .personInCharge .desc li.tit { padding:10px 0 0;}
+.checkPoint .personInCharge .desc li.item { display:inline; padding:0 12px 0 11px; background:url("//cdnimg.tourbaksa.com/PC/www/bul/bul_line_01.gif") no-repeat right top;}
+.checkPoint .personInCharge .desc li.info0 { padding-left:0;}
+.checkPoint .personInCharge .desc li.info2 { padding-right:0; background:none;}
+
+/* process */
+.checkPoint .notice .process {height:120px;padding:20px 0;background:url(//cdnimg.tourbaksa.com/PC/www/sub/bg_step3.gif) no-repeat center center;}
+
+/* reservationInfo */
+.reservationInfo {position:relative;height:170px;} /*2014-04-17 도로명 추가*/
+/*.reservationInfo {position:relative;height:120px;} 도로명 적용후 삭제*/
+.reservationInfo > div {float:left;width:50%;}
+.reservationInfo > div.addr {position:absolute;float:none;top:66px;width:100%;}
+.reservationInfo > div.addr strong {width:13%;}
+
+.reservationInfo .addr div {height:135px; line-height:10px;letter-spacing:0;position:relative;} /*2014-04-17 도로명 추가*/
+/*.reservationInfo .addr div {height:65px;line-height:60px;letter-spacing:0;position:relative;} 도로명 적용후 삭제*/
+.reservationInfo .addr div .zip_post{height:32px;padding-bottom:0;}
+.reservationInfo .addr div .zip_info{width:auto;position:absolute;right:28%;top:8px;}
+
+.reservationInfo .addr div .inputAddr {width:85.5%;margin-left:13%;padding-right:0;}
+.reservationMember .traveler {height:32px;padding-top:20px;line-height:32px;}
+.reservationMember .traveler strong {width:12.5%;}
+.reservationMember .traveler .travelerNum {float:left;width:12%;margin-right:2%;}
+.reservationMember .travelerDesc {margin:8px 0;}
+.reservation .graySub {width:90px;margin:0;}
+.reservationMember .ageCategory {float:right;width:200px;height:150px;margin-top:-42px;padding-right:15px;}
+.reservationMember .ageCategory ul li span {display:inline;}
+.reservationUser {width:838px;margin-bottom:12px;}
+.reservationUser .flexibleTable .details .item {width:8%;border-bottom:0 none;}
+.reservationUser .flexibleTable .details .item.short {width:8%;}
+.reservationUser .flexibleTable .details .item.long {width:17%}
+.reservationUser .flexibleTable .details .item.medium {border-bottom: 0 none; width: 20%;} /* 20131025 : 사이즈 추가 */
+.reservationUser .flexibleTable .details .item.short_plus {width:13%;} /* 20131025 : 사이즈 추가 */
+.reservationUser .flexibleTable .details .item.short_plus1 {width: 9%;} /* 20131025 : 사이즈 추가 */
+.reservationUser .flexibleTable .details .item.short_plus2 {width: 6%;} /* 20131025 : 사이즈 추가 */
+.reservationUser .flexibleTable .details .item.short_plus3 {width: 11%;} /* 20131025 : 사이즈 추가 */
+.reservationUser .flexibleTable .details .item.kr_plus1 {width: 10%;}
+.reservationUser .flexibleTable .details .item.kr_plus2 {width: 15%;}
+.reservationUser .flexibleTable .details .item.kr_plus3 {width: 15%;}
+.reservationUser .flexibleTable .details .item.kr_plus4 {width: 30%;}
+.reservationUser .flexibleTable .details .item.kr_plus5 {width: 10%;}
+.reservationUser .flexibleTable .details .item.kr_plus6 {width: 20%;}
+.reservationUser .flexibleTable .details h4 {height:23px;padding:15px 0 8px 0;border-left:0 none; vertical-align:middle; line-height:130%;}
+.reservationUser .flexibleTable .details div:last-child h4{height:30px;padding:8px 0;}
+.reservationUser .flexibleTable .details p {height:22px;padding:10px 5% 2px;border-left:0 none;}
+.reservation select.full.store {width:43%;}
+.accountArea span.accountWrap {float:left;width:220px;margin-right:40px;}
+.accountArea span.accountWrap strong {width:70px;}
+.accountArea span.accountWrap span {float:left;width:140px;}
+.cashReceiptArea .cashReceipt {float:left;margin-bottom:18px;}
+.cashReceiptArea .cashUse {float:left;margin-bottom:18px;padding:2px 0 0 15px;}
+.cashReceiptArea .cashForm {clear:left;margin:0;}
+.pointArea .userPoint {margin-left:10px;}
+.paymentArea .costArea {overflow:hidden;padding-right:0.2%;padding-left:0.2%;}
+.paymentArea .costArea > div {float:left;display:inline-block;padding:0 2%;}
+.paymentArea .costArea span {display:block;width:auto;text-align:center;margin-bottom:5px;}
+.paymentArea .costArea .price {width:100%;line-height:24px;}
+.paymentArea .costArea .price em {vertical-align:0;}
+.paymentArea .costArea .price em.minus {padding-left:0;background-image:none;}
+.paymentArea .costArea .totalBox {float:right;}
+.paymentArea .costArea .total {padding-top:0;border-top:0 none;}
+.paymentArea .costArea .savings span {height:20px;line-height:20px;}
+.paymentArea .costArea img {float:left;display:inline-block;width:17px;padding-top:26px;}
+
+/* 2014-04-01 추가_ 도로명주소 */
+/* .reservationInfo .addr div {height:240px;line-height:10px;letter-spacing:-0.05em; }  */
+.reservationInfo .addr ul.res_address {display:inline-block; width:80%; float:left;}
+.reservationInfo .addr ul.res_address li input {background-color: #FFFFFF;border: 1px solid #E2E2E2;height: 20px;line-height: 20px;  padding: 0 2%;}
+.reservationInfo .addr ul.res_address li button.graySub2 {background-color:#AAAAAA;border:1px solid #999999;color:#FFFFFF;  cursor:pointer;font-size:12px;height:28px;line-height:20px;margin:4px 0 0 2px; min-width:70px;}
+.addr ul.res_address li .yellow2 {width:100%; line-height: 18px; padding-top:4px;}
+
+.reservationInfo .addr ul.res_address li {width:100%; float:left; height:30px; padding:3px 2px;} 
+.reservationInfo .addr ul.res_address li label {display:inline-block;width:8%;padding:0 0 5px;color:#666; font-weight:bold;}
+.reservationInfo .addr ul.res_address li .search1{width:65%; margin-right:2px;} 
+.reservationInfo .addr ul.res_address li .search2{width:65%; margin-right:2px;} 
+
+
+/* 블포함사항 테이블 */
+.reservation table.exclu_itemlist { width: 360px; 	border-collapse: collapse;  margin-bottom:10px;	}
+.reservation table.exclu_itemlist th { background:#f4f4f4;color: #333;	font-weight: bold; padding: 6px; border-top: 1px dashed #ccc; border-bottom: 1px dashed #ccc; text-align: left;font-size:11px }
+.reservation table.exclu_itemlist td { background:#fff; padding: 6px;  border-bottom: 1px dashed #ccc; text-align: left; font-size:11px}
+
+.txt_item_infostandard{padding:0; color:red;}
+.txt_item_infostandard2{padding:8px 0 0 0; color:red; font-size:0.9em; line-height:140%;}
+
+/* 원데이투어 배너 영역 */
+
+.bannArea{margin:30px 0 10px 0}
+.bannArea a {display:inline-block;margin:0; width:auto;text-align:center;}
+.bannArea a img{display:inline;  width:545px; }
+.bannArea a:first-child {margin:0 6px 0 0; }
+.bannArea a.pc_bannArea {display:block;}
+.bannArea a.pc_bannArea img {width:1100px;}
+.bannArea a.pc_bannArea img.img_m_only {display:none;}
+.bannArea a.pc_bannArea img.img_pc_only {display:block;}
+
+
+/* 20140904 국외여행 표준 약관 취소수수료 규정 */
+.cancelRule{margin:0 0 10px 0;    }
+.cancelRule .cancelRule_conts{padding:6px;}
+.cancelRule h4{font-size:16px; font-weight:bold; background:#f5f5f5; padding:6px; margin:0 !important;}
+.cancelRule h4 span{color:#ff4e00;}
+.cancelRule p, .cancelRule li{color:#535353 !important;}
+.cancelRule ul, .cancelRule ol, .cancelRule li{list-style:none; background:none !important;}
+.cancelRule p{margin:0 0 15px 0;}
+.cancelRule li b{color:#333 !important;}
+.cancelRule li span{color:#da020d; font-weight:bold;}
+.cancelRule h5{font-size:12px; font-weight:bold; color:#000 !important; margin:10px 0 5px 0;}
+
+
+/* 2014-10-07 특별약관 */
+.info_agree_area {width:780px; padding:10px; }
+.info_agree_area .info_agree_tit {display:inline-block; font-weight:bold; font-size:13px; margin-bottom:4px;}
+.info_agree_area .info_agree_p1 {font-weight:bold; color:#000;}
+.info_agree_area .info_agree_p2 {text-decoration:underline; font-weight:bold;}
+.info_agree_area .info_agree_p2 em{color:#fc7d09}
+.info_agree_stit {font-weight:bold;}
+.info_agree_list em{color:#fc7d09}
+
+
+/* 예약하기 유아 비활성화 2014-10-07 */
+.reservationUser input[disabled] {background:#ccc; -webkit-text-fill-color:#ccc}
+
+
+/* 
+ * 2016.03.21 reservation 결제프로세스 개선
+ */
+
+.rsv_tit__bd{padding:0 0 15px 0;border-bottom:2px solid #949494;}
+
+
+/* 폼유형 : 객체 + 버튼 */
+.form-wrap1 {display:block;overflow:hidden;}
+.form-wrap1>:first-child {float:left;width:65%;}
+.form-wrap1>a, .form-wrap1>button {float:right;width:34%;min-width:0;}
+
+/* 폼유형 : input + input */
+.form-input-ty2> {display:block;overflow:hidden;}
+.form-input-ty2>:first-child {float:left;width:65% !important;}
+.form-input-ty2>input, .form-input-ty2>input + input{float:right;width:31% !important;min-width:0;padding:0;}
+
+.form-tel1{display:block;width:100%;overflow:hidden;}
+.form-tel1 select,
+.form-tel1 input{width:30%; height:27px;line-height:25px;}
+.form-tel1 select, .form-tel1 input, .form-tel1 span{float:left;box-sizing: border-box; -ms-box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;}
+.form-tel1 .unit{width: 5%;text-align: center;}
+
+.form-mail{display:block;width:100%;overflow:hidden;}
+.form-mail select,
+.form-mail input{width:80%;padding:0;}
+.form-mail select, .form-mail input, .form-mail span{float:left;box-sizing: border-box; -ms-box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;}
+.form-mail .unit{width: 6%;text-align: center;}
+
+.from-birth{display:inline-block;position:relative; padding-right:15px;border: 1px solid #e2e2e2;height:30px;line-height:100%;}
+.from-birth > input{border:0;height:18px;line-height:18px;}
+.from-birth > .ui-datepicker-trigger{position:absolute;right:3px;top:5px;}
+
+hr.rsv_line_ty1{display:none;height:1px;width:100%;margin:10px 0 0 0;border:0; border-bottom:1px solid #e3e3e3;}
+hr.rsv_line_ty2{display:block;height:1px;width:100%;margin:0 0 40px 0; padding:0 0 30px 0;border:0; border-bottom:1px solid #e3e3e3;}
+
+
+
+.rsv_process{margin:28px 0;}
+.rsv_process.rsv_step1{text-align:center;}
+.rsv_process.rsv_step1 img{height:100%;}
+.rsv_process.rsv_step1 strong{font-size:0;text-indent:-9999em;}
+
+.rsv_useBox{padding:10px;border:1px solid #ecd0a8;background-color:#fdfaef;}
+.rsv_useBox ul{width:100%;}
+.rsv_useBox ul li{color:#848484;font-size:12px;line-height:18px;}
+.rsv_useBox ul li strong{font-weight:600;}
+.rsv_useBox ul li{position:relative;padding-left:5px;}
+.rsv_useBox ul li span{position:absolute;left:0;top:0;}
+
+/* 예약자 정보 */
+
+/* moblie */
+
+
+.rsv_TableList > dl{width:100%;overflow:hidden;}
+.rsv_TableList > dl:after{content:'';display:block;clear:both;}
+.rsv_TableList > dl dt,
+.rsv_TableList > dl dd{float:left;padding:6px 0;color:#454545;line-height:18px;box-sizing: border-box; -ms-box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;}
+.rsv_TableList > dl dt sub{position:relative;top:0;font-size:14px; color:#e54c01;vertical-align:middle;}
+.rsv_TableList > dl dt{clear:none;float:left;width:10%;height:44px;font-size:14px; font-weight:bold}  
+.rsv_TableList > dl dd{width:40%; padding-left:0;font-size:13px;color:#666;}
+.rsv_TableList > dl dd p > img {width:100%;}
+.rsv_TableList > .column-1{display:table;}
+.rsv_TableList > .column-1 dt{/*float:none;*/display:table-cell;width:10%;}
+.rsv_TableList > .column-1 dd{/*float:none;*/display:table-cell;width:90%;}
+
+.rsv_TableList > dl dd select{height:30px;padding:0;line-height:30px;}
+.rsv_TableList > dl dd select,
+.rsv_TableList > dl dd input[type="text"]{height:30px;line-height:30px;padding:0 2%;box-sizing: border-box; -ms-box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;}
+.rsv_TableList > dl .unit{background:none; padding-right:0;line-height:29px;}
+.rsv_TableList > dl .from-birth{display:inline-block;position:relative; padding-right:15px;border: 1px solid #e2e2e2;height:25px;}
+.rsv_TableList > dl .from-birth > input[type="text"]{border:0;height:18px;line-height:18px;}
+.rsv_TableList > dl .from-birth > .ui-datepicker-trigger{position:absolute;right:2px;top:3px;}
+.rsv_TableList > dl .block_address{display:block;overflow:hidden;}
+.rsv_TableList > dl .block_address > label{display:block;font-size:12px;padding:0 0 7px 0;}
+.rsv_TableList > dl .block_address .graySub2{min-width: 65px;height:27px;margin: 0 0 0 2px; cursor: pointer;background-color: #aaaaaa; color: #FFFFFF; border: 1px solid #999999;font-size: 12px;line-height: 20px;}
+.rsv_TableList > dl .block_address + .block_address{padding:4px 0 0 0;}
+.rsv_TableList > dl dd .text-sty1{padding-top:10px;}
+.rsv_TableList > dl dd .form-tel1{width:85%;}
+.rsv_TableList > dl dd .unit{line-height:30px;} 
+.rsv_TableList > dl dd .from-birth{height:30px;}
+.rsv_TableList > dl dd .from-birth > input{vertical-align:top;}
+.rsv_TableList > dl dd .from-birth > .ui-datepicker-trigger{top:5px; right:5px;}
+.rsv_TableList > dl dd .block_address > label{float:left;width:75px;height:30px;font-size:12px;line-height:30px;}
+.rsv_TableList > dl dd .block_address + .block_address{padding:8px 0 0 0;}
+.rsv_TableList > dl dd .block_address .form-wrap1{float:left;width:645px;}
+.rsv_TableList > dl dd .block_address .form-wrap1>:first-child {width:86%;}
+.rsv_TableList > dl dd .block_address .graySub2{height:30px;line-height:27px;width:80px !important;}
+
+.footNote {margin:10px 0 0 0;position:relative;padding:0 0 0 14px;color:#fc7d09; font-size:12px; line-height:17px;}
+.footNote i{position:absolute;left:0;top:0;font-weight:600;}
+ul.footNote{padding:0;}
+ul.footNote li{position:relative;padding:0 0 0 14px;color:#fc7d09; font-size:12px; line-height:17px;}
+ul.footNote li + li{margin:5px 0 0 0;}
+ul.footNote li em{color:#e54c01;font-weight:800;}
+ul.footNote li span{position:absolute;left:0;top:0;font-weight:600;}
+
+
+
+.text-sty1{display: block;color: #454545;font-size:12px;}
+
+
+/*.rsv_body.rsv_head .rsv_table_row dd{width:40%;}*/
+
+.rsv_head{display:table;}
+.rsv_body .rsv_table_row dt.rsv_tit__m_change{display:none}
+.rsv_body .rsv_table_row dt.rsv_tit__pc_change{display:block;}
+.rsv_head .rsv_table_row + dl,
+.rsv_head .rsv_table_row + dl + dl{width:25%;}
+.rsv_head .rsv_table_row + dl + dl + dl{width:25%;}
+.rsv_head .rsv_table_row dd{text-align:center;}
+.rsv_head .rsv_table_row dt + dd{border-bottom:1px solid #c8c8c8;}
+.rsv_head .rsv_table_m_head{display:none;}
+.rsv_head .rsv_table_m_head dt{width:20%;padding-left:10px;border-right:1px solid #c8c8c8;border-bottom:1px solid #c8c8c8;background:#f3f3f3;
+font-size:12px;font-weight:800;color:#454545;text-align:left;vertical-align:middle;line-height:20px;}
+.rsv_head .rsv_table_m_head dd{width:40%;padding:9px 0 9px 10px;border-bottom:1px solid #c8c8c8;background:#f3f3f3;font-size:12px;font-weight:800;color:#454545;text-align:center;}
+
+
+/*0826 추가*/
+.rsv_body.rev_ty1 .rsv_table_row{width:11%;}
+.rsv_body.rev_ty1 .rsv_table_row dd{text-align:center;}
+.rsv_body.rev_ty1 .rsv_table_row dd > input[type="text"]{width:80px;height:27px;line-height: 25px;padding: 0 2%;border:1px solid #e2e2e2;}
+.rsv_body.rev_ty1 .rsv_table_row dd > select{width:80px;height:32px;}
+.rsv_body.rev_ty1 .rsv_table_row dd > button{display:inline-block;float:left;padding:0;margin-top:5px;}
+
+
+.rsv_head  + .rsv_body.rev_ty1{margin-top:30px;}
+.rsv_body.rev_ty1 > .rsv_table_row:first-child dt,.rsv_body.rev_ty1 > .rsv_table_row:first-child dd {border-top:0;}
+.rsv_table + .topTitArea{margin-top:30px;}
+.rsv_tax_area{width:1100px;margin:30px 0 40px;;padding:18px 0;margin:15px 0;border:2px solid #ff9733;text-align:center;}
+.rsv_tax_area .allTax{width:200px;margin:0 auto;text-align:center;font-weight:800;}
+.rsv_tax_area .allTax dt{display:inline-block;float:left;line-height:20px;color:#515151;font-size:14px;}
+.rsv_tax_area .allTax dd{color:#e74b01;font-size:20px;}
+
+
+/* pc */
+.rsv_step1{height:116px;}
+.rsv_useBox{padding:22px;}
+.rsv_useBox ul li{font-size:12px; line-height:22px;}
+
+.rsv_tit__bd{padding:0 0 20px 0;border-bottom:2px solid #949494;}
+.rsv_table{display:block;width:100%;}
+.rsv_table_row{display:block;width:100%;}
+.rsv_table_row dt,
+.rsv_table_row dd{line-height:20px;}
+.rsv_table_row dt{box-sizing: border-box; -ms-box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;width:20%;color: #454545;padding-left:10px;border-right:1px solid #c8c8c8;text-align: left;font-size: 12px;background-color:#f3f3f3;font-weight:600;vertical-align:middle;}
+.rsv_table_row dd{box-sizing: border-box; -ms-box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;width:80%;padding:9px 0 9px 10px;color:#454545;font-size:12px;}
+.rsv_table_row dd span{padding-right:8px;background:url(//cdnimg.tourbaksa.com/PC/www/common/bg_bar_04.gif) no-repeat left center}
+.rsv_table_row dd span:first-child {padding-left:0;background-image:none;}
+.rsv_table_row dd span em.price {color:#e54c01;text-decoration:underline;}
+.rsv_table_row dd strong.goodTit{color:#454545}
+.rsv_table_row dd strong em{display:inline-block;}
+.rsv_table_row dd strong.point{color:#ff921c}
+.rsv_table_row dd li{font-size:12px}
+
+
+.rsv_table_row dd ol li{margin:5px 0 0 0;} /* 20131029 : 좌측 간격 15px -> 0 / 넘버링 삭제 */
+.rsv_table_row dd ol li:first-child{margin-top:0px;}
+.rsv_table_row dd ol li img{display:block; width:100%;}
+.rsv_table_row .txt_item_infostandard{clear:both;color:#e54c01;}
+.rsv_table.rsv_body{border-top: 1px solid #c5c5c5;}
+.rsv_table.rsv_btm {margin-bottom:20px;border-top:0;}
+.rsv_table.rsv_btm .rsv_table_row dd span{padding-right:0;background-image:none;}
+.rsv_table.rsv_btm.mb10{margin-bottom:0 !important;}
+
+.rsv_cell{display: table-cell;vertical-align:top;}
+
+.rsv_header{width:100%;padding-top:10px;border-top:2px solid #949494;}
+.rsv_header dl{width:100%;margin:0 0 10px 0;}
+.rsv_header dt{width:10%;padding-left:0;background:none;border:0;font-size:14px;}
+.rsv_header dd{width:100%;font-size:14px;}
+.rsv_header dd strong em{display:inline-block;}
+
+
+.rsv_body{display:table;border-top:1px solid #c5c5c5;border-bottom:1px solid #e2e2e2;}
+.rsv_btm{overflow:hidden;display:table;width:100%;margin:18px 0 40px 0;border-bottom:1px solid #e2e2e2;border-top:1px solid #e2e2e2;}
+.rsv_btm:after{content:'';display:block;clear:both;}
+.rsv_body .rsv_table_row,
+.rsv_btm .rsv_table_row{position:relative;display:table-cell;box-sizing: border-box; -ms-box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+.rsv_body .rsv_table_row{width:15%;}
+.rsv_body .rsv_table_row.log_cell{width:25%;}
+.rsv_body .rsv_table_row.log_cell dd{line-height:18px;}
+.rsv_btm .rsv_table_row{width:50%;}
+.rsv_btm .rsv_table_row + .rsv_table_row,
+.rsv_body .rsv_table_row + .rsv_table_row{border-left:1px solid #dcdcdc;}
+
+.rsv_btm .rsv_table_row dt,
+.rsv_body .rsv_table_row dt{display:block;width:100%;height:42px;background-color:#f4f4f4;border-bottom:1px solid #e2e2e2;border-right:0;font-size:14px;line-height:42px;text-align:center;color:#454545;font-weight:800;}
+.rsv_body.bor_line .rsv_table_row dt{font-size:14px;font-weight:bold;}/*160830추가*/
+.rsv_body.bor_line .rsv_table_row dt{font-size:12px;font-weight:bold;}/*160830추가*/
+.rsv_body.bor_line .rsv_table_row dd{font-size:12px;color:#666;}/*160830추가*/
+.rsv_body.bor_line .rsv_table_row dd{font-size:13px;color:#666;}/*160830추가*/
+.rsv_body.bor_line .rsv_table_row dd.airline__name{line-height:10px;}/*160830추가*/
+.rsv_body.bor_line .rsv_table_row dd em.sm_dc{display:block;padding:5px 0;color:#fc7d09;font-size:11px;}
+.rsv_body.bor_line .rsv_table_row dd em.sm_dc.vsd{visibility:hidden;}
+.rsv_body.bor_line .rsv_table_row dd em.sm_dc.vsd{display:block;}
+.rsv_body.bor_line .rsv_table_row dd em.sm_dc.vsd{display:none;}
+.rsv_body.bor_line .rsv_table_row dt > em{font-size: 14px;color: #e54c01;vertical-align: middle;}/*160830추가*/
+.rsv_btm .rsv_table_row dd,
+.rsv_body .rsv_table_row dd{display:block;width:100%;padding:14px;padding-left:25px;font-size:13px;vertical-align:middle;}
+.rsv_btm .rsv_table_row dd b,
+.rsv_body .rsv_table_row dd b{display:block;}
+
+.rsv_body .rsv_table_row:first-child{width:7%;}
+.rsv_body .rsv_table_row + dl,
+.rsv_body .rsv_table_row + dl + dl{width:11%;}
+.rsv_body .rsv_table_row + dl + dl + dl{width:11%;}
+.rsv_body .rsv_table_row + dl + dl + dl + dl{width:11%;}
+.rsv_body .rsv_table_row + dl + dl + dl + dl + dl{width:13%;}
+.rsv_body .rsv_table_row + dl + dl + dl + dl + dl + dl{width:11%;}
+
+.rsv_table_row dd .priceValue li{overflow:hidden;display:block;}
+.rsv_table_row dd .priceValue li + li{text-align:center;}
+.rsv_table_row dd .priceValue li > span{float:left;padding-right:5px}
+.rsv_table_row dd .priceValue li > strong{float:left;}
+.rsv_table_row dd .priceValue .price strong{color:#f8871f;font-weight:800;}
+.rsv_table_row dd .priceValue strong{color:#454545;font-weight:800;}
+.rsv_table_row dd .priceValue .price span{color:#454545}
+
+
+.airline__name{text-align:center;}
+.airline__name > img{padding-right:5px;}
+.airline__name.tal{text-align:left;}
+.airline__name strong{display:block;}
+
+
+.rsv_btm .exclu_itemlist { width: 96%;border-collapse: collapse;  margin-bottom:10px;	}
+.rsv_btm .exclu_itemlist th { background:#f4f4f4;color: #333;	font-weight: bold; padding: 6px; border-top: 1px dashed #ccc; border-bottom: 1px dashed #ccc; text-align: left;font-size:11px }
+.rsv_btm .exclu_itemlist td { background:#fff; padding: 6px;  border-bottom: 1px dashed #ccc; text-align: left; font-size:11px}
+.txt_item_infostandard{padding:0; color:red;}
+.txt_item_infostandard2{padding:8px 0 0 0; color:red; font-size:0.9em; line-height:140%;}
+
+/* 160908 추가 수정 */
+.rsv_body.rev_ty2 {border-top:0;}
+.rsv_body.rev_ty2 > .rsv_table_row > dt{display:none;}
+
+
+/* 여행자정보 */
+
+/* 여행자정보디테일 */
+.rsv_Member hr.rsv_line_ty1 + .ageCategory{margin:10px 0 0 0;}
+.rsv_Member .ageCategory {position:absolute;right:0px;top:24px;width:200px;padding-right:15px;margin:0 0 10px; padding-bottom:12px; color:#454545; border:1px solid #e2dccc; background-color:#fdfbf4;} /* 20131119 : color:#666; -> color:#454545; */
+.rsv_Member .ageCategory p {margin:20px 0 9px 20px;}
+.rsv_Member .ageCategory p strong {font-size:13px; color:#454545;}
+.rsv_Member .ageCategory p img {margin:0 5px 0 0; vertical-align:middle;}
+.rsv_Member .ageCategory ul {margin:0 0 0 23px;}
+.rsv_Member .ageCategory ul li {display:inline;padding:0 0 6px 6px; background:url(//cdnimg.tourbaksa.com/PC/www/bul/bul_list_dot.gif) no-repeat left 5px;}
+.rsv_Member .ageCategory ul li span {margin:7px 0 0; font-size:11px; color:#ff921c;}
+
+hr.rsv_line_ty1{display:none;}
+.rsv_Member {position:relative;padding-right:248px !important;}
+.rsv_Member .traveler {overflow:hidden;width:865px;height:32px;padding:20px 0 12px 0;line-height:32px;}
+.rsv_Member .traveler strong {display:block; float:left; ;width:10%;height:32px;font-size:14px; color:#454545;}
+.rsv_Member .traveler strong sub {position:relative;top:0;font-size:14px; color:#e54c01;vertical-align:middle;}
+.rsv_Member .traveler .travelerNum {display:block;float:left;width:19%;margin-right:0;height:32px; font-size:12px; color:#666666;}
+.rsv_Member .traveler .travelerNum input[type="text"]{width:52%;height:30px;line-height:30px;color:#848484;}
+.rsv_Member .traveler .travelerNum em {margin:0 3px 0 0;}
+.rsv_Member .traveler .travelerNum > span {position:relative;}
+.rsv_Member .traveler .travelerNum button {position:absolute; left:105%;}
+.rsv_Member .traveler .travelerNum button.up {top:3px;}
+.rsv_Member .traveler .travelerNum button.down {top:12px;}
+.rsv_Member .travelerDesc {margin:8px 0;font-size:11px; color:#ff921c;line-height:18px;}
+.rsv_Member .graySub {width:13%;height:30px;margin:0;line-height:25px;}
+.rsv_Member .travelerPartner{margin:10px 0; font-size:11px;color:#454545;text-align:right;}
+.rsv_Member .travelerPartner input{margin-top:-4px;}
+.rsv_Member .traveler + .footNote{margin:0;}
+
+/* 인원수 인적사항 입력 */
+.rsv_User h4 {margin:0;}
+.rsv_User sub {position:relative; top:-2px; font-size:14px; color:#e54c01;}
+.rsv_User .flexibleTable .details .item:first-child + .item{padding-top:6px;}
+.rsv_Member .rsv_User {width:865px; padding-bottom:30px;}
+.rsv_User p select,
+.rsv_User p input {height:30px;line-height:30px;}
+.rsv_User p > input {width:96%;}
+.rsv_User.view .flexibleTable {border-bottom:1px solid #e2e2e2;}
+.rsv_User.view .details + .details{border-top:1px solid #e2e2e2 !important;}
+.rsv_User .flexibleTable .details .footNote{display:none;padding:0;}
+.rsv_User .flexibleTable + .footNote{display:block;}
+.rsv_User .flexibleTable .details .item {width:8%;border-bottom:0 none;background:none;}
+.rsv_User .flexibleTable .details .item:first-child{display:block;}
+.rsv_User .flexibleTable .details .item:first-child + .item{padding:0;}
+.rsv_User .flexibleTable .details .item.short {width:6%;}
+.rsv_User.view .flexibleTable .details .item.short {width:8%;}
+.rsv_User .flexibleTable .details .item.long {width:20%}
+.rsv_User.view .flexibleTable .details .item.long {width:19%}
+.rsv_User .flexibleTable .details .item.medium {border-bottom: 0 none; width: 20%;}
+.rsv_User .flexibleTable .details .item.short_plus {width:13%;} 
+.rsv_User .flexibleTable .details .item.short_plus1 {width: 9%;}
+.rsv_User .flexibleTable .details .item.short_plus2 {width: 6%;}
+.rsv_User .flexibleTable .details .item.short_plus3 {width: 10%;}
+.rsv_User .flexibleTable .details .item.kr_plus1 {width: 10%;}
+.rsv_User .flexibleTable .details .item.kr_plus2 {width: 15%;}
+.rsv_User .flexibleTable .details .item.kr_plus3 {width: 15%;}
+.rsv_User .flexibleTable .details .item.kr_plus4 {width: 30%;}
+.rsv_User .flexibleTable .details .item.kr_plus5 {width: 10%;}
+.rsv_User .flexibleTable .details .item.kr_plus6 {width: 20%;}
+.rsv_User .flexibleTable .details h4 {/*width:28%;*/height:23px;padding:15px 0 8px 0;background-color:#f4f4f4;border-left:0 none; vertical-align:middle; line-height:130%;font-size:12px;font-weight:600;}
+.rsv_User .flexibleTable .details h4 sub{top:0;}
+.rsv_User .flexibleTable .details .item.twoline h4{padding:8px 0 8px 0;height:30px;}
+.rsv_User .flexibleTable .details div:last-child h4{height:30px;padding:8px 0;}
+.rsv_User .flexibleTable .details p {overflow:hidden;height:32px;padding:10px 3% 2px;margin-left:0;border-left:0;border-left:0 none;line-height:30px;}
+.rsv_User .flexibleTable .details .form-tel1 select,
+.rsv_User .flexibleTable .details .form-tel1 input{height:32px;}
+.rsv_User .flexibleTable .details .form-tel1 input{padding:0 2%;}
+.rsv_User .flexibleTable .form-input-ty2>:first-child{width:31% !important;}
+.rsv_User .flexibleTable .form-input-ty2> input + input{width:63% !important;}
+
+/* 환불정보 */
+
+.rsv_refund .refund_agree div span{display:inline-block;}
+.rsv_refund .refund_agree div + div{margin-top:5px;}
+.rsv_refund .refund_info button{float:left;width:20%;height:27px;margin:6px 0 0 1%;}
+
+.rsv_refund .refund_agree div{display:inline-block;}
+.rsv_refund .refund_info{padding:16px 0 0 0;}
+.rsv_refund .refund_info li{overflow:hidden;float:left;width:294px;height:37px;}
+.rsv_refund .refund_info li label{float:left;width:93px;height:30px;font-size:14px;font-weight:600;line-height:30px;text-align:left;}
+.rsv_refund .refund_info li select,
+.rsv_refund .refund_info li input{float:left;width:52%;height:30px;margin:0;line-height:30px;padding:0 !important;background:none;}
+.rsv_refund .refund_info li.refund_name {width:385px;}
+.rsv_refund .refund_info li.refund_name input{width:158px;}
+.rsv_refund .refund_info li.refund_name button{height:31px;margin:0 0 0 20px;line-height:31px;}
+
+/* 예상결제금액 */
+.rsv_paymentArea{overflow:hidden;margin:0 0 10px 0;}
+.rsv_paymentArea .rsv_fareInfo table{}
+.rsv_paymentArea .rsv_fareInfo table th,
+.rsv_paymentArea .rsv_fareInfo table td{height:29px;border-top:1px solid #e2e2e2;line-height:29px;}
+.rsv_paymentArea .rsv_fareInfo table tbody tr:first-child th,
+.rsv_paymentArea .rsv_fareInfo table tbody tr:first-child td{border-top:0;}
+.rsv_paymentArea .rsv_fareInfo table th{width:25%;background-color:#f4f4f4;text-align:center;}
+.rsv_paymentArea .rsv_fareInfo table th strong{color:#e84c01;}
+.rsv_paymentArea .rsv_fareInfo table td{width:75%;padding-left:10px;}
+
+
+.rsv_paymentArea .total dl .taxInfo{display:block;height:15px;color:#848484;letter-spacing:-1px;}
+.rsv_paymentArea .savings {display:block;margin-top:7px;text-align:center;}
+
+.rsv_paymentArea .savings em {display:inline-block; width:59px; height:20px; margin-right:3px;font-size:11px; color:#806000; line-height:20px; font-weight:normal; text-align:center; vertical-align:top; background:url(//cdnimg.tourbaksa.com/PC/www/sub/bg_point.gif) no-repeat left top;}
+.rsv_paymentArea .savings i {display:inline-block;margin:0 2px 0 0; height:20px;font-style:normal;color:#ffae00;line-height:20px;}
+.rsv_paymentArea img {display:none;}
+
+.rsv_paymentArea + .footNote{margin:0 0 10px 0;padding-top:0;border-top:0 none;}
+.rsv_paymentArea .total {height:50px;}
+.rsv_paymentArea .rsv_fareInfo{float:left;width:250px;border:1px solid #cacaca; margin:0 21px 0 0;}
+.rsv_paymentArea .rsv_fareInfo table th{width:30%;}
+.rsv_paymentArea .rsv_fareInfo table td{width:70%;}
+.rsv_paymentArea .rsv_totalBox{float:left;width:823px;padding:19px 0 20px;height:77px;border:2px solid #ff9733;text-align:center;}
+.rsv_paymentArea .total dl{position:relative;width:140px;margin:0 auto;padding:0 0 0 97px;text-align:center;}
+.rsv_paymentArea .total dl dt{display:inline-block;position:absolute;left:0;top:23px;height:21px;line-height:21px;color:#454545;font-size:15px;font-weight:800;}
+.rsv_paymentArea .total dl .price{display:inline-block;width:100%;}
+.rsv_paymentArea .total dl .price em{display:inline-block;padding:5px 0 0 0;font-size:24px;color:#e74b01;text-align:right;font-weight:800;}
+.rsv_paymentArea .savings span {width:auto; height:20px; margin:0; padding:0; line-height:20px; font-size:14px; color:#848484;}
+
+/* btns */
+
+.rsv_processWrap .btnArea{width:331px;margin:0 auto;}
+.rsv_processWrap .btnArea.type0 .deBtn{display:block; height:38px; margin:0; line-height:36px; color:#fff; font-size:14px; font-weight:bold;}
+.rsv_processWrap .btnArea.type0 .deBtn.type0 { width:49%; margin:0 0 8px; background-color:#ff7a1f; border:1px solid #e45a01;}
+.rsv_processWrap .btnArea.type0 .deBtn.type1{ width:49%;color:#666666;background-color:#fff; border:1px solid #d0d0d0;} 
+.rsv_processWrap .btnArea.type0 .deBtn.type0 { float:left;}
+.rsv_processWrap .btnArea.type0 .deBtn.type1 { float:right;}
+.rsv_processWrap .btnArea.type0 .deBtn.type3 {width:45%;color:#fff;border:1px solid #f5a700;background-color:#ffbf44}
+
+.ViewrequestArea {min-height:50px;padding:10px;margin: 0 0 10px;border: 1px solid #e5e5e5;background-color:#f4f4f4;color: #666;}
+
+.rsv_payment{border-top: 2px solid #949494;}
+
+/* 결제하기  */
+.pay__coupon{padding: 15px 0; margin-bottom: 20px; border-bottom: 1px solid #e2e2e2;}
+.pay__coupon dt{width:25%;line-height:31px;}
+.pay__coupon dd input.inputBox{width:40%;}
+
+.pay__coupon .used{display:inline-block;width:45%;color:#848484;font-size:12px;letter-spacing:-1px;}
+.pay__coupon .used em{color:#ffae00;}
+.pay__coupon .column-1 + .column-1 .unit{margin-left:5px;}
+.pay__coupon dd select{width:200px;}
+.pay__coupon dd input{width:137px;}
+.pay__coupon .used,
+.pay__coupon .column-1 + .column-1 .used{width:auto;margin-left:15px;}
+.pay__coupon .rsv_btn_ty1{display:inline-block;margin:0 0 0 9px;height:28px;padding:4px 10px;background:#949494;font-size:11px;color:#fff;}
+.pay__coupon strong.unit{display:inline-block;margin-left:10px;color:#454545;}
+
+/* 결제수단선택 */
+
+.pay__options{overflow:hidden;margin:25px 0;padding:15px 0;border-top:1px dotted #c7c7c7;border-bottom:1px dotted #c7c7c7;}
+.coupon_payco {display: inline-block !important; padding: 0 5px; min-width: 60px; height: 22px;background: #3ACBC6; margin-left: 5px !important; line-height: 22px; color: #fff; font-size: 12px; font-weight: 700; text-align: center; }
+.new_coupon_payco {display: inline-block !important; padding: 0 5px; min-width: 60px; height: 22px;background: #3ACBC6; margin-left: 5px !important; line-height: 22px; color: #fff; font-size: 12px; font-weight: 700; text-align: center; }
+.coupon_payco > a.target {color:#fff;} /* 161209 추가 */
+
+.pay__options dt{line-height:29px !important;}
+.pay__options dd{padding-top:10px !important;}
+.pay__options .pay__method,
+.pay__options .pay__method ul,
+.pay__options .pay__method strong,
+.pay__options .pay__method ul li{float:left;height:22px;line-height:22px;}
+
+.pay__options .pay__method + .pay__method{margin:0 0 0 45px;}
+.pay__options .pay__method strong{display:inline-block;padding-right:20px;font-size:12px;}
+.pay__options .pay__method li{margin-right:11px;line-height:23px;}
+.pay__options .pay__method li label{color:#666666;font-size:12px;}
+
+
+/* 은행정보 */
+.pay__options_layer1,
+.pay__options_layer2,
+.pay__options_layer3{padding-bottom:30px;border-bottom:1px solid #e3e3e3;}
+
+.pay__options_layer1.ty1{padding-bottom:0;}/*160830추가*/
+
+/* 입금은행 */
+
+.pay__options_layer1 .options_account{padding-bottom:10px;}
+.pay__options_layer1 .options_account select{width:140px;}
+.pay__options_layer1 .options_account dl{width:85% !important;}
+
+.pay__options_layer1 span{display:inline-block;}
+.pay__options_layer1 span + span{padding-left:98px;}
+.pay__options_layer1 label{width:auto;padding:0;margin-right:40px;font-size:14px;}
+.pay__options_layer1 input,
+.pay__options_layer1 select{height:30px;}
+
+
+/* 신용카드 결제시 */
+.pay__options_layer2 .credit__form{padding:0 0 10px 0;}
+.pay__options_layer2 .credit__form span{color:#454545;font-weight:800;font-size:14px;}
+.pay__options_layer2 label{font-weight:800;font-size:14px;color:#454545;}
+.pay__options_layer2 input{height:30px;}
+
+
+.credit_graybox h5{font-size:12px;color:#454545;font-weight:800;}
+
+/*.credit_graybox .credit__card table th,
+.credit_graybox .credit__card table td{padding:7px 0;border-right:1px solid #cfcfcf;border-bottom:1px solid #cfcfcf;color:#404040;background-color:#fff;font-size:12px;vertical-align:middle;}*/
+.credit_graybox .credit__card table th{text-align:center;font-weight:600;}
+.credit_graybox .credit__card table th img{width:100%;max-width:65px;}
+.credit_graybox .credit__card table td{padding-left:5px !important;text-align:left;line-height:14px;}
+.credit_graybox .credit__card table thead th{display:none;background-color:#848484;color:#fff;border-left:0;border-right:1px solid #848484;}
+.credit_graybox .credit__card table th,
+.credit_graybox .credit__card table td{padding:7px 0;border-right:1px solid #cfcfcf;border-bottom:1px solid #cfcfcf;color:#404040;background-color:#fff;font-size:12px;vertical-align:middle;}
+.credit_graybox .credit__card table + table{margin-top:0;border-left:1px solid #cfcfcf;}
+.credit_graybox .credit__card table + table thead th{display:none;}
+.credit_graybox .credit__card + p{clear:both;padding:8px 0 25px 0;color:#848484;font-size:12px;}
+.credit_graybox{margin:30px 0 0 0;padding:25px;background:#f4f4f4;border:1px solid #e2e2e2;}
+.credit_graybox .credit__card{overflow:hidden;width:1046px;margin:10px 0 0 0;}
+.credit_graybox .credit__card .row{overflow:hidden;}
+.credit_graybox .credit__card .row + .row table tbody > tr:first-child td,
+.credit_graybox .credit__card .row + .row table tbody > tr:first-child th{border-top:0;}
+.credit_graybox .credit__card table{float:left;width:50%;table-layout:fixed;border-left:1px solid #cfcfcf;}
+.credit_graybox .credit__card table tbody > tr:first-child th,
+.credit_graybox .credit__card table tbody > tr:first-child td{border-top:1px solid #cfcfcf;}
+
+.credit_graybox .credit__check {margin:10px 0 0 0;border-top:1px solid #c5c5c5;}
+.credit_graybox .credit__check dd + dt{border-top:1px solid #e2e2e2;}
+.credit_graybox .credit__check dt .date,
+.credit_graybox .credit__check dt em{display:block;width:100%;padding:3px 0;}
+.credit_graybox .credit__check dt a{position:relative;display:block;padding:0;overflow:hidden;color:#454545;}
+.credit_graybox .credit__check dt span,
+.credit_graybox .credit__check dt em{float:left;width:auto;height:30px;line-height:30px;}
+.credit_graybox .credit__check dt .number{position:inherit;left:0;top:0;width:43px;height:27px;line-height:27px;text-align:center;}
+.credit_graybox .credit__check dt em{width:465px;}
+.credit_graybox .credit__check dt .date{float:right;}
+.credit_graybox .credit__check dd {padding:15px;border-top:1px solid #c5c5c5;color:#848484; font-size:12px;line-height:18px;}
+
+
+/* 페이코결제시 */
+.pay__options_layer3 .credit__form span{display:inline-block;margin-left:5px;color:#454545;font-weight:800;font-size:14px;}
+
+.pay__options_layer3 .credit__form{padding:0 0 10px 0;}
+.pay__options_layer3 label{font-weight:800;font-size:14px;color:#454545;}
+.pay__options_layer3 input{height:30px;}
+
+
+.payco_graybox{margin:0 0 10px 0;padding:10px;background:#f4f4f4; border:1px solid #e2e2e2; font-size:12px;}
+.payco_graybox p{margin:0 0 4px; padding:0 0 0 6px; color:#454545;font-weight:800; line-height:22px;}
+.payco_graybox li {margin:0 0 4px; padding:0 0 0 6px; color:#666666; line-height:17px; }
+.payco_graybox li a{text-decoration:underline;}
+.payco_graybox em{color:#454545;font-weight:800;}
+
+/* 결제금액 */
+.rsv_pay_Total .payCoupon dd{font-size:18px;color:#ffae00;font-weight:800;}
+.rsv_pay_Total .payPrice dd{font-size:26px;color:#e54c01;font-weight:800;}
+
+.rsv_pay_Total{display:table;margin-bottom:60px;width:100%;border:2px solid #ff9733;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;}
+.rsv_pay_Total dl{display:table-cell;padding:30px 0;width:50%;text-align:center;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;}
+.rsv_pay_Total dl + dl{border-left:1px solid #e2e2e2;}
+.rsv_pay_Total dl dt,
+.rsv_pay_Total dl dd{display:inline-block;}
+.rsv_pay_Total dl dt{padding-right:35px;font-size:14px;color:#454545;font-weight:800;}
+
+/* 예약번호 */
+.rsv_number{overflow:hidden;padding:14px;border:2px solid #ff9733;}
+.rsv_number h4{float:left;margin:0;width:15%;font-size:15px;color:#000000;font-weight:600;}
+.rsv_number p{float:left;width:85%;font-size:15px;color:#e54c01;font-weight:600;}
+
+
+/* 최종결제금액 */
+.rsv_totalBox__final{display:table;float: left;width: 823px;height: 116px; border:2px solid #ff9733;}
+.final_amount{display:table-cell;height:auto;border-bottom:0;line-height:1;vertical-align:middle;text-align:center;}
+.final_amount strong{display:inline-block;width:102px;color:#454545;font-size:15px;font-weight:800;}
+.final_amount em{font-size: 24px;color: #e74b01;font-weight: 800;}
+.total__final{display:table-cell;border-left:1px solid #e2e2e2;vertical-align:middle;}
+.total__final span{display:block;padding-left:20px;height:59px;line-height:59px;text-align:left;}
+.total__final span i{display:inline-block;font-size:14px;width:100px;color:#454545;font-style:normal;font-weight:600;}
+.total__final span + span{border-top:1px solid #e2e2e2;}
+.total__final span strong{color:#ffae00;font-size:18px;font-weight:800;}
+
+/* 무통장입금 정보 */
+.rsv_pay_bankInfo .bank_detail li + li{padding:10px 0 0 0;}
+.rsv_pay_bankInfo{height:87px;padding:14px 15px;margin-bottom:60px;padding:28px 30px;background-color:#f8f8f8;border:1px solid #dedede;}
+.rsv_pay_bankInfo .bank_detail{display:block;float:left;width:349px;height:87px;border-right:1px solid #e2e2e2}
+.rsv_pay_bankInfo .bank_detail strong{display:inline-block;width:123px;font-weight:800;color:#454545;}
+.rsv_pay_bankInfo .footNote{display:block;float:left;width:645px;margin:0 0 0 30px;}
+
+
+/* 문의및 예약자정보 */
+.rsv_personInCharge{margin-top:50px;background-color:#fdfaef;border:1px solid #edd1aa;}
+.rsv_personInCharge h4{margin:0;padding:12px 0 12px 40px;font-size:14px;color:#454545;}
+.rsv_personInCharge .rsv_step_process{background-color:#fff !important;}
+.Charge__detail{position:relative;padding:15px 20px;border-top:1px solid #e8e4d7;border-bottom:1px solid #e8e4d7;}
+.__detailwrap{position:relative;height:58px;padding:0 20px 0 110px;}
+.__detailwrap .Charge__photo{overflow:hidden;position:absolute;left:0;top:0;width:87px;height:58px;} 
+.__detailwrap .Charge__photo img{width:87px;height:58px;max-height:87px;}
+.__detailwrap .Charge__list{overflow:hidden;width:100%;padding:15px 0 12px;}
+.__detailwrap .Charge__list li{float:left;color:#454545;font-size:12px;font-weight:800;}
+.__detailwrap .Charge__list li + li{margin-left:20px;padding-left:20px;border-left:1px solid #d7d7d7;}
+.Charge__detail p{position:absolute;left:130px;top:40px;color:#666;padding-top:10px;color:#666;line-height:14px;}
+
+/* 프로세스 */
+.process_01{height:84px;padding:20px 0;background:url("//cdnimg.tourbaksa.com/PC/www/sub/mypage/854px_progress_bar_01.gif") no-repeat center center;}
+.process_02{height:84px;padding:20px 0;background:url("//cdnimg.tourbaksa.com/PC/www/sub/mypage/854px_progress_bar_02.gif") no-repeat center center;}
+.process_03{height:84px;padding:20px 0;background:url("//cdnimg.tourbaksa.com/PC/www/sub/mypage/854px_progress_bar_03.gif") no-repeat center center;}
+.process_04{height:84px;padding:20px 0;background:url("//cdnimg.tourbaksa.com/PC/www/sub/mypage/854px_progress_bar_04.gif") no-repeat center center;}
+.process_05{height:84px;padding:20px 0;background:url("//cdnimg.tourbaksa.com/PC/www/sub/mypage/854px_progress_bar_05.gif") no-repeat center center;}
+.rsv_User .flexibleTable .details div.kr_plus7:last-child h4{padding:15px 0 8px 0;height:23px;}
+
+
+.innerWrap.rsv_processWrap .rsv_pro_gyBox{padding:18px 10px;margin-bottom:30px;background:#f4f4f4;border:1px solid #e2e2e2;font-size:13px;color:#454545;}
+.innerWrap.rsv_processWrap .rsv_pro_gyBox > li{position:relative;padding:0 0 0 14px;line-height:18px;}
+.innerWrap.rsv_processWrap .rsv_pro_gyBox > li span{position:absolute;left:0;top:0;}
+.innerWrap.rsv_processWrap .rsv_pro_gyBox > li em{color:#e74b01;}

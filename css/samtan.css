@@ -1,0 +1,118 @@
+@charset "euc-kr";
+
+/* 국내 삼탄아트마인 티켓 신청하기 페이지 */
+.subCont .passEvent_Wrap {margin:20px 0 0; padding:20px; border:1px solid #E2E2E2;}
+.subCont .passEvent_Wrap .event_tit {clear:both; overflow:hidden;}
+.subCont .passEvent_Wrap .event_tit ul li.left {float:left; width:239px; height:127px; background:url("//cdnimg.tourbaksa.com/PC/www/pass/samtan/samtan_tit_mobile.gif") no-repeat scroll left top;}
+.subCont .passEvent_Wrap .event_tit ul li.right {clear:both; float:left; height:100%; background:url("//cdnimg.tourbaksa.com/PC/www/pass/samtan/samtan_arrow.gif") no-repeat scroll right 20px; padding:20px 0 0 25px;}
+.subCont .passEvent_Wrap .event_tit ul li.right .price {float:right; padding:15px 10px 0 0;}
+.subCont .passEvent_Wrap .event_tit ul li.right .price .point {color:#fc4243; font-size:14px; padding:0 0 5px 0; font-weight:bold;}
+.subCont .passEvent_Wrap .event_tit ul li.right .price .cost {color:#848484; text-decoration:line-through;}
+.subCont .passEvent_Wrap .event_tit ul li.right .price .sale {color:#fc7d09; font-size:32px; letter-spacing:-1px; padding:5px 0 0;}
+.subCont .passEvent_Wrap .event_tit ul li.right .on_sale {float:right; width:93px; height:92px; line-height:82px; letter-spacing:-2px; text-align:center; vertical-align:middle; font-size:24px; color:#FFF;}
+
+.subCont .passEvent_Wrap .info {padding:10px 0 0; text-decoration:underline;}
+.subCont .passEvent_Wrap .info a {color:#fc7d09; text-decoration:underline;}
+.subCont .passEvent_Wrap .info a:hover {text-decoration:underline;}
+.subCont .passEvent_Wrap .event_sub {clear:both; padding:30px 0 0; line-height:18px; color:#848484;}
+
+html.desktop .subCont .passEvent_Wrap .thumbnail {display:block; width:100%; height:80px; background:url("//cdnimg.tourbaksa.com/PC/www/pass/samtan/thumbnail.jpg") no-repeat scroll 0 20px;}
+.subCont .passEvent_Wrap .thumbnail {display:none;}
+
+html.desktop .subCont .passEvent_Wrap .event_tit ul li.left {float:left; width:65%; height:102px; background:url("//cdnimg.tourbaksa.com/PC/www/pass/samtan/samtan_tit.gif") no-repeat scroll left 10px;}
+html.desktop .subCont .passEvent_Wrap .event_tit ul li.right {float:right; clear:none; width:35%; height:92px; background:url("//cdnimg.tourbaksa.com/PC/www/pass/samtan/samtan_arrow.gif") no-repeat scroll right 10px; padding:10px 0 0;}
+
+html.tablet .subCont .passEvent_Wrap .event_tit ul li.left {float:left; width:65%; height:102px; background:url("//cdnimg.tourbaksa.com/PC/www/pass/samtan/samtan_tit.gif") no-repeat scroll left 10px;}
+html.tablet .subCont .passEvent_Wrap .event_tit ul li.right {float:right; clear:none; width:35%; height:92px; background:url("//cdnimg.tourbaksa.com/PC/www/pass/samtan/samtan_arrow.gif") no-repeat scroll right 10px; padding:10px 0 0;}
+
+/* 티켓신청하기 */
+.subCont .passContTit h3 {margin: 10px 0 5px; padding:10px 0;}
+
+html.desktop .subCont .ticket .line .info {overflow:hidden; float:left; width:50%;}
+html.desktop .subCont .ticket .line .infoFull {width:100%;}
+html.desktop .subCont .ticket .line .info .tit {float:left; width:106px; background: none repeat scroll 0 0 #F4F4F4; padding:18px 0 0;}
+html.desktop .subCont .ticket .line .info .tit span, .subCont .ticket .line .info .item span {margin:0 0 0 20px;}
+html.desktop .subCont .ticket .line .info .itemFull {width:auto;}
+html.desktop .subCont .ticket .line .info_topline {border-top:0px solid #E2E2E2;}
+html.desktop .subCont .ticket .line .info .tit {float:left; height:19px; background: none repeat scroll 0 0 #F4F4F4; padding:18px 10px 10px 0;}
+
+html.tablet .subCont .ticket .line .info {overflow:hidden; float:left; width:50%;}
+html.tablet .subCont .ticket .line .infoFull {width:100%;}
+html.tablet .subCont .ticket .line .info .tit {float:left; width:106px; background: none repeat scroll 0 0 #F4F4F4; padding:18px 0 0;}
+html.tablet .subCont .ticket .line .info .tit span, .subCont .ticket .line .info .item span {margin:0 0 0 20px;}
+html.tablet .subCont .ticket .line .info .itemFull {width:auto;}
+html.tablet .subCont .ticket .line .info_topline {border-top:0px solid #E2E2E2;}
+html.tablet .subCont .ticket .line .info .tit {float:left; height:19px; background: none repeat scroll 0 0 #F4F4F4; padding:18px 10px 10px 0;}
+
+.subCont .ticket:after {clear: both; content: ""; display: block; overflow: hidden;}
+.subCont .ticket {width: 100%; clear: both;}
+.subCont .ticket_top {border-top: 1px solid #C5C5C5; border-bottom: 0px solid #DCDCDC; width: 100%; clear: both;}
+.subCont .ticket select {border: 1px solid #E2E2E2; color: #666666; font-size: 12px; line-height:15px; padding: 5px 2px 5px 2px;}
+.subCont .ticket .line {width:100%; border-bottom: 1px solid #DCDCDC; overflow:hidden;}
+.subCont .ticket .line ul li {height: 29px;}
+.subCont .ticket .inp {border: 1px solid #E2E2E2; color: #666666; font-size: 12px; height: 29px; padding: 0 5px;}
+
+.subCont .ticket .line .info_topline {border-top:1px solid #E2E2E2;}
+.subCont .ticket .line .info ul {overflow:hidden;}
+.subCont .ticket .line .info .tit {float:left; width:46px; height:auto; background: none repeat scroll 0 0 #F4F4F4; padding:18px 10px 18px 10px;}
+.subCont .ticket .line .info .tit_up {height:46px;}
+.subCont .ticket .line .info .tit_up2 {height:30px;}
+.subCont .ticket .line .info .item {float:left; width:auto; height:auto;}
+.subCont .ticket .line .info .itemFull {width:200px;}
+.subCont .ticket .line .info .item span {float:left; padding:18px 0 0;}
+.subCont .ticket .line .info .item span.inputText {float:left; padding:8px 0 0; width:100%;}
+.subCont .ticket .line .info .item span.inputBir {padding:8px 0 0;}
+.subCont .ticket .line .info .item span.inputBir ul li {float:left; margin-right: 10px; padding-bottom:2px;}
+
+.subCont .ticket .line .info .item span.inputBir ul li.day {clear:both;}
+
+.subCont .ticket .line .info .tit span, .subCont .ticket .line .info .item span {margin:0 0 0 10px;}
+.subCont .ticket .line .info .tit span, .subCont .ticket .line .info .tit span {margin:0 0 0 0px;}
+
+.subCont .ticket .account {display:inline-block; height: 29px; line-height: 28px;}
+.subCont .ticket .selectList li {float:left; margin-right: 10px;}
+
+html.desktop .line .info .tit span, .subCont .ticket .line .info .tit span.m_height {line-height:inherit;}
+
+html.desktop .subCont .ticket .line .info .item span.inputBir ul li.day {clear:none;}
+html.tablet .subCont .ticket .line .info .item span.inputBir ul li.day {clear:none;}
+
+html.desktop .subCont .ticket .line .info .tit span, .subCont .ticket .line .info .tit span.m_height {line-height:inherit; padding: 18px 0 0;}
+html.desktop .subCont .ticket .line .info .tit span, .subCont .ticket .line .info .item span.m_height {line-height:inherit; padding: 18px 0 0;}
+html.tablet .subCont .ticket .line .info .tit span, .subCont .ticket .line .info .tit span.m_height {line-height:inherit; padding: 18px 0 0;}
+html.tablet .subCont .ticket .line .info .tit span, .subCont .ticket .line .info .item span.m_height {line-height:inherit; padding: 18px 0 0;}
+
+.subCont .btnArea {margin: 20px auto; text-align: center;}
+.subCont .btnArea .btn_apply {background: none repeat scroll 0 0 #FF7A1F; border: 1px solid #E45A01; color: #FFFFFF; display: inline-block; font-size: 11px; font-weight: bold; padding: 9px 30px;}
+
+.subCont .ticket .line .info {overflow:hidden; width:100%;}
+.subCont .ticket .line .infoFull {width:100%;}
+
+/* 유의사항 */
+.subCont .info_Wrap {border:1px solid #E2E2E2; padding:20px 10px;}
+.subCont .info_Wrap .note_info {clear:both; line-height:18px; color:#666; padding:0 0 0 10px;}
+.subCont .info_Wrap ul li.tit {font-size:14px;}
+.subCont .info_Wrap ul li span.point {color:#FF7B00;}
+.subCont .info_Wrap ul li span.point a {color:#FF7B00; text-decoration:underline;}
+.subCont .info_Wrap .pass {padding:20px 0 0;}
+.subCont .info_Wrap .note_info a {color:#fc7d09;}
+.subCont .info_Wrap .note_info a:hover {text-decoration:underline;}
+.subCont .info_Wrap .info {padding: 10px 0 0; text-decoration:underline;}
+.subCont .info_Wrap .info a {text-decoration:underline;}
+/* 국내 삼탄아트마인 티켓 신청하기 페이지 끝 */
+
+
+/* 마이페이지 패스/티켓 : 삼탄아트마인 티켓 예약안내 */
+.fcorg a {color:#fc7d09;}
+.reserve_btn {margin:10px 0 0;}
+.subCont .st_reserve ul li {width:20%;}
+
+/* 마이페이지 패스/티켓 : 삼탄아트마인 티켓 예약내역 리스트 */
+.subCont .passContTit h3 {margin: 10px 0 5px; padding:10px 0;}
+.fcorg a {color:#fc7d09;}
+.coaTableList .reserve_point {color:#FF7B00;} 
+.reserve_info .info_text {margin:0 0 10px 0; line-height:16px;}
+.reserve_info .info_text span.point {color:#FF7B00;}
+
+/* 마이페이지 패스/티켓 : 삼탄아트마인 티켓 예약내역 없는페이지 */
+.none {margin-top:50px;}

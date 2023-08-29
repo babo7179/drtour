@@ -1,0 +1,527 @@
+@charset "utf-8";
+/* lnb */
+.leftArea{float:left;width:216px;overflow:hidden;margin: 10px 0 20px;}
+.leftArea #lnb .topTitleArea{height:60px;padding:11px;border:1px solid #dadcde; border-bottom:none; background-image:none !important;}
+.leftArea #lnb.lnb22 .topTitleArea{background:#f4f4f4 url(//cdnimg.tourbaksa.com/PC/www/ico/ico_lnb_tit22.png) no-repeat 175px 63px;}
+.leftArea #lnb .topTitleArea h3{margin-top:17px; margin-left:7px; color:#3e4245;font-size:24px;}
+.leftArea #lnb h3, .leftArea #lnb ul > li > h4{display:block;}
+.leftArea #lnb ul li{clear:both; float: left;width:100%;font-size:0;} 
+.leftArea #lnb ul > li > a {font-size:13px;}
+.leftArea #lnb ul > li.noDepth > h4{border-bottom:0px;}
+.leftArea #lnb ul > li.noDepth > h4 a{background-image:none;}
+.leftArea #lnb ul li.end{border-bottom:1px solid #d7d7d7;}
+.leftArea #lnb ul > li.end > h4{border-top:0px;}
+.leftArea #lnb ul > li.end > ul.subMenu > li.end{border-bottom:1px solid #e1e1e1;}
+.leftArea #lnb.lnb6 ul > li.noDepth > h4 a{font-weight:bold;}
+.leftArea #lnb.lnb3 ul > li > ul.subMenu > li.subM06 a,
+.leftArea #lnb.lnb3 ul > li > ul.subMenu > li.subM11 a{border-bottom:0px;}
+.leftArea #lnb ul > li.on > h4{border:1px solid #e48329;background-color:#fe922e;}
+.leftArea #lnb ul > li > h4{padding:0 !important;border:1px solid #5c5e61;border-width:1px 0;background-color:#66696c;}
+.leftArea #lnb ul > li > h4 a{display:block !important;font-size:15px;padding:13px 20px !important; color:#fefefe;background:url(//cdnimg.tourbaksa.com/PC/www/ico/ico_plus.png) no-repeat 92% center !important;}
+.leftArea #lnb .topTitleArea h3.Leisure_title {margin-top:15px;color:#3e4245;font-size:24px;}/*수정 2015-05-24*/
+.leftArea #lnb .topTitleArea h3.over_title {margin-top:15px;color:#3e4245;font-size:24px; width:120px; line-height:32px;}/*수정 2015-05-24*/
+.leftArea #lnb .topTitleArea h3.over_title2 {color:#3e4245;font-size:24px; width:130px; line-height:32px;}/*수정 2015-05-24*/
+.leftArea #lnb .topTitleArea h3.over_title3 {margin-top:15px;color:#3e4245;font-size:24px; width:150px; line-height:32px;} /*수정 2015-05-24*/
+.leftArea #lnb .topTitleArea h3 span{display:block}
+
+/* lnb 안 미니배너 공지사항 */
+.leftAddB{display:block;clear: both;margin: 0;padding: 0;}
+.leftAddMenu {height:132px;padding:20px 0 0;border-left:1px solid #e2e2e2;border-bottom:1px solid #e2e2e2;border-right:1px solid #e2e2e2;}
+.leftAddMenu ul {margin:0 20px;overflow:hidden;border:1px solid #d9d8d4;}
+.leftAddMenu ul li {border-top:1px solid #d9d8d4;background:#f8f6ef;height:36px;font-weight:bold;font-size:13px;letter-spacing:-1px;line-height:36px;padding-left:14px;}
+.leftAddMenu ul li:first-child {border-top:0 none;}
+.leftAddMenu ul li a {display:block;color:#454545;} 
+.leftMIcon {text-align:right;padding:9px 15px 0 0;}
+.leftMIcon a {display:inline-block;margin:0 2px;}
+.tbl_not_write{width:100%;border-top:1px solid #c5c5c5;}
+.tbl_not_write th{background:#f4f4f4;padding:12px 0 12px 20px;overflow:hidden;text-align:left;border-bottom:1px solid #dcdcdc;color:#454545;font-weight:bold;}
+.tbl_not_write td{padding:4px 0 4px 10px;overflow:hidden;text-align:left;color:#666;border-bottom:1px solid #dcdcdc;vertical-align:middle;}
+.tbl_not_write td input {border:1px solid #e2e2e2;padding:0 5px;height:30px;line-height:30px;vertical-align:middle;}
+.tbl_not_write td span {vertical-align:middle;}
+.tbl_not_write td textarea {text-align:left;border:1px solid #e2e2e2;padding:0 5px;margin:0;height:218px;vertical-align:middle;width:95%;}
+.tbl_cus td.tbL {text-align:left;padding:12px 10px 10px 10px;}
+.tbl_cus td.tbR {text-align:right;padding:12px 10px 10px 0;}
+.tbl_cus_view {width:100%;border-top:1px solid #c5c5c5;}
+.tbl_cus_view dt{background:#f4f4f4;padding:12px 0 12px 20px;overflow:hidden;text-align:left;border-bottom:1px solid #dcdcdc;color:#454545;font-weight:bold;}
+.tbl_cus_view dd{padding:25px 28px;overflow:hidden;text-align:left;border-bottom:1px solid #dcdcdc;vertical-align:middle;line-height:22px;color:#333333;}
+.tbl_cus_view dt p.subject {float:left;text-align:left;width:70%;vertical-align:top;line-height:14px;}
+.tbl_cus_view dt p.txtR {float:right;display:inline;font-weight:normal;vertical-align:top;padding-right:20px;}
+.tbl_cus_view dt p.txtR span {display:inline; background: url(//cdnimg.tourbaksa.com/PC/www/common/bg_bar_04.gif) no-repeat left 2px;padding:0 4px 0 6px;}
+.tbl_cus_view dt p.txtR span:first-child {background:0 none;}
+
+/* .subCont*/
+.subCont{float:right;width:77.6%;overflow:hidden;padding-top:0;padding-bottom:30px;margin-top:0;max-height:1000000px;}
+.subCont.mypage{float:right;width:870px !important;overflow:hidden;padding-top:0;padding-bottom:30px;}
+
+/* 상세보기 페이지 자세히보기 라인 */
+#TabContent2 table,#TabContent2 p{ line-height:160% !important; text-align:left;}
+
+.sideInnerWrap >.innerWrap {width:97px !important;}
+
+/* #content .contWrap 공통 */
+.subCont > h2{font-size:24px;color:#fc7d09;font-weight:bold; line-height:25px; *line-height:25px; clear:both;}
+.subCont .contWrap{margin-top:20px;}
+.subCont .topTitArea{padding-left:0;border-bottom:0px;}
+.subCont .topTitArea .btnRArea{margin-top:10px;}
+.subCont .topTitArea h3 em{color:#e54c01;}
+
+
+/* 마이페이지- 현지투어 */
+.local_inner{display:block;overflow:hidden;}
+.local_inner .local_tit,.local_inner .local_txt{display:inline-block;float:left;}
+.local_inner .local_tit{font-size:24px;color: #fc7d09;font-weight: bold;line-height: 25px;clear: both;}
+.local_inner .local_txt{margin-left:20px;}
+
+/* 20140305 : GNB 서브메뉴 모바일 간격 수정 */
+.subCont_areaindex {display:block; padding:0 0 20px 0;}
+.subCont_zero{margin-top:0;}
+
+/*lnb h3 style 수정 2015-05-24*/
+.leftArea #lnb.lnb0 .topTitleArea{background:#f4f4f4 url(//cdnimg.tourbaksa.com/PC/www/ico/ico_lnb_tit0.png) no-repeat 175px 63px;}
+.leftArea #lnb.lnb1 .topTitleArea{background:#f4f4f4 url(//cdnimg.tourbaksa.com/PC/www/ico/ico_lnb_tit1.png) no-repeat 175px 63px;}
+.leftArea #lnb.lnb2 .topTitleArea{background:#f4f4f4 url(//cdnimg.tourbaksa.com/PC/www/ico/ico_lnb_tit2.png) no-repeat 175px 63px;}
+.leftArea #lnb.lnb3 .topTitleArea{background:#f4f4f4 url(//cdnimg.tourbaksa.com/PC/www/ico/ico_lnb_tit3.png) no-repeat 175px 63px;}
+.leftArea #lnb.lnb4 .topTitleArea{background:#f4f4f4 url(//cdnimg.tourbaksa.com/PC/www/ico/ico_lnb_tit4.png) no-repeat 175px 63px;}
+.leftArea #lnb.lnb5 .topTitleArea{background:#f4f4f4 url(//cdnimg.tourbaksa.com/PC/www/ico/ico_lnb_tit5.png) no-repeat 175px 63px;}
+.leftArea #lnb.lnb6 .topTitleArea{background:#f4f4f4 url(//cdnimg.tourbaksa.com/PC/www/ico/ico_lnb_tit6.png) no-repeat 175px 63px;}
+.leftArea #lnb.lnb7 .topTitleArea{background:#f4f4f4 url(//cdnimg.tourbaksa.com/PC/www/ico/ico_lnb_tit7.png) no-repeat 168px 63px;} 
+.leftArea #lnb.lnb8 .topTitleArea{background:#f4f4f4 url(//cdnimg.tourbaksa.com/PC/www/ico/ico_lnb_tit8.png) no-repeat 175px 63px;}
+.leftArea #lnb.lnb9 .topTitleArea{background:#f4f4f4 url(//cdnimg.tourbaksa.com/PC/www/ico/ico_lnb_tit9.png) no-repeat 175px 63px;}
+.leftArea #lnb.lnb10 .topTitleArea{background:#f4f4f4 url(//cdnimg.tourbaksa.com/PC/www/ico/ico_lnb_tit10.png) no-repeat 175px 63px;}
+.leftArea #lnb.lnb11 .topTitleArea{background:#f4f4f4 url(//cdnimg.tourbaksa.com/PC/www/ico/ico_lnb_tit11.png) no-repeat 175px 63px;}
+.leftArea #lnb.lnb12 .topTitleArea{background:#f4f4f4 url(//cdnimg.tourbaksa.com/PC/www/ico/ico_lnb_tit12.png) no-repeat 175px 63px;}
+.leftArea #lnb.lnb13 .topTitleArea{background:#f4f4f4 url(//cdnimg.tourbaksa.com/PC/www/ico/ico_lnb_tit13.png) no-repeat 166px 61px;}
+.leftArea #lnb.lnb13 .topTitleArea h3{margin-top:0;}
+.leftArea #lnb.lnb14 .topTitleArea{background:#f4f4f4 url(//cdnimg.tourbaksa.com/PC/www/ico/ico_lnb_tit14.png) no-repeat 175px 63px;}
+.leftArea #lnb.lnb22 .topTitleArea{background:#f4f4f4 url(//cdnimg.tourbaksa.com/PC/www/ico/ico_lnb_tit22.png) no-repeat 175px 63px;}
+
+ /* leftArea #lnb.lnb4  */
+.leftArea #lnb.lnb4 ul > li{float:left;width:50%;}
+.leftArea #lnb.lnb4 ul > li > h4{display:block;padding:13px 0;color:#666;font-weight:bold;font-size:12px;text-align:left;border:1px solid #d7d7d7;border-width:1px 1px 0 1px;background-color:#f3f5f7;}
+.leftArea #lnb.lnb4 ul > li > h4.subM02,
+.leftArea #lnb.lnb4 ul > li > h4.subM04{border-left:0px;}
+.leftArea #lnb.lnb4 ul > li > h4.subM03,
+.leftArea #lnb.lnb4 ul > li > h4.subM04{border-bottom:1px solid #d7d7d7;}
+.leftArea #lnb.lnb4 ul > li > h4.on{color:#fff;border:1px solid #e48329;border-width:1px 1px 0 1px;background-color:#fe922e;}
+.leftArea #lnb.lnb4 ul > li > h4.on a{color:#fff;}
+.leftArea #lnb.lnb4 ul > li > h4.subM02.on,
+.leftArea #lnb.lnb4 ul > li > h4.subM04.on,{border-left:0px;}
+.leftArea #lnb.lnb4 ul > li > h4.subM03.on,
+.leftArea #lnb.lnb4 ul > li > h4.subM04.on{border-bottom:1px solid #e48329;}
+.leftArea #lnb.lnb4 ul > li > h4.blank{display:none;}
+
+/* leftArea #lnb.lnb6  */
+.leftArea #lnb.lnb6 ul > li{float:left;width:50%;}
+.leftArea #lnb.lnb6 ul > li > h4{display:block;padding:13px 0;color:#666;font-weight:bold;font-size:12px;text-align:left;border:1px solid #d7d7d7;border-width:1px 1px 0 1px;background-color:#f3f5f7}
+.leftArea #lnb.lnb6 ul > li > h4.subM02,
+.leftArea #lnb.lnb6 ul > li > h4.blank{border-left:0px;}
+.leftArea #lnb.lnb6 ul > li > h4.subM01,
+.leftArea #lnb.lnb6 ul > li > h4.subM02,
+.leftArea #lnb.lnb6 ul > li > h4.subM03,
+.leftArea #lnb.lnb6 ul > li > h4.subM04{border-bottom:1px solid #d7d7d7;}
+.leftArea #lnb.lnb6 ul > li > h4.subM03,.leftArea #lnb.lnb6 ul > li > h4.subM06 {border-top:0;}
+.leftArea #lnb.lnb6 ul > li > h4.blank{display:none;border-bottom:1px solid #d7d7d7;}
+.leftArea #lnb.lnb6 ul > li > h4.on{color:#fff;border:1px solid #e48329;border-width:1px 1px 0 1px;background-color:#fe922e;}
+.leftArea #lnb.lnb6 ul > li > h4.on a{color:#fff}
+.leftArea #lnb.lnb6 ul > li > h4.subM02.on,
+.leftArea #lnb.lnb6 ul > li > h4.subM04.on,.leftArea #lnb.lnb6 ul > li > h4.subM06.on,.leftArea #lnb.lnb6 ul > li > h4.subM08.on{border-left:0px;}
+.leftArea #lnb.lnb6 ul > li > h4.subM03.on,
+.leftArea #lnb.lnb6 ul > li > h4.subM04.on{border-bottom:1px solid #e48329;}
+.leftArea #lnb.lnb6 ul > li > h4.subM05{border-top:0;}
+.leftArea #lnb.lnb6 ul > li > h4.subM04{border-left:0;border-top:0;}
+.leftArea #lnb.lnb6 ul > li > h4.subM06{border-left:0;}
+.leftArea #lnb.lnb6 ul > li > h4.subM08{border-left:0; border-bottom:1px solid #d7d7d7;}
+.leftArea #lnb.lnb6 ul > li > h4.subM09{border-bottom:1px solid #d7d7d7;border-top:0;}
+.leftArea #lnb.lnb6 ul > li > h4.subM07{border-bottom:1px solid #d7d7d7;}
+.leftArea #lnb.lnb6 ul > li.tb_mb {display:none;} /* 20141111 추가 */
+
+/* leftArea #lnb.lnb7  2014-06-03 렌터카 추가 작업 */
+.leftArea #lnb.lnb7 ul > li{float:left;width:50%;}
+.leftArea #lnb.lnb7 ul > li > h4{display:block;padding:13px 0;color:#666;font-weight:bold;font-size:12px;text-align:left;border:1px solid #d7d7d7;border-width:1px 1px 1px 1px;background-color:#f3f5f7}
+.leftArea #lnb.lnb7 ul > li.on > h4{color:#fff;border:1px solid #e48329;background-color:#fe922e;}
+.leftArea #lnb.lnb7 ul > li.on > h4 a{color:#fff;}
+.leftArea #lnb.lnb7 ul > li > h4.subM01{border-bottom:1px solid #d7d7d7;}
+.leftArea #lnb.lnb7 ul > li > h4.subM02{border-bottom:1px solid #d7d7d7;}
+.leftArea #lnb.lnb7 ul > li > h4.subM03{border-bottom:1px solid #d7d7d7;}
+.leftArea #lnb.lnb7 ul > li > h4.on{color:#fff;border:1px solid #e48329;border-width:1px 1px 1px 1px;background-color:#fe922e;}
+.leftArea #lnb.lnb7 ul > li > h4.on a{color:#fff}
+
+/* leftArea #lnb  */
+.leftArea #lnb ul > li > ul.subMenu {position:relative;}
+.leftArea #lnb h3{float:left;width:50%;}
+.leftArea #lnb ul > li > ul.subMenu > li{ float:none;width:auto;padding:0px 3.1% !important;border:1px solid #dadcde;border-width:1px 1px 0 1px;background:#fff url(//cdnimg.tourbaksa.com/PC/www/ico/ico_lnb_off.gif) no-repeat 20px 11px;}
+.leftArea #lnb ul > li > ul.subMenu > li:first-child{border-top:0px;}
+.leftArea #lnb ul > li > ul.subMenu > li.end{border-bottom:1px solid #d7d7d7;}
+.leftArea #lnb ul > li > ul.subMenu > li > a{display:block;padding:10px 0 10px  30px;font-size:13px;text-align:left;border:0px;background:url(//cdnimg.tourbaksa.com/PC/www/common/arrow_02.gif) no-repeat 182px 15px !important;}
+.leftArea #lnb ul > li > ul.subMenu > li.on{background:#fff url(//cdnimg.tourbaksa.com/PC/www/ico/ico_lnb_on.gif) no-repeat 20px 11px;}
+.leftArea #lnb ul > li > ul.subMenu > li.on > a{color:#333;font-weight:bold;}
+.leftArea #lnb ul > li > ul.subMenu > li.dep_mn{clear:both;display:block;float:left;width:100%;padding:0 !important;background:0;border:0;}
+.leftArea #lnb ul > li > ul.subMenu > li.dep_mn > .btn_spmenu{padding:20px;border:1px solid #dadcde;}
+.leftArea #lnb ul > li > ul.subMenu > li.dep_mn > .btn_spmenu > a{display:block;width:100%;margin:0;padding:0;}
+.leftArea #lnb ul > li > ul.subMenu > li.dep_mn > .btn_spmenu > a span{background: #f8f6ef url(//cdnimg.tourbaksa.com/PC/www/ico/ico_deco_10.gif) no-repeat 145px center;}
+.leftArea #lnb.noDepthSub > ul > li > ul.subMenu > li > a{background-image:none;}
+.leftArea #lnb.noDepthSub > ul > li > h4{border-bottom:0px;}
+.leftArea #lnb ul > li > ul.subMenu .blank{display:none;}
+.leftArea #lnb ul > li > ul.subMenu.sub3Depth{border-left:1px solid #dadcde;}
+.leftArea #lnb ul > li > ul.subMenu.sub3Depth > li{width:100%;height:auto;padding:0 0 !important;border-left:0px;border:0;color:#222;}
+.leftArea #lnb ul > li > ul.subMenu.sub3Depth > li > a{display:block;padding:10px 0 10px 35px;background-position:188px 15px !important;}
+.leftArea #lnb ul > li > ul.subMenu.sub3Depth > li.lineBottom > a {border-bottom:1px solid #dadcde;}
+.leftArea #lnb ul > li > ul.subMenu.sub3Depth > li.on{background:#f3f5f7 url(//cdnimg.tourbaksa.com/PC/www/ico/ico_lnb_on.gif) no-repeat 20px 11px;}
+.leftArea #lnb ul > li > ul.subMenu.sub3Depth > li.on > a{color:#222;font-weight:bold;/* border-bottom:1px solid #dadcde */}
+.leftArea #lnb ul > li > .sub3Depth .end{border-bottom:1px solid #d7d7d7;}
+.leftArea #lnb ul > li > ul.subMenu.sub3Depth > li > .sub4Depth{position:relative;padding:10px 19px 10px 30px;background-color:#fff;border-top:1px solid #dadcde; overflow:hidden;}
+.leftArea #lnb ul > li > ul.subMenu.sub3Depth > li > .sub4Depth > li{width:auto;border:0px;background-color:#fff}
+.leftArea #lnb ul > li > ul.subMenu.sub3Depth > li > .sub4Depth > li a{padding:5px 0;font-size:12px;text-align:left;background-color:#fff;border:0px;}
+.leftArea #lnb ul > li > ul.subMenu.sub3Depth > li > .sub4Depth > li.on a{color:#ee7001;font-weight:bold;background-color:#fff;border:0px;}
+.leftArea #lnb ul > li > ul.subMenu.sub3Depth > li > .sub4Depth > li{ position:relative;} 
+.leftArea #lnb ul > li > ul.subMenu.sub3Depth > li > .sub4Depth > li > .sub4DepthSub{width:50%;height:auto;border:1px solid #000;background:#fff;position:absolute;top:0;right:0;z-index:9999; display:none} 
+.leftArea #lnb ul > li > ul.subMenu.sub3Depth > li > .sub4Depth > li > .sub4DepthSub > li{padding-left:12px;background:url(//cdnimg.tourbaksa.com/PC/www/ico/ico_deco_08.gif) no-repeat left center;width:95% !important;}
+.leftArea #lnb ul > li > ul.subMenu.sub3Depth > li > .sub4Depth > li > .sub4DepthSub > li > a{background:0; padding:5px 0; border:0;border-top:1px solid #ddd; text-align:left;}
+.leftArea #lnb ul > li > ul.subMenu.sub3Depth > li > .sub4Depth > li .subMore{padding-left:20px;background:url(//cdnimg.tourbaksa.com/PC/www/ico/ico_deco_07.gif) no-repeat left center}
+.leftArea #lnb ul > li > ul.subMenu.sub3Depth > li > .sub4Depth > li a.on{color:#ff8719;text-decoration:underline;}/* 10월14일 */
+.leftArea #lnb ul > li > ul.subMenu.sub3Depth > li > .sub4Depth > li > .sub4DepthSub{padding-left:20px; position:relative !important; width:95% !important; border:0 !important; display:block !important;}
+.leftArea #lnb ul > li > ul.subMenu.sub3Depth > li > .sub4Depth > li a img{display:inline;margin-left:5px;}
+.leftArea #lnb ul > li > ul.subMenu.sub3Depth > li > .sub4Depth > li > .sub4DepthSub > li > a.on,
+.leftArea #lnb ul > li > ul.subMenu.sub3Depth > li > .sub4Depth > li > .sub4DepthSub > li > a:hover {color:#fe922e;}
+.leftArea #lnb ul > li > ul.subMenu.sub3Depth > li > .sub4Depth > li > .sub4DepthSub > li > a.on{text-decoration:none;}
+.leftArea #lnb ul > li > ul.subMenu.sub3Depth > li > ul > li{float:left;width:50%;letter-spacing:-0.05em;word-break:break-all;line-height:18px;}
+.leftArea #lnb ul > li > ul.subMenu.sub3Depth > li > ul > li > a {border:1px solid #d7d7d7;background-color:#f3f5f7;}
+.leftArea #lnb ul > li > ul.subMenu.sub3Depth > li > ul > li.on a{color:#fff;border:1px solid #e48329;background-color:#fe922e;}/* border-width:1px 1px 0 1px; */
+.leftArea #lnb ul > li > ul.subMenu.sub3Depth > li > ul > li.on a{color:#fff;}
+.leftArea #lnb ul > li > ul.subMenu.sub3Depth > li > ul > li a{}
+.leftArea #lnb ul > li > ul.subMenu.sub3Depth > li > ul > li a > img{display:none;}
+.leftArea #lnb ul > li > ul.subMenu.sub3Depth > li > ul > li.blank{display:none;}
+.leftArea #lnb ul > li > ul.subMenu.sub3Depth > li > .sub4Depth > li > a img{vertical-align:baseline;}
+
+/* 20171026 lnb event영역 재정의 */
+.leftArea.leftArea__event #lnb ul{border-top:0;}
+.leftArea.leftArea__event #lnb ul > li {float:left;width:50%;}
+.leftArea.leftArea__event #lnb ul > li > h4{display:block;}
+.leftArea.leftArea__event #lnb ul > li > h4 a{display: block;padding:13px 20px;font-size:15px;font-weight:bold;text-align:left;color: #222;background-color: #f3f5f7;}
+.leftArea.leftArea__event #lnb ul > li.last{margin-bottom:48px;}
+.leftArea.leftArea__event #lnb ul > li.leftArea__eventbnr a{display: block;color: #222;font-size: 12px;text-align: center;font-weight:400;}
+.leftArea.leftArea__event #lnb ul > li.leftArea__eventbnr a span{display:block;}
+.leftArea.leftArea__event #lnb ul > li.leftArea__eventbnr a img{display:none;}
+.leftArea__eventbnr {display:block;margin-bottom:12px;}
+.leftArea__eventbnr span{display:none !important;}
+.leftArea__eventbnr img{display:block !important;}
+
+/* 20140324 : 반응형 추가 */
+.leftArea #lnb ul > li > ul.subMenu.sub3Depth > li .oneday_bus {float:none; width:inherit; margin-top: 0px; margin-right: 0px;}
+
+/* 20140502 : 추가 */
+.leftArea #lnb ul > li > ul.subMenu.sub3Depth > li .oneday_bus a, .leftArea #lnb ul > li > ul.subMenu.sub3Depth > li .f_car a, .leftArea #lnb ul > li > ul.subMenu.sub3Depth > li .passTiket a {padding:16.5px 0;}
+.leftArea #lnb ul > li > ul.subMenu.sub3Depth > li .f_car{float:none; width:inherit; margin-top: 0px; margin-right: 0px;}
+.leftArea #lnb ul > li > ul.subMenu.sub3Depth > li .passTiket {float:none; width:inherit; margin-top: 0px; margin-right: 0px;}
+
+/* 좌측 추가 메뉴 2014-07-10 */
+.leftArea #lnb ul > li > ul.subMenu.sub3Depth > li .btn_spmenu {float:none; width:auto; margin-top: 0px; margin-right: 0px;line-height:19px;} /* 20141107 수정 : width:inherit -> width:auto */
+.leftArea #lnb ul > li > ul.subMenu.sub3Depth > li .btn_spmenu.last {padding-bottom:18px;} /*  2015-03-24  추가 */
+
+/* btns */
+.btnArea.type0 { margin:0 10px; overflow:hidden;}
+.deBtn { display:inline-block; height:38px; margin:0; padding:0; line-height:36px; color:#fff; font-size:15px; font-weight:bold;}
+.deBtn.type0 { width:100%; margin:0 0 8px; background-color:#ff7a1f; border:1px solid #e45a01;}
+.deBtn.type1,
+.deBtn.type2 { width:49%; background-color:#ffbf44; border:1px solid #f5a700;}
+.deBtn.type2point { width:49%; background-color: #FF7A1F; border: 1px solid #E45A01;} /* 20131217 : 컬러 추가 */
+.deBtn.type1 { float:left;}
+.deBtn.type2 { float:right;}
+.deBtn.type3,
+.deBtn.type4,
+.deBtn.type5{ width:69px; height:26px; line-height:26px; font-size:12px; letter-spacing:-1px; vertical-align:middle;}
+.deBtn.type3 { background-color:#fff; border:1px solid #d0d0d0; color:#b1b1b1;}
+.deBtn.type4 { color:#e37a08; border:1px solid #e37a08; }
+.deBtn.type5 { background-color:#a8a8a8; border:1px solid #bbb; color:#fff; }
+.deBtn.type6 {font-size:12px; background-color:#f9f6ef; border:1px solid #d4d1cb; color:#848484; }
+.deBtn.type7 {font-size:12px;background-color:#666; border:1px solid #575757; color:#fff; }
+.deBtn.type8 {font-size:14px;background-color:#ff7a1f; border:1px solid #e45a01; color:#fff; }/*20150512추가*/
+.deBtn.type9 {width:69px;height:26px;border:1px solid #a1a1a1;color:#666;font-size:12px;line-height:26px;letter-spacing:-1px;vertical-align:middle;} /* 2015-08-12 추가 */
+
+/* calendarSect */
+.calendarSect {overflow:hidden; margin:20px 0 0 0; padding-bottom:18px; border:1px solid #e2e2e2; background-color:#f4f4f4;}
+.calendarSect .dateTit { padding:20px 0 15px; text-align:center;}
+.calendarSect .dateTit > button { display:inline-block; width:6px; height:10px; margin:0; padding:0; text-indent:-10000px; vertical-align:middle;}
+.calendarSect .dateTit > button.prev { background:url("/images/btn/btn_cal_prev_off.gif") no-repeat left top;}
+.calendarSect .dateTit > button.prev.on { background-image:url("/images/btn/btn_cal_prev_on.gif");}
+.calendarSect .dateTit > button.next { background:url("/images/btn/btn_cal_next_off.gif") no-repeat left top;}
+.calendarSect .dateTit > button.next.on { background-image:url("/images/btn/btn_cal_next_on.gif");}
+.calendarSect .dateTit > span.date { display:inline-block; vertical-align:middle; padding:0 20px; color:#454545; font-size:22px; font-weight:bold;}
+
+
+.calendarSect .calendarWrap { position:relative; width:780px; margin:0 auto;} /* 2014-10-16 수정 */
+.calendarSect .calendarWrap .calendarTable {float:left; width:235px; margin-left:70px;}
+.calendarSect .calendarWrap .calendarTable table { width:100%; text-align:center; background-color:#fff; border-bottom:1px solid #e5e5e5;}
+.calendarSect .calendarWrap .calendarTable table thead th { padding:11px 0; font-size:13px; color:#666; border-top:1px solid #e5e5e5; border-bottom:1px solid #e5e5e5;}
+.calendarSect .calendarWrap .calendarTable table .sun { padding-left:5px; border-left:1px solid #e5e5e5; color:#eb5d68;}
+.calendarSect .calendarWrap .calendarTable table .sat { padding-right:5px; border-right:1px solid #e5e5e5; color:#4197d4;}
+.calendarSect .calendarWrap .calendarTable table tbody td { padding:8px 0; font-size:13px; color:#666;}
+.calendarSect .calendarWrap .calendarTable table tbody tr:first-child td { padding-top:15px;}
+.calendarSect .calendarWrap .calendarTable table tbody tr:last-child td { padding-bottom:12px;}
+.calendarSect .calendarWrap .calBtn { position:absolute; top:90px; width:20px; height:31px; text-indent:-10000px;}
+.calendarSect .calendarWrap .calBtn.prev { left:15px; background:url("/images/btn/btn_cal2_prev_off.gif") no-repeat left top;}
+.calendarSect .calendarWrap .calBtn.prev.on { background-image:url("/images/btn/btn_cal2_prev_on.gif");}
+.calendarSect .calendarWrap .calBtn.next { right:15px;background:url("/images/btn/btn_cal2_next_off.gif") no-repeat left top;}
+.calendarSect .calendarWrap .calBtn.next.on { background-image:url("/images/btn/btn_cal2_next_on.gif");}
+
+.calendarSect .calendarWrap .reservationTable {float:left; width:380px; margin:3px 10px 0 40px;}
+.calendarSect .calendarWrap .reservationTable table { width:100%;height:195px; text-align:center; border-bottom:1px solid #cccccc;}
+.calendarSect .calendarWrap .reservationTable table thead th{width:88px;padding:10px 0 5px 0;border-top:1px solid #ccc; border-bottom:1px solid #ccc; vertical-align:middle;color:#454545; font-weight:normal;} /* 20131119 : color:#666; -> color:#454545; */ 
+.calendarSect .calendarWrap .reservationTable table thead th img{vertical-align:middle;margin-top:-2px;}
+.calendarSect .calendarWrap .reservationTable table tbody td {width:88px; padding:2px 0;color:#454545;} /* 20131119 : color:#666; -> color:#454545; */
+.calendarSect .calendarWrap .reservationTable table tbody td.price { font-weight:bold; color:#454545;} /* 20131119 : color:#666; -> color:#454545; */
+.calendarSect .calendarWrap .reservationTable table tbody td span.status { font-weight:bold;}
+.calendarSect .calendarWrap .reservationTable table tbody td span.status.type1 { color:#44b2ad;}
+.calendarSect .calendarWrap .reservationTable table tbody td span.status.type2 {color:#f37b41;}
+.calendarSect .calendarWrap .reservationTable table tbody td span.status.type3{color:#333;}
+.calendarSect .calendarWrap .reservationTable table tbody td span.status.type4 {color:#ff9733;}
+.calendarSect .calendarWrap .reservationTable table tbody tr:first-child td { padding-top:7px;}
+.calendarSect .calendarWrap .reservationTable table tbody tr.lastTr td,
+.calendarSect .calendarWrap .reservationTable table tbody tr:last-child td { padding-bottom:7px;}
+.calendarSect .calendarWrap .reservationTable .seeMore a { display:block; padding:10px 0 20px; text-align:center;}
+.calendarSect .calendarWrap .reservationTable .seeMore a span { padding-right:13px; background:url("/images/ico/ico_cal_down.gif") no-repeat right 6px;}
+.calendarSect .calendarWrap .reservationTable .seeMore.close a span { background:url("/images/ico/ico_cal_up.gif") no-repeat right 6px;}
+.calendarSect .calendarWrap .reservationTable table tbody tr:hover td{background:#fff;}
+
+/* 달력예약상태 */
+.calendarSect .calendarWrap .calendarTable table tbody td.dateStatus2{color:#fff !important;background-color:#44B2AD}
+.calendarSect .calendarWrap .calendarTable table tbody td.dateStatus1{color:#fff !important;background-color:#A6A6A6} /* 131022 EM.LEE #666 > #A6A6A6 */
+.calendarSect .calendarWrap .calendarTable table tbody td.dateStatus2{color:#fff !important;background-color:#44B2AD}
+.calendarSect .calendarWrap .calendarTable table tbody td.dateStatus3{color:#fff !important;background-color:#ff6c15} /* 131022 EM.LEE #F37B41 > #ff6c15 */
+.calendarSect .calendarWrap .calendarTable table tbody td.dateStatus4{color:#fff !important;background-color:#333}
+.calendarSect .calendarWrap .calendarTable table tbody td.dateStatus5{color:#fff !important;background-color:#fe9f28} /* 131022 EM.LEE #ff9733 > #fe9f28 */
+
+.calendarSect .calendarWrap .calendarTable table tbody td.holiday{color:#ff0000;}
+.calendarSect .calendarWrap .calendarTable table tbody td.sun {color:#eb5d68;}
+.calendarSect .calendarWrap .calendarTable table tbody td.sat {color:#4197d4;}
+
+.calendarBulletbox {margin:10px 0 0 5px; line-height:18px;}
+.calendarBulletbox .bulletTxt1 {color:#ff9833; margin:0 13px 0 5px;}
+.calendarBulletbox .bulletTxt2 {color:#44b3ad; margin-left:5px;}
+.calendarBulletbox .bulletTxt3 {color:#ff6c16; margin:0 13px 0 5px;}
+.calendarBulletbox .bulletTxt4 {color:#a5a7a6; margin:0 13px 0 5px;}
+.calendarBulletbox .bulletTxt5 {color:#353432; margin-left:5px;}
+
+
+/* guideWrap */
+.resultList .tabCon.ship01 .itemList li{position:relative;}
+.resultList .tabCon.ship01 .itemList li .guideWrap{display:block;position:absolute;left:350px;top:5px;width:408px;height:132px;padding:20px 18px;text-align:left;background:url("/images/sub/bg_box.gif") no-repeat left top;}
+.resultList .tabCon.ship01 .itemList li .guideWrap h5{margin-bottom:5px;font-size:15px}
+.resultList .tabCon.ship01 .itemList li .guideWrap ul > li{margin:6px 0;padding-left:10px;color:#666;border-bottom:0px;background:url("/images/bul/bul_list_dot.gif") no-repeat left center;}
+
+
+/* mainTypeC - LNB style */
+.contMain .sub3Depth {display:none;}
+.contMain .leftArea #lnb > ul {background-color:#f3f5f7;}
+.contMain .leftArea #lnb ul li {overflow:hidden;float:left;width:49.83%;background-color:#f3f5f7;text-align:center;}
+.contMain .leftArea #lnb ul li h4 {display:block;padding:13px 0;}
+.contMain .leftArea #lnb ul li.liOdd {border-right:1px solid #d7d7d7;} /* 3속성 수정해야함 */
+.contMain .leftArea #lnb ul li.end {border-bottom:0 none;}
+.contMain .leftArea #lnb ul li h4 a {font-size:12px;}
+.contMain .leftArea #lnb .sub3Depth {border-top:0 none;border-right:0 none;border-bottom:0 none;}
+
+.container .layoutTypeA{background:url(//cdnimg.tourbaksa.com/PC/www/sub/bg_cont_line.gif) repeat-y 215px 10px}
+
+
+/* .passTiket */
+.passTiket{display:block;padding:1px 0 5px;background-color:#fff;}
+.passTiket a{padding:0px !important;margin:0 20px;color:#62666c !important;font-weight:bold;text-align:left !important;letter-spacing:-1px;font-size:13px;margin-top:-1px !important;border:1px solid #d9d8d4  !important;}
+.passTiket a span{display:block;padding:12px 15px;color:#454545;background:#f8f6ef url(//cdnimg.tourbaksa.com/PC/www/ico/ico_deco_05.gif) no-repeat 145px center;} /* 20131119 : color:#62666c; -> 454545 */
+.noico a span{background-image:none !important;}
+.f_car {display:block;padding:1px 0 5px;background-color:#fff;}
+.f_car a{padding:0px !important;margin:0 20px;color:#62666c !important;font-weight:bold;text-align:left !important;letter-spacing:-1px;font-size:13px;margin-top:-1px !important;border:1px solid #d9d8d4  !important;}
+.f_car a span {background:#f8f6ef url(//cdnimg.tourbaksa.com/PC/www/ico/ico_deco_15.gif) no-repeat 145px center !important;} /* 20140228 : 배너 아이콘 추가 */
+.f_car .type0{border-top:0px;background-image:url(//cdnimg.tourbaksa.com/PC/www/ico/ico_deco_04.gif)}
+.f_car a.type1{background:#f8f6ef url(//cdnimg.tourbaksa.com/PC/www/ico/ico_deco_10.gif) no-repeat 155px center}
+
+/* oneday_bus 20140303 추가 */
+.oneday_bus {display:block;padding:1px 0 5px;background-color:#fff;}
+.oneday_bus a{padding:0px !important;margin:0 20px;color:#62666c !important;font-weight:bold;text-align:left !important;letter-spacing:-1px;font-size:13px;margin-top:-1px !important;border:1px solid #d9d8d4  !important;}
+.oneday_bus a span{display:block;padding:12px 15px;color:#454545;background:#f8f6ef url(//cdnimg.tourbaksa.com/PC/www/ico/ico_deco_05.gif) no-repeat 145px center;} /* 20131119 : color:#62666c; -> 454545 */
+.oneday_bus .type0{border-top:0px;background-image:url(//cdnimg.tourbaksa.com/PC/www/ico/ico_deco_04.gif);}
+.oneday_bus a.type1{background:#f8f6ef url(//cdnimg.tourbaksa.com/PC/www/ico/ico_deco_10.gif) no-repeat 155px center;}
+
+/* 좌측 추가 메뉴 2014-07-10 */
+.btn_spmenu {display:block;padding:1px 0 5px;background-color:#fff;}
+.btn_spmenu a{padding:0px !important;margin:0 20px;color:#62666c !important;font-weight:bold;text-align:left !important;letter-spacing:-1px;font-size:13px;margin-top:-1px !important;border:1px solid #d9d8d4  !important;}
+.btn_spmenu a span{display:block;padding:12px 15px;color:#454545;background:#f8f6ef url(//cdnimg.tourbaksa.com/PC/www/ico/ico_deco_05.gif) no-repeat 145px center;} /* 20131119 : color:#62666c; -> 454545 */
+.btn_spmenu .type0{border-top:0px; }
+
+
+/* .passTiket a:first-child span{border-bottom:0px;background-image:url(//cdnimg.tourbaksa.com/PC/www/ico/ico_deco_04.gif) } */
+.passTiket .type0{border-top:0px;background-image:url(//cdnimg.tourbaksa.com/PC/www/ico/ico_deco_04.gif)}
+.passTiket a.type1{background:#f8f6ef url(//cdnimg.tourbaksa.com/PC/www/ico/ico_deco_10.gif) no-repeat 155px center}
+.noDepth.passTiketArea .passTiket{padding:20px;border:1px solid #e2e2e2;border-width:0 1px 1px}
+.noDepth.passTiketArea .passTiket a{display:block;width:100%;margin:0 auto}
+.noDepth.passTiketArea .passTiket a.type2 span{background:#f8f6ef url(//cdnimg.tourbaksa.com/PC/www/ico/ico_deco_12.gif) no-repeat 135px center}
+#lnb.lnb4 .noDepth.passTiketArea .passTiket a.type3 span{letter-spacing:-2px;background-image:none}
+#lnb.lnb6 .noDepth.passTiketArea .passTiket a.type2 span{background:#f8f6ef url(//cdnimg.tourbaksa.com/PC/www/ico/ico_deco_10.gif) no-repeat 145px center}
+#lnb.lnb6 .noDepth.passTiketArea .passTiket a.type1 span{border-top:0px;background:#f8f6ef url(//cdnimg.tourbaksa.com/PC/www/ico/ico_deco_04.gif) no-repeat 145px center}
+#lnb.lnb6 .noDepth.passTiketArea .passTiket a.type2 span.f_car {background:#f8f6ef url(//cdnimg.tourbaksa.com/PC/www/ico/ico_deco_15.gif) no-repeat 145px center !important;} /* 20140228 : 배너 아이콘 추가 */
+#lnb.lnb6 .noDepth.passTiketArea .passTiket a.type2 span.oneday_bus {background:#f8f6ef url(//cdnimg.tourbaksa.com/PC/www/ico/ico_deco_16.gif) no-repeat 145px center !important;} /* 20140228 : 배너 아이콘 추가 */
+
+
+/*  2013.09.26 제품메인의 탭부분 */
+.prolistop {display:block;margin:20px 0 15px;padding:0;clear:both;display:table;width:100%;}
+.prototal {display:table-cell;width:80px;height:auto;margin:10px 0;background:#575757;text-align:center;letter-spacing:-1px;font-size:13px;font-weight:bold;letter-spacing:-1px;color:#fff;vertical-align:middle;}
+.prototal a:link{color:#fff;}
+.protoList {display:table-cell;border:1px solid #d8d9d4;overflow:hidden;height:auto;}
+.protoList div {display:table;float:left;width:50%;height:40px;margin-left:-1px;margin-bottom:-1px;vertical-align:middle;border-left:1px solid #d8d9d4;border-top:1px solid #d8d9d4;}
+.protoList div h3 {display:table-cell;height:40px;vertical-align:middle;padding:5px 5px 5px 0px;;border-top:1px solid #d8d9d4;width:20%;text-align:center;background:#faf7f0 url(/images/sub/bg_dt_liner.png) no-repeat right top;font-weight:bold;font-size:13px;letter-spacing:-1px;}
+.protoList div.longtxt {width:60%;}
+.protoList div.longtxt h3 {width:25%;}
+.protoList div.shoutext {width:40%;}
+.protoList div.shoutext h3 {width:30%;}
+.protoList div:first-child h3 {border-top:0 none;}
+.protoList div:first-child p {border-top:0 none;}
+.protoList div.even h3 {border-top:0 none;}
+.protoList div.longwid {width:100%;}
+.protoList div.longwid h3 {width:18%;background:#faf7f0 url(/images/sub/bg_dt_liner2.png) no-repeat right top; } 
+.protoList div.halftxt {width:50%;}
+.protoList div.halftxt h3 {width:25%;}
+.protoList div p {display:table-cell;vertical-align:middle;padding:0 0 0 2px; line-height:16px;}
+.protoList div p span {background:url("/images/common/bg_bar_04.gif") no-repeat left 1px; padding:0 3px 0 8px}
+.protoList div p span.on a {font-weight:bold;color:#ff8719;text-decoration:underline;}
+.protoList div p span:first-child {background:0 none;}
+
+/*  2013.10.15 제품메인의 탭부분 */
+.proDlistop {display:block;margin:20px 0 15px;padding:0;clear:both;display:table;width:100%;}
+
+.proDtotal {display:table-cell;width:80px; height:auto;margin:10px 0;text-align:center;letter-spacing:-1px;font-size:13px;font-weight:bold;letter-spacing:-1px;color:#2d2c2c;vertical-align:middle;background:#fff;border-top:1px solid #e2e2e2;border-bottom:1px solid #e2e2e2;border-left:1px solid #e2e2e2;}
+.proDtotal > a:link{color:#333;}
+.proDtoList {display:table-cell;border:1px solid #d8d9d4;overflow:hidden;height:auto;background:url("/images/sub/bg_proDtoList.png") repeat 0 0;}
+.proDtoList div {display:table;float:left;width:50%;height:40px;margin-left:-1px;margin-bottom:-1px;vertical-align:middle;border-left:1px solid #e2e2e2;border-top:1px solid #e2e2e2;color:#fff;}
+.proDtoList div:nth-of-type(even) p{border-right:0;}
+.proDtoList div p.pType {height:64px;} /* 201601 신규 : 텝메뉴 깨짐으로 높이값 지정 */
+.proDtoList div a{color:#fff;}
+.proDtoList div h3 {line-height:16px;display:table-cell; vertical-align:middle; padding:5px 8px 5px 2px; width:25%;text-align:center;background:url("/images/sub/bg_dt_liner_new.png") no-repeat right center;font-weight:bold;font-size:13px;letter-spacing:-1px;}  
+.proDtoList div p {background:#6e7278;display:table-cell;vertical-align:middle;padding:5px 2px 5px 4px; line-height:16px;} 
+.proDtoList div p span {background:url("/images/common/bg_bar_04.gif") no-repeat 100% center;padding:5px 0;display:inline-block;margin-bottom:1px;}
+.proDtoList div p span:last-child {background:0 none;}
+.proDtoList div p span:last-child a:hover{background-image:none;}
+.proDtoList div p span.on a {font-weight:bold;color:#fff;background:#ff9734;text-decoration:none;} 
+.proDtoList div p span a{width:100%;padding:5px;}
+.proDtoList div p span a:hover{background:#ff9734 url("/images/common/bg_bar_04.gif") no-repeat 100% center;}
+.proDtoList .proDtoRow{position:relative;display:table;float:none;height:auto !important;border:none;width:100%;}
+.proDtoList .proDtoRow + .proDtoRow{border-top:1px solid #d8d9d4;}
+.proDtoList .proDtoRow > div{background:url("/images/sub/bg_proDtoListDiv.png") repeat 0 0;display:table-cell;float:none;border-left:0;margin-left:-1px;margin-top:-1px;color:#fff;border-top:0;}
+.proDtoList .proDtoRow > div + div{border-left:1px solid #d8d9d4;}
+.proDtoList .proDtoRow > div h3{display:table-cell;width:88.5px;vertical-align:middle;padding:5px 2px 5px 6px;background-position:31px 50%;}
+.proDtoList .proDtoRow > div p{display:table-cell;vertical-align:middle;padding:5px 2px 7px 4px;margin-bottom:1px;}
+.proDtoList div.proDtoRow.longtype{display:block; width:100%;}
+.proDtoList div.proDtoRow.longtype > div{display:table;width:100%;}
+.proDtoList div.longtype h3{display:table-cell; width:12.4%;}
+.proDtoList div.longtype p{display:table-cell; border-right:0; width:87.6%}
+
+/* 2014.03.18 고객센터 lnb */
+.leftArea #lnb.lnb22 ul > li > h4{display:block;padding:13px 0;color:#666;font-weight:bold;text-align:left;font-size:12px;border:1px solid #d7d7d7;border-width:1px;background-color:#f3f5f7}
+.leftArea #lnb.lnb22 ul > li > h4.subM05{border-bottom:1px solid #d7d7d7;}
+.leftArea #lnb.lnb22 ul > li > h4.blank{display:none;}
+.leftArea #lnb.lnb22 ul > li > h4.on{color:#fff;border:1px solid #e48329;border-width:1px 1px 0 1px;background-color:#fe922e;}
+.leftArea #lnb.lnb22 ul > li > h4.on a{color:#fff}
+
+.leftArea #lnb.lnb22 ul > li > h4.subM02.on,
+.leftArea #lnb.lnb22 ul > li > h4.subM04.on{border-left:0px}
+.leftArea #lnb.lnb22 ul > li > h4.subM03.on,
+.leftArea #lnb.lnb22 ul > li > h4.subM04.on,
+.leftArea #lnb.lnb22 ul > li > h4.subM05.on{border-bottom:1px solid #e48329;}
+
+.leftAddB{display:block;}
+
+/* 2014-07-28 원데이투어 버튼 추가 */
+.subMenu_add_m{display:none;}
+.subMenu_add_m li{float:left;width:50%;color: #fc7d09;font-size: 24px;font-weight: bold;line-height: 25px;padding:0;} /* 20141111 float:left 추가 */
+.subMenu_add_m li a{background-color: #f3f5f7;border: 1px solid #d7d7d7;color: #222;display: block;font-size: 12px;padding: 8px 0;text-align: center;}
+
+/* 20141111 추가 */
+.pass_bnr{display:block;}
+ul.pass_bnr li {margin-bottom:10px;}
+ul.pass_bnr li:first-child {margin:48px 0 10px;}
+
+/* 공통 타이틀 밑에 소개글 - 2014-12-05 추가 */
+.subCont .desc_txt {margin:20px 0 0;line-height:18px;}
+
+/*국내레저lnb하단부분추가- 2015-05-15*/
+.leisure_leftbox {display:block;width:194px; height:60px;padding:10px; margin-top:30px; border:1px solid #bcbcbc;}
+.leisure_leftbox span {display:inline-block; float:left; width:180px; margin-bottom:10px;}
+.leisure_leftbox span.yTxt {color:#fe922e; font-weight:bold;}
+
+/* lnb 마이페이지 및 기타  2015-06-04*/
+#mypage_m {display:none}
+#mypage_pc {display:block;}
+#side_m {display:none}
+#side_pc {display:block;}
+
+.leftArea #lnb_etc h3{display:none}
+.leftArea #lnb_etc ul > li > h4{display:block; !important;}
+.leftArea #lnb_etc ul > li > h4 a {background:#f3f5f7; border:1px solid #d7d7d7;  color:#222;}
+.leftArea #lnb_etc ul > li > h4 a.on {color:#fff;background-color:#fe922e;border:1px solid #e48329;}
+.leftArea #lnb_etc ul > li > ul.subMenu > li{float:left;width:50%;}
+.leftArea #lnb_etc ul > li > ul.subMenu > li a{display:block;padding:13px 0;color:#222;font-size:12px;text-align:center;border-bottom:1px solid #ddd;/*border:1px solid #d7d7d7;*/background-color:#f3f5f7}
+.leftArea #lnb_etc ul > li > ul.subMenu.sub3Depth > li{width:50%;border:0;color:#222;}
+.leftArea #lnb_etc ul > li > ul.subMenu.sub3Depth > li > a{display:block;}
+.leftArea #lnb_etc ul > li > ul.subMenu.sub3Depth > li > .sub4Depth > li{ position:relative} 
+.leftArea #lnb_etc ul > li > ul.subMenu.sub3Depth > li > .sub4Depth > li > .sub4DepthSub{width:50%;height:auto;border:1px solid #000;background:#fff;position:absolute;top:0;right:0;z-index:9999; display:none} 
+.leftArea #lnb_etc ul > li > ul.subMenu.sub3Depth > li > .sub4Depth > li > .sub4DepthSub > li > h4  a {border-bottom:1px solid #ddd; border-top:0; /*border-top:1px solid #ddd;*/}
+.leftArea #lnb_etc ul > li > ul.subMenu.sub3Depth > li > .sub4Depth > li > .sub4DepthSub > li > h4  a.on {color:#fe922e;background:#fff; padding:5px 10px; border:0;border-top:1px solid #fff; text-align:left; }
+.leftArea #lnb_etc ul > li > ul.subMenu.sub3Depth > li > .sub4Depth > li > .sub4DepthSub > li > a{color:#666;background:#fff; padding:5px 10px; /*border-top:1px solid #ddd;*/ text-align:left}
+.leftArea #lnb_etc ul > li > ul.subMenu.sub3Depth > li > .sub4Depth > li > .sub4DepthSub > li > a.on {color:#fe922e;background:#fff; padding:5px 10px; border:0;border-top:1px solid #fff; text-align:left}
+.leftArea #lnb_etc ul > li > ul.subMenu.sub3Depth > li > .sub4Depth > li > .sub4DepthSub > li > a:hover {color:#fe922e ;}
+.leftArea #lnb_etc ul > li > ul.subMenu.sub3Depth > li > ul > li{float:left;width:100%;letter-spacing:-0.05em;word-break:break-all;line-height:18px; border-top:0;}
+.leftArea #lnb_etc ul > li > ul.subMenu.sub3Depth > li > ul > li > a {border:1px solid #d7d7d7;background-color:#f3f5f7;     display: block; padding:13px 0; text-align:center;}
+.leftArea #lnb_etc ul > li > ul.subMenu.sub3Depth > li > ul > li.on a{background:#f3f5f7; /*border:1px solid #d7d7d7;*/ color:#222;}
+.leftArea #lnb_etc ul > li > ul.subMenu.sub3Depth > li > ul > li.on a.on{color:#fff;border:1px solid #e48329;background-color:#fe922e;}
+.leftArea #lnb_etc ul > li > ul.subMenu.sub3Depth > li > ul > li.on a{color:#222;}
+.leftArea #lnb_etc ul > li > ul.subMenu.sub3Depth > li > ul > li a{font-weight: normal;}
+.leftArea #lnb_etc ul > li > ul.subMenu.sub3Depth > li > ul > li a > img{display:none}
+
+
+/* 골프, 허니문 */
+.leftArea #lnb_etc2 h3{display:none}
+.leftArea #lnb_etc2 ul > li > h4{display:block; !important;}
+.leftArea #lnb_etc2 ul > li > h4 a {background:#f3f5f7; border:1px solid #d7d7d7;  color:#222;}
+.leftArea #lnb_etc2 ul > li > h4 a.on {color:#fff;background-color:#fe922e;border:1px solid #e48329;}
+.leftArea #lnb_etc2 ul > li > ul.subMenu > li{float:left;width:50%;}
+.leftArea #lnb_etc2 ul > li > ul.subMenu > li a{display:block;padding:13px 0;color:#222;font-size:12px;text-align:center;border-bottom:1px solid #ddd;/*border:1px solid #d7d7d7;*/background-color:#f3f5f7}
+.leftArea #lnb_etc2 ul > li > ul.subMenu.sub3Depth > li{width:100%;border:0;color:#222;}
+.leftArea #lnb_etc2 ul > li > ul.subMenu.sub3Depth > li > a{display:block;}
+.leftArea #lnb_etc2 ul > li > ul.subMenu.sub3Depth > li > .sub4Depth > li{ position:relative; width:50%} 
+.leftArea #lnb_etc2 ul > li > ul.subMenu.sub3Depth > li > .sub4Depth > li > .sub4DepthSub{width:50%;height:auto;border:1px solid #000;background:#fff;position:absolute;top:0;right:0;z-index:9999; display:none} 
+.leftArea #lnb_etc2 ul > li > ul.subMenu.sub3Depth > li > .sub4Depth > li > .sub4DepthSub > li > h4  a {border-bottom:1px solid #ddd; border-top:0; /*border-top:1px solid #ddd;*/}
+.leftArea #lnb_etc2 ul > li > ul.subMenu.sub3Depth > li > .sub4Depth > li > .sub4DepthSub > li > h4  a.on {color:#fe922e;background:#fff; padding:5px 10px; border:0;border-top:1px solid #fff; text-align:left; }
+.leftArea #lnb_etc2 ul > li > ul.subMenu.sub3Depth > li > .sub4Depth > li > .sub4DepthSub > li > a{color:#666;background:#fff; padding:5px 10px; /*border-top:1px solid #ddd;*/ text-align:left}
+.leftArea #lnb_etc2 ul > li > ul.subMenu.sub3Depth > li > .sub4Depth > li > .sub4DepthSub > li > a.on {color:#fe922e;background:#fff; padding:5px 10px; border:0;border-top:1px solid #fff; text-align:left}
+.leftArea #lnb_etc2 ul > li > ul.subMenu.sub3Depth > li > .sub4Depth > li > .sub4DepthSub > li > a:hover {color:#fe922e ;}
+.leftArea #lnb_etc2 ul > li > ul.subMenu.sub3Depth > li > ul > li{float:left;width:100%;letter-spacing:-0.05em;word-break:break-all;line-height:18px; border-top:0;}
+.leftArea #lnb_etc2 ul > li > ul.subMenu.sub3Depth > li > ul > li > a {border:1px solid #d7d7d7;background-color:#f3f5f7;     display: block; padding:13px 0; text-align:center;}
+.leftArea #lnb_etc2 ul > li > ul.subMenu.sub3Depth > li > ul > li.on a{background:#f3f5f7; /*border:1px solid #d7d7d7;*/ color:#222;}
+.leftArea #lnb_etc2 ul > li > ul.subMenu.sub3Depth > li > ul > li.on a.on{color:#fff;border:1px solid #e48329;background-color:#fe922e;}
+.leftArea #lnb_etc2 ul > li > ul.subMenu.sub3Depth > li > ul > li.on a{color:#222;}
+.leftArea #lnb_etc2 ul > li > ul.subMenu.sub3Depth > li > ul > li a{font-weight: normal;}
+.leftArea #lnb_etc2 ul > li > ul.subMenu.sub3Depth > li > ul > li a > img{display:none}
+
+/* 2015-07-22 전세계 렌터카 배너 추가 */
+.rentRefuel_rental {margin-top:20px; text-align:left;}
+
+
+/* 예약페이지 배너 영역 */
+.subCont .bannArea{margin:30px 0 10px 0}
+.subCont .bannArea a {display:inline-block; width:auto;text-align:center;}
+.subCont .bannArea a img{display:inline; width:423px; height:100px; }
+.subCont .bannArea a:first-child {margin:0 6px 0 0; }
+.subCont .bannArea a.pc_bannArea {display:block;}
+.subCont .bannArea a.pc_bannArea img {width:1100px;}
+.subCont .bannArea a.pc_bannArea img.img_m_only {display:none;}
+.subCont .bannArea a.pc_bannArea img.img_pc_only {display:block;}
+
+
+/* 201605 신규 : 링크복사 버튼 추가에 따른 css 추가 */
+.posi_desc {position:relative;}
+.posi_linkBtn {display:inline-block; position:static;top:-1px; right:0;}
+.posi_linkBtn .linkBtn {display:block; padding:4px; border:1px solid #e2e2e2; background:#fff;}
+.posi_linkBtn .linkBtn .img {width:100%;}
+.posi_linkBtn .linkBtn .img img {width:100%; max-width:12px;}
+
+
+/* etcWrap */
+.etcWrap{margin-top:0}

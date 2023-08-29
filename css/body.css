@@ -1,0 +1,492 @@
+BODY, TD, TEXTAREA, INPUT, SELECT {
+	font-size: 12px;
+	line-height: 16px;
+	font-family: ±¼¸²,curier,seoul;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	color:#333;
+	margin:0px;
+}
+p, ul, ol, h1, h2, h3, h4, h5, dl, dt, dd {
+	margin:0;
+	padding:0;
+}
+.price {
+	MARGIN-RIGHT: 15px;
+	font-size:18pt; line-height:24px; font-weight:bold; color:ff3a1f; font-family:Arial; letter-spacing:-0.05em;
+}
+.l_banner {background:url('/images/item/bg_left_banner.gif') no-repeat; margin:3 0 0 0px; text-align:left;padding:2 2 2 2px;}
+
+/*2008-08-25 ±èÀºÃ¶ ÇÑ °¡Áö Ãß°¡*/
+image{border: 0px;}
+.intra_subtit {  background:url(http://newintra.tourbaksa.com/images/intra_subtit.jpg) #Ffffff no-repeat left ; vertical-align:top; color: #05879b; padding-left:35px; padding-top:8px; font-weight:bold; height:35px}
+
+
+
+/***** »çÀÌÆ®¸Ê (sitemap)080924 ±è±âÀºÃß°¡ *****/
+/* link */
+a.sitemap { font-size:12px;color:#999999;font-family:Dotum,Dotumche,verdana;}
+a.sitemap:link { font-size:12px;color:#999999;font-family:Dotum,Dotumche,verdana; text-decoration:none }
+a.sitemap:visited { font-size:12px;color:#999999;font-family:Dotum,Dotumche,verdana;text-decoration:none }
+a.sitemap:active { font-size:12px;color:#999999;font-family:Dotum,Dotumche,verdana; text-decoration:none }
+a.sitemap:hover { font-size:12px;color:#999999;font-family:Dotum,Dotumche,verdana; text-decoration:none }
+/***** »çÀÌÆ®¸Ê (sitemap) *****/
+.gray_right   {color:#666666; line-height:17px; font-size:9pt;  font-family:µ¸¿ò,Verdana,Arial; text-align:right; padding:2 5 2 2;}
+
+.orangeB_right   {color:#FF6A36; line-height:17px; font-size:9pt;  font-family:µ¸¿ò,Verdana,Arial; text-align:right; padding:2 5 2 2;}
+.TABLE_con {font-size:8pt; line-height:14px; font-family: µ¸¿ò, Arial;letter-spacing:-1; padding-left:5PX}
+.grayS	 {color:#777777; font-size:8pt;font-family: µ¸¿ò, Arial; line-height:14px; padding-left:20px;}
+.detail_popup {color:#875a8b; font-family: µ¸¿ò,curier,seoul; font-size:14px; font-weight:bold;}
+.pad_t5 {padding-top:5px;}
+/*¸®´º¾óÃß°¡*/
+.thema_on{ background:url(/images/renew_main/main_thema_on_04.gif); height:31px; width:183px;  padding:0 0 0 0; color:#ffffff; font-family: µ¸¿ò,curier,seoul; font-weight:bold; line-height:15px; text-align:center; }
+.thema_off{ background:url(/images/renew_main/main_thema_off_04.gif); height:31px; width:183px;  padding:8 0 0 0; color:#404755; font-family: µ¸¿ò,curier,seoul;  line-height:15px; text-align:center; font-size:11px; }
+.congray {font-size:8pt; line-height:14px; font-family: µ¸¿ò, Arial;color:#7a7a7a;letter-spacing:-1;}
+.newmainprice {font-size:12px; line-height: 16px; font-family: µ¸¿ò,curier,seoul; color: #601fb9; font-weight:bold;}
+.reddB           	{color:#772b06; line-height:18px; font-size:11px; font-family:Arial,Verdana,µ¸¿ò,Arial; font-weight:bold;}
+.subthema_on01{ background:url(/images/renew_main/main_thema_on_04.gif); height:31px; width:183px;  padding:0 0 0 0; color:#ffffff; font-family: µ¸¿ò,curier,seoul; font-weight:bold; line-height:15px; text-align:center; }
+.subthema_on02{ background:url(/images/renew_main/main_thema_on_044.gif); height:31px; width:183px;  padding:0 0 0 0; color:#ffffff; font-family: µ¸¿ò,curier,seoul; font-weight:bold; line-height:15px; text-align:center; }
+.txt_orang12{font-family:µ¸¿ò; font-size:9pt; line-height:18px; color:#ff6600;font-family:dotum}
+.txt_orang12_No{font-family:µ¸¿ò; font-size:9pt; line-height:18px; color:#ff6600;font-family:verdana}
+.txt_red12{font-family:µ¸¿ò; font-size:9pt; line-height:18px; color:#ff0000;font-family:dotum}
+/* ¸ÞÀÎ */
+.mainprice {font-size:12px; line-height: 16px; font-family: µ¸¿ò,curier,seoul; color: #FF6600; font-weight:bold;}
+.mainarea {font-size:12px; line-height: 16px; font-family: µ¸¿ò,curier,seoul; color: #1562A6; font-weight:bold;}
+.in_cost{font-family:verdana; font-size:11px;border:solid 1px; border-color:white; color:#010101; text-align:center;letter-spacing:-1;width:60px;height:21px;}
+.login{border:1px #CFA295 solid; height:20; background-color:#FDEDE8; color:#000000; font-size:9pt;;}
+.schtit{color:#657E95; line-height:18px; font-size:9pt; font-family:Arial,Verdana,µ¸¿ò,Arial; font-weight:bold; }
+.boom{color:#62B7D3; line-height:18px; font-size:9pt; font-family:Arial,Verdana,µ¸¿ò,Arial; font-weight:bold; }
+/* ¸ÞÀÏ */
+.mailitem {font-size:12px; line-height: 16px; font-family: µ¸¿ò,curier,seoul; color:#444444; font-weight:bold;}
+.redbold            	{color:#ff0000; line-height:18px; font-size:9pt; font-family:Arial,Verdana,µ¸¿ò,Arial; font-weight:bold; }
+/* °Ô½ÃÆÇ */
+.notice {font-family:tahoma;font-size:7pt;color:#ff6600;}
+/* »ó¼¼È­¸é */
+.title {font-family:±¼¸²;font-size:11pt; line-height: 16px; font-weight:bold;letter-spacing:-1;}
+.titleb {font-family:±¼¸²;font-size:11pt; line-height: 16px; color:#000000; font-weight:bold;letter-spacing:-1;}
+.ca_title {font-family:tahoma;font-size:7pt;font-weight:bold;}
+.canum {font-family:tahoma;font-size:8pt;}
+.canumsel {font-family:tahoma;font-size:8pt;color:#FFFFFF;}
+.casun {font-family:tahoma;font-size:8pt;color:#FF0000;}
+.casat {font-family:tahoma;font-size:8pt;color:#0066CC;}
+/* ¿©Çà»óÇ° */
+.recomprice {font-family:±¼¸²;font-size:11pt; line-height: 16px; color:#FF5A00; font-weight:bold;letter-spacing:-1;}
+.listtitle {font-family:±¼¸²;font-size:11pt; line-height: 16px; color:#000000; font-weight:bold;letter-spacing:-1;}
+.saleprice {font-size:12px; line-height: 16px; font-family: µ¸¿ò,curier,seoul; color: #FF6600;font-weight:bold;}
+.hitprice {font-size:12px; line-height: 16px; font-family: µ¸¿ò,curier,seoul; color: #35ABD7;font-weight:bold;}
+.hitprice2 {font-size:14px; line-height: 16px; font-family: µ¸¿ò,curier,seoul; color: #35ABD7;font-weight:bold;}
+.option_link {font-size:9pt;font-family: µ¸¿ò, Arial; color:#FA6400;}
+.option_link2 {font-size:11pt;font-family: µ¸¿ò, Arial; color:#FA6400;font-weight:bold;}
+/* °øÅë */
+.location {font-size:8pt; line-height:16px; font-family: µ¸¿ò, Arial;letter-spacing:-1;}
+.txm {font-size:12px; line-height:16px; font-family: µ¸¿ò, Arial;letter-spacing:-1;}
+.txmb {font-size:12px; line-height:16px; font-family: µ¸¿ò, Arial;letter-spacing:-1;font-weight:bold;}
+.con {font-size:8pt; line-height:14px; font-family: µ¸¿ò, Arial;letter-spacing:-1;}
+.conb {font-size:8pt; line-height:14px; font-family: µ¸¿ò, Arial;letter-spacing:-1;font-weight:bold;}
+.con8 {font-size:8pt;font-family: µ¸¿ò, Arial; line-height:14px;}
+.con8b {font-size:8pt;font-family: µ¸¿ò, Arial;font-weight:bold; line-height:14px;}
+.con800 {font-size:8pt; line-height:14px; font-family: µ¸¿ò, Arial;color:#000000;letter-spacing:-1;}
+.con800b {font-size:8pt; line-height:14px; font-family: µ¸¿ò, Arial;color:#000000;letter-spacing:-1;font-weight:bold;}
+.con900b {font-size:8pt; line-height:14px; font-family: µ¸¿ò, Arial;color:#ff6600;letter-spacing:-1;font-weight:bold;}
+.conffb {font-size:8pt; line-height:14px; font-family: µ¸¿ò, Arial;color:#FFFFFF;letter-spacing:-1;font-weight:bold;}
+.ver {font-family:verdana;font-size:7pt;letter-spacing:-1;}
+.verb {font-family:verdana;font-size:7pt;font-weight:bold;}
+.num7 {font-family:tahoma; line-height:12px;font-size:7pt;}
+.num7b {font-family:tahoma; line-height:12px;font-size:7pt;font-weight:bold;}
+.num8 {font-family:tahoma;font-size:8pt;}
+.num8b {font-family:tahoma;font-size:8pt;font-weight:bold;}
+.eng{font-size:8pt; font-family:Arial;  line-height:14px}
+.twdate {font-size:8pt; font-family:Arial;  line-height:14px color: #999999;}
+A:link    { font-family: ±¼¸²,curier,seoul;  color: #444444; line-height: 16px; text-decoration: none; }
+A:active  { font-family: ±¼¸²,curier,seoul;  color: #444444; line-height: 16px; text-decoration: none; }
+A:visited { font-family: ±¼¸²,curier,seoul;  color: #444444; line-height: 16px; text-decoration: none; }
+A:hover   { font-family: ±¼¸²,curier,seoul;  color: #444444; line-height: 16px; text-decoration: underline; }
+/* ÀÛÀº±Û¾¾ ¸µÅ© */
+.B:link    { font-size:8pt; line-height:16px; font-family: µ¸¿ò, Arial;letter-spacing:-1; text-decoration: none; }
+.B:active  { font-size:8pt; line-height:16px; font-family: µ¸¿ò, Arial;letter-spacing:-1; text-decoration: none; }
+.B:visited { font-size:8pt; line-height:16px; font-family: µ¸¿ò, Arial;letter-spacing:-1; text-decoration: none; }
+.B:hover   { font-size:8pt; line-height:16px; font-family: µ¸¿ò, Arial;letter-spacing:-1; text-decoration: underline; }
+/* ¾ÆÀÌÅÛ ÃßÃµ */
+.C:link    { font-size:12px; line-height:22px; font-family: ±¼¸², Arial;letter-spacing:-1; color: #000000; text-decoration: none; }
+.C:active  { font-size:12px; line-height:22px; font-family: ±¼¸², Arial;letter-spacing:-1; color: #000000; text-decoration: none; }
+.C:visited { font-size:12px; line-height:22px; font-family: ±¼¸², Arial;letter-spacing:-1; color: #000000; text-decoration: none; }
+.C:hover   { font-size:12px; line-height:22px; font-family: ±¼¸², Arial;letter-spacing:-1; color: #000000; text-decoration: underline; }
+/* È£ÅÚ¿ä±ÝÇ¥ */
+A.hotel:link    { font-size:8pt; line-height:16px; font-family: µ¸¿ò, Arial; color: #000000; text-decoration: none; }
+A.hotel:active  { font-size:8pt; line-height:16px; font-family: µ¸¿ò, Arial; color: #FF0000; text-decoration: none; }
+A.hotel:visited { font-size:8pt; line-height:16px; font-family: µ¸¿ò, Arial; color: #000000; text-decoration: none;}
+A.hotel:hover   { font-size:8pt; line-height:16px; font-family: µ¸¿ò, Arial; color: #FF0000; text-decoration: underline;}
+A.hotel01:link    { font-size:8pt; line-height:16px; font-family: µ¸¿ò, Arial; color: #000000; text-decoration: none; }
+A.hotel01:active  { font-size:8pt; line-height:16px; font-family: µ¸¿ò, Arial; color: #FF0000; text-decoration: none; }
+A.hotel01:visited { font-size:8pt; line-height:16px; font-family: µ¸¿ò, Arial; color: #000000; text-decoration: underline;}
+A.hotel01:hover   { font-size:8pt; line-height:16px; font-family: µ¸¿ò, Arial; color: #FF0000; text-decoration: underline;}
+.xx:link    { font-size:12px; line-height:22px; font-family: ±¼¸², Arial;letter-spacing:-1; color: #005571;  font-weight:bold; }
+.xx:active  { font-size:12px; line-height:22px; font-family: ±¼¸², Arial;letter-spacing:-1; color: #005571; font-weight:bold;}
+.xx:visited { font-size:12px; line-height:22px; font-family: ±¼¸², Arial;letter-spacing:-1; color: #005571; font-weight:bold; }
+.xx:hover   { font-size:12px; line-height:22px; font-family: ±¼¸², Arial;letter-spacing:-1; color: #005571; font-weight:bold; }
+/* °Ô½ÃÆÇÆäÀÌÁö */
+.D:link    { font-size:7pt; line-height:14px; font-family: verdana; text-decoration: none; }
+.D:active  { font-size:7pt; line-height:14px; font-family: verdana; text-decoration: none; }
+.D:visited { font-size:7pt; line-height:14px; font-family: verdana; text-decoration: none; }
+.D:hover   { font-size:7pt; line-height:14px; font-family: verdana; text-decoration: underline; }
+/* È£ÅÚ¸®½ºÆ®ÆäÀÌÁö °¡°Ý */
+.E:link    { font-size:7pt; line-height:14px; font-family: tahoma; text-decoration: none; font-weight:bold;}
+.E:active  { font-size:7pt; line-height:14px; font-family: tahoma; text-decoration: none; font-weight:bold;}
+.E:visited { font-size:7pt; line-height:14px; font-family: tahoma; text-decoration: none; font-weight:bold;}
+.E:hover   { font-size:7pt; line-height:14px; font-family: tahoma; text-decoration: underline; font-weight:bold;}
+/* ¸ñ·Ï */
+li.pno1 {background:url('/images/newmain/pno_01.gif') no-repeat;padding-left:19px;}
+li.pno2 {background:url('/images/newmain/pno_02.gif') no-repeat;padding-left:19px;}
+li.pno3 {background:url('/images/newmain/pno_03.gif') no-repeat;padding-left:19px;}
+li.pno4 {background:url('/images/newmain/pno_04.gif') no-repeat;padding-left:19px;}
+li.pno5 {background:url('/images/newmain/pno_05.gif') no-repeat;padding-left:19px;}
+li.gno1 {background:url('/images/newmain/gno_01.gif') no-repeat;padding-left:19px;}
+li.gno2 {background:url('/images/newmain/gno_02.gif') no-repeat;padding-left:19px;}
+li.gno3 {background:url('/images/newmain/gno_03.gif') no-repeat;padding-left:19px;}
+li.cno {background:url('/images/newmain/comm_bl.gif') no-repeat;padding-left:9px;}
+#alignLeft{float: left;}
+#alignRight{float: right;}
+/* ÀÔ·ÂÃ¢ */
+.Input_Common {BORDER-TOP: #999999 1px solid;BORDER-BOTTOM: #999999 1px solid;BORDER-LEFT: #999999 1px solid;BORDER-RIGHT: #999999 1px solid;FONT-SIZE: 9pt;COLOR: #444444;FONT-FAMILY: µ¸¿ò;}
+.Input_Common_chat {BORDER-TOP: #F2E8DC 1px solid;BORDER-BOTTOM: #F2E8DC 1px solid;BORDER-LEFT: #F2E8DC 1px solid;BORDER-RIGHT: #F2E8DC 1px solid;padding:3px;FONT-SIZE: 9pt;COLOR: #654636;background-color:#F2E8DC;FONT-FAMILY:µ¸¿ò;}
+.corpStyle {height:15px;padding:3px 0 0 5px;border:1px solid #CECECE;}
+.Input_1214 {BORDER-TOP: #999999 0px solid;BORDER-BOTTOM: #999999 0px solid;BORDER-LEFT: #999999 0px solid;BORDER-RIGHT: #999999 0px solid;FONT-SIZE: 9pt;COLOR: #444444;FONT-FAMILY: µ¸¿ò;}
+/* ¼¿·ºÆ® ¹Ú½º */
+.List_Common {FONT-SIZE: 12px;  font-family: dotum, Arial, sans-serif;  HEIGHT: 20px;  color:#666666; background-color:#ffffff;}
+/* ³»¿ë ÀÔ·Â Ã¢ */
+.Textarea_Common {
+	PADDING-TOP: 0px;
+	PADDING-BOTTOM: 0px;
+	PADDING-LEFT: 1px;
+	PADDING-RIGHT: 1px;
+	BORDER-TOP: #999999 1px solid;
+	BORDER-BOTTOM: #999999 1px solid;
+	BORDER-LEFT: #999999 1px solid;
+	BORDER-RIGHT: #999999 1px solid;
+	FONT-SIZE: 9pt;
+	COLOR: #444444;
+	FONT-FAMILY: µ¸¿ò;
+	SCROLLBAR-FACE-COLOR: #8BD5DC;
+	SCROLLBAR-HIGHLIGHT-COLOR: #DCDCDC;
+	SCROLLBAR-SHADOW-COLOR: #777777;
+	SCROLLBAR-3DLIGHT-COLOR: #F2F2F2;
+	SCROLLBAR-ARROW-COLOR: #777777;
+	SCROLLBAR-TRACK-COLOR: #F2F2F2;
+	SCROLLBAR-DARKSHADOW-COLOR: #F2F2F2;
+	SCROLLBAR-COLOR: #C0C0C0;
+}
+.Textarea_Common1 {
+	PADDING-TOP: 0px;
+	PADDING-BOTTOM: 0px;
+	PADDING-LEFT: 1px;
+	PADDING-RIGHT: 1px;
+	BORDER-TOP: #d7d7d7 1px solid;
+	BORDER-BOTTOM: #d7d7d7 1px solid;
+	BORDER-LEFT: #d7d7d7 1px solid;
+	BORDER-RIGHT: #d7d7d7 1px solid;
+	FONT-SIZE: 9pt;
+	background-color:#f9f9f9;
+	COLOR: #444444;
+	FONT-FAMILY: µ¸¿ò;
+	SCROLLBAR-FACE-COLOR: #8BD5DC;
+	SCROLLBAR-HIGHLIGHT-COLOR: #DCDCDC;
+	SCROLLBAR-SHADOW-COLOR: #777777;
+	SCROLLBAR-3DLIGHT-COLOR: #F2F2F2;
+	SCROLLBAR-ARROW-COLOR: #777777;
+	SCROLLBAR-TRACK-COLOR: #F2F2F2;
+	SCROLLBAR-DARKSHADOW-COLOR: #F2F2F2;
+	SCROLLBAR-COLOR: #C0C0C0;
+}
+.Textarea_Common_chat {
+	PADDING-TOP: 0px;
+	PADDING-BOTTOM: 0px;
+	PADDING-LEFT: 1px;
+	PADDING-RIGHT: 1px;
+	BORDER-TOP: #FFFFFF 1px solid;
+	BORDER-BOTTOM: #FFFFFF 1px solid;
+	BORDER-LEFT: #FFFFFF 1px solid;
+	BORDER-RIGHT: #FFFFFF 1px solid;
+	FONT-SIZE: 9pt;
+	COLOR: #444444;
+	FONT-FAMILY: µ¸¿ò;
+	SCROLLBAR-FACE-COLOR: #DCDCDC;
+	SCROLLBAR-HIGHLIGHT-COLOR: #DCDCDC;
+	SCROLLBAR-SHADOW-COLOR: #777777;
+	SCROLLBAR-3DLIGHT-COLOR: #F2F2F2;
+	SCROLLBAR-ARROW-COLOR: #777777;
+	SCROLLBAR-TRACK-COLOR: #F2F2F2;
+	SCROLLBAR-DARKSHADOW-COLOR: #F2F2F2;
+	SCROLLBAR-COLOR: #C0C0C0;
+}
+.Input_Common_chat {
+	FONT-SIZE: 9pt;
+	COLOR: #654636;
+	background-color:#F2E8DC;
+	FONT-FAMILY: µ¸¿ò;
+}
+/*****  ¿© Çà Á¤ º¸  *****/
+/****** ¾ç³¡Á¤·Ä*****/
+.txalign{
+	text-align:justify;
+}
+/****** ÃâÀÔ±¹Á¤º¸ *****/
+fieldset{padding:3px; border-width:1 7 1 7px; border-color:lightblue;}
+.style1 { color: #0066CC;	font-weight: bold;font-size:13px;letter-spacing:-0.2em;background-color:#D5F7F0}
+.style0 {color: #CC9966;font-weight: bold;font-size:13px;}
+.point_red {color: #ED473F;font-weight: bold;font-size:12px;}
+.point_gr {color: #339966;font-weight: bold;font-size:12px;}
+.point_bu {color: #0F83C1;font-weight: bold;font-size:12px;}
+.point_bk {color: #444444;font-size:12px;}
+/****** Ç¥Å×ÀÌºí ½ºÅ¸ÀÏ*/
+.tbtop{padding-top:3px;background-color:#EAF5FE;text-align:center;}
+/****** Ç¥Å×ÀÌºí ½ºÅ¸ÀÏ_ 1Â÷ ÁÖ¿äºÐ·ù*/
+.tbleft{background-color:#F1F1F1;text-align:center;}
+/****** Ç¥Å×ÀÌºí ½ºÅ¸ÀÏ_ 2Â÷ ÁÖ¿äºÐ·ù*/
+.tbright01{background-color:#F8F8F8;text-align:center;}
+/****** Ç¥Å×ÀÌºí ½ºÅ¸ÀÏ_ 3Â÷_¿ÞÂÊÁ¤·Ä*/
+.tbright02{background-color:#FFFFFF;text-align:left;}
+/****** Ç¥Å×ÀÌºí ½ºÅ¸ÀÏ_ 3Â÷_°¡¿îµ¥Á¤·Ä*/
+.tbright03{background-color:#FFFFFF;text-align:center;}
+/****** Áö¿ªÁ¤º¸ Å¸ÀÌÆ² */
+.infotit{font-weight:bold;font-size:13px;letter-spacing:-0.1em;color:#9945A8;}
+.infotit1{font-size:14px;color:#555555;}
+/****** Å×ÀÌºí ³» ±ÛÀ§Ä¡ */
+.ht{padding-top:3px;}
+/**************************  ¿© Çà Á¤ º¸  ****************************************/
+/******* ÆäÀÌÁö³» ¾Æµî¹Ùµî */
+.osakalittle	 {color:#999999; font-size:8pt;font-family: µ¸¿ò, Arial; line-height:14px;}
+.graySmall 	 {color:#777777; font-size:8pt;font-family: µ¸¿ò, Arial; line-height:14px;}
+.sin2           {color:#EC124F; font-size:11px; line-height:16px; font-weight:bold; font-family:±¼¸²,µ¸¿ò,Arial; text-decoration:none; }
+.sin           {color:#EC124F; font-size:12px; line-height:16px; font-weight:bold; font-family:±¼¸²,µ¸¿ò,Arial; text-decoration:none; }
+.sin A:link    {color:#EC124F; font-size:12px; line-height:16px; font-weight:bold; font-family:±¼¸²,µ¸¿ò,Arial; text-decoration:none; }
+.sin A:active  {color:#EC124F; font-size:12px; line-height:16px; font-weight:bold; font-family:±¼¸²,µ¸¿ò,Arial; text-decoration:none; }
+.sin A:visited {color:#EC124F; font-size:12px; line-height:16px; font-weight:bold; font-family:±¼¸²,µ¸¿ò,Arial; text-decoration:none; }
+.sin A:hover   {color:#EC124F; font-size:12px; line-height:16px; font-weight:bold; font-family:±¼¸²,µ¸¿ò,Arial; text-decoration:underline; }
+.baseTime            {color:#555555; line-height:17px; font-size:11px; font-family:µ¸¿ò,Verdana,Arial; }
+.baseTime_b          {color:#555555; line-height:17px; font-size:10pt; font-family:µ¸¿ò,Verdana,Arial; }
+.baseTime_w          {color:#ffffff; line-height:12px; font-size:11px; font-family:µ¸¿ò,Verdana,Arial; font-weight:bold; }
+.best           	{color:#555555; line-height:21px; font-size:9pt; font-family:±¼¸²,µ¸¿ò,Arial,Verdana; }
+.grayLight         	{color:#777777; line-height:18px; font-size:9pt; font-family:±¼¸²,µ¸¿ò,Arial,Verdana; margin-left:10px;}
+.grayLightB         	{color:#666666; line-height:18px; font-size:9pt; font-family:±¼¸²,µ¸¿ò,Arial,Verdana;  font-weight:bold;}
+.grayLight2         	{color:#777777; line-height:16px; font-size:11px; font-family:±¼¸²,µ¸¿ò,Arial,Verdana; letter-spacing:-1px;}
+.violetBold         	{color:#A77272; line-height:16px; font-size:11px; font-weight:bold; font-family:±¼¸²,µ¸¿ò,Arial,Verdana; }
+.whBold         	{color:#fff; line-height:16px; font-size:11px; font-weight:bold; font-family:±¼¸²,µ¸¿ò,Arial,Verdana; }
+.blueBold         	{color:#118fdc; line-height:16px; font-size:11px; font-weight:bold; font-family:±¼¸²,µ¸¿ò,Arial,Verdana; }
+.violetBold2        	{color:#9152dd; line-height:16px; font-size:11px; font-weight:bold; font-family:±¼¸²,µ¸¿ò,Arial,Verdana; }
+.violetBold3        	{color:#72921d; line-height:16px; font-size:11px; font-weight:bold; font-family:±¼¸²,µ¸¿ò,Arial,Verdana; }
+.brown 		{color:#924716; line-height:17px; font-size:9pt; font-weight:bold; font-family:±¼¸²,µ¸¿ò,Verdana,Arial; }
+.brownYellow2		{color:#603111; line-height:17px; font-size:9pt; font-weight:bold; font-family:±¼¸²,µ¸¿ò,Verdana,Arial; }
+.orangeB            {color:#FF6A36; line-height:17px; font-size:9pt; font-weight:bold; font-family:µ¸¿ò,Verdana,Arial; }
+.orangeB A:link     {color:#FF6A36; line-height:17px; font-size:9pt; font-weight:bold; font-family:µ¸¿ò,Verdana,Arial; }
+.orangeB A:visited  {color:#FF6A36; line-height:17px; font-size:9pt; font-weight:bold; font-family:µ¸¿ò,Verdana,Arial; }
+.orangeB A:hover    {color:#FF6A36; line-height:17px; font-size:9pt; font-weight:bold; font-family:µ¸¿ò,Verdana,Arial; }
+.orangeUnderline    {color:#FF6A36; line-height:17px; font-size:9pt; font-family:µ¸¿ò,Verdana,Arial; text-decoration:underline}
+.orangeNoUnderline    {color:#FF6A36; line-height:17px; font-size:9pt; font-weight:bold; font-family:µ¸¿ò,Verdana,Arial; }
+.parang          	{color:#0031E9; line-height:17px; font-size:9pt; font-family:µ¸¿ò,Verdana,Arial,Helvetica,sans-serif; }
+.parang A:link   	{color:#0031E9; line-height:17px; font-size:9pt; font-family:µ¸¿ò,Verdana,Arial,Helvetica,sans-serif; }
+.parang A:visited	{color:#0031E9; line-height:17px; font-size:9pt; font-family:µ¸¿ò,Verdana,Arial,Helvetica,sans-serif; }
+.parang A:hover  	{color:#6E8DFF; line-height:17px; font-size:9pt; font-family:µ¸¿ò,Verdana,Arial,Helvetica,sans-serif; }
+.blue          		{color:#459BBB; line-height:17px; font-size:9pt; font-family:Arial,Verdana,µ¸¿ò,Arial; }
+.blue A:link   		{color:#459BBB; line-height:17px; font-size:9pt; font-family:Arial,Verdana,µ¸¿ò,Arial; }
+.blue A:visited		{color:#459BBB; line-height:17px; font-size:9pt; font-family:Arial,Verdana,µ¸¿ò,Arial; }
+.blue A:hover  		{color:#3648c9; line-height:17px; font-size:9pt; font-family:Arial,Verdana,µ¸¿ò,Arial; }
+.brown				{color:#926940; line-height:16px; font-size:9pt; font-family:Arial,Verdana,µ¸¿ò,Arial; }
+.brown A:link   	{color:#926940; line-height:16px; font-size:9pt; font-family:Arial,Verdana,µ¸¿ò,Arial; }
+.brown A:visited	{color:#926940; line-height:16px; font-size:9pt; font-family:Arial,Verdana,µ¸¿ò,Arial; }
+.brown A:hover  	{color:#926940; line-height:16px; font-size:9pt; font-family:Arial,Verdana,µ¸¿ò,Arial; }
+.priceLife 		{MARGIN-RIGHT: 15px; font-size:18pt; line-height:24px; font-weight:bold; color:ff3a1f; font-family:Arial; letter-spacing:-0.05em;}
+.priceLife A:link	{MARGIN-RIGHT: 15px; font-size:18pt; line-height:24px; font-weight:bold; color:ff3a1f; font-family:Arial; letter-spacing:-0.05em;}
+.priceLife A:visited	{MARGIN-RIGHT: 15px; font-size:18pt; line-height:24px; font-weight:bold; color:ff3a1f; font-family:Arial; letter-spacing:-0.05em;}
+.priceLife A:hover	{MARGIN-RIGHT: 15px; font-size:18pt; line-height:24px; font-weight:bold; color:ff3a1f; font-family:Arial; letter-spacing:-0.05em;}
+.orangeBig {font-size: 11pt;color: #793F0B;font-weight:bold;}
+.blueJin          	{color:#0F83C1; line-height:17px; font-size:9pt; font-family:Arial,Verdana,µ¸¿ò,Arial; }
+.oliveLight			{color:#35AD10; line-height:15px; font-size:9pt; font-family:Arial,Verdana,µ¸¿ò,Arial; }
+.greenLight 		{color:#7CAA0F; line-height:15px; font-size:9pt; font-family:Arial,Verdana,µ¸¿ò,Arial; }
+.olive           	{color:#557A36; line-height:17px; font-size:11px; font-family:Arial,Verdana,µ¸¿ò,Arial; }
+.olive A:link   	{color:#557A36; line-height:17px; font-size:11px; font-family:Arial,Verdana,µ¸¿ò,Arial; }
+.olive A:visited	{color:#557A36; line-height:17px; font-size:11px; font-family:Arial,Verdana,µ¸¿ò,Arial; }
+.olive A:hover  	{color:#557A36; line-height:17px; font-size:11px; font-family:Arial,Verdana,µ¸¿ò,Arial; }
+.oliveB           	{color:#557A36; line-height:17px; font-size:11px; font-family:Arial,Verdana,µ¸¿ò,Arial; font-weight:bold;}
+.redB           	{color:#D3440E; line-height:18px; font-size:11px; font-family:Arial,Verdana,µ¸¿ò,Arial; font-weight:bold;}
+.red             	{color:#ff0000; line-height:18px; font-size:9pt; font-family:Arial,Verdana,µ¸¿ò,Arial; }
+.green           	{color:#7DB130; line-height:17px; font-size:11px; font-family:Arial,Verdana,µ¸¿ò,Arial; }
+.yellowBatang      	{color:#6B3725; line-height:20px; font-family:Arial,Verdana,µ¸¿ò,Arial; background-color:#F9F4E1;}
+.yellowRedFont     	{color:#F25A41; line-height:20px; font-family:Arial,Verdana,µ¸¿ò,Arial; background-color:#F9F5EC;}
+.whiteB           	{color:#4A91A8; line-height:17px; font-weight:bold; font-size:12px; font-family:±¼¸²,µ¸¿ò,Arial,Verdana,; }
+.greyfont          	{color:#555555; line-height:15px; font-size:11px; font-family:±¼¸²,µ¸¿ò,Arial,Verdana; font-weight:bold;}
+.greyfont A:link    {color:#555555; line-height:15px; font-size:11px; font-family:±¼¸²,µ¸¿ò,Arial,Verdana; font-weight:bold;}
+.greyfont A:active  {color:#555555; line-height:15px; font-size:11px; font-family:±¼¸²,µ¸¿ò,Arial,Verdana; font-weight:bold;}
+.greyfont A:visited {color:#555555; line-height:15px; font-size:11px; font-family:±¼¸²,µ¸¿ò,Arial,Verdana; font-weight:bold;}
+.greyfont A:hover   {color:#ED1C22; line-height:15px; font-size:11px; font-family:±¼¸²,µ¸¿ò,Arial,Verdana; font-weight:bold;}
+
+.greyfont1          	{color:#555555; line-height:15px; font-size:12px; font-family:±¼¸²,µ¸¿ò,Arial,Verdana; font-weight:bold;}
+.greyfont1 A:link    {color:#555555; line-height:15px; font-size:12px; font-family:±¼¸²,µ¸¿ò,Arial,Verdana; font-weight:bold;}
+.greyfont1 A:active  {color:#555555; line-height:15px; font-size:12px; font-family:±¼¸²,µ¸¿ò,Arial,Verdana; font-weight:bold;}
+.greyfont1 A:visited {color:#555555; line-height:15px; font-size:12px; font-family:±¼¸²,µ¸¿ò,Arial,Verdana; font-weight:bold;}
+.greyfont1 A:hover   {color:#ED1C22; line-height:15px; font-size:12px; font-family:±¼¸²,µ¸¿ò,Arial,Verdana; font-weight:bold;}
+
+.grayBright        	{color:#999999; line-height:15px; font-size:11px; font-family:±¼¸²,µ¸¿ò,Arial,Verdana; }
+.blueSmall			{color:#0F83C1; font-weight:bold; font-size:11px; font-family:±¼¸²,µ¸¿ò,Arial,Verdana; }
+.redSmall			{color:#ED473F; font-weight:bold; font-size:11px; font-family:±¼¸²,µ¸¿ò,Arial,Verdana; }
+#BannerSpace		{position:absolute; top:0px;left:816px; width:84px; height:115px;}
+.pricePink {
+	MARGIN-RIGHT: 15px; letter-height:-10px;
+	font-size:14pt; line-height:24px; font-weight:bold; color:fe2c90; font-family: Verdana,sans-serif,Arial, Helvetica ; letter-spacing:-0.05em;
+}
+/******* Å¥½´Áö¿ª ¹ö½º½Ã°£Ç¥ */
+.busBlue            {color:#ED5427; line-height:17px; font-size:12pt; font-weight:bold; font-family:µ¸¿ò,Verdana,Arial; background-color:#FEF5E9;}
+.busBlue A:link     {color:#ED5427; line-height:17px; font-size:12pt; font-weight:bold; font-family:µ¸¿ò,Verdana,Arial; }
+.busBlue A:visited  {color:#ED5427; line-height:17px; font-size:12pt; font-weight:bold; font-family:µ¸¿ò,Verdana,Arial; }
+.busBlue A:hover    {color:#ED5427; line-height:17px; font-size:12pt; font-weight:bold; font-family:µ¸¿ò,Verdana,Arial; }
+.busBlue2           {color:#0F83C1; line-height:17px; font-size:9pt; font-weight:bold; font-family:µ¸¿ò,Verdana,Arial; text-decoration:underline}
+.busBlue2 A:link    {color:#0F83C1; line-height:17px; font-size:9pt; font-weight:bold; font-family:µ¸¿ò,Verdana,Arial; }
+.busBlue2 A:visited {color:#0F83C1; line-height:17px; font-size:9pt; font-weight:bold; font-family:µ¸¿ò,Verdana,Arial; }
+.busBlue2 A:hover   {color:#FA6400; line-height:17px; font-size:9pt; font-weight:bold; font-family:µ¸¿ò,Verdana,Arial; }
+.busBlue3            {color:#ED5427; line-height:17px; font-size:11pt; font-weight:bold; font-family:µ¸¿ò,Verdana,Arial; background-color:#fefde9;}
+.busBlue3 A:link     {color:#ED5427; line-height:17px; font-size:11pt; font-weight:bold; font-family:µ¸¿ò,Verdana,Arial; }
+.busBlue3 A:visited  {color:#ED5427; line-height:17px; font-size:11pt; font-weight:bold; font-family:µ¸¿ò,Verdana,Arial; }
+.busBlue3 A:hover    {color:#ED5427; line-height:17px; font-size:11pt; font-weight:bold; font-family:µ¸¿ò,Verdana,Arial; }
+.blueblue           {color:#0F83C1; line-height:17px; font-size:9pt; font-weight:bold; font-family:µ¸¿ò,Verdana,Arial; text-decoration:underline;}
+.blueblue A:link    {color:#0F83C1; line-height:17px; font-size:9pt; font-weight:bold; font-family:µ¸¿ò,Verdana,Arial; text-decoration:underline;}
+.blueblue A:visited {color:#0F83C1; line-height:17px; font-size:9pt; font-weight:bold; font-family:µ¸¿ò,Verdana,Arial; text-decoration:underline;}
+.blueblue A:hover   {color:#64A047; line-height:17px; font-size:9pt; font-weight:bold; font-family:µ¸¿ò,Verdana,Arial; text-decoration:underline;}
+.blueblue2           {color:#0F83C1; line-height:17px; font-size:9pt; font-weight:bold; font-family:µ¸¿ò,Verdana,Arial; text-decoration:underline; background-color:#FEF8BC;}
+.blueblue2 A:link    {color:#0F83C1; line-height:17px; font-size:9pt; font-weight:bold; font-family:µ¸¿ò,Verdana,Arial; text-decoration:underline;}
+.blueblue2 A:visited {color:#0F83C1; line-height:17px; font-size:9pt; font-weight:bold; font-family:µ¸¿ò,Verdana,Arial; text-decoration:underline;}
+.blueblue2 A:hover   {color:#64A047; line-height:17px; font-size:9pt; font-weight:bold; font-family:µ¸¿ò,Verdana,Arial; text-decoration:underline;}
+.brownYellow        {color:#BD945B; line-height:17px; font-size:9pt; font-weight:bold; font-family:µ¸¿ò,Verdana,Arial; }
+.brownGreen         {color:#47A387; line-height:17px; font-size:9pt; font-weight:bold; font-family:µ¸¿ò,Verdana,Arial; }
+.brownGreen2         {color:#a151cc; line-height:17px; font-size:9pt; font-weight:bold; font-family:µ¸¿ò,Verdana,Arial; }
+.busNumber          {color:#333333; line-height:17px; font-size:9pt; font-family:Verdana,Arial; }
+.BusLeftSpace       {color:#924716; line-height:17px; font-size:9pt; padding-left:20; font-family:µ¸¿ò,Äð¸²,verdana,Arial; background-color:#F7F4E7;}
+.BusLeftSpace2      {color:#924716; line-height:17px; font-size:9pt; font-family:µ¸¿ò,Äð¸²,verdana,Arial; background-color:#F7F4E7;}
+/******* ÅÃ½º¶õ? */
+#ToolTip{position:absolute;top:0;left:0;background:#FFFFFF;border-color:#FFFFFF;border-style:solid;border-width:0px 0px 0px 0px;visibility:hidden;}
+.ToolTipTD {color:white;}
+.select	{ cursor:pointer;word-break:normal;FONT-SIZE: 12px;  font-family: dotum, Arial, sans-serif;  HEIGHT: 20px;  color:#666666; background-color:#ffffff;}/*behavior: url('/css/selectBox.htc');*/
+.select_w3	{cursor:pointer;word-break:normal;FONT-SIZE: 12px;  font-family: dotum, Arial, sans-serif;  HEIGHT: 19px;  color:#666666; background-color:#ffffff;}/*behavior: url('/css/selectBox.htc');*/
+/* À¯·´ ¸ÂÃã¿©Çà */
+.block {
+	background-color:#EBFF65;
+	font-family:tahoma;
+	line-height:12px;
+	font-size:7pt;
+}
+/*Ç×°ø¼­ºê¸®´º¾ó 2008 07 28 Âô*/
+.blue_14pt_byJJ{font-family:dotum; font-size:14px; line-height:18px; color:#055daf;}
+.gray_11pt_bgJJ{font-family:dotum; font-size:11px; line-height:14px;  color:#666666; letter-spacing:-1px}
+.orange_11pt_bgJJ{font-family:verdana; font-size:11px; line-height:14px;  color:#ff6600; }
+.orange_12pt_bgJJ{font-family:verdana; font-size:12px; line-height:16px;  color:#ff6600; }
+.red_14pt_bgJJ{font-family:verdana; font-size:14px; line-height:18px;  color:#ff0000; }
+.red_12pt_bgJJ{font-family:µ¸¿ò; font-size:12px; line-height:16px;  color:#ff0000; }
+/* Hotel */
+.sheet_tit{font-size:40pt; 	line-height: 50px; color:#05AC8F; }
+.sheet_tit01{font-size:25pt; 	line-height: 30px;	color:#81C1B6; }
+.sheet_no{font-size:16pt; 	line-height: 30px; color:#000000; font-weight:bold;}
+.tb_text{font-size:9pt; line-height: 18px; color:#000000; padding-TOP: 3px;}
+.tb_text01{font-size:8pt; 	line-height: 18px;	color:#666666; padding-TOP: 3px;}
+.tb_text02{font-size:9pt; line-height: 18px; color:#666666; padding-TOP: 3px;}
+.tb_text03{font-size:9pt; line-height: 18px; color:#666666; padding-TOP: 3px;	letter-spacing: -0.1em; }
+.tb_text04{font-size:16pt; 	line-height: 20px; color:#000000; padding-TOP: 3px; font-weight:bold;}
+.tb_text05{font-size:12pt; line-height: 18px; color:#000000; padding-TOP: 3px;}
+.text_point{font-size:10pt; 	line-height: 20px; font-weight:bold;}
+.text_amount{font-size:11pt; 	color:#D00000; font-weight:bold;}
+.Input_amount{BORDER-TOP: #FFFFFF 0px solid; BORDER-BOTTOM: #FFFFFF 0px solid; BORDER-LEFT: #FFFFFF 0px solid; BORDER-RIGHT: #FFFFFF 0px solid; font-size:11pt; color:#D00000; 	font-weight:bold;}
+.text_num{font-size:9pt; 	line-height: 18px; color:#666666;}
+INPUT.btn {height:21px;cursor:pointer;font-size:11px; font-family:µ¸¿ò;color:#C95305; border-top: 1px solid #CCCCCC; border-left: 1px solid #CCCCCC; border-bottom: 1px solid #999999; border-right: 1px solid #999999; background-color:#FFFEF9; padding-top:1px; filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr='#FFFEF9', endColorStr='#E8E3DF', gradientType='0')}
+INPUT.sbtn {height:18px;cursor:pointer;font-size:9px; font-family:µ¸¿ò;color:#C95305; border-top: 1px solid #CCCCCC; border-left: 1px solid #CCCCCC; border-bottom: 1px solid #999999; border-right: 1px solid #999999; background-color:#FFFEF9; padding-top:1px; filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr='#FFFEF9', endColorStr='#E8E3DF', gradientType='0')}
+/* ÃßÃµÀÏÁ¤¹öÆ° */
+.schedule_over {  background:url(http://www.tourbaksa.com/images/item/tab/s_tab_over.jpg) #Ffffff no-repeat left ; vertical-align:middle; color: #ffffff; font-weight:bold; width:128px; height:27px; font-family:µ¸¿ò;font-size:12px; padding:5 7 5 7px;}
+.schedule_off {  background:url(http://www.tourbaksa.com/images/item/tab/s_tab_off.jpg) #Ffffff no-repeat left ; vertical-align:middle; color: #000000; font-weight:bold; width:128px; height:27px; font-family:µ¸¿ò;font-size:12px; padding:5 7 5 7px;}
+/* ÃßÃµÀÏÁ¤ ¸µÅ© */
+.schedule_over A:link    { font-size:12px; font-family: µ¸¿ò, Arial; text-decoration: none; color:#ffffff;}
+.schedule_over A:active  { font-size:12px; font-family: µ¸¿ò, Arial; text-decoration: none; color:#ffffff; }
+.schedule_over A:visited { font-size:12px; font-family: µ¸¿ò, Arial; text-decoration: none; color:#ffffff; }
+.schedule_over A:hover   { font-size:12px; font-family: µ¸¿ò, Arial; text-decoration: none; color:#ffffff; }
+.schedule_off A:link    { font-size:12px; font-family: µ¸¿ò, Arial; text-decoration: none; color:#000000;}
+.schedule_off A:active  { font-size:12px; font-family: µ¸¿ò, Arial; text-decoration: none; color:#000000; }
+.schedule_off A:visited { font-size:12px; font-family: µ¸¿ò, Arial; text-decoration: none; color:#000000; }
+.schedule_off A:hover   { font-size:12px; font-family: µ¸¿ò, Arial; text-decoration: none; color:#000000; }
+/* hotel */
+.hotel_mainprice {font-size:12px; line-height: 18px; font-family: µ¸¿ò,curier,seoul; color: #555555;}
+.hotel_howto {font-size:14px; line-height: 24px; font-family: µ¸¿ò,curier,seoul; color: #0072bc;}
+.hotel_howto01 {font-size:14px; line-height: 24px; font-family: µ¸¿ò,curier,seoul; color: #555555;}
+.hotel_weeknum1 {font-size:12px; line-height: 14px; font-family: µ¸¿ò,curier,seoul; color: #555555;}
+.hotel_price {font-size:12px; line-height: 18px; font-family: µ¸¿ò,curier,seoul; color: #c92525;}
+.hotel_dbleprice {font-size:12px; line-height: 18px; font-family: µ¸¿ò,curier,seoul; color: #000000;}
+.hotel_detail {font-size:11px; line-height: 14px; font-family: µ¸¿ò,curier,seoul; color: #0072bc;}
+.hotel_week {font-size:11px; line-height: 17px; font-family: µ¸¿ò,curier,seoul; color: #555555;}
+.hotel_mainarea {font-size:12px; line-height: 16px; font-family: µ¸¿ò,curier,seoul; color: #1562A6; font-weight:bold;}
+.hotel_in_cost{font-family:verdana; font-size:11px;border:solid 1px; border-color:white; color:#010101; text-align:center;letter-spacing:-1;width:60px;height:21px;}
+.hotel_login{border:1px #CFA295 solid; height:20; background-color:#FDEDE8; color:#000000; font-size:9pt;;}
+.hotel_schtit{color:#657E95; line-height:18px; font-size:9pt; font-family:Arial,Verdana,µ¸¿ò,Arial; font-weight:bold; }
+.hotel_boom{color:#62B7D3; line-height:18px; font-size:9pt; font-family:Arial,Verdana,µ¸¿ò,Arial; font-weight:bold; }
+/* ÁÂÃø ÇÁ·Î¸ð¼Ç ¹è³Ê bg (081215 Áö³ª)*/
+.l_banner {background:url('/images/item/bg_left_banner.gif') no-repeat; text-align:center;}
+/* ÇÒÀÎÄíÆù/ÆÐ½º/ÀÌº¥Æ®/´ÙÀÌ¾î¸® (090226 ±è´º)*/
+.zNew_bt_title {font-size:14px; line-height:normal; color: #ffffff; font-weight: bold}
+.zNew_bt_title2 {font-size:13px; line-height:normal; color: #40851b; font-weight: bold}
+.zNew_bt_basic {font-size:12px; line-height:normal; color: #757575; font-weight: bold}
+.zNew_bt_tab {font-size:12px; line-height:normal; color: #488c00; font-weight: bold}
+.zNew_st_title {font-size:11px; line-height:normal; color: #464646; font-weight: bold}
+.zNew_st_title2 {font-size:11px; line-height:normal; color: #2eb2bd; font-weight: bold}
+.zNew_st_basic {font-size:11px; line-height:normal; color: #757575;}
+.zNew_st_basic2 {font-size:11px; line-height:normal; color: #482200;}
+.zNew_st_Print {font-size:11px; line-height:normal; color: #ffffff;}
+.zNew_st_tab {font-size:11px; line-height:normal; color: #40851b; font-weight: bold}
+.zNew_box {font-size:11px; border: 3px solid #e5e5e5; color: #757575; font-style: normal;}
+.promo_title {font-size:14px;line-height:17px; font-family:µ¸¿ò,Verdana,Arial; padding:10 0 0 10; font-weight:bold; }
+.mon_no {font-size:40px; 	line-height:45px;	color:#5F504B; font-weight:bold; 	font-family:tahoma;	letter-spacing:-0.05em;	text-decoration: none;}
+
+/* 2011-04-06 ±èÀºÃ¶ Ãß°¡ ÀÛ¾÷ */
+#corrsp2 {height:130px; width:450px; border:0px solid #ececec; overflow:hidden;}
+#corrsp2 div {height:22px;padding-left:3px;}
+#corrsp2 img {margin-right:5px;}
+
+/* Gnb season ¹è³Ê Å©¸®½º¸¶½º
+.gnbBanner{width:100%;height:65px;margin:0 0 2px;background:#ffffff url(http://www.tourbaksa.com/images/main/m.gif) repeat-y center 0;text-align:center}
+.gnbBanner .img{margin: 0 auto;text-align:center;width: 1072px;}*/
+
+/* Gnb season 5¿ù¿¬ÈÞ */
+.gnbBanner{width:100%;height:64px;margin:0 0 2px;background:#fdfbef;text-align:center;}
+.gnbBanner .img{margin: 0 auto;text-align:center;width: 1072px;}
+
+
+ /*Gnb season ¹è³Ê ÈÞ¾çÁö*/
+.gnbBanner1{width:100%;height:65px;margin:0 0 2px;background:#ffffff url(http://www.tourbaksa.com/images/main/top_summerbg.gif) repeat-y center 0;text-align:center}
+.gnbBanner1 .img{margin: 0 auto;text-align:center;width: 1072px;}*/
+
+/* Gnb season ¹è³Ê ¿ÂÃµ
+.gnbBanner2{width:100%;height:65px;margin:0 0 2px;background:#ffffff url(http://www.tourbaksa.com/images/main/bg_top.gif) repeat-y center 0;text-align:center}
+.gnbBanner2 .img{margin: 0 auto;text-align:center;width: 1072px;}*/
+
+
+
+/* 111219 ¸ÞÀÎ¹è³Ê Ãß°¡*/
+.mainBann {	width:970px;border-top: 2px solid #fa8126;padding-top:10px}
+.mainBann .mainBannleft {float:left;text-align:right;border:1px solid #dddddd;}
+.mainBannleft .sub {margin-top:5px;text-align:right}
+.mainBannleft .btn {text-align: right;padding-left:5px;padding-right:4px;}
+.mainBann .mainBannright {float:right;text-align:right;border:1px solid #dddddd;}
+.mainBannright .sub {margin-top:5px;text-align:right}
+.mainBannright .btn {text-align: right;padding-right:4px;}
+
+/*120104 ´Þ·Â Ãß°¡*/
+.mainBann .mainBanncalendar {float:left; width:185px; }
+
+/*120104 ¸ÞÀÎÃßÃµ·áÄ­*/
+.mainBhotel { width:185px; padding:0; margin:0;}
+.hotelCon {width:183px ;border:1px solid #dddddd; padding:3px 0 0 0; table-layout:fixed;}
+.hotelCon .icon {height:21px; padding-left:5; width:17px; vertical-align:middle; }
+.hotelCon .name {height:21px;  line-height: 21px; vertical-align:middle; width:100px;  padding-left:3px; color: #555555; font-family: µ¸¿ò,Verdana,Arial; font-size: 11px; text-align:left;}
+.hotelCon .name A:hover   {color: #62a1b8;}
+.hotelCon .Hprice{ height:21px; width:65px; text-align:left; padding:0px 5px; color:#EC124F; font-size:11px; font-weight:bold; font-family:±¼¸²,µ¸¿ò,Arial; text-decoration:none;}
+
+a.leftMHover: a {color:#555; font-family:±¼¸²,µ¸¿ò,Arial;  font-size:8pt; }
+a.leftMHover: hover{color:#FF8000; font-family:±¼¸²,µ¸¿ò,Arial;  font-size:8pt; text-decoration:none;}
+
+
+
+.menuDae {height:22px; line-height:22px; text-indent:1.4em; background:#f6f6f6; font-family:±¼¸²,µ¸¿ò,Arial; font-weight:bold; font-size:9pt; color:#333; padding:15px 0 0 0;}

@@ -1,0 +1,1024 @@
+@charset "euc-kr";
+@import "/UI/css/subLayout.css";
+@import "/UI/css/subCommon.css";
+
+/* 모든 디바이스 공통 */
+
+/* .topTitArea */
+.topTitArea .btnArea a{border:1px solid #e2e2e2}
+.topTitArea .btnArea a:first-child{border-right:0px}
+
+/* .contWrap .leftCont */
+.contWrap .leftCont .innerCont{text-align:center}
+/* .contWrap .leftCont .innerCont .pic{width:100%;max-width:574px;} */
+
+/* .contWrap .rightCont */
+.contWrap .rightCont{position:relative;margin-top:20px; }
+.contWrap .rightCont h3{position:absolute;left:-7px;top:5px;}
+.contWrap .rightCont ul{padding-top:43px;border:1px solid #ccc} /*jkh 2014.01.20*/
+.contWrap .rightCont li{padding:0px;border-top:1px solid #ccc;background-color:#f6f6f5;}
+html.desktop .contWrap .rightCont li, html.tablet .contWrap .rightCont li {padding:0px;border-top:1px solid #ccc;background-color:#f6f6f5;}
+/*html.ie7 .contWrap .rightCont li{padding:15px 15px 10px}*/
+html.ie7 #k1_content .contWrap .rightCont .bannerWrap ul li a{  display:block;}
+.contWrap .rightCont li a,
+.contWrap .rightCont li a span{display:block;}
+/*html.ie7 .contWrap .rightCont li a{zoom:1}*/
+.contWrap .rightCont li a:after{display:block;content:"";clear:both}
+.contWrap .rightCont li a span{float:left;padding:1px 0}
+.contWrap .rightCont li a .point{width:32%;font-size:13px;}/* padding-left:13px;;background:url(//cdnimg.tourbaksa.com/PC/www/ico/ico_deco_01.gif) no-repeat left center */
+.contWrap .rightCont li a .subject{width:68%;height:13px;line-height:13px;color:#4a4a4a;text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
+.contWrap .rightCont .oddLine{background-color:#e5e5e4}
+
+/* recommArea*/
+.recommTour{width:100%;overflow:hidden;}
+.recommTour .topTitArea{margin:10px 0 5px}
+
+/* .recommTour .contInner */
+.recommTour .contInner ul{width:1000%;overflow:hidden;position:relative;}
+.recommTour .contInner ul.conRoling {margin-left:-0.55%;}
+/* html.ie7 .recommTour .contInner ul{position:relative;} */
+.recommTour .contInner ul li{float:left;position:relative;width:9.95%;overflow:hidden;border:1px solid #e2e2e2;background-color:#fff;}
+/* .recommTour .contInner ul.conRoling li{width:10%;} */
+/* html.ie7 .recommTour .contInner ul li{display:inline} */
+.recommTour .topRecomm{float:left;width:99.2%;overflow:hidden;border:1px solid #e2e2e2;background-color:#fff;}
+
+/*.recommTour .contInner ul li a,
+.recommTour .contInner ul li strong,
+.recommTour .contInner ul li span{display:block;font-size:11px}*/
+.recommTour .contInner ul li .contInfo{position:relative;width:94%;margin-top:-15px;overflow:hidden;padding:20px 4.605%;background:url(//cdnimg.tourbaksa.com/PC/www/main/bg_tit_box_02.png) no-repeat top right}
+
+.recommTour .contInner ul li strong{margin-bottom:10px;font-size:14px;letter-spacing:-1px;}
+.recommTour .contInner ul li .contInfo .point{margin-top:5px;font-size:16px}
+.recommTour .contInner ul li .localImg{text-align:center;}
+.recommTour .contInner ul li .localImg .pic{width:100%;}/* max-width:185px */
+.recommTour .contInner ul.conRoling li .localImg .pic{min-width:304px;}
+
+/* .recommTour .contInner .bannerZone */
+.contInner .bannerZone{display:none}
+
+/* mainTypeB */
+/* popularArea */
+.popularArea{margin:20px 0}
+
+/* top5Area */
+.top5Area .topTitArea,
+.keywordArea .topTitArea{padding-left:20px;border-bottom:1px solid #e2e2e2}
+.top5Area ol li{position:relative;padding:12px 20px;border-top:1px solid #e2e2e2;line-height:13px;text-overflow:ellipsis;/*white-space:nowrap;*/overflow:hidden;}
+.top5Area ol li span.rank{position:absolute;top:18px;right:10px;text-indent:-9999px;width:10px;height:10px;font-size:0;background:url(//cdnimg.tourbaksa.com/PC/www/main/ico_13.gif) no-repeat left center}
+.top5Area ol li span.up{background:url(//cdnimg.tourbaksa.com/PC/www/main/ico_15.gif)}
+.top5Area ol li span.new{background:url(//cdnimg.tourbaksa.com/PC/www/main/ico_14.gif)}
+.top5Area ol li strong{color:#7c6151;font-size:14px;margin-right:7px;}
+.top5Area ol li a{display:inline-block;color:#a5866a;width:85%;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+.top5Area ol li a span span{width:65%;}
+.top5Area ol li:first-child{border-top:0px}
+.top5Area ol li .pic{display:none;}
+.top5Area ol li.on{padding:15px 20px 20px;background-color:#f8f5f2}
+
+.top5Area ol li.on strong{display:block;width:22px;height:7px;line-height:7px;padding:8px 10px 10px 5px;margin-bottom:10px;text-align:center;color:#fff;background:url(//cdnimg.tourbaksa.com/PC/www/main/bg_ico01.gif) no-repeat left top}
+.top5Area ol li.on span.rank {display:none;}
+.top5Area ol li.on a {width:45%;}
+.top5Area ol li.on a em,
+.top5Area ol li.on a span{display:block;width:100%;line-height:16px;color:#454545;font-size:13px;font-weight:bold;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+html.desktop .top5Area ol li.on .pic, html.tablet .top5Area ol li.on .pic {display:block;position:absolute;top:8px;right:20px;width:84px;height:84px;}
+.top5Area ol li.on .pic{display:block;position:absolute;top:2px;right:20px;width:84px;height:84px;}
+
+/* recomArea */
+.recomArea{padding:30px 0;border:1px solid #e2e2e2;background-color:#fafafa}
+.recomArea .topTitArea{padding-left:0px;border-bottom:0px;}
+.recomArea .topTitArea .txtTab{margin-top:8px;font-size:13px;text-align:right;}
+.recomArea .topTitArea .txtTab span{margin:0 6px;color:#ccc}
+.recomArea .topTitArea .txtTab a{color:#666}
+.recomArea .topTitArea .txtTab .on{color:#009fe3;font-weight:bold}
+.recomArea .topTitArea .btnRArea{float:right;margin:15px 0;}
+
+/* popularArea seasonTour */
+.seasonTour .topTitArea{margin-top:10px}
+.seasonTour .innerCont{width:100%;overflow:hidden;margin-bottom:20px}
+html.ie7 .seasonTour .innerCont { position:relative;}
+.seasonTour .innerCont li{display:inline-block;position:relative;width:98%;height:242px;overflow:hidden;margin:5px 0.8%;border:1px solid #e2e2e2;background-color:#fff}
+html.ie7 .seasonTour .innerCont li { display:inline;}
+
+.seasonTour .innerCont li span.contInfo{display:block;position:absolute;top:65%;width:96%;overflow:hidden;padding:15px 3%;background:url(//cdnimg.tourbaksa.com/PC/www/main/bg_tit_box_02.png) no-repeat right top}
+.seasonTour .innerCont li span.contInfo strong,
+.seasonTour .innerCont li span.contInfo span{display:block;}
+.seasonTour .innerCont li span.contInfo strong{font-size:14px;color:#333}
+.seasonTour .innerCont li span.contInfo span{padding:1px 0;color:#666;font-size:11px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;line-height:13px;}
+.seasonTour .innerCont li span.contInfo span.point{margin:10px 0 5px;font-size:13px;color:#f57914}
+.seasonTour .innerCont li span.localImg{display:block;height:170px;overflow:hidden;text-align:center}
+.seasonTour .innerCont li .pic{width:100%;height:auto;}/*max-width:304px; height:auto; */
+
+/* popularArea themeTour */
+.themeTour .innerCont{background-color:#f4f4f4}
+.themeTour .innerCont li{position:relative;height:76px;border-top:1px solid #dbdbdb;}
+html.ie7 .themeTour .innerCont li {height:70px;}
+.themeTour .innerCont li:first-child{border-top:0px;}
+.themeTour .innerCont li a,
+.themeTour .innerCont li a strong,
+.themeTour .innerCont li a em,
+.themeTour .innerCont li span{display:block;}
+.themeTour .innerCont li span.contInfo{position:absolute;width:68%;padding:10px 0 10px 20px;background: url(//cdnimg.tourbaksa.com/PC/www/sub/bg_contLi.png) no-repeat right top;z-index:1}
+.themeTour .innerCont li span.picArea{float:right;text-align:left;width:29%;overflow:hidden}/*  */
+.themeTour .innerCont li span.picArea img{height:76px;}
+.themeTour .innerCont li span.contInfo strong{margin-right:14px;color:#444;font-size:14px;}
+.themeTour .innerCont li span.contInfo em{margin:10px 0 6px;color:#f45212;font-size:13px}
+.themeTour .innerCont li span.contInfo span{width:80%;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;color:#656565;font-size:11px;line-height:13px;}
+.themeTour .innerCont li span.contInfo span span {width:100%;}
+.themeTour .innerCont li a:before,
+.themeTour .innerCont li a:after{ content: "."; display: block; height: 0; overflow: hidden;}
+.themeTour .innerCont li a:after { clear: both;}
+html.ie .themeTour .innerCont li a{ zoom: 1;}
+/* html.ie .themeTour .innerCont li a:after{ zoom: 1;} */
+
+
+/* subBVisu*/
+.subBVisu{position:relative;overflow:hidden; margin:20px 0;min-width:304px;height:270px;}
+.subBVisu .btnArea a{top:40%;z-index:2}
+.subBVisu .btnArea a.btnPre{left:10px}
+.subBVisu .btnArea a.btnNext{right:10px;}
+.subBVisu .innerCont{position:absolute;overflow:hidden; width:1000%; height:270px; left:50%; top:0; margin-left:-426px;}
+.subBVisu.subBVisu2 .innerCont {margin-left:-415px;}
+.subBVisu ul.clearfix{position:absolute;left:0;top:0;width:1000%;height:270px;}
+.subBVisu ul.clearfix li{float:left;margin:0 8px;}
+.subBVisu ul.clearfix li .pic{width:100%;}/* max-width:265px; */
+
+/* mainTypeC - mypage */
+.mypage .pointBox {overflow:hidden;padding:10px 10px 10px 20px;line-height:31px;}
+.mypage .pointBox div {float:left;}
+.mypage .pointBox div > span {display:inline-block;padding-right:12px;font-size:13px;font-weight:bold;color:#454545;letter-spacing:-1px;}
+.mypage .pointBox div span.coupon {padding-left:12px;background:url(//cdnimg.tourbaksa.com/PC/www/common/bg_bar_05.gif) no-repeat 0 center;}
+.colorY {color:#ffae00;}
+.mypage button.btnYellow,
+.mypage button.btnGray {width:108px;margin:0;background-image:none;padding:9px 0;font-size:13px;line-height:13px;}
+.mypage button.btnYellow {float:right;}
+.mypage .titleArea {margin-bottom:14px;padding:30px 0 15px;border-bottom:2px solid #949494;}
+.mypage .titleArea h3 {font-size:15px;color:#333;}
+.mypage .titleArea p {padding-top:6px;color:#848484;letter-spacing:-1px;}
+.mypage .process {height:248px;margin-top:20px;background:url(//cdnimg.tourbaksa.com/PC/www/sub/bg_step1.gif) no-repeat center center;}
+.mypage .menu {padding-bottom:13px;}
+.mypage .menu a {font-size:13px;color:#666;letter-spacing:-1px;padding-left:10px;background:url(//cdnimg.tourbaksa.com/PC/www/common/bg_bar_03.gif) no-repeat 0 center;}
+.mypage .menu a:first-child {padding-right:10px;padding-left:0;background-image:none;}
+.mypage .menu a.on {color:#fc7d09;font-weight:bold;}
+.mypage .btnArea {text-align:center;}
+.mypage .itemList li {padding:15px 0;border-bottom:1px solid #e2e2e2;}
+.mypage .itemList li:first-child {padding-top:5px;}
+.mypage .itemListEmpty {padding-top:20px;text-align:center;color:#848484;}
+.mypage .pic {float:left;}
+.mypage .info {margin-left:105px;padding-left:15px;}
+.mypage .itemList .itemBox h4 {padding-top:0px;padding-bottom:10px;white-space:normal;}
+.mypage .itemList .detail {line-height:18px;background-position:right 0;}
+.mypage .itemList .itemBox .liner {background-position:2px center;}
+.mypage .itemList .itemBox .itemNum {display:inline-block;background-position:left 3px;}
+
+/* mainTypeD */
+.mapArea {display:none;}
+.topTitArea .txtTab{clear:both;font-size:13px;line-height:18px;}
+.topTitArea .txtTab .on{font-weight:bold;color:#fc7d09}
+.topTitArea .txtTab span{margin:0 5px;color:#ccc}
+.recommTour.type0 .topTitArea .btnArea{margin-bottom:13px;}
+
+.layoutTypeA .contBox.top5Area{margin-top:30px;}
+
+.recommTour.type0 .contInner ul{margin-top:15px;}
+.recommTour.type0 .contInner ul li .localImg .pic{width:100%}/* max-width:198px */
+.recommTour.type0 .contInner ul li strong{margin:5px 0 10px}
+
+/* mainTypeD themeTour type0 */
+.themeTourType0 .innerCont{background-color:#fff}
+.themeTourType0 .innerCont li{position:relative;height:116px;border-top:1px solid #dbdbdb;}
+html.ie7 .themeTourType0 .innerCont li {}/* height:70px; */
+.themeTourType0 .innerCont li:first-child{border-top:0px;}
+.themeTourType0 .innerCont li a,
+.themeTourType0 .innerCont li a strong,
+.themeTourType0 .innerCont li a em,
+.themeTourType0 .innerCont li span{display:block;}
+.themeTourType0 .innerCont li span.contInfo{position:absolute;width:48.5%;padding:20px 0 20px 20px;background: url("//cdnimg.tourbaksa.com/PC/www/sub/bg_03.png") no-repeat right top;z-index:1}
+.themeTourType0 .innerCont li span.picArea{float:right;width:54%;text-align:right;overflow:hidden}
+.themeTourType0 .innerCont li span.contInfo strong{margin:5px 0 13px;color:#444;font-size:14px;}
+.themeTourType0 .innerCont li span.contInfo .cont .price em.point{margin:8px 0 0;color:#fc7d09; font-size:16px}
+
+/* searchArea */
+.searchArea{position:relative;height:380px;color:#666;background-color:#f4f4f4}
+.searchArea h3{padding:15px;letter-spacing:-1px;font-size:14px;color:#454545;}
+.searchArea .searchInput {position:relative; padding:0 15px;}
+.searchArea .center {position:absolute;bottom:15px;width:100%} /* 2014-06-02 */
+.searchArea .center .btnSrch{width:160px;padding:10px 0;color:#fff;font-weight:bold;text-align:center;border:1px solid #575757;background-color:#666}
+
+html.tablet .searchArea .center {position:absolute;bottom:20px;  bottom:20px; right:20px;  width:100px; } /* 2014-06-16 */
+html.tablet .searchArea .center .btnSrch{width:100px; margin-right:20px; padding:10px 0;color:#fff;font-weight:bold;text-align:center;border:1px solid #575757;background-color:#666}
+
+html.desktop .searchArea .center {position:absolute; bottom:20px; right:20px;  width:160px;} /* 2014-06-016 */
+html.desktop .searchArea .center .btnSrch{width:160px; margin-right:20px; padding:10px 0;color:#fff;font-weight:bold;text-align:center;border:1px solid #575757;background-color:#666}
+/* searchArea searchInput */
+.searchInput > ul > li > dl > dt,
+.searchInput > ul > li > dl > dd{float:left;}
+.searchInput > ul > li > dl > dt{width:18%;padding-right:1.8%;font-weight:bold;letter-spacing:-1px;}
+.searchInput > ul > li > dl > dd{width:80%;letter-spacing:-1px}
+.searchInput > ul > li > dl > dd select{width:30%; margin-top:6px;} /*2014-06-02 */
+.searchInput > ul > li > dl > dd .slelectBox select {width:100%; } /* 2014-06-02 */
+.searchInput > ul > li > dl > dd .slelectBox2{margin-top:4px;}
+html.desktop .searchInput > ul > li > dl > dd select, html.tablet .searchInput > ul > li > dl > dd select {width:100%; } /* 2014-06-02 */
+html.desktop .searchInput > ul > li > dl > dd .slelectBox, html.tablet .searchInput > ul > li > dl > dd .slelectBox {width:55%; float:left; margin-left:2%} /* 2014-06-02 */
+html.tablet .searchInput > ul > li > dl > dd .slelectBox2 {width:20%; float:left; margin-left:2%; margin-top:4px;} /* 2014-06-02 */
+html.desktop .searchInput > ul > li > dl > dd .slelectBox2 {width:16%; float:left; margin-left:2%; margin-top:4px;} /* 2014-06-02 */
+
+.searchArea .memberSize dd p{float:left;width:50%;}
+.searchArea .memberSize dd p label{margin-right:3px}
+.searchArea .memberSize dd:after{content:"";display:block;clear:both}
+.searchArea .memberSize dd p select{width:60%}
+.searchInput > ul {position:relative;}
+html.ie7 .searchArea .memberSize dd p {width:48%}
+.searchInput > ul > li > dl {overflow:hidden;}
+.searchInput > ul > li > dl > dd .inputBox{position:relative;width:93%;height:22px;line-height:22px;margin-top:4px;padding:0 2%;border:1px solid #e2e2e2;background-color:#fff;}
+.searchInput > ul > li > dl > dd .inputBox .btnDate, .searchInput > ul > li > dl > dd .inputBox01 .btnDate{position:absolute;right:3px;top:-1px;}
+.searchInput > ul > li > dl > dd .inputBox button {position:absolute;right:3px;top:2px;} /* 2014-07-03 테블릿 위치 수정 */
+.searchInput > ul > li > dl > dd .inputBox button.ui-datepicker-trigger {position:absolute;top:4px;left:80%;right:0;width:15px;height:14px;padding:0;overflow:visible;background:url(//cdnimg.tourbaksa.com/PC/www/common/ico_02.gif) no-repeat top left;} /* 2015-06-08 추가 */
+.searchInput > ul > li > dl > dd .inputBox button.ui-datepicker-trigger img {display:none;width:0;height:0;} /* 2015-06-08 추가 */
+html.ie7 .searchInput > ul > li > dl > dd .inputBox .btnDate{top:2px;}
+.searchInput > ul > li > dl > dd .inputBox .inputText{width:96%;border:0px;color:#666}/* font-family:나눔고딕,ngwoff, ngeot, nmwoff, nmeot, dotum; */
+.searchInput > ul > li{line-height:22px;padding:4px 0;}
+html.ie7 .searchInput > ul > li{padding:2px 0;}
+html.ie7 .searchInput > ul > li > dl > dd .inputBox .inputText{margin-top:3px;}
+.searchInput > ul > li:before,
+.searchInput > ul > li:after{content: "."; display: block; height: 0; overflow: hidden;}
+.searchInput > ul > li:after {clear: both;}
+html.ie .searchInput > ul > li{zoom: 1;}
+/* html.ie .searchInput > ul > li:after{zoom: 1;} */
+.searchInput > ul > li.hotelName span {display:inline-block;height:16px;line-height:16px;margin-right:8px;}
+.searchInput > ul > li.hotelName input[type=checkbox] {margin-top:2px;margin-right:3px;}
+html.ie .searchInput > ul > li.hotelName input[type=checkbox] {margin-top:0;}
+.searchInput > ul > li.hotelName label {font-size:11px;vertical-align:top;}
+.searchInput > ul > li.hotelName span * {vertical-align:middle;}
+.searchInput > ul > li.hotelName img {padding-left:3px;}
+#realtimeHotel {display:none;position:absolute;left:23%;top:144px;width:159px;height:89px;padding:14px 0 0 37px;background:url(//cdnimg.tourbaksa.com/PC/www/sub/bg_hotel_desc.png) no-repeat 0 0;}
+
+.calLayer.calendarSect {display:none;position:absolute;top:0;width:300px;height:250px;padding:15px 0;border:0 none;margin:0;background:url(//cdnimg.tourbaksa.com/PC/www/common/bg_calendar_m.png) no-repeat 0 0;z-index:10;}
+.calLayer.calendarSect .topTitArea {overflow:hidden;border-bottom:0 none;}
+.calLayer.calendarSect h4 {float:left;padding-left:15px;font-size:14px;color:#454545;}
+.calLayer.calendarSect .topTitArea a {float:right;padding-right:15px;}
+.calLayer.calendarSect .date {width:222px;height:28px;margin:0 auto;margin-top:10px;line-height:28px;border:1px solid #dbdbdb;text-align:center;font-weight:bold;font-size:16px;color:#454545;background-color:#f4f4f4;}
+.calLayer.calendarSect .calendarWrap .calendarTable {width:224px;margin-top:5px;}
+.calLayer.calendarSect .calendarWrap .calendarTable table tbody td {padding:7px 0;font-weight:bold;font-size:12px;}
+.calLayer.calendarSect .calendarWrap .calBtn {top:120px;width:14px;}
+.calLayer.calendarSect .calendarWrap .calBtn.prev {background:url(//cdnimg.tourbaksa.com/PC/www/btn/btn_cal3_prev_off.gif) no-repeat 0 0;}
+.calLayer.calendarSect .calendarWrap .calBtn.next.on {background:url(//cdnimg.tourbaksa.com/PC/www/btn/btn_cal3_next_on.gif) no-repeat 0 0;}
+.calLayer.calendarSect .calendarWrap .calendarTable table,
+.calLayer.calendarSect .calendarWrap .calendarTable table th,
+.calLayer.calendarSect .calendarWrap .calendarTable table td.sun,
+.calLayer.calendarSect .calendarWrap .calendarTable table td.sat {border:0 none;}
+.calLayer.calendarSect .calendarWrap .calendarTable table th {border-bottom:1px solid #e5e5e5;}
+.calLayer.calendarSect .calendarWrap .calendarTable table tbody tr:last-child td {padding-bottom:0;}
+
+
+/* promotion */
+.subCont .contWrap.promotion {margin-top:10px;}
+
+/* top5 */
+.layoutTypeA .hotelCon .contBox.top5Area {margin-top:20px;}
+
+/* hot keyword */
+.keywordArea {margin-top:20px;padding-bottom:14px;}
+.keyword {overflow:hidden;height:150px;padding:10px 3% 0;}
+.keyword a {display:inline-block;height:22px;margin:3px 9px;line-height:22px;font-size:13px;}
+.keyword a.em01 {background-color:#e54c01;margin:5px;padding:0 4px;font-weight:bold;color:#fff;}
+.keyword a.em02 {font-size:14px;font-weight:bold;color:#454545;}
+.keyword a.em03 {text-decoration:underline;}
+.keyword a.em04 {background-color:#ff9733;margin:5px;padding:0 4px;font-weight:bold;color:#fff;}
+.keyword a.em05 {color:#f46600;font-weight:bold;}
+
+.contactArea {overflow:hidden;}
+.contactArea .rinkGroup li {height:38px;margin-bottom:3px;;border:1px solid #c5c5c5;background-color:#f4f4f4;text-align:center;line-height:38px;}
+.contactArea .rinkGroup li a {font-weight:bold;font-size:14px;color:#666;}
+.contactArea .contact {margin:17px 0;}
+.contactArea .contact > a {display:inline-block;width:56.4%;height:34px;padding-left:43%;border:1px solid #e37a08;line-height:34px;font-weight:bold;font-size:14px;color:#fff;background:#ff9733 url(//cdnimg.tourbaksa.com/PC/www/sub/bg_laptop.png) no-repeat 38% center;}
+.contactArea .contact div.call {height:30px;line-height:30px;text-align:center;color:#666;}
+.contactArea .contact .call li { padding-left:20px}
+html.tablet .contactArea .contact .call ul {width:100%;}
+html.tablet .contactArea .contact .call li { width:100%; padding-left:0px;}
+html.desktop .contactArea .contact .call li { padding-left:0px}
+.contactArea .contact .call li span {display:inline-block; padding-top:8px;color:#454545;}
+html.ie7 .contactArea .contact .call li span {width:48%;}
+.contactArea .contact .call li span:first-child {text-align:left;width:34%;}
+html.tablet .contactArea .contact .call li span:first-child {text-align:left;}
+html.tablet .contactArea .contact .call li span {/*display:inline;*/ color:#454545;text-align:left; letter-spacing:-1px;}
+
+.contactArea .contact .call li:first-child span {padding-top:5px; /*float:left;*/}
+.contactArea .contact .call li span.second {padding-left:48%;}
+html.ie7 .contactArea .contact .call li span.second {padding-left:48%;}
+.contactArea .notice {padding:15px 15px 11px;border:1px solid #e2e2e2;}
+.contactArea .notice h3 {padding-bottom:10px;font-size:15px;color:#454545;}
+.contactArea .notice .descList li {margin:0 0 4px; padding:0 0 0 6px; color:#666; line-height:17px; background:url(//cdnimg.tourbaksa.com/PC/www/bul/bul_list_dot.gif) no-repeat left 8px;}
+
+/* mainTypeE */
+.airCon .searchArea {height:100%; padding-bottom:64px;} /* 2014-06-02 */
+.airCon .rightCont {}
+.airCon .contWrap .rightCont h3 {left:-6px;top:0;padding:0;}
+.airCon .contWrap .rightCont .bannerWrap {padding-top:40px;border:1px solid #e2e2e2;}
+.airCon .contWrap .rightCont .bannerWrap > div {position:relative;overflow:hidden;border-top:1px solid #e2e2e2;z-index:10;}
+.airCon .contWrap .rightCont .bannerWrap ul {position:relative;height:10%;overflow:hidden;padding:0;border:0 none;z-index:9;} /*jkh height 수정 2014.01.20*/
+html.desktop .airCon .contWrap .rightCont .bannerWrap ul, html.tablet .airCon .contWrap .rightCont .bannerWrap ul {position:relative;height:222px;overflow:hidden;padding:0;border:0 none;z-index:9}
+
+.airCon .contWrap .rightCont .bannerWrap ul li {border-top:0 none;}
+.airCon .contWrap .rightCont li {overflow:hidden;border-color:#e2e2e2;background-color:#fff;}
+/*.airCon .contWrap .rightCont li .pic{width:100%;}*//* max-width:299px */
+.airCon .contWrap .rightCont li .pic{width:100%;} 
+.airCon .topTitArea .btnArea a {border-bottom:0 none;}
+.airCon .searchInput > ul > li > dl > dd div.inputBox {float:left;width:60%;margin-right:2%;} /* 2014-06-02 */
+html.tablet .airCon .searchInput > ul > li > dl > dd div.inputBox {width:32%} /* 2014-06-02 */
+html.desktop .airCon .searchInput > ul > li > dl > dd div.inputBox {width:26%} /* 2014-06-02 */
+html.desktop .airCon .searchInput > ul > li > dl > dd div.inputBox .date {vertical-align:top;width:68%;height:24px;background:transparent;border:0;z-index:1000;text-indent:2px;}
+html.tablet .airCon .searchInput > ul > li > dl > dd div.inputBox .date {vertical-align:top;width:68%;height:24px;background:transparent;border:0;z-index:1000;text-indent:2px;} /* 2014-06-02 */
+.airCon .searchInput > ul > li > dl > dd div.inputBox .date {vertical-align:top;width:68%;height:24px;background:transparent;border:0;z-index:1000;text-indent:2px; float:left; line-height:24px; padding:0 0 3px 0;}
+.airCon .searchInput > ul > li.arrivalInput > dl > dd fieldset.inputBox {float:left;width:84%;margin-right:2%;}
+.airCon .searchInput > ul > li > dl > dd span {position:relative;float:left;width:40px;height:14px;margin-right:6px;}
+.airCon .searchInput > ul > li > dl > dd .undefined {margin-top:13px;margin-right:0;}
+.airCon .searchInput > ul > li > dl > dd span.seat01 {width:50px;}
+.airCon .searchInput > ul > li > dl > dd span.seat02 {width:68px;}
+.airCon .searchInput > ul > li > dl > dd .check { }
+.airCon .searchInput > ul > li > dl > dd .check input { height:14px;line-height:14px;}
+.airCon .searchInput > ul > li > dl > dd .check label { height:14px;line-height:14px; display:inline-block;}
+html.ie7 .airCon .searchInput > ul > li > dl > dd .check label {left:20px;top:1px;} 
+
+.searchInput .select01{ width:100%;float:left; }
+.searchInput .select02{ width:65px; float:right;  }
+
+html.tablet .searchInput .select01{ width:41%;}  /* 2014-06-02 */
+html.tablet .searchInput .select02{ width:17%; float:left; margin-top:4px; margin-left:6px}
+
+html.desktop .searchInput .select01{ width:38%; margin-right:8px} /* 2014-06-02 */
+html.desktop .searchInput .select02{ width:13%; float:left; margin-top:4px; margin-left:6px;}
+
+.searchInput > ul > li > dl > dd .inputBox01{position:relative;width:60%;height:22px;line-height:22px;margin-top:4px;padding:0 2%;border:1px solid #e2e2e2;background-color:#fff;float:left;}
+html.tablet .searchInput > ul > li > dl > dd .inputBox01{width:28%;}
+html.desktop .searchInput > ul > li > dl > dd .inputBox01{width:24.5%;}
+
+.arrivalInput a {display:inline-block;float:left;}
+.searchInput a.search {display:inline-block;height:14px;padding:0 10px;line-height:14px;background:url(//cdnimg.tourbaksa.com/PC/www/common/arrow_03.gif) no-repeat right 6px;}
+.scbig #departure {width:98%;}
+.airCon span label {font-size:11px;}
+.airCon .memberSize a img {padding-left:5px;}
+.airCon .topTitArea .txtTab {margin-bottom:14px;}
+.priceTable table { width:100%;}
+.priceTable table .normal { display:none;}
+.priceTable table .mobile { display:inline;}
+.priceTable table .num1,
+.priceTable table .num2,
+.priceTable table .num3 { display:none;}
+.priceTable table thead th { height:36px; text-align:center; background-color:#f4f4f4; color:#454545; border-top:1px solid #dcdcdc; border-right:1px solid #e2e2e2; border-bottom:1px solid #dcdcdc; vertical-align:middle;}
+.priceTable table thead th strong { color:#454545;}
+.priceTable table thead th.num0 { border-right:0 none;}
+.priceTable table thead th.num2 { padding-left:0; padding-right:10px; text-align:center;}
+.priceTable table tbody td { padding:10px 0; border-bottom:1px solid #e2e2e2; color:#848484; text-align:center;}
+.priceTable table tbody td.fix { border-right:1px solid #e2e2e2;}
+.priceTable table tbody td.fix span { display:inline-block;height:20px;padding-left:25px;line-height:20px;background:url(//cdnimg.tourbaksa.com/PC/www/ico/ico_airline_01.gif) no-repeat 0 0;}
+/*.airCon .contactArea .contact .call li {width:70%;}*/
+.airCon .contactArea .contact .call li span {font-size:14px;}
+
+/*!
+ * Tablet
+ * min-width:768px and max-width:959px
+ **/
+
+/* .subCont .contWrap */
+/* .leftCont */
+html.tablet .subCont .contWrap .leftCont{float:left;width:66.1%;}
+html.tablet .subCont .contWrap .leftCont .topTitArea{margin-bottom:2px}
+
+/* .rightCont */
+html.tablet .subCont .contWrap .rightCont{float:right;width:221px;margin-top:0px}/*jkh 2014.01.21*/
+html.tablet .subCont .contWrap .rightCont li{padding:13px 10px;}
+html.tablet.ie7 .subCont .contWrap .rightCont li{padding:13px 10px 7px}
+html.tablet .subCont .contWrap .rightCont li a .point{width:36%;}
+html.tablet .subCont .contWrap .rightCont li a .subject{width:62%;margin-left:2%}
+
+/* .recommTour */
+html.tablet .recommTour .contInner ul.conRoling {height:195px;}
+html.tablet .recommTour .contInner ul.conRoling li {height:193px;margin-bottom:1px;}
+html.tablet .recommTour .contInner ul.conRoling li .contInfo {margin-top:-35px;}
+html.tablet .recommTour .contInner ul.conRoling li .localImg .pic{margin-left:-50%;}
+html.tablet .recommTour .contInner ul.clearfix{float:left;width:100%;padding-left:0}
+html.tablet .recommTour .contInner ul.clearfix li{width:31%;margin-left:1.75%;}
+html.tablet .recommTour .contInner ul.clearfix{float:left;width:100%;padding-left:0}
+html.tablet .recommTour .contInner ul.clearfix li:first-child{margin-left:0;}
+html.tablet .recommTour .contInner .topRecomm ul.clearfix li{height:202px;}
+html.tablet .recommTour .contInner ul li .contInfo {margin-top:-24px;padding-top:15px;}
+html.tablet .recommTour:after{display:block;content:"";clear:both}
+html.tablet .recommTour .topRecomm{width:68%;margin:0;border:0;background-color:#fff;}
+html.tablet .recommTour .conRoling{position:static;}
+html.ie7 .recommTour{zoom:1}
+
+/* .bannerZone */
+html.tablet .recommTour .topTitArea .btnArea.clearfix{display:none}
+html.tablet .recommTour .contInner .bannerZone{display:block;float:right;width:222px;overflow:hidden;}
+html.tablet .recommTour .contInner .bannerZone li{width:100%;border:0px}
+
+
+/* mainTypeB */
+/* popularArea top5Area */
+html.tablet .top5Area,
+html.tablet .keywordArea{float:right;width:30.5%;}
+html.tablet .top5Area ol li a {width:85%;}
+html.tablet .top5Area ol li.on a {width:45%;}
+html.tablet .top5Area ol li.on a span {width:90px;}
+html.tablet .top5Area ol li.on a span span{text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+
+/* html.tablet .top5Area ol li.end{display:none;} 2013-09-12 */
+
+/* popularArea seasonTour */
+html.tablet .seasonTour{float:left;width:66.1%}
+html.ie7.tablet .seasonTour{width:66%}
+html.tablet .seasonTour .topTitArea{margin-top:0}
+html.tablet .seasonTour .btnArea{display:none}
+html.tablet .seasonTour .innerCont{height:261px;margin-bottom:0}
+html.tablet .seasonTour .innerCont li span.localImg{height:175px}
+html.tablet .seasonTour .innerCont li .pic{width:auto}
+html.tablet .seasonTour .innerCont ul li{float:left;width:17.6%;height:254px;margin:5px 0;border:1px solid #e2e2e2;border-left:0px;}
+html.tablet .seasonTour .innerCont ul li:first-child{border-left:1px solid #e2e2e2}
+html.tablet .seasonTour .innerCont ul li.on{width:46%;}
+/*html.tablet .seasonTour .innerCont li span.contInfo{padding:15 4%}*/
+html.tablet .seasonTour .innerCont ul li span.contInfo span{display:none}
+html.tablet .seasonTour .innerCont ul li span.contInfo span.point{display:block;text-overflow:clip;white-space:normal;overflow:visible}
+html.tablet .seasonTour .innerCont ul li.on span.contInfo span{display:block;width:100%;}
+
+
+/* .subBVisu .innerCont*/
+html.tablet .subBVisu .btnArea{display:block} 
+html.tablet .subBVisu ul.clearfix{margin-left:-23px}
+html.tablet .subBVisu ul.clearfix li{margin:0 0 0 23px;}
+
+/* .themeTour .innerCont */
+html.tablet .themeTour .innerCont{margin-top:10px}
+html.tablet .themeTour .innerCont .contInfo{width:59.5%;padding:0;}
+html.tablet .themeTour .innerCont .contInfo strong{float:left;width:58px;height:14px;overflow:hidden;padding:31px 20px;border-right:1px solid #dbdbdb;background-color:#e2e2e2;}
+html.tablet .themeTour .innerCont .contInfo .cont{float:left;padding:12px 20px;}
+html.tablet .themeTour .innerCont li span.contInfo .cont {width:260px;}
+html.tablet .themeTour .innerCont .contInfo .cont span{margin-top:10px}
+html.tablet .themeTour .innerCont .picArea{width:42%}
+
+html.ie7 .themeTour .innerCont .contInfo .cont{margin-top:10px}
+
+/* mainTypeC - mypage */
+html.tablet .mypage .titleArea {overflow:hidden;}
+html.tablet .mypage .titleArea h3 {float:left;}
+html.tablet .mypage .titleArea p {float:right;padding-top:4px;}
+html.tablet .mypage .process {height:102px;background:url(//cdnimg.tourbaksa.com/PC/www/sub/bg_step2.gif) no-repeat center center;}
+html.tablet .mypage .btnArea {overflow:hidden;padding-top:20px;}
+html.tablet .mypage button.btnGray {float:right;}
+html.tablet .mypage .itemList {overflow:hidden;border-bottom:1px solid #e2e2e2;}
+html.tablet .mypage .itemList li {float:left;width:49%;padding:0;}
+html.tablet .mypage .itemList li.liOdd {padding-left:2%;}
+html.tablet .mypage .itemList li.liLast {border-bottom:0 none;}
+html.tablet .mypage .itemList .itemBox .pic {margin-top:12px;}
+html.tablet .mypage .itemList .itemBox .info {float:none;width:65%;padding-top:12px;}
+html.tablet .mypage .itemList .itemBox .info div {}
+html.tablet .mypage .itemList .itemBox .itemNum {display:block;background-position:left 3px;}
+
+/* mainTypeD */
+html.tablet .layoutTypeA .topTitArea{position:relative;}
+html.tablet .layoutTypeA .recommTour.type0 .topTitArea,
+html.tablet .layoutTypeA .themeTourType0 .topTitArea{margin:30px 0 0}
+html.tablet .layoutTypeA .topTitArea .btnRArea.floatR{display:block;}
+/* html.tablet .layoutTypeA .promotion .topTitArea .btnRArea.floatR {display:block;}
+html.tablet .layoutTypeA .topTitArea .btnArea.clearfix{display:block} */
+html.tablet .layoutTypeA .topTitArea .txtTab{position:absolute;top:8px;left:130px}
+
+html.tablet .searchArea {height:290px;}
+html.tablet .searchInput > ul {overflow:hidden;}
+html.tablet.ie7 .searchInput > ul > li {padding:6px 0; }
+html.tablet .searchInput > ul > li.check {float:left;width:50%;} 
+html.tablet .searchInput > ul > li.check.checkout {width:40%;padding-left:10%;}
+html.tablet .searchInput > ul > li > dl {overflow:visible;}
+html.tablet .searchInput > ul > li > dl > dt {width:10%}
+html.tablet .searchInput > ul > li > dl > dd {width:88%;}
+html.tablet .searchInput > ul > li.check dt {width:20%;padding-right:3.6%;}
+html.tablet .searchInput > ul > li.check dd {width:50%;}
+html.tablet .searchInput > ul > li.check.checkout dt {width:29%;}
+html.tablet .searchInput > ul > li.check.checkout dd {width:62%;}
+html.tablet .searchArea .memberSize dd p {width:25%;}
+html.tablet .searchArea .memberSize dd p select{width:50.5%;padding:2px 0.3% 2px 0;}
+html.tablet .searchInput > ul > li.hotelName > dl > dd .inputBox {float:left;width:32%;}
+html.tablet .searchInput > ul > li.hotelName span.onlyHotel {margin-left:20px;}
+html.tablet.ie7 .searchInput > ul > li.hotelName span {float:left;display:block;padding-top:5px;}
+html.tablet #realtimeHotel {left:50%;top:33px;}
+html.tablet .subCont .contWrap.promotion {position:relative;margin-top:28px;}
+html.tablet .keywordArea {position:absolute;top:-340px;right:0;}
+html.tablet .keywordArea .keyword {height:230px;}
+
+html.tablet .layoutTypeA .contBox.top5Area{margin-top:0px;}
+html.tablet .layoutTypeA .contBox.top5Area ol li.end {display:none;}
+html.tablet .layoutTypeA .contBox.top5Area ol li.on {padding:15px 20px 18px;}
+
+html.tablet .top5Area ol li{ padding:0 20px; height:39px; line-height:39px; vertical-align:middle;white-space:nowrap;}
+html.tablet .top5Area ol li span.rank{top:14px;}
+html.tablet .top5Area ol li a{display:inline;}
+html.tablet .top5Area ol li.on { height:66px; padding-top:0; padding-bottom:0;}
+
+/* recommTour */
+html.tablet .recommTour.type0 .contInner ul{float:none;width:100%;margin-top:0px;}
+html.tablet .recommTour.type0 .contInner ul li{width:23.55%;height:240px;margin:0 0.77%}
+html.tablet .recommTour.type0 .contInner ul li:first-child{margin-left:0}
+html.tablet .recommTour.type0 .contInner ul li.end{float:right;margin-right:0}
+html.tablet .recommTour.type0 .contInner ul li strong{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+
+/* 2013-09-12 */
+html.tablet .bannerZone ul.recomBanner li{height:216px}
+html.tablet .recommTour .contInner ul li .localImg{height:134px;overflow:hidden}
+
+
+html.tablet .contactArea {margin-top:30px;}
+html.tablet .contactArea .rinkGroup {float:left;}
+html.tablet .contactArea .rinkGroup {width:21.6%;}
+html.tablet .contactArea .rinkGroup li {height:46px;line-height:46px;margin-bottom:10px;text-align:left;}
+html.tablet .contactArea .rinkGroup li.twoLines {height:62px;line-height:62px;}
+html.tablet .contactArea .rinkGroup li a {display:block;text-indent:10px;}
+html.tablet .contactArea .rinkGroup li.twoLines a {padding-top:12px;line-height:20px;}
+html.tablet .contactArea .rinkGroup li span {display:block;}
+html.tablet .contactArea .contact {float:right;width:30%;margin:0;}
+/*html.tablet .contactArea .contact .call li {width:100%;}*/
+html.tablet .contactArea .contact .topTitArea h3 {padding-top:0;}
+html.tablet .contactArea .contact a {width:59%;padding-left:40%;background-position:29% center;}
+/*html.tablet .contactArea .contact .call li span:first-child {width:23%;letter-spacing:-1px;}*/
+html.tablet .contactArea .contact .call li span.second {padding-left:13%;}
+html.tablet .contactArea .notice {float:left; width:40%;margin-left:2.3%;padding:24px 0px 24px 15px;}
+html.tablet .contactArea .notice h3 {padding-bottom:15px;}
+html.tablet .contactArea .notice .descList li {overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;}
+
+/* mainTypeD themeTour type0 */
+html.tablet .themeTourType0 .innerCont {border-top:0 none;border-bottom:0 none;border-right:1px solid #dbdbdb;border-left:1px solid #dbdbdb;}
+html.tablet .themeTourType0 .innerCont li{float:left;width:50%;height:114px;overflow:hidden;border-top:0 none;border-bottom:1px solid #dbdbdb;}
+html.tablet.ie7 .themeTourType0 .innerCont li{width:49.8%;}
+html.tablet .themeTourType0  .innerCont li:first-child,
+html.tablet .themeTourType0  .innerCont li.noLine{border-top:1px solid #dbdbdb;}
+html.tablet .themeTourType0 .innerCont:after{content:"";display:block;clear:both}
+html.tablet .themeTourType0 .innerCont li span.contInfo{width:56.5%}
+
+/* mainTypeE */
+/*html.tablet .airCon .searchArea {height:333px;}*/
+html.tablet .airCon .searchArea {height:263px; padding-bottom:0;} /* 2014-06-02 */
+html.tablet .airCon .rightCont {display:block;}
+html.tablet .airCon .contWrap .rightCont li {width:100%;padding:0;}
+html.tablet.ie7 .subCont .contWrap .rightCont li{padding:0}
+html.tablet .searchInput > ul > li.departInput,
+html.tablet .searchInput > ul > li.arrivalInput {float:left;width:100%;} /* 2014-06-02 */
+html.tablet .searchInput > ul > li.departInput dt,
+html.tablet .searchInput > ul > li.arrivalInput dt {width:20%;padding-right:3.6%;}
+html.tablet .searchInput > ul > li.departInput dd,
+html.tablet .searchInput > ul > li.arrivalInput dd {width:76%;}
+html.tablet .airCon .searchInput > ul > li.arrivalInput > dl > dd .inputBox {width:32%;} /* 2014-06-02 */
+html.tablet .airCon .searchInput > ul > li > dl > dd .inputBox .inputText {width:94%;}
+html.tablet .scbig #departure {width:77%;}
+html.tablet .priceTable {padding-top:8px;}
+html.tablet .priceTable table th,
+html.tablet .priceTable table td { display:table-cell;}
+html.tablet .priceTable table .normal { display:inline;}
+html.tablet .priceTable table .mobile { display:none;}
+html.tablet .priceTable table thead th { border-right:1px solid #e2e2e2;}
+html.tablet .priceTable table thead th.num3 { width:65px;}
+html.tablet .priceTable table tbody td { border-right:1px solid #e2e2e2;}
+html.tablet .priceTable table .num3 { border-right:0 none;}
+
+.airCon .contactArea .contact .call_number {width:100%; padding:0 0 20px 20px; font-weight:bold; font-size:14px; letter-spacing:-1px; line-height:16px; color:#454545;}
+.airCon .contactArea .contact .call_number p {padding:7px 0 0; clear:both; position:relative; overflow:hidden;}
+.airCon .contactArea .contact .call_number p .first {display:inline; width:32.5%; float:left;}
+html.desktop .airCon .contactArea .contact .call_number, html.tablet .airCon .contactArea .contact .call_number {font-weight:bold; font-size:14px; letter-spacing:-1px; line-height:16px; color:#454545; padding:0px;}
+html.desktop .airCon .contactArea .contact .call_number p .first {width:43%;}
+
+html.tablet .airCon .contactArea .contact .call_number p .first {width:43%;}
+html.tablet .airCon .contactArea .contact .call_number .last {position:absolute; right:0px; top:0px; float:none; display:inline-block; text-align:left; padding:6px 0 0; width:57%;}
+
+
+html.tablet .airCon .contactArea .contact .call {line-height:18px;width:100%;}
+html.tablet .airCon .contactArea .contact .call li span.first {width:43%;}
+html.tablet .airCon .contactArea .contact .call li span.txt01 {width:50%;letter-spacing:-1.5px;text-align:left;}
+html.tablet .contactArea .contact .call li span.txt01 strong {}
+html.tablet .contactArea .contact .call li span.txt01 strong a {margin:0px;padding:0px;}
+
+
+
+
+/*!
+ * Desktop
+ * min-width:1100px
+ **/
+
+/* .subCont .contWrap */
+/* .leftCont */
+/*html.desktop .subCont .contWrap .leftCont{float:left;width:66.1%;}*/
+html.desktop .subCont .contWrap .leftCont{float:left;width:854px;}
+html.desktop .subCont .contWrap .leftCont .topTitArea{margin-bottom:3px}
+
+/* .rightCont */
+/*html.desktop .subCont .contWrap .rightCont{float:right;width:30.5%;margin-top:0px}*/
+html.desktop .subCont .contWrap .rightCont{float:right;width:260px;margin-top:0px} /*jkh 2014.01.20 */
+
+html.desktop .subCont .contWrap .rightCont li{padding:13px 11px;}
+html.desktop.ie7 .subCont .contWrap .rightCont li{padding:13px 11px 7px}
+html.desktop .subCont .contWrap .rightCont li a .point{width:33%;}
+html.desktop .subCont .contWrap .rightCont li a .subject{width:65%;margin-left:2%;}
+
+/* .recommTour */
+html.desktop .recommTour .contInner ul{float:left;width:100%;padding-left:0}
+html.desktop .recommTour .contInner ul li{width:31%;height:236px;overflow:hidden;margin:0 0.63%;}
+html.desktop .recommTour .contInner ul.conRoling{position:static;height:238px;}
+html.desktop .recommTour .contInner ul.conRoling li{height:236px;} /* 2013-09-12 */
+html.desktop .recommTour .contInner ul.conRoling li .localImg .pic{margin-left:-40%;}
+html.desktop .recommTour:after{display:block;content:"";clear:both}
+html.desktop .recommTour .topRecomm{width:68%;margin:0;border:0;background-color:#fff;}
+html.desktop .recommTour .contInner ul li{border:1px solid #e2e2e2;background-color:#fff;}
+html.ie7 .recommTour{zoom:1}
+
+/* 2013-09-12 */
+html.desktop .recommTour .contInner ul li .localImg{height:148px;overflow:hidden}
+
+/* .bannerZone */
+html.desktop .recommTour .topTitArea .btnRArea.floatR{display:block}
+html.desktop .recommTour .topTitArea .btnArea{display:none}
+html.desktop .recommTour .contInner .bannerZone{display:block;float:right;width:259px;overflow:hidden;text-align:right;}
+html.desktop .recommTour .contInner .bannerZone li{width:100%;border:0px;}
+
+/* mainTypeB */
+/* top5Area */
+html.desktop .top5Area, 
+html.desktop .keywordArea{float:right;width:30.3%;}
+
+/* popularArea seasonTour */
+html.desktop .seasonTour{float:left;width:66.1%}
+html.ie7.desktop .seasonTour{width:65.8%}
+html.desktop .seasonTour .topTitArea{margin-top:0}
+html.desktop .seasonTour .btnArea{display:none}
+html.desktop .seasonTour .innerCont{height:261px;margin-bottom:0}
+html.desktop .seasonTour .innerCont li .pic{width:auto}
+html.desktop .seasonTour .innerCont li span.localImg{height:175px}
+html.desktop .seasonTour .innerCont ul li{float:left;width:17.6%;height:254px;margin:5px 0;border:1px solid #e2e2e2;border-left:0px;}
+html.desktop .seasonTour .innerCont ul li:first-child{border-left:1px solid #e2e2e2}
+html.desktop .seasonTour .innerCont ul li.on{width:46%;}
+html.desktop .seasonTour .innerCont ul li span.contInfo span{display:none}
+html.desktop .seasonTour .innerCont ul li span.contInfo span.point{display:block;text-overflow:clip;white-space:normal;overflow:visible}
+html.desktop .seasonTour .innerCont ul li.on span.contInfo span{display:block;width:100%;}
+
+/* .subBVisu .innerCont */
+html.desktop .subBVisu .btnArea{display:none}
+html.desktop .subBVisu.subBVisu2 .innerCont {margin-left:-426px;}
+html.desktop .subBVisu ul.clearfix{margin-left:-34px}
+html.desktop .subBVisu ul.clearfix li{width:267px;margin:0 0 0 26px;}
+html.desktop .subBVisu ul.clearfix li:first-child{margin:0 0 0 34px;}
+html.desktop .subBVisu ul.clearfix li img.pic{width:100%;}/* max-width:265px */
+
+/* .themeTour .innerCont */
+html.desktop .themeTour .innerCont{margin-top:10px}
+html.desktop .themeTour .innerCont.contBox {width:auto;}
+html.desktop .themeTour .innerCont .contInfo{width:66.5%;padding:0;}
+html.desktop .themeTour .innerCont .contInfo strong{float:left;width:58px;height:14px;overflow:hidden;padding:31px 20px;border-right:1px solid #dbdbdb;background-color:#e2e2e2;}
+html.desktop .themeTour .innerCont .contInfo .cont{float:left;padding:12px 20px;}
+html.desktop .themeTour .innerCont .contInfo .cont span{margin-top:10px}
+html.desktop .themeTour .innerCont li span.contInfo .cont {width:400px;}
+html.desktop .themeTour .innerCont .picArea{width:42%;text-align:right;}
+
+/* mainTypeC - mypage */
+html.desktop .mypage .titleArea {overflow:hidden;}
+html.desktop .mypage .titleArea h3 {float:left;}
+html.desktop .mypage .titleArea p {float:right;padding-top:4px;}
+html.desktop .mypage .process {height:104px;background:url(//cdnimg.tourbaksa.com/PC/www/sub/bg_step2.gif) no-repeat center center;}
+html.desktop .mypage .btnArea {overflow:hidden;padding-top:20px;}
+html.desktop .mypage button.btnGray {float:right;}
+html.desktop .mypage .itemList {overflow:hidden;border-bottom:1px solid #e2e2e2;}
+html.desktop .mypage .itemList li {float:left;width:49%;padding:0;}
+html.desktop .mypage .itemList li.liOdd {padding-left:2%;}
+html.desktop .mypage .itemList li.liLast {border-bottom:0 none;}
+html.desktop .mypage .itemList .itemBox .pic {margin-top:12px;}
+html.desktop .mypage .itemList .itemBox .info {float:none;width:65%;padding-top:12px;}
+html.desktop .mypage .itemList .itemBox .itemNum {display:block;background-position:left 3px;}
+
+/* mainTypeD */
+html.desktop .mapArea {display:block;position:relative;margin-top:30px;padding-bottom:7px;border:1px solid #dcdcdc;background-color:#fefdf8;z-index:11;}
+html.desktop .mapArea .btnArea {overflow:hidden;}
+html.desktop .mapArea .type {float:left;margin:7px 0 0 7px;z-index:12;}
+html.desktop .mapArea button.mapShow,
+html.desktop .mapArea button.mapHide {position:absolute;display:inline-block;width:110px;height:42px;padding:0 15px;line-height:44px;letter-spacing:-1px;border:1px solid #848484;background:#999 url(//cdnimg.tourbaksa.com/PC/www/bul/bul_arrow_open.png) no-repeat 82px center;font-weight:bold;font-size:15px;color:#ffd75c;text-align:left;z-index:12;}
+html.desktop .mapArea button.mapShow {right:-1px;top:-1px;}
+html.desktop .mapArea button.mapHide {right:-1px;top:408px;width:44px;background:#999 url(//cdnimg.tourbaksa.com/PC/www/bul/bul_arrow_close.png) no-repeat center center;}
+html.desktop .mapArea .map {display:none;position:absolute;left:-1px;width:100%;height:414px;padding-bottom:35px;text-align:center;border:1px solid #dcdcdc;border-top:0 none;background:#fefdf8;z-index:11;}
+html.desktop .mapArea .wholeMap {width:100%;height:100%;background:url(//cdnimg.tourbaksa.com/PC/www/sub/map_all_01.png) no-repeat 308px 0;z-index:11;}
+html.desktop .mapArea .ryokanMap {display:none;width:594px;height:100%;margin:0 auto;background:url(//cdnimg.tourbaksa.com/PC/www/sub/map_all_02.png) no-repeat -15px 10px;}
+html.desktop .mapArea .localMap {position:absolute;left:0;top:0px;width:520px;height:520px;z-index:9;}
+html.desktop .mapArea .localMap div {display:none;z-index:9;width:520px;height:350px;}
+html.desktop .mapArea .localMap #hokkaido {background:url(//cdnimg.tourbaksa.com/PC/www/sub/map_hokkaido.png) no-repeat 107px 40px;}
+html.desktop .mapArea .localMap #tohoku {background:url(//cdnimg.tourbaksa.com/PC/www/sub/map_tohoku.png) no-repeat 114px 28px;}
+html.desktop .mapArea .localMap #hokuriku {background:url(//cdnimg.tourbaksa.com/PC/www/sub/map_hokuriku.png) no-repeat 69px 33px;}
+html.desktop .mapArea .localMap #kanto {background:url(//cdnimg.tourbaksa.com/PC/www/sub/map_kanto.png) no-repeat 110px 34px;}
+html.desktop .mapArea .localMap #tokyo {background:url(//cdnimg.tourbaksa.com/PC/www/sub/map_tokyo.png) no-repeat 68px 72px;}
+html.desktop .mapArea .localMap #tokai {background:url(//cdnimg.tourbaksa.com/PC/www/sub/map_tokai.png) no-repeat 98px 33px;}
+html.desktop .mapArea .localMap #osaka {background:url(//cdnimg.tourbaksa.com/PC/www/sub/map_osaka.png) no-repeat 80px 38px;}
+html.desktop .mapArea .localMap #kansai {background:url(//cdnimg.tourbaksa.com/PC/www/sub/map_kansai.png) no-repeat 109px 38px;}
+html.desktop .mapArea .localMap #chugoku {background:url(//cdnimg.tourbaksa.com/PC/www/sub/map_chugoku.png) no-repeat 86px 60px;}
+html.desktop .mapArea .localMap #shikoku {background:url(//cdnimg.tourbaksa.com/PC/www/sub/map_shikoku.png) no-repeat 85px 67px;}
+html.desktop .mapArea .localMap #kyushu {background:url(//cdnimg.tourbaksa.com/PC/www/sub/map_kyushu.png) no-repeat 128px 25px;}
+html.desktop .mapArea .localMap #okinawa {background:url(//cdnimg.tourbaksa.com/PC/www/sub/map_okinawa.png) no-repeat 97px 77px;}
+
+html.desktop .mapArea a {position:absolute;z-index:11;}
+html.desktop .mapArea a.hokkaido {left:623px;top:53px;}
+html.desktop .mapArea a.tohoku {left:584px;top:137px;}
+html.desktop .mapArea a.kanto {left:584px;top:234px;}
+html.desktop .mapArea a.tokyo {left:575px;top:257px;}
+html.desktop .mapArea a.hokuriku {left:469px;top:232px;}
+html.desktop .mapArea a.tokai {left:524px;top:288px;}
+html.desktop .mapArea a.osaka {left:477px;top:305px;}
+html.desktop .mapArea a.kansai {left:464px;top:283px;}
+html.desktop .mapArea a.chugoku {left:399px;top:266px;}
+html.desktop .mapArea a.shikoku {left:412px;top:318px;}
+html.desktop .mapArea a.kyushu {left:368px;top:338px;}
+html.desktop .mapArea a.okinawa {left:277px;top:381px;}
+
+html.desktop .mapArea a.hokkaidoetc {left:345px;top:90px;}
+html.desktop .mapArea a.asahikawa {left:241px;top:139px;}
+html.desktop .mapArea a.otaru {left:135px;top:180px;}
+html.desktop .mapArea a.sapporo {left:198px;top:215px;}
+html.desktop .mapArea a.toya {left:170px;top:245px;}
+html.desktop .mapArea a.hakodate {left:148px;top:295px;}
+
+html.desktop .mapArea a.aomori {left:330px;top:95px;}
+html.desktop .mapArea a.akita {left:284px;top:126px;}
+html.desktop .mapArea a.iwate {left:338px;top:168px;}
+html.desktop .mapArea a.yamagata {left:210px;top:189px;}
+html.desktop .mapArea a.miyagi {left:220px;top:234px;}
+html.desktop .mapArea a.fukushima {left:170px;top:281px;}
+
+html.desktop .mapArea a.niigata {left:413px;top:107px;}
+html.desktop .mapArea a.toyama {left:270px;top:154px;}
+html.desktop .mapArea a.nagano {left:288px;top:199px;}
+html.desktop .mapArea a.fukui {left:144px;top:175px;}
+html.desktop .mapArea a.ishikawa {left:184px;top:124px;}
+
+html.desktop .mapArea a.nikko {left:281px;top:70px;}
+html.desktop .mapArea a.tochigi {left:259px;top:91px;}
+html.desktop .mapArea a.ibaraki {left:325px;top:151px;}
+html.desktop .mapArea a.saitama {left:242px;top:176px;}
+html.desktop .mapArea a.chiba {left:328px;top:205px;}
+html.desktop .mapArea a.yokohama02 {left:244px;top:248px;}
+html.desktop .mapArea a.tokyo02 {left:222px;top:216px;}
+html.desktop .mapArea a.kanagawa {left:157px;top:230px;}
+html.desktop .mapArea a.yamanashi {left:94px;top:203px;}
+html.desktop .mapArea a.gunma {left:182px;top:111px;}
+html.desktop .mapArea a.kusatsu {left:174px;top:88px;}
+
+html.desktop .mapArea a.narita {left:487px;top:120px;}
+html.desktop .mapArea a.disney {left:454px;top:93px;}
+html.desktop .mapArea a.asakusa {left:393px;top:76px;}
+html.desktop .mapArea a.ueno {left:400px;top:111px;}
+html.desktop .mapArea a.ryogoku {left:425px;top:129px;}
+html.desktop .mapArea a.ginza {left:372px;top:150px;}
+html.desktop .mapArea a.shinagawa {left:380px;top:170px;}
+html.desktop .mapArea a.odaiba {left:385px;top:191px;}
+html.desktop .mapArea a.haneda {left:337px;top:204px;}
+html.desktop .mapArea a.yokohama {left:205px;top:267px;}
+html.desktop .mapArea a.hakone {left:173px;top:295px;}
+html.desktop .mapArea a.tokyoetc {left:109px;top:209px;}
+html.desktop .mapArea a.meguro {left:267px;top:166px;}
+html.desktop .mapArea a.shibuya {left:294px;top:148px;}
+html.desktop .mapArea a.shinjuku {left:276px;top:130px;}
+html.desktop .mapArea a.ikebukuro {left:274px;top:102px;}
+html.desktop .mapArea a.ochanomizu {left:237px;top:73px;}
+html.desktop .mapArea a.roppongi {left:368px;top:52px;}
+
+html.desktop .mapArea a.gifu {left:205px;top:106px;}
+html.desktop .mapArea a.gero {left:245px;top:128px;}
+html.desktop .mapArea a.nagoya {left:183px;top:168px;}
+html.desktop .mapArea a.aichi {left:232px;top:184px;}
+html.desktop .mapArea a.mie {left:130px;top:231px;}
+html.desktop .mapArea a.shizuoka {left:307px;top:205px;}
+html.desktop .mapArea a.atami {left:430px;top:188px;}
+
+html.desktop .mapArea a.osakaetc {left:411px;top:81px;}
+html.desktop .mapArea a.shinosaka {left:359px;top:114px;}
+html.desktop .mapArea a.umeda {left:347px;top:144px;}
+html.desktop .mapArea a.kyoto {left:429px;top:156px;}
+html.desktop .mapArea a.honmachi {left:327px;top:175px;}
+html.desktop .mapArea a.kyobashi {left:295px;top:218px;}
+html.desktop .mapArea a.tennoji {left:261px;top:251px;}
+html.desktop .mapArea a.sakai {left:209px;top:251px;}
+html.desktop .mapArea a.kansaiair {left:83px;top:174px;}
+html.desktop .mapArea a.namba {left:180px;top:207px;}
+html.desktop .mapArea a.usj {left:207px;top:185px;}
+html.desktop .mapArea a.kobe {left:262px;top:133px;}
+html.desktop .mapArea a.arima {left:269px;top:102px;}
+html.desktop .mapArea a.himeji {left:206px;top:79px;}
+
+html.desktop .mapArea a.kyotoside {left:217px;top:85px;}
+html.desktop .mapArea a.hyogo {left:170px;top:125px;}
+html.desktop .mapArea a.shiga {left:326px;top:136px;}
+html.desktop .mapArea a.osaka02 {left:220px;top:193px;}
+html.desktop .mapArea a.nara {left:268px;top:229px;}
+html.desktop .mapArea a.wakayama {left:166px;top:259px;}
+html.desktop .mapArea a.shirahama {left:188px;top:297px;}
+
+html.desktop .mapArea a.tottori {left:358px;top:85px;}
+html.desktop .mapArea a.shimane {left:246px;top:132px;}
+html.desktop .mapArea a.okayama {left:377px;top:156px;}
+html.desktop .mapArea a.hiroshimaside {left:260px;top:180px;}
+html.desktop .mapArea a.hiroshima {left:256px;top:202px;}
+html.desktop .mapArea a.yamaguchi {left:136px;top:215px;}
+
+html.desktop .mapArea a.kagawa {left:316px;top:123px;}
+html.desktop .mapArea a.tokushima {left:307px;top:167px;}
+html.desktop .mapArea a.ehime {left:185px;top:182px;}
+html.desktop .mapArea a.kochi {left:170px;top:231px;}
+
+html.desktop .mapArea a.kyushuetc {left:262px;top:31px;}
+html.desktop .mapArea a.yufuin {left:263px;top:73px;}
+html.desktop .mapArea a.beppu {left:307px;top:92px;}
+html.desktop .mapArea a.oita {left:325px;top:112px;}
+html.desktop .mapArea a.kurokawa {left:277px;top:126px;}
+html.desktop .mapArea a.aso {left:241px;top:122px;}
+html.desktop .mapArea a.kumamoto {left:207px;top:155px;}
+html.desktop .mapArea a.saga {left:186px;top:88px;}
+html.desktop .mapArea a.fukuoka {left:170px;top:53px;}
+html.desktop .mapArea a.huistenbosch {left:87px;top:103px;}
+html.desktop .mapArea a.nagasaki {left:126px;top:144px;}
+html.desktop .mapArea a.kagoshima {left:144px;top:256px;}
+html.desktop .mapArea a.ibusuki {left:194px;top:311px;}
+html.desktop .mapArea a.miyazaki {left:290px;top:243px;}
+
+html.desktop .mapArea a.okinawaetc {left:288px;top:61px;}
+html.desktop .mapArea a.okinawaeast {left:314px;top:208px;}
+html.desktop .mapArea a.okinawawest {left:185px;top:130px;}
+html.desktop .mapArea a.naha {left:124px;top:194px;}
+
+html.desktop .mapArea a.ryokan02 {left:98px;top:309px;}
+html.desktop .mapArea a.ryokan03 {left:209px;top:305px;}
+html.desktop .mapArea a.ryokan04 {left:205px;top:324px;}
+html.desktop .mapArea a.ryokan05 {left:336px;top:299px;}
+html.desktop .mapArea a.ryokan08 {left:473px;top:296px;}
+html.desktop .mapArea a.ryokan09 {left:453px;top:276px;}
+html.desktop .mapArea a.ryokan10 {left:472px;top:251px;}
+html.desktop .mapArea a.ryokan11 {left:498px;top:122px;}
+html.desktop .mapArea a.ryokan12 {left:544px;top:90px;}
+html.desktop .mapArea a.ryokan13 {left:543px;top:72px;}
+html.desktop .mapArea a.ryokan15 {left:584px;top:96px;}
+html.desktop .mapArea img.ryokan01,
+html.desktop .mapArea img.ryokan06,
+html.desktop .mapArea img.ryokan07,
+html.desktop .mapArea img.ryokan14 {position:absolute;}
+html.desktop .mapArea img.ryokan01 {left:173px;top:271px;}
+html.desktop .mapArea img.ryokan06 {left:326px;top:325px;}
+html.desktop .mapArea img.ryokan07 {left:478px;top:319px;}
+html.desktop .mapArea img.ryokan14 {left:606px;top:75px;}
+
+html.desktop .contWrap .leftCont.hotelPromotion .innerCont.bannerWrap{ height:259px;}
+
+html.desktop .layoutTypeA .topTitArea{position:relative;}
+html.desktop .layoutTypeA .recommTour.type0 .topTitArea,
+html.desktop .layoutTypeA .themeTourType0 .topTitArea{margin:30px 0 0}
+html.desktop .layoutTypeA .topTitArea .btnRArea.floatR{display:block}
+html.desktop .layoutTypeA .topTitArea .btnArea.clearfix{display:none}
+html.desktop .layoutTypeA .topTitArea .txtTab{position:absolute;top:8px;left:130px}
+
+html.desktop .layoutTypeA .contBox.top5Area{margin-top:0px;}
+html.desktop .top5Area ol li {height:14px;}
+html.desktop .top5Area ol li.on {height:66px;}
+
+html.desktop .recommTour.type0 .contInner ul{float:none;width:100%;margin-top:0px;}
+html.desktop .recommTour.type0 .contInner ul li{width:23.18%;height:240px;margin:0 1.053%}
+html.desktop .recommTour.type0 .contInner ul li:first-child{margin-left:0}
+html.desktop .recommTour.type0 .contInner ul li.end{margin-right:0}
+
+html.desktop .searchArea {height:290px;}
+html.desktop .searchInput > ul {overflow:hidden;}
+html.desktop .searchInput > ul > li.check {float:left;width:50%;}
+html.desktop.ie7 .searchInput > ul > li {padding:6px 0;}
+html.desktop .searchInput > ul > li.check.checkout {width:40%;padding-left:10%;}
+html.desktop.ie7 .searchInput > ul > li.check.checkout {width:40%;padding-left:8%;}
+html.desktop .searchInput > ul > li > dl {overflow:visible;}
+html.desktop .searchInput > ul > li > dl > dt {width:10%}
+html.desktop .searchInput > ul > li > dl > dd {width:88%;}
+html.desktop .searchInput > ul > li.check dt {width:20%;padding-right:3.6%;}
+html.desktop .searchInput > ul > li.check dd {width:50%;}
+html.desktop .searchInput > ul > li.check.checkout dt {width:29%;}
+html.desktop .searchInput > ul > li.check.checkout dd {width:61.7%;}
+html.desktop .searchArea .memberSize dd p {width:24.5%;}
+html.desktop .searchArea .memberSize dd p select{width:53%}
+html.desktop .searchInput > ul > li.hotelName > dl > dd .inputBox {float:left;width:32%;}
+html.desktop .searchInput > ul > li.hotelName span.onlyHotel {margin-left:20px;}
+html.desktop.ie7 .searchInput > ul > li.hotelName span {float:left;display:block;padding-top:5px;}
+html.desktop #realtimeHotel {left:245px;top:34px;}
+html.desktop .subCont .contWrap.promotion {position:relative;margin-top:28px;}
+html.desktop .keywordArea {position:absolute;top:-340px;right:0;}
+html.desktop .keywordArea .keyword {height:230px;}
+html.desktop .calLayer.calendarSect {right:22%;top:100px;width:546px;background:url(//cdnimg.tourbaksa.com/PC/www/common/bg_calendar.png) no-repeat 0 0;}
+html.desktop .calLayer.calendarSect .calendarWrap {overflow:hidden;padding-left:30px;}
+html.desktop .calLayer.calendarSect .calendarWrap .calendarTable {float:left;width:224px;margin-top:5px;margin-right:10px;margin-left:10px;}
+html.desktop .calLayer.calendarSect .calendarWrap .calBtn {top:120px;}
+html.desktop .calLayer.calendarSect .calendarWrap .calBtn.prev {left:10px;}
+html.desktop .calLayer.calendarSect .calendarWrap .calBtn.next {right:10px;}
+
+/* 
+.calLayer.calendarSect {display:none;position:absolute;top:0;width:300px;height:250px;padding:15px 0;border:0 none;margin:0;z-index:10;}
+ */
+
+html.desktop .contactArea {margin-top:30px;}
+html.desktop .contactArea .rinkGroup {float:left;}
+html.desktop .contactArea .rinkGroup {width:23.2%;}
+html.desktop .contactArea .rinkGroup li {height:46px; line-height:46px;margin-bottom:10px;text-align:left;}
+html.desktop .contactArea .rinkGroup li.twoLines {height:62px;line-height:62px;}
+html.desktop .contactArea .rinkGroup li a {display:block;text-indent:10px;}
+html.desktop .contactArea .rinkGroup li.twoLines a {padding-top:12px;line-height:20px;}
+html.desktop .contactArea .rinkGroup li span {display:block;}
+html.desktop .contactArea .contact {float:right;width:30.5%;margin:0;}
+html.desktop .contactArea .contact .call li {width:100%;}
+html.desktop .contactArea .contact .topTitArea h3 {padding-top:0;}
+html.desktop .contactArea .contact > a {width:59%;padding-left:40%;background-position:29% center;}
+html.desktop .contactArea .contact .call li span {width:57%;}
+html.desktop .contactArea .contact .call li span:first-child {width:43%;}
+html.desktop .contactArea .contact .call li span.second {padding-left:43%;}
+html.desktop .contactArea .notice {float:left; width:37.6%;margin-left:2.8%; padding:24px 0px 24px 20px;} /* 20140203 : 20px 0 16px 20px -> padding:24px 0px 24px 20px; */
+html.desktop .contactArea .notice h3 {padding-bottom:15px;}
+html.desktop .contactArea .notice .descList li {overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;}
+
+/* mainTypeD themeTour type0 */
+html.desktop .themeTourType0 .innerCont {border-top:0 none;border-bottom:0 none;border-right:1px solid #dbdbdb;border-left:1px solid #dbdbdb;}
+html.desktop .themeTourType0 .innerCont li{float:left;width:50%;height:114px;overflow:hidden;border-top:0 none;border-bottom:1px solid #dbdbdb;}
+html.desktop.ie7 .themeTourType0 .innerCont li{width:49.8%;}
+html.desktop .themeTourType0  .innerCont li:first-child,
+html.desktop .themeTourType0  .innerCont li.noLine{border-top:1px solid #dbdbdb;}
+html.desktop .themeTourType0 .innerCont:after{content:"";display:block;clear:both;}
+html.desktop .themeTourType0 .innerCont li span.contInfo{width:63.5%}
+
+/* mainTypeE */
+/*html.desktop .airCon .searchArea {height:333px;}*/
+html.desktop .airCon .searchArea {height:263px; padding-bottom:0;} /* 2014-06-02 */
+html.desktop .airCon .rightCont {display:block;}
+html.desktop .layoutTypeA .airCon .topTitArea .btnArea.clearfix{display:block;}
+html.desktop .airCon .contWrap .rightCont li {width:100%;padding:0;}
+html.desktop.ie7 .subCont .contWrap .rightCont li{padding:0}
+html.desktop .searchInput > ul > li.departInput,
+html.desktop .searchInput > ul > li.arrivalInput {float:left;width:100%;} /* 2014-06-02 */
+html.desktop.ie .searchInput > ul > li.arrivalInput {width:99%;} /* 2014-06-02 */
+html.desktop .searchInput > ul > li.departInput dt,
+html.desktop .searchInput > ul > li.arrivalInput dt {width:14%;padding-right:3.6%;} /* 2014-06-02 */
+html.desktop .searchInput > ul > li.departInput dd,
+html.desktop .searchInput > ul > li.arrivalInput dd {width:82%;} /* 2014-06-02 */
+html.desktop .airCon .searchInput > ul > li.arrivalInput > dl > dd .inputBox {width:26%;}/* 2014-06-02 */
+html.desktop.ie .airCon .searchInput > ul > li.arrivalInput > dl > dd .inputBox {}
+html.desktop .airCon .searchInput > ul > li > dl > dd .inputBox .inputText {width:94%;}
+html.desktop .scbig #departure {width:77%;}
+html.desktop .priceTable {padding-top:8px;}
+html.desktop .priceTable table th,
+html.desktop .priceTable table td { display:table-cell;}
+html.desktop .priceTable table .normal { display:inline;}
+html.desktop .priceTable table .mobile { display:none;}
+html.desktop .priceTable table thead th { border-right:1px solid #e2e2e2;}
+html.desktop .priceTable table thead th.num3 { width:65px;}
+html.desktop .priceTable table tbody td { border-right:1px solid #e2e2e2;}
+html.desktop .priceTable table .num3 { border-right:0 none;}
+html.desktop .airCon .contactArea .contact div.call {padding:10px 0;line-height:18px;text-align:left;}
+html.desktop .contact .call > span {display:block;padding-left:68px;}
+html.desktop .priceTable table th,
+html.desktop .priceTable table td { display:table-cell;}
+html.desktop .priceTable table .normal { display:inline;}
+html.desktop .priceTable table .mobile { display:none;}
+html.desktop .priceTable table thead th,
+html.desktop .priceTable table tbody td { border-right:1px solid #e2e2e2;text-align:center;}
+html.desktop .priceTable table .num3 { border-right:0 none;}
+
+
+
+
+
+
+/* 롤링배너 스타일 */
+.contWrap .leftCont .innerCont.bannerWrap{position:relative;overflow:hidden;border:1px solid #e2e2e2;z-index:10;}/**/
+.recommTour .contInner .bannerZone{position:relative;z-index:10}
+.bannerWrap ul.promotionBanner,
+.bannerZone ul.recomBanner {position:relative;overflow:hidden;width:1000%;z-index:9}
+.bannerWrap .promotionBanner li,
+.recommTour .contInner .bannerZone li {float:left;width:10%;margin:0;overflow:hidden}
+.recommTour .contInner .bannerZone li img {width:100%;}
+.contWrap .leftCont .bannerWrap .promotionBanner li .pic{width:854px;;}/* max-width:574px */
+
+/*html.tablet .contWrap .leftCont .bannerWrap .promotionBanner li .pic{min-height:216px}*/
+/*html.tablet .recommTour .contInner .bannerZone li img {width:100%;}*/
+html.tablet .bannerZone ul.recomBanner {position:relative;overflow:hidden;width:1000%;height:100%;}
+html.tablet .airCon .contWrap .rightCont .promotionBanner li,
+html.tablet .recommTour .contInner .bannerZone li {float:left;width:10%;margin:0;}
+/* html.tablet  .contWrap .leftCont .innerCont.bannerWrap{ height:217px; } */
+
+html.desktop .bannerZone ul.recomBanner {position:relative;overflow:hidden;width:1000%;}
+html.desktop .bannerZone ul.recomBanner li{height:238px}
+html.desktop .bannerZone ul.recomBanner li img{width:100%}/* max-width:260px; */
+html.desktop .airCon .contWrap .rightCont .promotionBanner li,
+html.desktop .recommTour .contInner .bannerZone li {float:left;width:10%;margin:0;}
+/*html.desktop .recommTour .contInner .bannerZone li img {width:259px;}*/
+html.desktop .contWrap .leftCont .innerCont.bannerWrap{ width:852px;height:259px; }
+html.desktop .contWrap .leftCont .innerCont.bannerWrap img,
+html.tablet .contWrap .leftCont .innerCont.bannerWrap,
+html.tablet .contWrap .leftCont .innerCont.bannerWrap img {height:259px;}
+
+html.tablet.ie7 .subCont .contWrap .rightCont li a span {height:35px;line-height:35px;}
+html.tablet .airCon .contWrap .rightCont .bannerWrap .pic {height:222px;}
+
+/* 20160705 추가
+html.desktop .bannerZone .recomBanner li img.recom_img{width:257px;height:236px;border:1px solid #e2e2e2;}
+html.desktop .bannerZone .recomBanner .recom_bg{display:block;position:absolute;left:1px;top:1px;width:257px;background:url(http://www.tourbaksa.com//cdnimg.tourbaksa.com/PC/www/common/bg_gray.png) no-repeat 0 99px;}
+html.desktop .bannerZone .recomBanner .recom_txt{display:block;padding:158px 18px 18px;color:#fff;font-size:22px;font-weight:bold;letter-spacing:-0.25px;text-align:left;}
+html.desktop .bannerZone .recomBanner .recom_txt .txt1{display:block;margin-bottom:6px;font-size:12px;font-weight:600;line-height:16px;} */
+
+/* 렌터카 예약 박스 추가 설명 */
+.scbig_txt {clear:both; position:relative; padding-left:20%; padding-top:8px;  line-height:16px; width:78%; font-size:11p

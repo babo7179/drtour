@@ -1,0 +1,272 @@
+@charset "utf-8";
+html{overflow-x:hidden;} 
+
+#wrap{width:100%;}
+#header{position:relative;width:100%;z-index:99;}
+.header-wrap,.location{overflow:hidden;width:1100px;margin:0 auto;}
+.location{height:30px;margin-bottom:20px;background:#000;}
+.innerWrap{width:1100px;margin: 0px auto;padding:0 8px;}/*overflow:hidden*/ 
+.searchAreaLine{padding-right:0; padding-left:0;} /* 2015-05-18 추가 */
+
+#header .util-menu li a{font-size:12px;color:#666;font-weight:400;}
+#header .header-inner{position:relative;}
+#header .head-util{position:relative;width:1100px;height:26px;margin:0 auto;padding:44px 0 33px;text-align:center;}
+#header .head-util h1{display:inline-block;font-size:0;line-height:0;}
+#header .head-util:after{content:'';display:block;clear:both;}
+#header .head-rolling{overflow:hidden;position:relative;float:left;width:355px;margin-top:6px;}
+#header .head-rolling-list > li{padding:2px 0;text-align:left;}
+#header .head-rolling-list > li > a strong{display:inline-block;width:56px;height:26px;border:1px solid #2bb5b1;font-weight:500;font-size:13px;color:#2bb5b1;line-height:26px;text-align:center;} 
+#header .head-rolling-list > li > a span{display:inline-block;height:26px;padding-left:10px;font-size:12px;line-height:26px;}
+#header .header-rolling-ctrol{position:absolute;right:0;top:0;width:13px;}
+#header .header-rolling-ctrol > a{position:relative;display:block;width:13px;height:14px;}
+#header .header-rolling-ctrol > a:after{content:'';position:absolute;left:50%;top:50%;width:7px;height:4px;margin:-2px 0 0 -4px; background:url(//cdnimg.tourbaksa.com/PC/www/new/layout/tb_iconset.png) no-repeat -17px -29px;}
+#header .header-rolling-ctrol > a.btn-rolling-next:after{background-position:-28px -29px;}
+
+#header .head-utilmenu{float:right;margin-top:6px;}
+#header .head-utilmenu > .util-item{position:relative;display:inline-block;padding-left:7px;margin-left:5px;}
+#header .head-utilmenu > .util-item + .util-item:after{content:'';display:block;position:absolute;left:0;top:50%;width:1px;height:10px;margin-top:-5px;background-color:#aaaaaa;}
+#header .head-utilmenu > .util-item > a{font-size:12px;}
+#header .ui-dropdown{position:relative;z-index:95;}
+#header .ui-dropdown > a{display:block;position:relative;padding-right:12px;}
+#header .ui-dropdown > a:after{content:'';position:absolute;right:0;top:50%;width:7px;height:4px;margin-top:-2px;background:url(//cdnimg.tourbaksa.com/PC/www/new/layout/tb_iconset.png) no-repeat -28px -29px;transition: transform .5s;-webkit-transition: transform .5s;}
+#header .ui-dropdown.on a:after{transform:rotate(180deg);	-webkit-transform:rotate(180deg);}
+#header .ui-dropdown .util-submenu{display:none;position:absolute;left:0;top:20px;width:98px;padding:9px 0;border:1px solid #dddddd;background-color:#fff;z-index:95;}
+#header .ui-dropdown .util-submenu li>a{display:block;padding-left:14px;height:19px;line-height:19px;text-align:left;}
+
+
+/* 출발지 지정 */
+.gnb-depart{float:left;margin:8px 0 0 0;}
+.gnb-depart .ui-selectbox{position:relative;width:114px;height:35px;z-index:1000;}
+.gnb-depart .ui-selectbox .ui-select-list{display:none;}
+.gnb-depart .ui-selectbox.on .ui-select-list{display:block;}
+.gnb-depart .ui-selectbox .ui-select-list{width:113px;padding:10px 0;background-color:#fff;border:1px solid #303843;border-top:0;}
+.gnb-depart .ui-selectbox .ui-select-list>li>a{padding-left:14px;height:24px;line-height:24px;}
+/* .gnb-depart .ui-selectbox > a:after{transition: transform .2s;-webkit-transition: transform .2s;}
+.gnb-depart .ui-selectbox.on > a:after{transform:rotate(180deg);	-webkit-transform:rotate(180deg);} */
+
+/*
+ * 메인A 타입과 서브메인B타입의 gnb스타일로 나뉜다.
+ */
+
+#nav{width:932px;padding-left:115px;}
+#nav .nav-menu{}
+#nav .nav-menu .nav-dep1{float:left;padding:0 18px;vertical-align:middle;}
+#nav .nav-menu .nav-dep1:first-child{padding-left:29px;}
+#nav .nav-menu .nav-dep1 > a{display:block;height:54px;line-height:54px;font-weight:400;font-size:17px;color:#f0f0f0;}
+#nav .nav-menu .nav-dep1.current > a,
+#nav .nav-menu .nav-dep1.on > a,
+#nav .nav-menu .nav-dep1 > a:hover{color:#fe922e !important;}
+#nav .nav-menu .menu4{padding-right:37px;}
+#nav .nav-menu .menu5{position:relative;padding-left:29px;}
+#nav .nav-dep2.current > a,
+#nav .nav-dep2.on > a,
+#nav .nav-dep2 > a:hover{color:#fe922e;}
+#nav .nav-menu >li .nav-dep2Layer{display:none;}
+
+/* gnb-wrap */
+.gnb-typeA.gnb-wrap{position:relative;width:100%;border-top:1px solid #ddd;z-index:90;}
+.gnb-typeA:after{content:'';display:block;position:absolute;left:0;bottom:0;width:100%;height:1px;background-color:#ddd; -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=50)"; filter: alpha(opacity=50); opacity: 0.5;}
+.gnb-typeA .gnb-inner{position:relative;width:1100px;margin:0 auto;}
+.gnb-typeA .gnb-inner:after{content:'';display:block;clear:both;}
+.gnb-typeA .nav-dep1{position:relative;}
+.gnb-typeA .nav-dep2Layer{display:none;position:absolute;left:0;top:44px;width:140px;padding:29px 24px;margin:9px 0 0 0;border:1px solid #222;background-color:#fff;z-index:2;}
+.gnb-typeA .nav-dep2Layer:before{content:'';position:absolute;left:50%;top:-9px;width:14px;height:9px;margin:0 0 0 -7px;background:url(//cdnimg.tourbaksa.com/PC/www/new/layout/tb_iconset.png) no-repeat -134px -81px;}
+.gnb-typeA .nav-dep2Layer h3{padding-bottom:12px;font-weight:500;font-size:16px;color:#222222;}
+.gnb-typeA .nav-dep2Layer ul > li{padding-bottom:10px;}
+.gnb-typeA .nav-dep2Layer ul > li > a{position:relative;font-size:14px;font-weight:400;color:#666;}
+.gnb-typeA .nav-dep2Layer ul > li > a:hover{color:#fe922e;}
+.gnb-typeA .nav-dep2Layer ul > li > a:hover:before{content:'';position:absolute;left:0;bottom:1px;display:block;width:100%;height:1px;background-color:#fe922e;}
+
+.gnb-typeA .menu1 .nav-dep2Layer{left:-28px;}/* 패키지 */
+.gnb-typeA .menu2 .nav-dep2Layer{left:-47px;}/* 자유 */
+.gnb-typeA .menu3 .nav-dep2Layer{left:-47px;}/* 테마 */
+.gnb-typeA .menu4 .nav-dep2Layer{left:-47px;}/* 국내 */
+.gnb-typeA .menu6 .nav-dep2Layer{left:-47px;}/* 패스티켓 */
+.gnb-typeA .menu8 .nav-dep2Layer{left:-54px;}/* 렌터카 */
+.gnb-typeA .menu9 .nav-dep2Layer{left:-62px;}/* 항공 */
+
+
+/* gnb 검색 공통 : gnb-search */
+.gnb-wrap .gnb-search{position:relative;float:right;height:53px;}
+.gnb-wrap .btn-search-act,
+.gnb-wrap .btn-search-form{position:absolute;right:0;top:0;width:53px;height:53px;text-align:center;}
+
+.gnb-wrap .btn-search-act span,
+.gnb-wrap .btn-search-form span{display:inline-block;width:19px;height:19px;margin:17px 0 0 17px;background:url(//cdnimg.tourbaksa.com/PC/www/new/layout/tb_iconset.png) no-repeat 0 0;}
+.gnb-wrap .btn-search-form span{background-position:-123px -16px;}
+
+
+/* gnb search action button */
+.gnb-wrap .gnb-search .btn-ActSearch {position:relative;display:inline-block;width:53px;height:53px;}
+.gnb-wrap .gnb-search .btn-ActSearch:after{content:'';position:absolute;left:50%;top:50%;width:19px;height:19px;margin:-10px 0 0 -10px;background:url(//cdnimg.tourbaksa.com/PC/www/new/layout/tb_iconset.png) no-repeat -99px -16px;}
+.gnb-wrap .gnb-search .btn-ActSearch span{position:absolute;left:0;top:0;width:52px;height:53px;border-left:1px solid #ddd;border-right:1px solid #ddd;-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=50)"; filter: alpha(opacity=50); opacity: 0.5;text-indent:-9999em;font-size:0;}
+
+/* search-layer buttn */
+.gnb-wrap .gnb-search .btn-gnb-search{position:absolute;right:0;top:0;width:53px;height:53px;outline:none;background-color:#fff;z-index:999;}
+.gnb-wrap .gnb-search .btn-gnb-search:after{content:'';position:absolute;left:50%;top:50%;width:19px;height:19px;margin:-10px 0 0 -10px;background:url(//cdnimg.tourbaksa.com/PC/www/new/layout/tb_iconset.png) no-repeat -123px -16px;}
+.gnb-wrap .gnb-search .btn-gnb-search span{display:none;}
+/* search-layer */
+.gnb-wrap .search-layer{overflow:hidden;position:absolute;right:0;width:0;top:0;z-index:99; -webkit-transition: width 0.3s;-moz-transition: width 0.3s;-ms-transition: width 0.3s;-o-transition: width 0.3s;transition: width 0.3s;}
+.gnb-wrap .search-layer.is-open{width:546px;}
+.gnb-wrap .search-layer input{background-color:transparent;border:0;font-size:14px;color:#fff;}
+.gnb-wrap .ui-form-input{position:relative;height:53px;}
+.gnb-wrap .ui-form-input label{position:absolute;left:30px;top:12px;height:28px;line-height:28px;font-size:14px;}
+.gnb-wrap .ui-form-input input{ position: absolute;left: 0;top: 0;width:493px;padding:12px 0 13px;height:28px;line-height:28px;text-indent: 30px;font-size:14px;color:#fff;
+font-family:'Noto Sans KR',Dotum, Gulim;font-weight:400;}
+
+/* 
+ * gnb-typeA
+ */
+.gnb-typeA .nav-dep1.menu5:before{content: '';position: absolute;left: -1px;top: 0;width: 1px;height: 53px;background-color: #ddd;-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=50)"; filter: alpha(opacity=50); opacity: 0.5;}
+/* 출발지 : gnb-depart */
+
+.gnb-typeA .ui-selectbox:after{content:'';position:absolute;left:0;top:0px;border:1px solid #ddd;width:113px;height:35px;-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=50)"; filter: alpha(opacity=50); opacity: 0.5;}
+.gnb-typeA .ui-selectbox > a{position:relative;display:block;padding: 1px 25px 1px 14px;font-family:'NanumSquare';text-align:center;font-weight:400;color:#fff;font-size:17px;line-height:35px;}
+.gnb-typeA .ui-selectbox > a:after{content:'';position:absolute;right:15px;top:50%;width:10px;height:5px;margin-top:-3px;background:url(//cdnimg.tourbaksa.com/PC/www/new/layout/tb_iconset.png) no-repeat -3px -29px;}
+
+/* nav */
+.gnb-typeA #nav .nav-dep1.nav-hotel:before{content:'';display:block;position:absolute;left:-1px;top:0;width:1px;height:53px;background-color:#ddd;
+-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=50)"; filter: alpha(opacity=50); opacity: 0.5;}
+
+/* main : gnb-typeA .search-layer */
+.gnb-typeA .btn-search-act:after{content:'';position:absolute;left:0;top:0;width:52px;height:52px;border-left:1px solid #ddd;border-right:1px solid #ddd;-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=50)"; filter: alpha(opacity=50); opacity: 0.5;}
+.gnb-typeA .btn-search-act span{background-position:-99px -16px;}
+.gnb-typeA .ui-form-input label{color:#fff;} 
+.gnb-typeA .search-layer{height:53px;background-color:#222222;border:0;}
+
+/* 
+ * gnb-typeB
+ */
+
+/* gnb-wrap */
+.gnb-typeB.gnb-wrap{position:relative;width:100%;height:97px;border-top:1px solid #ddd;background-color:#fff;z-index:10;}
+/* .gnb-typeB:after{content:'';position:absolute;left:0;bottom:0;} */
+.gnb-typeB .gnb-inner{width:1100px;height:53px;margin:0 auto;}
+.gnb-typeB .gnb-inner:after{content:'';display:block;clear:both;}
+
+ /* 출발지 : gnb-depart */
+.gnb-typeB .gnb-depart{float:left;width:115px;height:37px;margin:8px 0 0 0;}
+.gnb-typeB .ui-selectbox{width:115px;}
+.gnb-typeB .ui-selectbox > a{position:relative;display:block;width:76px;padding: 1px 25px 1px 14px;text-align:center;background-color:#323944;font-weight:400;color:#fff;font-size:17px;line-height:35px;}
+.gnb-typeB .ui-selectbox > a:after{content:'';position:absolute;right:15px;top:50%;width:10px;height:5px;margin-top:-3px;background:url(//cdnimg.tourbaksa.com/PC/www/new/layout/tb_iconset.png) no-repeat -3px -29px;}
+
+
+/* gnb-typeB */
+.gnb-typeB .nav-dep1 > a{color:#222 !important;}
+.gnb-typeB .nav-dep1.menu5:before{content:'';display:block;position:absolute;left:-1px;top:0;width:1px;height:53px;background-color:#ddd;}
+.gnb-typeB .sub2Depth{position:absolute;left:0;top:53px;width:100%;height:44px;background-color:#323944;}
+.gnb-typeB .nav-dep2Layer{position:absolute;left:50%;top:0;width:1100px;margin-left:-550px;}
+.gnb-typeB .nav-dep2Layer{}
+.gnb-typeB .nav-dep2Layer > h3{display:none;}
+.gnb-typeB .nav-dep2Layer > ul{visibility: hidden;height: 0; margin-top: -3px;opacity:0; -webkit-transition:all 0.1s ease; transition:all 0.1s ease; transition-delay:0s;-webkit-transition-delay:0s;}
+.gnb-typeB .nav-dep2Layer.open > ul{visibility: visible;height: auto; margin: 0;opacity:1;-webkit-transition:all 0.4s ease;transition:all 0.4s ease;transition-delay:0.2s;-webkit-transition-delay:0.2s;}
+.gnb-typeB .nav-dep2{float:left;}
+.gnb-typeB .nav-dep2 > a{display:block;padding:0 15px 0 16px;color:#fff;font-size:15px;font-weight:300;line-height:44px;}
+.gnb-typeB .nav-dep2:first-child > a{padding-left:19px;}
+
+/* gnb-typeB .search-layer */
+.gnb-typeB .gnb-search .btn-search-act span{background-position:-73px -16px;}
+.gnb-typeB .search-layer{top:0px;height:53px;background-color:#fff;}
+.gnb-typeB .search-layer.is-open{top:-1px;right:-1px;border:1px solid #000;}
+.gnb-typeB .ui-form-input label{color:#666;}
+.gnb-typeB .gnb-search .btn-ActSearch:after{background:url(//cdnimg.tourbaksa.com/PC/www/new/layout/tb_iconset.png) no-repeat -73px -16px;}
+
+
+/*
+	sub공통 3depth 메뉴
+	nav-cate-DetailLayer
+*/
+.sub3Depth{display:none;position:absolute;left:0;top:97px;width:1100px;background-color:#fff;z-index:90;}
+.sub3Depth .nav-cate-menu{float:left;width:880px;}
+.sub3Depth .menu-row{overflow:hidden;display:table;height:249px;border-bottom:1px solid #ddd;}
+.sub3Depth .menu-row > li{display:table-cell;width:219px;border-left:1px solid #dddd;}
+.sub3Depth .categoryList{margin:15px 24px 0;}
+.sub3Depth .categoryList .cate-dep1 a{display:block;line-height:18px;letter-spacing:-0.025em;}
+.sub3Depth .categoryList .cate-dep1 a:hover{color:#fe922e;}
+.sub3Depth .categoryList .cate-dep1 > a{padding-bottom:6px;color:#222222;font-size:15px;font-weight:600;word-wrap:break-word;}
+.sub3Depth .categoryList .cate-dep1 ul{margin-bottom:8px;}
+.sub3Depth .categoryList .cate-dep1 li > a{padding-bottom:7px;color:#888;font-size:13px;font-weight:400;}
+
+
+.sub3Depth .nav-cate-AD{float:left;width:219px;border-right:1px solid #ddd;}
+.sub3Depth .nav-cate-AD .row-ad{width:219px;height:249px;border-bottom:1px solid #ddd;}
+
+/* header-sub */ 
+.main-visual{position:relative;top:-54px;}
+
+/* topTitArea */
+.topTitArea{padding-left:20px;border-bottom:1px solid #e2e2e2}
+.topTitArea h3{float:left;padding:10px 0;font-size:15px;color:#454545}
+.topTitArea .btnArea{display:none;float:right;}
+.topTitArea .btnArea a{display:block;float:left;width:16px;height:14px;padding:10px;text-align:center;border-left:1px solid #e2e2e2}
+
+.topTitArea .btnRArea a.on{background:url(//cdnimg.tourbaksa.com/PC/www/common/bg_on.png) no-repeat}
+.topTitArea .btnRArea a{float:left;display:block;width:10px;height:10px;margin-left:5px;text-indent:-9999px;overflow:hidden;background:url(//cdnimg.tourbaksa.com/PC/www/common/bg_off.png) no-repeat}
+
+.contBox{width:100%;border:1px solid #e2e2e2;z-index:1;}/*min-width:302px;*/
+
+/* clearfix */
+.clearfix:after { content: "."; display: block; height: 0; overflow: hidden; clear: both;}
+html.ie .clearfix { zoom: 1;}
+
+
+.left_banner { position:absolute; top:0; left:-142px; width:100px; cursor:pointer;}
+#top_area {position:absolute; top:0; left:0; width:1100px; height:512px; display:none; background:#000; z-index:9999;} 
+#top_area_close{ position:absolute; top:8px; right:23px; z-index:99999; width:50px; height:50px; }
+
+.promotion {margin-top:20px !important;}
+.leftCont.promotion {margin-top:0 !important;} /* 2015-05-21 추가 - submain */
+.breadcrum-inner{clear:both;width:100%;border-top: 1px solid #ddd;border-bottom: 1px solid #ddd;}
+.breadcrum-menu{width:1100px;height:auto;margin:0 auto;font-size:12px;}
+.breadcrum-menu .home{display:block;overflow:hidden;float:left;width:13px;padding:14px 10px 14px 15px;line-height:13px;text-indent:-9999px;background:url(//cdnimg.tourbaksa.com/PC/www/ico/ico_home.gif) no-repeat center center;border-right:none !important;}
+.breadcrum-menu > a{display:inline-block;padding:15px 10px 15px 15px;line-height:12px;background: url(//cdnimg.tourbaksa.com/PC/www/common/arrow_01_new.gif) no-repeat left center;text-align: center;}
+.breadcrum-inner.typeA{background:#323944;}
+.breadcrum-inner.typeA .breadcrum-menu > a{color:#fff;}
+/* footer */
+#footer{width:100%;margin-top:0;min-width:1100px;background-color: #fafafa;}
+#footer .footerMenu .footerMenuInner{position:relative;width:1100px; margin:0 auto;padding:7px 0;}
+#footer .footerMenu{width:100%;margin:0 auto;padding:0;background-color:#777;}
+#footer .footerMenu a{color:#ddd;}
+#footer .footerMenu ul li{display:inline-block;padding:7px 1%;text-align:center;background:url(//cdnimg.tourbaksa.com/PC/www/common/bg_bar_03.gif) no-repeat left center;}
+#footer .footerMenu ul li:first-child{padding-left:0px;background-image:none;}
+#footer .footerMenu ul li.personal_info {font-weight:300;} 
+#footer .footerMenu ul li.personal_info a {color:#fff;}
+
+/* family site */
+#footer .family-site{position:absolute;top:0;right:63px;z-index:997;width:118px;}
+#footer .family-site>a{display:block;padding:14px 29px 15px 12px;background:#989898 url(//www.tourbaksa.com//cdnimg.tourbaksa.com/PC/www/common/bg_footer_f_site.png) no-repeat 91px center;color:#fff;font-size:12px;letter-spacing:-0.8px;}
+#footer .family-siteList {display:none;padding:5px 12px 10px 6px;background:#fff;border:1px solid #d9d9d9;border-top:0;}
+#footer .family-siteList  li > a {display:block;color:#666;font-size:12px;height:20px;line-height:20px;letter-spacing:-0.8px;}
+
+/* gotop */
+#footer .footerMenu .btnTop {position:absolute;top:0;right:0;padding:14px 15px 14px 27px;background:#5c5e61 url(//www.tourbaksa.com//cdnimg.tourbaksa.com/PC/www/common/bg_top.png) no-repeat 13px center;}
+
+.footer-bottom{width:1100px;margin:0 auto 20px;}
+.footer-bottom .copyRight {overflow:hidden;position:relative;padding:20px 8px; width:1100px; margin:0 auto;}
+.footer-bottom .copyRight h2{float:left;margin-top:0;margin-right:35px;}
+.footer-bottom .copyRight address{margin:0 0 20px;line-height:20px;font-size:12px;color:#888;font-style:normal;}
+.footer-bottom .copyRight address span{display:block}
+.footer-bottom .copyRight em{display:block;font-size:11px;color:#aaa;} 
+
+/* footer award */
+.footer_award {display:block;overflow:hidden;position: relative;width:1100px;padding-top:10px;margin:0 auto;border-top:1px solid #e2e2e2;} 
+.footer_award dl {float:left;}
+.footer_award dl:first-child{margin-left:0;}
+.footer_award dl dt{float:left; margin-right:6px;}
+.footer_award dl dd {display:inline-block; float:left; color:#aaa; font-size:11px; line-height:12px;}
+
+.footer_award .new_award_list .slide{display: inline-block;float: left;width:200px;padding:0 0 0 30px;background: url(//cdnimg.tourbaksa.com/PC/www/common/bg_award_border.gif) no-repeat 100% 20%;}
+.footer_award .new_award_list .slide.first{padding:0;width:190px;}
+.footer_award .new_award_list .slide.last{padding:0 0 0 30px;width:190px;background:0;}
+.footer_award .new_award_list .slide.top{margin-top:20px;}
+ 
+
+/*161212 수정 : 여행정보 메인 푸터 크기 조정*/
+#mainWrapper ~ #footer .footMenuWrap .innerWrap .f_site > a {padding:15px 29px 15px 12px;}
+
+/* footer-banner */
+.Footer_ad_Wrap{display:block;overflow:hidden;width:100%;height:100px;}
+.Footer_ad_Wrap .Footer_ad_Cont{width:1100px;margin:0 auto;text-align:center;}
+
+
+
